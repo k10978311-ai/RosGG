@@ -2,10 +2,13 @@
 Dry-run of loginapp.build_reply() with the LAST captured request packet,
 using the corrected BF_SPEC=1:16 (confirmed ECB, 16-byte key at offset 1).
 """
-import sys, os
-sys.path.insert(0, r'C:\Users\Lufy\Desktop\Server')
-os.environ['REPLY_VARIANT'] = '24'
-os.environ['BF_SPEC'] = '1:16'   # confirmed correct
+import os
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+os.environ["REPLY_VARIANT"] = "24"
+os.environ["BF_SPEC"] = "1:16"
 
 import loginapp, importlib
 importlib.reload(loginapp)

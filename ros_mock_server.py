@@ -3,13 +3,14 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
 import os
 import ssl
+import struct
 import threading
 
 CERT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "certs")
 HTTPS_PORT = 443
 
 HOST_IP = "0.0.0.0"          # Listen on all interfaces
-LOCAL_SERVER_IP = "192.168.1.18"  # PC's LAN IPv4 address (must match redirect_ros_17.js)
+LOCAL_SERVER_IP = os.environ.get("ROS_PC_IP", "192.168.100.137")  # match real/server_list_ad.local.txt
 HTTP_PORT = 80
 GATE_TCP_PORT = 20001
 
@@ -203,20 +204,27 @@ class RoSMockHTTPHandler(BaseHTTPRequestHandler):
 # Asyncio Raw TCP Listener for the NeoX Gate/Lobby Connection
 async def handle_gate_client(reader, writer):
     addr = writer.get_extra_info('peername')
-    print(f"\n[TCP GATE] Incoming NeoX Engine connection from {addr}!")
+    port = writer.get_extra_info('sockname')[1]
+    print(f"\n[TCP GATE:{port}] Connection from {addr}")
+    root = os.path.dirname(os.path.abspath(__file__))
+    tcp_log = os.path.join(root, "tcp_gate_capture.bin")
     try:
         while True:
             data = await reader.read(4096)
             if not data:
                 break
-            print(f"[TCP GATE] {writer.get_extra_info('sockname')[1]} Received {len(data)} bytes: {data.hex()}")
-            with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "gate_capture.bin"), "ab") as f:
+            print(f"[TCP GATE:{port}] {len(data)}B: {data[:128].hex()}{'...' if len(data)>128 else ''}")
+            with open(tcp_log, "ab") as f:
+                f.write(struct.pack("<H", len(data)))
                 f.write(data)
-            # Echo / Acknowledge packet inspection point
+            # Stay open; real gate handshake TBD (see tcp_gate_capture.bin). Optional no-op ack:
+            if os.environ.get("TCP_GATE_ECHO", "off") == "on":
+                writer.write(data)
+                await writer.drain()
     except Exception as e:
-        print(f"[TCP GATE] Connection error: {e}")
+        print(f"[TCP GATE:{port}] error: {e}")
     finally:
-        print(f"[TCP GATE] Disconnected: {addr}")
+        print(f"[TCP GATE:{port}] closed {addr}")
         writer.close()
 
 class GateUDP(asyncio.DatagramProtocol):
@@ -239,13 +247,13 @@ class GateUDP(asyncio.DatagramProtocol):
             f.write(data)
 
         # --- Login reply handler ---
-        if self.port == 25000 and is_login and os.environ.get("REPLY_VARIANT", "off") != "off":
+        reply_variant_env = os.environ.get("REPLY_VARIANT", "24")
+        if self.port == 25000 and is_login and reply_variant_env != "off":
             try:
                 import loginapp, importlib
                 importlib.reload(loginapp)
-                env = os.environ.get("REPLY_VARIANT")
-                if env is not None and env != "sweep":
-                    msgid = int(env)
+                if reply_variant_env != "sweep":
+                    msgid = int(reply_variant_env)
                 else:
                     sf = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sweep_msgid.txt")
                     try:
@@ -257,12 +265,15 @@ class GateUDP(asyncio.DatagramProtocol):
                 res = loginapp.build_reply(data, LOCAL_SERVER_IP, 25000, msgid)
                 if res:
                     pkt, params, bf = res
-                    print(f"  [{_t.strftime('%H:%M:%S')}] [LOGIN] TRY msgid={msgid} (0x{msgid:02x}) -> {len(pkt)}B: {pkt.hex()}")
-                    print(f"      LogOnParams rest={params.get('rest',b'').hex()} bf={bf.hex() if bf else None}")
+                    sk = loginapp.extract_session_u32(params).hex()
+                    print(f"  [{_t.strftime('%H:%M:%S')}] [LOGIN] SENT REPLY variant={msgid} -> {len(pkt)}B: {pkt.hex()}")
+                    print(f"      Decrypted: user={params.get('username')} error={params.get('error')}")
+                    print(f"      session_u32={sk} rest={params.get('rest',b'').hex() if isinstance(params.get('rest'), (bytes, bytearray)) else ''} bf={bf.hex() if bf else None}")
                     self.transport.sendto(pkt, addr)
                     self._login_replied[addr] = True
             except Exception as e:
-                print(f"  [REPLY ERROR] {e}")
+                import traceback
+                print(f"  [REPLY ERROR] {e}\n{traceback.format_exc()}")
             return
 
         # --- BaseApp Mercury channel probe handler ---
@@ -274,14 +285,34 @@ class GateUDP(asyncio.DatagramProtocol):
             # Capture to a separate file for easy analysis
             with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "baseapp_capture.bin"), "ab") as f:
                 f.write(len(data).to_bytes(2, 'little') + data)
-            # Attempt a minimal Mercury ACK / no-op reply so client knows we're alive
-            # BigWorld Mercury: a plain off-channel ACK is flags=0x0000 with no body
-            # (just to prevent connection refused; not necessarily protocol-correct yet)
-            if os.environ.get("BASEAPP_ACK", "off") != "off":
-                # Echo the packet back as a minimal off-channel ack
-                ack = bytes([0x00, 0x00])
-                self.transport.sendto(ack, addr)
-                print(f"  [{ts}] [BASEAPP] Sent minimal ACK (2B) to {addr}")
+
+            if data[:4] == b"\x01\x00\x00\x0b" and len(data) >= 15:
+                req_id = data[5:9]
+                sess_key = data[11:15]
+                attempt = struct.unpack("<I", data[15:19])[0] if len(data) >= 19 else 1
+                print(
+                    f"  [{ts}] [BASEAPP] baseAppLogin attempt {attempt}: "
+                    f"req_id={req_id.hex()} sess_key={sess_key.hex()} seq_footer={data[7:11].hex()}"
+                )
+
+                import loginapp, importlib
+                importlib.reload(loginapp)
+                if os.environ.get("BASEAPP_ACK", "off") == "on":
+                    variant = 0
+                else:
+                    variant = os.environ.get("BASEAPP_REPLY_VARIANT", "1")
+                    try:
+                        variant = int(variant)
+                    except ValueError:
+                        pass
+                pkt = loginapp.build_baseapp_reply(data, variant)
+                if pkt:
+                    self.transport.sendto(pkt, addr)
+                    print(
+                        f"  [{ts}] [BASEAPP] SENT REPLY variant={variant} -> "
+                        f"{len(pkt)}B: {pkt.hex()} to {addr}"
+                    )
+                return
 
 
 async def start_tcp_gate():

@@ -12,7 +12,8 @@ import struct, sys
 from elf import ELF
 from capstone import Cs, CS_ARCH_ARM64, CS_MODE_LITTLE_ENDIAN
 
-PATH = r"C:\Users\Lufy\Desktop\Server\extract\libclient.so"
+import os
+PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "libclient.so")
 e = ELF(PATH); d = e.d
 text = e.sec(".text"); tbase, toff, tsize = text["addr"], text["offset"], text["size"]
 

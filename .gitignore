@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+harness/captures/
+*.log
+dns_err.log
+server_err.log
+frida_trace.log
+frida.log
+msgmap.log
+tdump_*.txt
+tcpdump*.txt
+sweep_*.txt
+bf_off.txt

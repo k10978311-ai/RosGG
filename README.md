@@ -236,6 +236,24 @@ New tools from this pass: `extract/elf.py`, `extract/msgmap.py`, `extract/xref2.
   (see "Static RE pass" → "Still unresolved"). Best next step: BigWorld 2.x Mercury source,
   or an arm64 environment so `libclient.so` can be hooked with Frida.
 
+### Frida on LDPlayer (emulated realm)
+
+LDPlayer runs arm64 `libclient.so` through a native bridge. In the **native** realm,
+`Process.findModuleByName("libclient.so")` is usually `NULL`; libc hooks (`trace_pubkey.js`)
+still work. For engine modules, attach in the **emulated** realm (Frida ≥ 16):
+
+```powershell
+python run_frida.py diag.js --attach --realm emulated          # LDPlayer
+python run_frida.py frida/neox_py_discover.js --attach --realm emulated  # Python module names only (RE)
+python run_frida.py frida/neox_py_discover.js --attach --realm native    # Note10+
+```
+
+Do **not** use Frida to force-load lobby scenes or bypass PLAY — use the Mercury LoginApp path (`loginapp.py`).
+
+After login-reply experiments (`REPLY_VARIANT=24`), `gate_capture.bin` contains follow-up
+UDP probes (`01 00 00 0b …`). Inspect them with `python scratch/parse_baseapp.py`; the
+mock server can answer using `loginapp.build_probe_ack()` when `BASEAPP_ACK=on`.
+
 ### File index
 | File | Purpose |
 |------|---------|
@@ -245,7 +263,8 @@ New tools from this pass: `extract/elf.py`, `extract/msgmap.py`, `extract/xref2.
 | `loginapp.py` | Experimental Mercury login-reply builder (decrypts LogOnParams, reply variants, msgid sweep) |
 | `cycle.sh` | Relaunch game + dump NeoX `<SCRIPT>` logs + screenshot |
 | `trace_pubkey.js` | Frida: trace the `loginapp.pubkey` load path (libc hooks) |
-| `run_frida.py` | Spawn/attach the game under Frida |
+| `run_frida.py` | Spawn/attach the game under Frida (`--realm emulated` on LDPlayer for `libclient.so`) |
+| `frida_attach.ps1` | Shortcut: `.\frida_attach.ps1 -Script diag.js` (defaults to emulated attach) |
 | `redirect_ros_17.js`, `dump_urls.js` | Original Frida redirector / URL sniffer (not needed for the DNS flow) |
 | `dump_msgmap.js`, `diag.js` | Frida msgid-map dumper + module diag (blocked by native bridge here) |
 | `certs/` | Local test CA + leaf cert (SANs for NetEase hosts) |
@@ -315,10 +334,39 @@ DNS-based flow.
   `:25000` (the RSA key-exchange described above).
 - `gate_capture.bin` — scratch capture from the running server.
 
+## Agent loop (private server RE)
+
+See **`AGENTS.md`** for the Harness Agent charter. One iteration:
+
+```powershell
+.\harness\harness_loop.ps1 -TapPlay    # LD + phone screenshots + iteration_log.jsonl
+.\harness\loop_ros.ps1 -IntervalMinutes 15 -TapPlay   # background wake for Cursor /loop
+```
+
+Spawn a Cursor **Task** sub-agent with prompt: _Read AGENTS.md, run harness iteration, fix LoginApp/BaseApp, log to harness/iteration_log.jsonl._
+
+## Real phone + LDPlayer (dual test)
+
+| Device | Serial (example) | Install | Harness setup | Frida realm |
+|--------|------------------|---------|---------------|-------------|
+| **Note10+** (arm64) | `R3CM90BCXGJ` | XAPK in `Internal storage\RosGG` → `install_ros.ps1` | `setup_device.ps1` (Wi‑Fi DNS → PC) | `native` (`libclient.so` visible) |
+| **LDPlayer** (x86_64) | `emulator-5554` | `install_ros.ps1 -Target ldplayer -WithObb` | `setup_emulator.ps1` (root + iptables) | `emulated` |
+
+```powershell
+cd C:\Users\LUFY\Desktop\RosGG
+.\install_ros.ps1 -Target phone -WithObb      # first install on phone (~4GB OBB extract)
+.\install_ros.ps1 -Target ldplayer -WithObb   # same for emulator (use phone XAPK via adb push if needed)
+.\setup_device.ps1                            # Note10+
+.\setup_emulator.ps1                          # LDPlayer only
+```
+
+Both devices can stay connected; scripts pick the right serial via `adb_common.ps1`.
+
 ## How to run (fresh boot)
 
-Assumes LDPlayer running with the game installed, `frida-server` not required for
-this flow, PC IP `192.168.1.18`. ADB is at `C:\LDPlayer\LDPlayer9\adb.exe` (not on PATH).
+Assumes LDPlayer and/or a phone on the same LAN as the PC, `frida-server` optional.
+PC harness IP defaults to `192.168.100.137` (`$env:ROS_PC_IP` to override). ADB:
+`E:\LDPlayer\LDPlayer9\adb.exe` (not on PATH).
 
 1. Start the servers (two terminals, from `C:\Users\Lufy\Desktop\Server`):
    ```bash

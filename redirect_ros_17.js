@@ -5,7 +5,7 @@
  * Usage:  frida -U -f com.netease.chiji -l redirect_ros_17.js
  */
 
-const LOCAL_IP = "192.168.1.18";   // Windows PC LAN IPv4 (must match ros_mock_server.py)
+const LOCAL_IP = "192.168.100.137";   // must match ROS_PC_IP / server_list_ad.local.txt
 const LOCAL_HTTP_PORT = 80;
 const LOCAL_GATE_PORT = 20001;
 
