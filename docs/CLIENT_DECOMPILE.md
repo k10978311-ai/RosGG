@@ -9,6 +9,21 @@ Paths on this PC (sibling repo):
 | `RoS_Client\Android\apk\signed\*.apk` | Debug-signed rebuild — requires **uninstall** before install |
 | `RoS_Client\Android\tools\apktool.jar` | Rebuild tool (needs JDK 17+) |
 
+## There are no game `.py` files in `Client\Decompiled`
+
+Apktool output is **smali + res + `lib/*.so` + thin `assets/`**. A recursive search finds **zero** `login_mgr.py`, `GateClient.py`, or `mobilecommon/` Python trees. NeoX game logic is:
+
+| Layer | Location |
+|-------|----------|
+| Mercury login / BaseApp | **C++** `libclient.so` (`neox::bwclient::Mercury`, `LoginHandler::onLoginReply`) |
+| Embedded Python 2.7 | **Inside** `libclient.so` (stripped `Py*` exports on this build) |
+| Lobby art / scripts | **`main` / `patch` OBB** (~4 GB npk), not in the APK smali tree |
+| PLAY / patch gate UI | Java **Launcher** + native **`com.netease.neox.Client`** |
+
+Run `.\scratch\find_login_lobby_refs.ps1` on this PC for string offsets in `extract\libclient.so`.
+
+**Charter:** use this for **server packet matching** (`loginapp.py`, `ros_mock_server.py`). Do **not** patch client scripts or Frida-inject Python to force lobby.
+
 ## What the APK can vs cannot fix
 
 - **Smali/res**: UniSDK HTTP, cleartext/user CA (`network_security_config.xml` already allows user certs).

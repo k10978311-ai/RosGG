@@ -254,6 +254,41 @@ def parse_mercury_probe(data):
     }
 
 
+def _bundle_body(pkt: bytes) -> bytes:
+    """Mercury packet body after flags, without seq footer when HAS_SEQUENCE."""
+    if len(pkt) < 2:
+        return b""
+    flags = struct.unpack("<H", pkt[:2])[0]
+    body = pkt[2:]
+    if flags & 0x0040 and len(body) >= 4:
+        body = body[:-4]
+    return body
+
+
+def extract_identify_version_point(pkt: bytes):
+    """Parse BaseAppExtInterface message 12 (0x0c identifyVersionPoint) from a bundle."""
+    body = _bundle_body(pkt)
+    i = 0
+    while i + 3 <= len(body):
+        msg_id = body[i]
+        i += 1
+        ln = struct.unpack_from("<H", body, i)[0]
+        i += 2
+        if i + ln > len(body):
+            break
+        payload = body[i : i + ln]
+        i += ln
+        if msg_id == 0x0C:
+            return payload
+    return None
+
+
+def build_summarise_version_point(identify_payload: bytes) -> bytes:
+    """BaseAppExtInterface message 13 (0x0d summariseVersionPoint), VARIABLE 2-byte len."""
+    payload = identify_payload or (b"\x14\x00\x0a" + b"This docum")
+    return bytes([0x0D]) + struct.pack("<H", len(payload)) + payload
+
+
 def build_probe_ack(data):
     """Minimal off-channel Mercury reply to keep the channel handshake observable (experimental)."""
     if len(data) < 11 or data[:4] != b"\x01\x00\x00\x0b":

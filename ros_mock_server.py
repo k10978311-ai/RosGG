@@ -360,12 +360,15 @@ class GateUDP(asyncio.DatagramProtocol):
                 # Flags: ON_CHANNEL(0x0008) | RELIABLE(0x0010) | HAS_ACKS(0x0004) | HAS_SEQUENCE(0x0040) = 0x005c
                 header = struct.pack("<H", 0x005c)
                 
-                # Messages:
-                # ID 3: resetEntities (1 byte fixed: 0 = dont keep player on base)
+                body = b""
+                ident = loginapp.extract_identify_version_point(pkt)
+                if ident is not None:
+                    body += loginapp.build_summarise_version_point(ident)
+                    print(f"      [BASEAPP] identifyVersionPoint {len(ident)}B -> summariseVersionPoint")
+                # ClientInterface: resetEntities then createBasePlayer
                 msg_reset = b"\x03\x00"
-                # ID 4: createBasePlayer (entityID=10001, entityType=1 per HANDOFF / Avatar)
                 msg_create = b"\x04" + struct.pack("<H", 6) + struct.pack("<I", 10001) + struct.pack("<H", 1)
-                body = msg_reset + msg_create
+                body += msg_reset + msg_create
                 
                 # Footers (LIFO order: seq footer, ack seqs, nAcks at the very end):
                 # Note: NeoX ARM64 uses Little-Endian (<I) for SeqNum on the wire!
