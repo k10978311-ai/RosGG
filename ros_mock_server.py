@@ -222,28 +222,37 @@ async def handle_gate_client(reader, writer):
 class GateUDP(asyncio.DatagramProtocol):
     def __init__(self, port):
         self.port = port
+        self._login_replied = {}   # addr -> True, to track post-login packets
     def connection_made(self, transport):
         self.transport = transport
     def datagram_received(self, data, addr):
-        print(f"[UDP GATE] {self.port} from {addr} {len(data)} bytes: {data.hex()}")
+        import time as _t
+        is_login = data[:4] == b"\x01\x00\x00\x84"
+
+        if is_login:
+            print(f"[UDP GATE:{self.port}] LOGIN from {addr} {len(data)}B seq={data[5:7].hex()}")
+        else:
+            print(f"[UDP GATE:{self.port}] NON-LOGIN from {addr} {len(data)}B: {data.hex()}")
+
+        # Always capture to gate_capture.bin
         with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "gate_capture.bin"), "ab") as f:
             f.write(data)
-        # Experimental: reply to login requests on :25000 (set REPLY_VARIANT to enable)
-        if self.port == 25000 and data[:4] == b"\x01\x00\x00\x84" and os.environ.get("REPLY_VARIANT", "off") != "off":
+
+        # --- Login reply handler ---
+        if self.port == 25000 and is_login and os.environ.get("REPLY_VARIANT", "off") != "off":
             try:
-                import loginapp, importlib, time as _t
+                import loginapp, importlib
                 importlib.reload(loginapp)
                 env = os.environ.get("REPLY_VARIANT")
                 if env is not None and env != "sweep":
                     msgid = int(env)
                 else:
-                    # sweep mode: advance a persistent msgid counter each login packet
-                    f = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sweep_msgid.txt")
+                    sf = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sweep_msgid.txt")
                     try:
-                        msgid = int(open(f).read().strip())
+                        msgid = int(open(sf).read().strip())
                     except Exception:
                         msgid = 0
-                    with open(f, "w") as fh:
+                    with open(sf, "w") as fh:
                         fh.write(str((msgid + 1) & 0xFF))
                 res = loginapp.build_reply(data, LOCAL_SERVER_IP, 25000, msgid)
                 if res:
@@ -251,8 +260,28 @@ class GateUDP(asyncio.DatagramProtocol):
                     print(f"  [{_t.strftime('%H:%M:%S')}] [LOGIN] TRY msgid={msgid} (0x{msgid:02x}) -> {len(pkt)}B: {pkt.hex()}")
                     print(f"      LogOnParams rest={params.get('rest',b'').hex()} bf={bf.hex() if bf else None}")
                     self.transport.sendto(pkt, addr)
+                    self._login_replied[addr] = True
             except Exception as e:
                 print(f"  [REPLY ERROR] {e}")
+            return
+
+        # --- BaseApp Mercury channel probe handler ---
+        # After login reply, client sends Mercury channel-creation packets here.
+        # Log them prominently so we can study them.
+        if self.port == 25000 and not is_login:
+            ts = _t.strftime('%H:%M:%S')
+            print(f"  [{ts}] *** BASEAPP PROBE from {addr}: {data.hex()} ***")
+            # Capture to a separate file for easy analysis
+            with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "baseapp_capture.bin"), "ab") as f:
+                f.write(len(data).to_bytes(2, 'little') + data)
+            # Attempt a minimal Mercury ACK / no-op reply so client knows we're alive
+            # BigWorld Mercury: a plain off-channel ACK is flags=0x0000 with no body
+            # (just to prevent connection refused; not necessarily protocol-correct yet)
+            if os.environ.get("BASEAPP_ACK", "off") != "off":
+                # Echo the packet back as a minimal off-channel ack
+                ack = bytes([0x00, 0x00])
+                self.transport.sendto(ack, addr)
+                print(f"  [{ts}] [BASEAPP] Sent minimal ACK (2B) to {addr}")
 
 
 async def start_tcp_gate():

@@ -42,10 +42,12 @@ def decrypt_logon(rsa_block):
 
 def extract_blowfish_key(params):
     """The tail of LogOnParams holds the Blowfish session key. The exact slice is set by
-    env BF_SPEC="offset:length" into `rest` (default 2:16, i.e. after the 04 08 prefix)."""
+    env BF_SPEC="offset:length" into `rest` (confirmed: offset=1, length=16, ECB mode).
+    Structure: 04 | <16-byte BF key> | <4-byte per-session nonce>
+    The 0x04 prefix is a type tag; the 16-byte key follows immediately at offset 1."""
     import os as _os
     rest = params.get("rest", b"")
-    spec = _os.environ.get("BF_SPEC", "2:16")
+    spec = _os.environ.get("BF_SPEC", "1:16")
     if spec == "sweep":
         f = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "bf_off.txt")
         try:
@@ -64,7 +66,7 @@ def extract_blowfish_key(params):
             ln = len(rest) - off
         return rest[off:off+ln]
     except Exception:
-        return rest[2:18]
+        return rest[1:17]
 
 
 def build_reply(data, local_ip, baseapp_port, variant=0):
