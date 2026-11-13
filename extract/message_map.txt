@@ -1,0 +1,125 @@
+﻿seq name                       style     param
+  0 login                      VARIABLE  2
+  1 probe                      None      None
+  2 BaseAppExtInterface        None      None
+  3 baseAppLogin               VARIABLE  2
+  4 authenticate               None      4
+  5 avatarUpdateImplicit       None      24
+  6 avatarUpdateExplicit       None      32
+  7 avatarUpdateWardImplicit   None      24
+  8 avatarUpdateWardExplicit   None      32
+  9 switchInterface            None      None
+ 10 requestEntityUpdate        VARIABLE  2
+ 11 enableEntities             None      8
+ 12 setSpaceViewportAck        None      8
+ 13 setVehicleAck              None      8
+ 14 restoreClientAck           None      4
+ 15 identifyVersionPoint       VARIABLE  2
+ 16 summariseVersionPoint      VARIABLE  2
+ 17 commenceResourceDownload   VARIABLE  2
+ 18 disconnectClient           None      1
+ 19 resourceVersionTag         None      1
+ 20 entityMessage              VARIABLE  2
+ 21 ClientInterface            None      None
+ 22 bandwidthNotification      None      4
+ 23 updateFrequencyNotification None      1
+ 24 setGameTime                None      4
+ 25 resetEntities              None      1
+ 26 createBasePlayer           VARIABLE  2
+ 27 createCellPlayer           VARIABLE  2
+ 28 spaceData                  VARIABLE  2
+ 29 spaceViewportInfo          None      13
+ 30 createEntity               VARIABLE  2
+ 31 updateEntity               VARIABLE  2
+ 32 enterAoI                   None      5
+ 33 enterAoIThruViewport       None      6
+ 34 enterAoIOnVehicle          None      9
+ 35 partialUpdate              None      5
+ 36 leaveAoI                   VARIABLE  2
+ 37 tickSync                   None      1
+ 38 relativePositionReference  None      1
+ 39 setSpaceViewport           None      1
+ 40 setVehicle                 None      4
+ 41 stayPut                    None      4
+ 42 stayPutAlias               None      1
+ 43 historyEventBegin          None      4
+ 44 historyEventEnd            None      1
+ 45 avatarUpdateNoAliasFullPosYawPitchRollTimeStamp None      14
+ 46 avatarUpdateNoAliasFullPosYawPitchRollNoTimeStamp None      12
+ 47 avatarUpdateNoAliasFullPosYawPitchTimeStamp None      13
+ 48 avatarUpdateNoAliasFullPosYawPitchNoTimeStamp None      11
+ 49 avatarUpdateNoAliasFullPosYawTimeStamp None      12
+ 50 avatarUpdateNoAliasFullPosYawNoTimeStamp None      10
+ 51 avatarUpdateNoAliasFullPosNoDirTimeStamp None      11
+ 52 avatarUpdateNoAliasFullPosNoDirNoTimeStamp None      9
+ 53 avatarUpdateNoAliasUnpackPosYawPitchRollTimeStamp None      15
+ 54 avatarUpdateNoAliasUnpackPosYawPitchRollNoTimeStamp None      13
+ 55 avatarUpdateNoAliasUnpackPosYawPitchTimeStamp None      14
+ 56 avatarUpdateNoAliasUnpackPosYawPitchNoTimeStamp None      12
+ 57 avatarUpdateNoAliasUnpackPosYawTimeStamp None      13
+ 58 avatarUpdateNoAliasUnpackPosYawNoTimeStamp None      11
+ 59 avatarUpdateNoAliasUnpackPosNoDirTimeStamp None      12
+ 60 avatarUpdateNoAliasUnpackPosNoDirNoTimeStamp None      10
+ 61 avatarUpdateNoAliasOnGroundYawPitchRollTimeStamp None      12
+ 62 avatarUpdateNoAliasOnGroundYawPitchRollNoTimeStamp None      10
+ 63 avatarUpdateNoAliasOnGroundYawPitchTimeStamp None      11
+ 64 avatarUpdateNoAliasOnGroundYawPitchNoTimeStamp None      9
+ 65 avatarUpdateNoAliasOnGroundYawTimeStamp None      10
+ 66 avatarUpdateNoAliasOnGroundYawNoTimeStamp None      8
+ 67 avatarUpdateNoAliasOnGroundNoDirTimeStamp None      9
+ 68 avatarUpdateNoAliasOnGroundNoDirNoTimeStamp None      7
+ 69 avatarUpdateNoAliasNoPosYawPitchRollTimeStamp None      9
+ 70 avatarUpdateNoAliasNoPosYawPitchRollNoTimeStamp None      7
+ 71 avatarUpdateNoAliasNoPosYawPitchTimeStamp None      8
+ 72 avatarUpdateNoAliasNoPosYawPitchNoTimeStamp None      6
+ 73 avatarUpdateNoAliasNoPosYawTimeStamp None      7
+ 74 avatarUpdateNoAliasNoPosYawNoTimeStamp None      5
+ 75 avatarUpdateNoAliasNoPosNoDirTimeStamp None      6
+ 76 avatarUpdateNoAliasNoPosNoDirNoTimeStamp None      4
+ 77 avatarUpdateAliasFullPosYawPitchRollTimeStamp None      11
+ 78 avatarUpdateAliasFullPosYawPitchRollNoTimeStamp None      9
+ 79 avatarUpdateAliasFullPosYawPitchTimeStamp None      10
+ 80 avatarUpdateAliasFullPosYawPitchNoTimeStamp None      8
+ 81 avatarUpdateAliasFullPosYawTimeStamp None      9
+ 82 avatarUpdateAliasFullPosYawNoTimeStamp None      7
+ 83 avatarUpdateAliasFullPosNoDirTimeStamp None      8
+ 84 avatarUpdateAliasFullPosNoDirNoTimeStamp None      6
+ 85 avatarUpdateAliasUnpackPosYawPitchRollTimeStamp None      12
+ 86 avatarUpdateAliasUnpackPosYawPitchRollNoTimeStamp None      10
+ 87 avatarUpdateAliasUnpackPosYawPitchTimeStamp None      11
+ 88 avatarUpdateAliasUnpackPosYawPitchNoTimeStamp None      9
+ 89 avatarUpdateAliasUnpackPosYawTimeStamp None      10
+ 90 avatarUpdateAliasUnpackPosYawNoTimeStamp None      8
+ 91 avatarUpdateAliasUnpackPosNoDirTimeStamp None      9
+ 92 avatarUpdateAliasUnpackPosNoDirNoTimeStamp None      7
+ 93 avatarUpdateAliasOnGroundYawPitchRollTimeStamp None      9
+ 94 avatarUpdateAliasOnGroundYawPitchRollNoTimeStamp None      7
+ 95 avatarUpdateAliasOnGroundYawPitchTimeStamp None      8
+ 96 avatarUpdateAliasOnGroundYawPitchNoTimeStamp None      6
+ 97 avatarUpdateAliasOnGroundYawTimeStamp None      7
+ 98 avatarUpdateAliasOnGroundYawNoTimeStamp None      5
+ 99 avatarUpdateAliasOnGroundNoDirTimeStamp None      6
+100 avatarUpdateAliasOnGroundNoDirNoTimeStamp None      4
+101 avatarUpdateAliasNoPosYawPitchRollTimeStamp None      6
+102 avatarUpdateAliasNoPosYawPitchRollNoTimeStamp None      4
+103 avatarUpdateAliasNoPosYawPitchTimeStamp None      5
+104 avatarUpdateAliasNoPosYawPitchNoTimeStamp None      3
+105 avatarUpdateAliasNoPosYawTimeStamp None      4
+106 avatarUpdateAliasNoPosYawNoTimeStamp None      2
+107 avatarUpdateAliasNoPosNoDirTimeStamp None      3
+108 avatarUpdateAliasNoPosNoDirNoTimeStamp None      1
+109 detailedPosition           None      30
+110 forcedPosition             None      36
+111 controlEntity              None      5
+112 voiceData                  VARIABLE  2
+113 restoreClient              VARIABLE  2
+114 restoreBaseApp             VARIABLE  2
+115 versionPointIdentity       None      8
+116 versionPointSummary        None      34
+117 resourceFragment           VARIABLE  2
+118 resourceVersionStatus      None      8
+119 loggedOff                  None      1
+120 shortEntityMessage         VARIABLE  1
+121 longEntityMessage          VARIABLE  2
+
+Total registered: 122

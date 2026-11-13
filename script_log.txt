@@ -1,0 +1,82 @@
+11-13 14:27:44.890 D/AndroidRuntime(26053): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+11-13 14:27:45.015 D/AndroidRuntime(26053): Calling main entry com.android.commands.monkey.Monkey
+11-13 14:27:45.196 I/AndroidRuntime(26053): VM exiting with result code 0.
+11-13 14:27:53.352 I/[14:27:53.352] M   <SCRIPT> (26076): [cj]test patch!!!!!!!!
+11-13 14:27:53.902 I/[14:27:53.902] M   <SCRIPT> (26076): prepare_md5_info PatchConst.FILES_HASH_PATH=hash_list not found!
+11-13 14:27:53.937 I/[14:27:53.937] M   <SCRIPT> (26076): @@@@@@@showLoadingTexture
+11-13 14:27:53.937 I/[14:27:53.937] M   <SCRIPT> (26076): @@@@@@@showInitPanel
+11-13 14:27:54.607 I/[14:27:54.607]     <SCRIPT> (26076): fetch_by_domain
+11-13 14:27:54.607 I/[14:27:54.607]     <SCRIPT> (26076): http_get url=https://h45na.update.easebar.com/pl/h45na_hc,host=h45na.update.easebar.com
+11-13 14:27:54.680 I/[14:27:54.680]     <SCRIPT> (26076): verify_result
+11-13 14:27:54.680 I/[14:27:54.680]     <SCRIPT> (26076): _fetch_http_data_antihijack h45na_hc
+11-13 14:27:54.698 I/[14:27:54.698]     <SCRIPT> (26076): fbn, fetchMd5AndCode  hotfix 1111 af9febf319e367cf4c1ce3a84f694212
+11-13 14:27:54.699 I/[14:27:54.699] M   <SCRIPT> (26076): fbn verifyHotfixCode, md5 af9febf319e367cf4c1ce3a84f694212
+11-13 14:27:54.714 I/[14:27:54.714] M   <SCRIPT> (26076): This is a test for headCode hotfix
+11-13 14:27:54.714 I/[14:27:54.714] M   <SCRIPT> (26076): hotfix_20180717 begin
+11-13 14:27:54.715 I/[14:27:54.715] M   <SCRIPT> (26076): hotfix_20190115_patch_func begin
+11-13 14:27:54.715 I/[14:27:54.715] M   <SCRIPT> (26076): hotfix_20190115_patch_func end
+11-13 14:27:54.715 I/[14:27:54.715] M   <SCRIPT> (26076): hotfix_20190508_MultiThreadPatchFix begin
+11-13 14:27:54.758 I/[14:27:54.758] M   <SCRIPT> (26076): hotfix_20190508_MultiThreadPatchFix end
+11-13 14:27:54.758 I/[14:27:54.758] M   <SCRIPT> (26076): hotfix_20190617_FixVersionInfoError begin
+11-13 14:27:54.758 I/[14:27:54.758] M   <SCRIPT> (26076): hotfix_20190617_FixVersionInfoError end
+11-13 14:27:54.758 I/[14:27:54.758] M   <SCRIPT> (26076): discard hotfix_unisdk_whitelist 617289
+11-13 14:27:54.758 I/[14:27:54.758] M   <SCRIPT> (26076): hotfix_unisdk_whitelist end
+11-13 14:27:54.759 I/[14:27:54.759] M   <SCRIPT> (26076): hotfix_20200303 begin
+11-13 14:27:54.759 I/[14:27:54.759] M   <SCRIPT> (26076): 20200327 modified
+11-13 14:27:54.759 I/[14:27:54.759] M   <SCRIPT> (26076): 20200416 modified
+11-13 14:27:54.759 I/[14:27:54.759] M   <SCRIPT> (26076): hotfix_20200303 shutdown USE_CHECK_FILE_MD5 on mobile devices
+11-13 14:27:54.759 I/[14:27:54.759] M   <SCRIPT> (26076): hotfix_20200303 pass: 617289
+11-13 14:27:54.759 I/[14:27:54.759] M   <SCRIPT> (26076): hotfix_20200818 start
+11-13 14:27:54.759 I/[14:27:54.759] M   <SCRIPT> (26076): hotfix_20200818 end
+11-13 14:27:54.759 I/[14:27:54.759] M   <SCRIPT> (26076): hotfix_axeso_2020_08_25 .... start
+11-13 14:27:54.759 I/[14:27:54.759] M   <SCRIPT> (26076): hotfix_axeso_2020_08_25 .... end
+11-13 14:27:54.759 I/[14:27:54.759] M   <SCRIPT> (26076): hotfix_natproxy_20210331 start
+11-13 14:27:54.764 I/[14:27:54.764] M   <SCRIPT> (26076): hotfix_natproxy_20210331 end
+11-13 14:27:54.765 I/[14:27:54.765] M   <SCRIPT> (26076): fbn, HeadCode on suc!
+11-13 14:27:55.443 I/[14:27:55.443]     <SCRIPT> (26076): fetch_by_domain
+11-13 14:27:55.444 I/[14:27:55.444]     <SCRIPT> (26076): http_get url=https://h45na.update.easebar.com/pl/npk_version_na_android.plist,host=h45na.update.easebar.com
+11-13 14:27:55.584 I/[14:27:55.584]     <SCRIPT> (26076): verify_result
+11-13 14:27:55.585 I/[14:27:55.585]     <SCRIPT> (26076): process_result host=h45na.update.easebar.com, success=True, fault=None
+11-13 14:27:55.653 I/[14:27:55.653] M   <SCRIPT> (26076): hardware_instancing_enbled: True
+11-13 14:27:55.654 I/[14:27:55.654] M   <SCRIPT> (26076): fubingnan version info: {'assets.npk_size': 8255000, 'assets.npk_md5': 'e78491456d1afd8d31067dc2890422ff', 'gles2_0_neox.xml_size': 8132, 'gles2_0_neox.xml_md5': '0968aa74db8ac76dd63a53e537fa650e', 'neox.xml_size': 8164, 'neox.xml_md5': 'caaf4ffc20f9143dc3c60bf8e3e8032c', 'script.npk_size': 48047172, 'script.npk_md5': 'd3c84dc209c1bc914e6f8
+11-13 14:27:55.656 I/[14:27:55.656] M   <SCRIPT> (26076): settingLanguage: en
+11-13 14:27:55.656 I/[14:27:55.656] M   <SCRIPT> (26076): LINYUAN___useDLCClothes:  False
+11-13 14:27:55.657 I/[14:27:55.657] M   <SCRIPT> (26076): fubingnan local-ver: 610637.617289, min-ver: 610141.448899
+11-13 14:27:55.659 I/[14:27:55.659] M   <SCRIPT> (26076): patch_language: en
+11-13 14:27:55.659 I/[14:27:55.659] M   <SCRIPT> (26076): fubingnan patch local-patch-ver: 610637.617289, min-patch-ver: 610637.617289
+11-13 14:27:55.659 I/[14:27:55.659] M   <SCRIPT> (26076): fubingnan patch version is equal!
+11-13 14:27:56.152 I/[14:27:56.152]     <SCRIPT> (26076): [WARNING] LINYUAN___ cpythonoverrides file is: 'assets/claudia/CythonOverrides.txt '
+11-13 14:27:56.153 I/[14:27:56.153]     <SCRIPT> (26076): [WARNING] Ignoring not-a-py file from line 1: '#0' in CythonOverrides.txt
+11-13 14:27:56.153 I/[14:27:56.153]     <SCRIPT> (26076): [WARNING] Ignoring not-a-py file from line 11: '#293088' in CythonOverrides.txt
+11-13 14:27:56.153 I/[14:27:56.153]     <SCRIPT> (26076): [WARNING] Ignoring not-a-py file from line 14: '#381568' in CythonOverrides.txt
+11-13 14:27:56.153 I/[14:27:56.153]     <SCRIPT> (26076): [WARNING] Ignoring not-a-py file from line 23: '#400014' in CythonOverrides.txt
+11-13 14:27:56.155 I/[14:27:56.155]     <SCRIPT> (26076): [trouger] properties.init()... assets/data/properties
+11-13 14:28:00.183 I/[14:28:00.183] M   <SCRIPT> (26076): Type <class 'libclaudia.internals.ResourceController.ResourceController'> should be initialized immediately after creation.
+11-13 14:28:00.350 I/[14:28:00.350] M   <SCRIPT> (26076): Type <class 'libclaudia.Settings.TagsAndLayers.TagLayerManager'> should be initialized immediately after creation.
+11-13 14:28:00.357 I/[14:28:00.357] M   <SCRIPT> (26076): Type <class 'libclaudia.Settings.CanvasManager.CanvasManager'> should be initialized immediately after creation.
+11-13 14:28:01.121 I/[14:28:01.121] M   <SCRIPT> (26076): Type <class 'ui.chat.voiceUtils.VoiceUtils'> should be initialized immediately after creation.
+11-13 14:28:01.220 I/[14:28:01.220] M   <SCRIPT> (26076): Type <class 'libclaudia.Settings.CanvasManager.Canvas'> should be initialized immediately after creation.
+11-13 14:28:01.747 I/[14:28:01.747] M   <SCRIPT> (26076): Type <class 'scenario.helper.scenario_gameobj.ScenarioGameObject'> should be initialized immediately after creation.
+11-13 14:28:01.748 I/[14:28:01.748] M   <SCRIPT> (26076): Type <class 'scenario.helper.scenario_ui._ScenarioUIMgr'> should be initialized immediately after creation.
+11-13 14:28:01.757 I/[14:28:01.757] M   <SCRIPT> (26076): Type <class 'scenario.helper.scenario_camera.NeoXCamera'> should be initialized immediately after creation.
+11-13 14:28:01.759 I/[14:28:01.759] M   <SCRIPT> (26076): Type <class 'scenario.helper.scenario_ui.ScenarioUI'> should be initialized immediately after creation.
+11-13 14:28:03.631 I/[14:28:03.631] M   <SCRIPT> (26076): Type <class 'helpers.async_task.TaskCallback'> should be initialized immediately after creation.
+11-13 14:28:03.632 I/[14:28:03.632] M   <SCRIPT> (26076): Type <class 'helpers.async_task.WorkerTask'> should be initialized immediately after creation.
+11-13 14:28:03.964 I/[14:28:03.964] M   <SCRIPT> (26076): fetch_by_domain
+11-13 14:28:03.964 I/[14:28:03.964] M   <SCRIPT> (26076): http_get url=https://h45na.update.easebar.com/server_list_ad.txt,host=h45na.update.easebar.com
+11-13 14:28:03.982 I/[14:28:03.982] M   <SCRIPT> (26076): verify_result
+11-13 14:28:03.996 I/[14:28:03.996] M   <SCRIPT> (26076): fetch_by_domain
+11-13 14:28:03.996 I/[14:28:03.996] M   <SCRIPT> (26076): http_get url=https://h45na.update.easebar.com/server_list_ad.txt,host=h45na.update.easebar.com
+11-13 14:28:04.014 I/[14:28:04.014] M   <SCRIPT> (26076): verify_result
+11-13 14:28:16.343 I/[14:28:16.343] M   <SCRIPT> (26076): fetch_by_domain
+11-13 14:28:16.344 I/[14:28:16.344] M   <SCRIPT> (26076): http_get url=https://h45na.update.easebar.com/notice_pc_hw.txt,host=h45na.update.easebar.com
+11-13 14:28:16.383 I/[14:28:16.383] M   <SCRIPT> (26076): verify_result
+11-13 14:28:16.385 I/[14:28:16.385] M   <SCRIPT> (26076): fetch_by_domain
+11-13 14:28:16.385 I/[14:28:16.385] M   <SCRIPT> (26076): http_get url=https://h45na.update.easebar.com/notice_pc_hw.txt,host=h45na.update.easebar.com
+11-13 14:28:16.421 I/[14:28:16.421] M   <SCRIPT> (26076): verify_result
+11-13 14:28:21.574 I/[14:28:21.574]     <SCRIPT> (26076): fetch_by_domain
+11-13 14:28:21.574 I/[14:28:21.574]     <SCRIPT> (26076): http_get url=https://h45na.update.easebar.com/notice_pc_hw.txt,host=h45na.update.easebar.com
+11-13 14:28:21.614 I/[14:28:21.614]     <SCRIPT> (26076): verify_result
+11-13 14:28:21.615 I/[14:28:21.615]     <SCRIPT> (26076): fetch_by_domain
+11-13 14:28:21.615 I/[14:28:21.615]     <SCRIPT> (26076): http_get url=https://h45na.update.easebar.com/notice_pc_hw.txt,host=h45na.update.easebar.com
+11-13 14:28:21.654 I/[14:28:21.654]     <SCRIPT> (26076): verify_result

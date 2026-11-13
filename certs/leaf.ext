@@ -1,0 +1,4 @@
+basicConstraints=CA:FALSE
+keyUsage=critical,digitalSignature,keyEncipherment
+extendedKeyUsage=serverAuth
+subjectAltName=DNS:easebar.com,DNS:*.easebar.com,DNS:*.update.easebar.com,DNS:*.nie.easebar.com,DNS:*.proxima.nie.easebar.com,DNS:*.gph.easebar.com,DNS:*.nstool.easebar.com,DNS:*.mpsdk.easebar.com,DNS:*.mkey.easebar.com,DNS:*.nie.netease.com,DNS:netease.com,DNS:*.netease.com,DNS:*.163.com,DNS:rulesofsurvivalgame.com,DNS:*.rulesofsurvivalgame.com,IP:192.168.1.18

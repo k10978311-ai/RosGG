@@ -1,0 +1,315 @@
+11-13 13:15:12.933 I/[13:15:12.933] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:12.933 I/[13:15:12.933] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:13.364 I/[13:15:13.364] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:13.365 I/[13:15:13.365] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:13.796 I/[13:15:13.796] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:13.796 I/[13:15:13.796] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:14.228 I/[13:15:14.228] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:14.228 I/[13:15:14.228] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:14.631 I/[13:15:14.631] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:14.631 I/[13:15:14.631] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:15.033 I/[13:15:15.033] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:15.033 I/[13:15:15.033] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:15.463 I/[13:15:15.463] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:15.464 I/[13:15:15.464] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:15.921 I/[13:15:15.921] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:15.921 I/[13:15:15.921] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:16.354 I/[13:15:16.354] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:16.354 I/[13:15:16.354] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:16.782 I/[13:15:16.782] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:16.782 I/[13:15:16.782] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:21.793 I/[13:15:21.793] M (17114): [ERROR] ServerConnection::logOnComplete: Logon failed (Mercury::REASON_TIMER_EXPIRED)
+11-13 13:15:26.728 I/[13:15:26.728] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:26.728 I/[13:15:26.728] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:27.131 I/[13:15:27.131] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:27.131 I/[13:15:27.131] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:27.563 I/[13:15:27.563] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:27.564 I/[13:15:27.564] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:28.019 I/[13:15:28.019] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:28.020 I/[13:15:28.020] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:28.452 I/[13:15:28.452] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:28.452 I/[13:15:28.452] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:28.878 I/[13:15:28.878] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:28.878 I/[13:15:28.878] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:29.278 I/[13:15:29.278] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:29.278 I/[13:15:29.278] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:29.709 I/[13:15:29.709] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:29.709 I/[13:15:29.709] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:30.141 I/[13:15:30.141] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:30.141 I/[13:15:30.141] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:30.572 I/[13:15:30.572] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:30.572 I/[13:15:30.572] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:35.582 I/[13:15:35.582] M (17114): [ERROR] ServerConnection::logOnComplete: Logon failed (Mercury::REASON_TIMER_EXPIRED)
+11-13 13:15:40.521 I/[13:15:40.521] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:40.521 I/[13:15:40.521] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:40.952 I/[13:15:40.952] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:40.952 I/[13:15:40.952] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:41.353 I/[13:15:41.353] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:41.353 I/[13:15:41.353] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:41.784 I/[13:15:41.784] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:41.784 I/[13:15:41.784] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:42.217 I/[13:15:42.217] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:42.217 I/[13:15:42.217] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:42.619 I/[13:15:42.619] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:42.619 I/[13:15:42.619] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:43.050 I/[13:15:43.050] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:43.050 I/[13:15:43.050] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:43.483 I/[13:15:43.483] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:43.483 I/[13:15:43.483] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:43.902 I/[13:15:43.902] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:43.902 I/[13:15:43.902] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:44.332 I/[13:15:44.332] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:44.332 I/[13:15:44.332] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:49.337 I/[13:15:49.337] M (17114): [ERROR] ServerConnection::logOnComplete: Logon failed (Mercury::REASON_TIMER_EXPIRED)
+11-13 13:15:55.079 I/[13:15:55.079] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:55.079 I/[13:15:55.079] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:55.505 I/[13:15:55.505] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:55.505 I/[13:15:55.505] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:55.906 I/[13:15:55.906] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:55.906 I/[13:15:55.906] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:56.308 I/[13:15:56.308] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:56.309 I/[13:15:56.309] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:56.740 I/[13:15:56.740] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:56.740 I/[13:15:56.740] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:57.171 I/[13:15:57.171] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:57.172 I/[13:15:57.172] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:57.574 I/[13:15:57.574] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:57.575 I/[13:15:57.575] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:57.975 I/[13:15:57.975] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:57.975 I/[13:15:57.975] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:58.408 I/[13:15:58.408] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:58.408 I/[13:15:58.408] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:15:58.808 I/[13:15:58.808] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:15:58.808 I/[13:15:58.808] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:03.872 I/[13:16:03.872] M (17114): [ERROR] ServerConnection::logOnComplete: Logon failed (Mercury::REASON_TIMER_EXPIRED)
+11-13 13:16:09.144 I/[13:16:09.144] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:09.144 I/[13:16:09.144] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:09.579 I/[13:16:09.579] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:09.579 I/[13:16:09.579] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:10.009 I/[13:16:10.009] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:10.009 I/[13:16:10.009] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:10.441 I/[13:16:10.441] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:10.441 I/[13:16:10.441] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:10.840 I/[13:16:10.840] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:10.842 I/[13:16:10.842] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:11.274 I/[13:16:11.274] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:11.274 I/[13:16:11.274] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:11.706 I/[13:16:11.706] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:11.706 I/[13:16:11.706] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:12.107 I/[13:16:12.107] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:12.107 I/[13:16:12.107] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:12.537 I/[13:16:12.537] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:12.538 I/[13:16:12.538] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:12.939 I/[13:16:12.939] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:12.939 I/[13:16:12.939] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:17.941 I/[13:16:17.941] M (17114): [ERROR] ServerConnection::logOnComplete: Logon failed (Mercury::REASON_TIMER_EXPIRED)
+11-13 13:16:23.321 I/[13:16:23.321] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:23.321 I/[13:16:23.321] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:23.722 I/[13:16:23.722] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:23.722 I/[13:16:23.722] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:24.125 I/[13:16:24.125] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:24.125 I/[13:16:24.125] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:24.541 I/[13:16:24.541] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:24.542 I/[13:16:24.542] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:24.941 I/[13:16:24.941] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:24.941 I/[13:16:24.941] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:25.373 I/[13:16:25.373] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:25.373 I/[13:16:25.373] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:25.774 I/[13:16:25.774] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:25.774 I/[13:16:25.774] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:26.174 I/[13:16:26.174] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:26.174 I/[13:16:26.174] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:26.608 I/[13:16:26.608] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:26.609 I/[13:16:26.609] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:27.010 I/[13:16:27.010] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:27.010 I/[13:16:27.010] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:32.056 I/[13:16:32.056] M (17114): [ERROR] ServerConnection::logOnComplete: Logon failed (Mercury::REASON_TIMER_EXPIRED)
+11-13 13:16:37.489 I/[13:16:37.489] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:37.489 I/[13:16:37.489] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:37.890 I/[13:16:37.890] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:37.890 I/[13:16:37.890] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:38.321 I/[13:16:38.321] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:38.321 I/[13:16:38.321] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:38.745 I/[13:16:38.745] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:38.745 I/[13:16:38.745] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:39.176 I/[13:16:39.176] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:39.176 I/[13:16:39.176] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:39.613 I/[13:16:39.613] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:39.613 I/[13:16:39.613] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:40.015 I/[13:16:40.015] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:40.015 I/[13:16:40.015] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:40.447 I/[13:16:40.447] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:40.447 I/[13:16:40.447] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:40.847 I/[13:16:40.847] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:40.847 I/[13:16:40.847] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:41.279 I/[13:16:41.279] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:41.279 I/[13:16:41.279] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:46.259 I/[13:16:46.259] M (17114): [ERROR] ServerConnection::logOnComplete: Logon failed (Mercury::REASON_TIMER_EXPIRED)
+11-13 13:16:51.604 I/[13:16:51.604] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:51.604 I/[13:16:51.604] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:52.005 I/[13:16:52.005] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:52.006 I/[13:16:52.006] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:52.407 I/[13:16:52.407] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:52.407 I/[13:16:52.407] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:52.931 I/[13:16:52.931] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:52.931 I/[13:16:52.931] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:53.273 I/[13:16:53.273] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:53.273 I/[13:16:53.273] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:53.679 I/[13:16:53.679] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:53.680 I/[13:16:53.680] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:54.095 I/[13:16:54.095] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:54.095 I/[13:16:54.095] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:54.533 I/[13:16:54.533] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:54.533 I/[13:16:54.533] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:54.967 I/[13:16:54.967] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:54.968 I/[13:16:54.968] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:16:55.333 I/[13:16:55.333] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:16:55.333 I/[13:16:55.333] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:00.406 I/[13:17:00.406] M (17114): [ERROR] ServerConnection::logOnComplete: Logon failed (Mercury::REASON_TIMER_EXPIRED)
+11-13 13:17:09.313 I/[13:17:09.313] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:09.313 I/[13:17:09.313] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:09.716 I/[13:17:09.716] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:09.716 I/[13:17:09.716] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:10.146 I/[13:17:10.146] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:10.147 I/[13:17:10.147] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:10.547 I/[13:17:10.547] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:10.547 I/[13:17:10.547] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:10.948 I/[13:17:10.948] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:10.948 I/[13:17:10.948] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:11.363 I/[13:17:11.363] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:11.363 I/[13:17:11.363] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:11.797 I/[13:17:11.797] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:11.797 I/[13:17:11.797] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:12.229 I/[13:17:12.229] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:12.230 I/[13:17:12.230] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:12.632 I/[13:17:12.632] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:12.632 I/[13:17:12.632] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:13.046 I/[13:17:13.046] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:13.046 I/[13:17:13.046] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:18.081 I/[13:17:18.081] M (17114): [ERROR] ServerConnection::logOnComplete: Logon failed (Mercury::REASON_TIMER_EXPIRED)
+11-13 13:17:24.973 I/[13:17:24.973] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:24.973 I/[13:17:24.973] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:25.338 I/[13:17:25.338] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:25.338 I/[13:17:25.338] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:25.741 I/[13:17:25.741] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:25.742 I/[13:17:25.742] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:26.143 I/[13:17:26.143] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:26.143 I/[13:17:26.143] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:26.552 I/[13:17:26.552] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:26.552 I/[13:17:26.552] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:26.952 I/[13:17:26.952] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:26.952 I/[13:17:26.952] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:27.362 I/[13:17:27.362] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:27.362 I/[13:17:27.362] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:27.768 I/[13:17:27.768] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:27.769 I/[13:17:27.769] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:28.200 I/[13:17:28.200] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:28.200 I/[13:17:28.200] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:28.616 I/[13:17:28.616] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:28.616 I/[13:17:28.616] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:33.690 I/[13:17:33.690] M (17114): [ERROR] ServerConnection::logOnComplete: Logon failed (Mercury::REASON_TIMER_EXPIRED)
+11-13 13:17:39.960 I/[13:17:39.960] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:39.961 I/[13:17:39.961] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:40.362 I/[13:17:40.362] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:40.362 I/[13:17:40.362] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:40.772 I/[13:17:40.772] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:40.772 I/[13:17:40.772] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:41.180 I/[13:17:41.180] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:41.180 I/[13:17:41.180] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:41.585 I/[13:17:41.585] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:41.585 I/[13:17:41.585] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:42.016 I/[13:17:42.016] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:42.016 I/[13:17:42.016] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:42.416 I/[13:17:42.416] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:42.416 I/[13:17:42.416] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:42.844 I/[13:17:42.844] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:42.844 I/[13:17:42.844] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:43.244 I/[13:17:43.244] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:43.244 I/[13:17:43.244] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:43.645 I/[13:17:43.645] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:43.645 I/[13:17:43.645] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:48.631 I/[13:17:48.631] M (17114): [ERROR] ServerConnection::logOnComplete: Logon failed (Mercury::REASON_TIMER_EXPIRED)
+11-13 13:17:54.547 I/[13:17:54.547] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:54.547 I/[13:17:54.547] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:54.949 I/[13:17:54.949] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:54.949 I/[13:17:54.949] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:55.350 I/[13:17:55.350] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:55.350 I/[13:17:55.350] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:55.782 I/[13:17:55.782] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:55.782 I/[13:17:55.782] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:56.182 I/[13:17:56.182] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:56.182 I/[13:17:56.182] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:56.582 I/[13:17:56.582] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:56.583 I/[13:17:56.583] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:57.014 I/[13:17:57.014] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:57.015 I/[13:17:57.015] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:57.415 I/[13:17:57.415] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:57.416 I/[13:17:57.416] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:57.846 I/[13:17:57.846] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:57.846 I/[13:17:57.846] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:17:58.250 I/[13:17:58.250] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:17:58.250 I/[13:17:58.250] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:03.243 I/[13:18:03.243] M (17114): [ERROR] ServerConnection::logOnComplete: Logon failed (Mercury::REASON_TIMER_EXPIRED)
+11-13 13:18:08.678 I/[13:18:08.678] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:08.683 I/[13:18:08.683] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:09.109 I/[13:18:09.109] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:09.109 I/[13:18:09.109] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:09.542 I/[13:18:09.542] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:09.542 I/[13:18:09.542] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:09.971 I/[13:18:09.971] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:09.971 I/[13:18:09.971] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:10.400 I/[13:18:10.400] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:10.400 I/[13:18:10.400] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:10.832 I/[13:18:10.832] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:10.832 I/[13:18:10.832] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:11.262 I/[13:18:11.262] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:11.262 I/[13:18:11.262] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:11.692 I/[13:18:11.692] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:11.692 I/[13:18:11.692] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:12.124 I/[13:18:12.124] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:12.124 I/[13:18:12.124] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:12.529 I/[13:18:12.529] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:12.529 I/[13:18:12.529] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:17.604 I/[13:18:17.604] M (17114): [ERROR] ServerConnection::logOnComplete: Logon failed (Mercury::REASON_TIMER_EXPIRED)
+11-13 13:18:23.806 I/[13:18:23.806] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:23.806 I/[13:18:23.806] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:24.213 I/[13:18:24.213] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:24.213 I/[13:18:24.213] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:24.614 I/[13:18:24.614] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:24.614 I/[13:18:24.614] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:25.018 I/[13:18:25.018] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:25.018 I/[13:18:25.018] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:25.424 I/[13:18:25.424] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:25.424 I/[13:18:25.424] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:25.849 I/[13:18:25.849] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:25.849 I/[13:18:25.849] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:26.255 I/[13:18:26.255] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:26.255 I/[13:18:26.255] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:26.696 I/[13:18:26.696] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:26.696 I/[13:18:26.696] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:27.068 I/[13:18:27.068] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:27.069 I/[13:18:27.069] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:27.478 I/[13:18:27.478] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:27.478 I/[13:18:27.478] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:32.568 I/[13:18:32.568] M (17114): [ERROR] ServerConnection::logOnComplete: Logon failed (Mercury::REASON_TIMER_EXPIRED)
+11-13 13:18:37.668 I/[13:18:37.668] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:37.669 I/[13:18:37.669] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:38.096 I/[13:18:38.096] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:38.096 I/[13:18:38.096] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:38.526 I/[13:18:38.526] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:38.526 I/[13:18:38.526] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:38.959 I/[13:18:38.959] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:38.959 I/[13:18:38.959] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:39.365 I/[13:18:39.365] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:39.365 I/[13:18:39.365] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:39.797 I/[13:18:39.797] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:39.797 I/[13:18:39.797] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:40.229 I/[13:18:40.229] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:40.229 I/[13:18:40.229] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:40.630 I/[13:18:40.630] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:40.630 I/[13:18:40.630] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:41.064 I/[13:18:41.064] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:41.064 I/[13:18:41.064] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:41.470 I/[13:18:41.470] M (17114): [ERROR] Bundle::iterator::unpack( createBasePlayer ): Not enough data on stream at 28 for payload (0 left, needed 12284)
+11-13 13:18:41.470 I/[13:18:41.470] M (17114): [WARNING] MainApp::poll: poll returned unexpectedly (REASON_CORRUPTED_PACKET).
+11-13 13:18:46.466 I/[13:18:46.466] M (17114): [ERROR] ServerConnection::logOnComplete: Logon failed (Mercury::REASON_TIMER_EXPIRED)

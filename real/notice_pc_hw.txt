@@ -1,0 +1,1322 @@
+#cFF9900Notice on Apr.27-28#n
+
+Attention Survivors:
+
+"Dear Player:
+
+Thank you for your continuous support and love towards Rules of Survival.
+
+We regret to inform you that Rules of Survival will cease operations on June 27, 2022 at 15:00:00 (UTC+8). After that, players will no longer be able to access Rules of Survival game servers, and all account data and character info (including but not limited to characters, Diamonds, items, materials) will be deleted.
+You can apply for a refund for unused Diamonds on the corresponding platform from 06/28/2022 10:00:00 - 09/28/2022 18:00:00 (UTC+8).
+We sincerely apologize for this and thank you once again for your tremendous support towards Rules of Survival."
+
+The Rules of Survival Development and Community Team
+
+$SED$
+
+$< $new  $H:Notice on Apr.27-28$h: $>
+
+#cFF9900Notice on Apr.27-28#n
+
+Attention Survivors:
+
+"Dear Player:
+
+Thank you for your continuous support and love towards Rules of Survival.
+
+We regret to inform you that Rules of Survival will cease operations on June 27, 2022 at 15:00:00 (UTC+8). After that, players will no longer be able to access Rules of Survival game servers, and all account data and character info (including but not limited to characters, Diamonds, items, materials) will be deleted.
+You can apply for a refund for unused Diamonds on the corresponding platform from 06/28/2022 10:00:00 - 09/28/2022 18:00:00 (UTC+8).
+We sincerely apologize for this and thank you once again for your tremendous support towards Rules of Survival."
+
+The Rules of Survival Development and Community Team
+
+
+$< $nor  $H:Notice on Mar.29-30$h: $>
+
+
+
+#cFF9900Notice on Mar.29-30#n
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Mar.29-Mar.30#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Mar.29, 2022
+        DT (New York): 6:00 PM - 9:00 PM, Mar.29, 2022
+        UTC : 10:00 PM, Mar.29 - 1:00 AM, Mar.30, 2022
+        UTC+1 (London): 11:00 PM, Mar.29- 2:00 AM, Mar.30, 2022
+        UTC+2 (Paris, Berlin): 11:59 PM, Mar.29 - 3:00 AM, Mar.30, 2022
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Mar.30, 2022
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00,  Mar.30, 2022
+        UTC+8 (Singapore, Manila): 06:00 - 09:00,  Mar.30, 2022
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00, Mar.30, 2022
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+Bug Fixes:
+1. Fixed the issue where the key could not be inserted into the Secret Box due to effects issues.
+2. Fixed the issue where Contract Mission Points could not be interacted with under certain circumstances.
+3. Fixed the issue where players' actions were displayed wrongly when the skateboard was ridden from a distance.
+
+Special Adjustments:
+1. Optimized message notifications.
+2. Added a reminder to the preparation phase when players are not equipped with any tactical items.
+3. Adjusted the purchase price of tactical items. The price will now increase with the number of purchases made in a single day.
+4. Added a reminder to the preparation phase and the battlefield when players are not equipped with the right ammo.
+5. Added a random attribute replacement hotkey.
+6. Added costs to random attribute replacement.
+7. Balanced the value of some legendary attributes and the probability of triggering debuff attributes.
+
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Mar.22-23$h: $>
+
+#cFF9900Notice on Mar.22-23#n
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Mar.22-Mar.23#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Mar.22, 2022
+        DT (New York): 6:00 PM - 9:00 PM, Mar.22, 2022
+        UTC : 10:00 PM, Mar.22 - 1:00 AM, Mar.23, 2022
+        UTC+1 (London): 11:00 PM, Mar.22- 2:00 AM, Mar.23, 2022
+        UTC+2 (Paris, Berlin): 11:59 PM, Mar.22 - 3:00 AM, Mar.23, 2022
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Mar.23, 2022
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00,  Mar.23, 2022
+        UTC+8 (Singapore, Manila): 06:00 - 09:00,  Mar.23, 2022
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00, Mar.23, 2022
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+Anti-cheating and Penalty Info:
+We've detected some players obtained the USD Cash Cards maliciously in the Cash Bounty Fight event that just ended, and we've banned these players and revoked all of their earnings.
+The Rules of Survival Development Team is always determined to fight cheating behaviors, and we also ask players to have zero tolerance against them and actively report cheaters via the report function or official channels so that we can deal with them immediately.
+
+Bug Fixes:
+1. Fixed the issue where the head-up/head-down angle is too small when holding a gun.
+2. Fixed the issue where metal barrels could not be picked up correctly.
+
+Special Adjustments:
+1. Significantly reduced debuff removal items' use time, and Bandage/Splint/Painkiller/Antidote can now be used while moving.
+
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Mar.15-16$h: $>
+
+#cFF9900Notice on Mar.15-16#n
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Mar.15-Mar.16#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Mar.15, 2022
+        DT (New York): 6:00 PM - 9:00 PM, Mar.15, 2022
+        UTC : 10:00 PM, Mar.15 - 1:00 AM, Mar.16, 2022
+        UTC+1 (London): 11:00 PM, Mar.15- 2:00 AM, Mar.16, 2022
+        UTC+2 (Paris, Berlin): 11:59 PM, Mar.15 - 3:00 AM, Mar.16, 2022
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Mar.16, 2022
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00,  Mar.16, 2022
+        UTC+8 (Singapore, Manila): 06:00 - 09:00,  Mar.16, 2022
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00, Mar.16, 2022
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+Bug Fixes:
+1. Fixed the issue where the refresh time became longer after the EXO ID Card was used.
+2. Fixed the bug for Novice Mission.
+3. Fixed the issue where players' EXO outfit was mismatched if they had different genders in ROS 1.0 and ROS 2.0.
+4. Fixed the issue where the Cargo Station smoke displayed a wrong color.
+5. Fixed the issue where players had a double HP recovery when using Nutrients.
+6. Fixed the issue where players in Ghillie Suit were not able to transform after killing an AI.
+7. Fixed the issue where EXO's tactical items were consumed even when not used in-game.
+
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Mar.1-2$h: $>
+
+#cFF9900Notice on Mar.1-2#n
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Mar.1-Mar.2#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Mar.1, 2022
+        DT (New York): 6:00 PM - 9:00 PM, Mar.1, 2022
+        UTC : 10:00 PM, Mar.1 - 1:00 AM, Mar.2, 2022
+        UTC+1 (London): 11:00 PM, Mar.1- 2:00 AM, Mar.2, 2022
+        UTC+2 (Paris, Berlin): 11:59 PM, Mar.1 - 3:00 AM, Mar.2, 2022
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Mar.2, 2022
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00,  Mar.2, 2022
+        UTC+8 (Singapore, Manila): 06:00 - 09:00,  Mar.2, 2022
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00, Mar.2, 2022
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+With the launching of ROS 2.0, we've received tons of feedback from enthusiastic players. We've made a massive amount of optimizations based on the suggestions to provide a better gaming experience.
+Therefore, we'd like to thank all players for their participation and support.
+
+The server will be undergoing maintenance on March 2, 2022, and the details are as below:
+
+*ROS 2.0 New Season Starting Soon:
+Season 2 of the pioneers is now officially here, and most progress from the previous season will be reset.
+To reward players who've actively participated in the previous season, we've decided to keep the following for this season only to give the veterans an extra advantage in the new season:
+- All tactical items' unlock progress(Unlocked and upgraded tactical items will be kept, but not unlocked mission progress)
+- All obtained firearm and armor attributes
+- All obtained DNA Chips
+- All unlocked EXO characters and their Loyalty
+
+*Multiple Events Are Heading Your Way:
+1. ROS 2.0 Cash Bounty Fight II
+Event Period: March 2, 2022 to March 19, 2022
+During the event, Spoils Crates in ROS 2.0 battlefield have a chance to drop USD Cash Cards, and players who successfully escape with it will add them to their exclusive Cash Pool.
+Once a certain amount is reached, players will be able to withdraw it!
+
+2. ROS 2.0 Diamond Mine Refinement
+Players participating in the search for Diamond Mine clues and successfully bringing it out will be able to start mining the Diamond Mine. Mined ores can be exchanged for Diamonds or converted into Cash and added to the Cash Pool. Once a certain amount is reached, players will be able to withdraw it! So play more to get more!
+
+3. ROS 2.0 Secret Box Challenge
+Completing missions for Secret Keys can be used to unlock the Secret Box for rewards. Once a certain number of Secret Boxes are unlocked, players will be able to obtain a mysterious EXO character!
+
+4. Diamond Mine Event
+Diamond Mines have been discovered in ROS 2.0. Complete missions for a massive amount of Diamonds. Once all missions have been completed, players will unlock the Diamond Mine and win the final prize! So, what are you waiting for?!
+
+5. Pioneer Recall Event
+Event Period: March 2, 2022 to March 15, 2022
+During the event period, players who complete all the login requirements will receive amazing rewards. On the other hand, players can also invite veteran players back and complete a series of event missions to obtain Recall Tokens, which can be exchanged for rare appearances, loads of Diamonds, Supreme Supply Tickets, and other amazing rewards!
+
+*ROS 1.0 New Maps
+2 new maps have been added to ROS 1.0. It's now even faster-paced and more hyped! Go try it out for yourself!
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Feb.15-16$h: $>
+
+#cFF9900Notice on  Feb.15-16#n
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Feb.15-Feb.16#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Feb.15, 2022
+        DT (New York): 6:00 PM - 9:00 PM, Feb.15, 2022
+        UTC : 10:00 PM, Feb.15 - 1:00 AM, Feb.16, 2022
+        UTC+1 (London): 11:00 PM, Feb.15- 2:00 AM, Feb.16, 2022
+        UTC+2 (Paris, Berlin): 11:59 PM, Feb.15 - 3:00 AM, Feb.16, 2022
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Feb.16, 2022
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00,  Feb.16, 2022
+        UTC+8 (Singapore, Manila): 06:00 - 09:00,  Feb.16, 2022
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00, Feb.16, 2022
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+Bug Fixes:
+* Fixed the issue where teammates' Cores would appear when escaping as a team successfully.
+* Fixed the issue where the Escape Points on the Cargo Station map were not generated correctly.
+* Fixed the issue where some players would get stuck on the ROS 2.0 results page.
+* Fixed the anomalies for ROS 2.0 Friends page.
+* Fixed the issue where some players would experience glitches during Novice Contract Missions.
+* Fixed the anomalies for Lobby Name Card.
+* Fixed the issue where some players would experience glitches when picking up Cores in ROS 1.0.
+* Fixed the issue where some players would get stuck in the Spawn Point.
+* Fixed the display bug for the number of ID Cards.
+* Fixed the issue with EXO Arms.
+
+The Rules of Survival Development and Community Team
+
+
+$< $nor  $H:Notice on Jan.27-28$h: $>
+
+#cFF9900Notice on Jan.27-28#n
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Jan.27-Jan.28#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Jan.27, 2022
+        DT (New York): 6:00 PM - 9:00 PM, Jan.27, 2022
+        UTC : 10:00 PM, 10:00PM, Jan.27 - 1:00 AM, Jan.28, 2022
+        UTC+1 (London): 11:00 PM, Jan.27- 2:00 AM, Jan.28, 2022
+        UTC+2 (Paris, Berlin): 11:59 PM, Jan.27 - 3:00 AM, Jan.28, 2022
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Jan.28, 2022
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Jan.28, 2022
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Jan.28, 2022
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Jan.28, 2022
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+ROS 2.0 has been officially launched, and the development team has been listening to players' opinions and dealing with bugs urgently.
+
+Bug Fixes:
+
+* Fixed the issue where some devices did not respond to the tapping action on the escape results interface.
+* Fixed the issue where sometimes the ranking data could not be displayed in the Cash leaderboard.
+* Fixed the display bug for the number of ID Cards.
+* Fixed the issue where sometimes picking up items in the matches would lead to bugs.
+* Fixed the Spawn Point error.
+* Fixed the issue where some national flags in the leaderboard were displayed incorrectly.
+* Fixed the countdown error.
+
+Event:
+
+* After the official launch of ROS 2.0, Survivors were so active that we decided to extend the duration of the [Crazy Cash] event by one week.
+The event will end on 2022/2/9 (before maintenance)
+* In order to ensure the rest of the players, the drops of Cash Card from 0:00 - 6:00 (server time) every day are reduced; meanwhile, the drops of Cash Card will be correspondingly increased from 6:00 - 24:00.
+
+Have fun and enjoy your time in ROS 2.0!
+
+Through the anti-hack system and player reporting, we found that some players may illegally obtain Cash Cards. We have been further verifying the cases. Once verified, related accounts will be banned immediately, and all illegal gains will be emptied and returned to the prize pool.
+Please adhere to the relevant in-game regulations and have zero tolerance for cheating.
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Jan.25-26$h: $>
+
+#cFF9900Notice on Jan.25-26#n
+
+Attention Survivors:
+
+ROS2.0 servers will be online at #cFF9900Jan.26, 2:00 utc+0#n
+
+Rules of Survival will be updated from #cFF9900Jan.25-Jan.26#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Jan.25, 2022
+        DT (New York): 6:00 PM - 9:00 PM, Jan.25, 2022
+        UTC : 10:00 PM, Jan.25 - 1:00 AM, Jan.26, 2022
+        UTC+1 (London): 11:00 PM, Jan.25- 2:00 AM, Jan.26, 2022
+        UTC+2 (Paris, Berlin): 11:59 PM, Jan.25 - 3:00 AM, Jan.26, 2022
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Jan.26, 2022
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Jan.26, 2022
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Jan.26, 2022
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Jan.26, 2022
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+ROS 2.0 is Now in Full Swing!
+An All-New 2.0 Mode
+The world is getting more and more chaotic, and crises are approaching again. How will you dictate the new rules of survival?
+- Choose a faction and compete in 4 new maps. Gather or plunder, it no longer matters! Now, getting out alive with the Spoils Crate will be the ultimate goal!
+- Build a Shelter, strengthen your abilities, modify your firearms, and hire mercenaries. The only way to get stronger in this ever-changing world is to keep getting stronger!
+- Trade freely, team up with friends, and use all available resources to help you achieve your goals!
+
+Get Rich Together Event
+From 2022/1/26–2022/2/9.
+During the event, players who complete ROS 2.0 matches with friends and reach a certain number of Activity Points will receive a large number of Diamonds and various amazing rewards!
+
+USD RUSH
+From 2022/1/26–2022/2/1.
+During the event, Spoils Crates in ROS 2.0 battlefield have a chance to drop USD Cash Cards, and players who successfully escape with them will add them to the exclusive Cash Pool. Once a certain amount is reached, players will be able to withdraw it!
+
+
+The Rules of Survival Development and Community Team
+
+
+$< $nor  $H:Notice on Jan.18-19$h: $>
+
+#cFF9900Notice on Jan.18-19#n
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Jan.18-Jan.19#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Jan.18, 2022
+        DT (New York): 6:00 PM - 9:00 PM, Jan.18, 2022
+        UTC : 10:00 PM, Jan.18 - 1:00 AM, Jan.19, 2022
+        UTC+1 (London): 11:00 PM, Jan.18- 2:00 AM, Jan.19, 2022
+        UTC+2 (Paris, Berlin): 11:59 PM, Jan.18 - 3:00 AM, Jan.19, 2022
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Jan.19, 2022
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Jan.19, 2022
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Jan.19, 2022
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Jan.19, 2022
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+ROS 2.0 Update Event:
+1. ROS 2.0 Update Event
+ROS 2.0 Update Event Period: 2022/1/19 (after maintenance)–2022/2/9 (before maintenance).
+
+2. Event Gameplay:
+Team Rally: From 2022/1/19–2022/1/26, players who rally 10 friends will receive a rally reward—Rhino Fighter Shield - Gold
+Get Rich Together: From 2022/1/26–2022/2/9, players who complete ROS 2.0 matches with rallied friends and reach a certain number of Activity Points will receive the Golden Rhino Fighter Set, a large number of Diamonds, and various ROS 2.0 items which will help them greatly in battles.
+
+
+The Rules of Survival Development and Community Team
+
+
+$< $nor  $H:Notice on Jan.04-05$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Jan.04-Jan.05#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Jan.04, 2022
+        DT (New York): 6:00 PM - 9:00 PM, Jan.04, 2022
+        UTC : 10:00 PM, Jan.04 - 1:00 AM, Jan.05, 2022
+        UTC+1 (London): 11:00 PM, Jan.04- 2:00 AM, Jan.05, 2022
+        UTC+2 (Paris, Berlin): 11:59 PM, Jan.04 - 3:00 AM, Jan.05, 2022
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Jan.05, 2022
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Jan.05, 2022
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Jan.05, 2022
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Jan.05, 2022
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Dec.21-22$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Dec.21-Dec.22#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Dec.21, 2021
+        DT (New York): 6:00 PM - 9:00 PM, Dec.21, 2021
+        UTC : 10:00 PM, Dec.21 - 1:00 AM, Dec.22, 2021
+        UTC+1 (London): 11:00 PM, Dec.21- 2:00 AM, Dec.22, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Dec.21 - 3:00 AM, Dec.22, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Dec.22, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Dec.22, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Dec.22, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Dec.22, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+ Xmas Event
+
+*ROS Xmas Event will be available from Dec. 22 (after maintenance) to Jan. 5 (before maintenance).
+*Xmas Top-up Event will be opened for a limited time, during which players will enjoy a 50% rebate upon the first Diamond top-up.
+*Xmas Bonus Rebate will be opened for a limited time. Spend a certain amount of Diamonds to receive different benefits.
+*Three Kingdoms Super Carnival Draw will be available for a limited time, including rare appearances of 5 different Three Kingdoms heroes.
+*Ranked match - Xmas Bell game mode will be available all day, in which players can directly compete for Diamonds from airdrops.
+*Xmas Bell Exchange Store will be available for a limited time for players to redeem rare Xmas outfits.
+*Xmas Sign-In Event will be available for a limited time with lots of benefits. Don't miss it!
+
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Dec.7-8$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Dec.7-Dec.8#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Dec.7, 2021
+        DT (New York): 6:00 PM - 9:00 PM, Dec.7, 2021
+        UTC : 10:00 PM, Dec.7 - 1:00 AM, Dec.8, 2021
+        UTC+1 (London): 11:00 PM, Dec.7- 2:00 AM, Dec.8, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Dec.7 - 3:00 AM, Dec.8, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Dec.8, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Dec.8, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Dec.8, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Dec.8, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+Bug Fixes
+
+* Fixed the issue where Season Bounty Reward Rankings were displayed incorrectly.
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Nov.23-24$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Nov.23-Nov.24#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Nov.23, 2021
+        DT (New York): 6:00 PM - 9:00 PM, Nov.23, 2021
+        UTC : 10:00 PM, Nov.23 - 1:00 AM, Nov.24, 2021
+        UTC+1 (London): 11:00 PM, Nov.23- 2:00 AM, Nov.24, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Nov.23 - 3:00 AM, Nov.24, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Nov.24, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Nov.24, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Nov.24, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Nov.24, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+ Bug Fixes
+
+* Fixed the issue where M16A4 could not fire normally.
+* Fixed the issue where characters were not displayed in the right place in Boot Camp.
+* Fixed the issue where some Android 11 players faced game crashes occasionally.
+
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Nov.09-10$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Nov.09-Nov.10#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Nov.09, 2021
+        DT (New York): 6:00 PM - 9:00 PM, Nov.09, 2021
+        UTC : 10:00 PM, Nov.09 - 1:00 AM, Nov.10, 2021
+        UTC+1 (London): 11:00 PM, Nov.09- 2:00 AM, Nov.10, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Nov.09 - 3:00 AM, Nov.10, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Nov.10, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Nov.10, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Nov.10, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Nov.10, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+ Bug Fixes
+
+* Fixed the issue where the Grenade icon is displayed when picking up a gun in Hero Mode.
+* Fixed the issue where vehicles do not take damage when hit.
+* Fixed the issue where the game would crash under certain circumstances.
+
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Oct.26-27$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Oct.26-Oct.27#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Oct.26, 2021
+        DT (New York): 6:00 PM - 9:00 PM, Oct.26, 2021
+        UTC : 10:00 PM, Oct.26 - 1:00 AM, Oct.27, 2021
+        UTC+1 (London): 11:00 PM, Oct.26- 2:00 AM, Oct.27, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Oct.26 - 3:00 AM, Oct.27, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Oct.27, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Oct.27, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Oct.27, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Oct.27, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. Bug Fixes
+* Fixed the issue that RPG could deal huge damage in Titan Mode.
+* Fixed the issue that the number of people and icons of steering buttons were not fully displayed in Hero and Krazy modes.
+* Fixed the issue that the character model would disappear when switching from weapon bar to character clothing bar in Depot Interface.
+
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Oct.12-13$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Oct.12-Oct.13#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Oct.12, 2021
+        DT (New York): 6:00 PM - 9:00 PM, Oct.12, 2021
+        UTC : 10:00 PM, Oct.12 - 1:00 AM, Oct.13, 2021
+        UTC+1 (London): 11:00 PM, Oct.12- 2:00 AM, Oct.13, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Oct.12 - 3:00 AM, Oct.13, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Oct.13, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Oct.13, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Oct.13, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Oct.13, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. Update Content
+*  4th ROSversary Event: ROS x Attack on Titan Crossover Event
+*  The ROS x Attack on Titan Crossover 4th ROSversary event will last from October 13 (after maintenance) to November 10 (before maintenance).
+*  A ROSversary top-up discount event will be available for a limited time, during which, Diamond top-ups will grant you an additional rebate of up to 100%, and additional content obtained by purchasing daily Special Offers will be doubled.
+*  Crossover Passes will be available for a limited time, including a free 4th ROSversary Pass containing loads of Diamonds and themed Passes of 3 popular crossover characters.
+*  A crossover-themed Super Carnival Draw will be available for a limited time, including limited-edition crossover character skins and other rare appearances.
+*  The Ranked match Ghillie Island crossover themed mode will be available all day, offering a range of amazing rewards.
+*  The main crossover mode, Titan Invasion, will be available for a limited time, from 20:00 to 22:00 every day.
+*  ROSversary Supplies will make their annual return, bringing with them a huge number of popular rare appearances for a limited time.
+
+2. Bug Fixes
+*  Fixed an issue where, after upgrading to get Kill Announcements, Kill Announcements would be displayed incorrectly.
+
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Sep.28-29$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Sep.28-Sep.29#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Sep.28, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Sep.28, 2021
+        UTC : 10:00 PM, Sep.28 - 1:00 AM, Sep.29, 2021
+        UTC+1 (London): 11:00 PM, Sep.28- 2:00 AM, Sep.29, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Sep.28 - 3:00 AM, Sep.29, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Sep.29, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Sep.29, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Sep.29, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Sep.29, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. Update Content
+*Added iPhone 13 support.
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Sep.14-15$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Sep.14-Sep.15#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Sep.14, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Sep.14, 2021
+        UTC : 10:00 PM, Sep.14 - 1:00 AM, Sep.15, 2021
+        UTC+1 (London): 11:00 PM, Sep.14- 2:00 AM, Sep.15, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Sep.14 - 3:00 AM, Sep.15, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Sep.15, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Sep.15, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Sep.15, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Sep.15, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. Bug Fixes
+* Fixed the issue that caused the game to lag when switching the floor area of the Cargo Station
+* Fixed the Combat UI issue after reconnecting to the game
+* Fixed the issue that Invincible vehicles could be driven into battles from the Cargo Station after the game started
+* Fixed the issue that caused players to be able to pick up the equipped backpack at a fixed location at the Cargo Station after the game started
+* Fixed the issue of sudden movement on the map
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Sep.01$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Aug.31-Sep.01#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Aug.31, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Aug.31, 2021
+        UTC : 10:00 PM, Aug.31 - 1:00 AM, Sep.01, 2021
+        UTC+1 (London): 11:00 PM, Aug.31- 2:00 AM, Sep.01, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Aug.31 - 3:00 AM, Sep.01, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Sep.01, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Sep.01, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Sep.01, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Sep.01, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. All-new Battle Mode: ROS 2.0 Early Access
+
+* Duration: Players can start participating after this maintenance, and the new mode is expected to last for 2 weeks.
+* Background Introduction: In this new mode, you'll be a mercenary who survived a fierce confrontation between two armed forces. Choose a faction, explore the Ruins, search for supplies, defeat your opponents, grab the Spoils Crate, and evacuate with equipment before time runs out... Will you survive this endless war?
+* All-new Map: New mode battles will take place on a new map. After this update, you'll be able to experience several different scenes: War-torn transportation hubs, heavily guarded arsenal, etc... Can you venture deep enough to obtain more powerful equipment?
+* Firearm Upgrades: In this new mode, you'll be able to further upgrade your firearms. Are you looking to build a high-precision sniper rifle? Or to surprise your opponents with a shotgun fitted with an 8x scope? The choice is yours!
+
+2. Bug Fixes
+
+* Fixed the issue where players could move in advance at the Cargo Station during the Prep Phase.
+* Fixed the issue where players fell from above after switching out Flying Nimbus.
+
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Aug.17-18$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Aug.17-18#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Aug.17, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Aug.17, 2021
+        UTC : 10:00 PM, Aug.17 - 1:00 AM, Aug.18, 2021
+        UTC+1 (London): 11:00 PM, Aug.17- 2:00 AM, Aug.18, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Aug.17 - 3:00 AM, Aug.18, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Aug.18, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Aug.18, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Aug.18, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Aug.18, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. Season Updates
+* New Season available: Season 19 will begin and Season 18 will end after maintenance on Aug. 18. When the new season begins, all ranking data related to Ranked Matches as well as current battle stats and historical data will be cleared. Players that participated in Ranked Matches can claim season rewards according to tiers:
+  Grand Master: Adv. Supply Tickets x60, Season Exclusive Reward - Outer God set, S18 Grand Master Medallion;
+  Master: Adv. Supply Tickets x50, Season Exclusive Reward - Outer God set, S18 Master Medallion;
+  Diamond: Adv. Supply Tickets x33, Season Exclusive Reward - Outer God set, S18 Elite Medallion;
+  Platinum: Adv. Supply Tickets x25, Season Exclusive Reward - Outer God set;
+  Gold: Adv. Supply Tickets x16, Season Exclusive Reward - Outer God set;
+  Silver: Adv. Supply Tickets x8;
+  Bronze: Adv. Supply Tickets x5.
+
+
+2. Bug Fixes
+* Fixed the UI issue when riding on a Bouncer Bot;
+* Fixed the issue where players could move before the end of the countdown in Cargo Station.
+
+
+The Rules of Survival Development and Community Team
+
+
+$< $nor  $H:Notice on Aug.03-04$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Aug.03-04#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Aug.03, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Aug.03, 2021
+        UTC : 10:00 PM, Aug.03 - 1:00 AM, Aug.04, 2021
+        UTC+1 (London): 11:00 PM, Aug.03- 2:00 AM, Aug.04, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Aug.03 - 3:00 AM, Aug.04, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Aug.04, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Aug.04, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Aug.04, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Aug.04, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. Bug Fixes
+* Improved anti-hack measures.
+* Fixed the issue where most Bouncer Bots could not be operated after changing their skins.
+
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Jul.20-21$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Jul.20-21#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Jul.20, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Jul.20, 2021
+        UTC : 10:00 PM, Jul.20 - 1:00 AM, Jul.21, 2021
+        UTC+1 (London): 11:00 PM, Jul.20- 2:00 AM, Jul.21, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Jul.20 - 3:00 AM, Jul.21, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Jul.21, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Jul.21, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Jul.21, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Jul.21, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. Bug Fixes
+* Fixed the issue where switching seats while driving could cause nearby players to get stuck;
+* Fixed the issue where barbed wire fences were not displayed correctly;
+* Fixed some bugs on the new map;
+* Fixed the issue where some players would get stuck on Android devices;
+* Fixed the issue where the red house was lack of doors and glass;
+* Fixed some transformation issues in Journey to the West;
+* Fixed the issue where the Scope icon was stretched out;
+* Fixed the issue where using Grenade - Bun might cause the game to quit;
+* Fixed the issue where some players would not obtain Journey to the West Shards after claiming them in Journey to the West;
+* Fixed the issue where some players would experience glitches after disconnection.
+* Fixed the points calculation issue on the new map.
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Jul.06-07$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Jul.06-07#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Jul.06, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Jul.06, 2021
+        UTC : 10:00 PM, Jul.06 - 1:00 AM, Jul.06, 2021
+        UTC+1 (London): 11:00 PM, Jul.06- 2:00 AM, Jul.06, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Jul.06 - 3:00 AM, Jul.06, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Jul.06, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Jul.06, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Jul.06, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Jul.06, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. Journey to the West Event
+ALL-SERVER JOURNEY PROGRESS
+During this event, survivors will take a journey to the west. All players' traveled mileage in Ranked Matches will be accumulated to the Journey to the West's total distance. When the distance meets certain thresholds, players will unlock famous sites and corresponding events on the journey and obtain rewards.
+
+EVENT MISSIONS & EXCHANGE STORE
+Journey to the West missions will be available during the event. After completing missions, players will get the event token "Journey to the West Badge" which can be exchanged for exclusive Looks, Weapons, and amazing rewards from the event store.
+
+JOURNEY TO THE WEST LUCKY DRAW
+Journey to the West sets are here with a bang, including Wingman, Vehicles, Sets, Weapons, and other types of cool Looks. Obtain all sets to get an exclusive Wingman and Avatar Frame from the event page.
+
+TOP UP REBATE
+Top Up Rebates will be available during the event. Players will get up to 50% additional rebate when topping up!
+
+EVENT GAME MODES
+All-new Journey to the West game mode will be available during the event:
+Journey to the West Trials - 5 players will undergo various trials on the Journey to the West as the master and disciples. In the trials, players can sign up as a squad to keep the Tang Sanzang alive to the end, while all other squads' goal is to defeat the Tang Sanzang.
+Metamorph - In the world of Journey to the West, metamorphing is an indispensable skill. In this game mode, players can morph into scene objects to confuse their opponents and carry out surprise attacks.
+
+FIRE SALE STORE
+All-new time-limited Fire Sale Store is here! Invite friends for discount assistance and purchase limited vehicles and firearm skins at an ultra-low price! Returning players can get even better prices!
+
+
+2. Bug Fixes
+* Fixed the issue where portable vehicles could be used during the prep phase in Train Station;
+* Fixed the issue where fences and glass could not be seen, but collisions still occurred;
+* Fixed the issue where players sometimes failed to share Looks in the Lobby.
+
+The Rules of Survival Development and Community Team
+
+
+2. Bug Fixes
+*Optimized memory usage and reduced lags significantly.
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Jun.22-23$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Jun.22-23#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Jun.22, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Jun.22, 2021
+        UTC : 10:00 PM, Jun.22 - 1:00 AM, Jun.23, 2021
+        UTC+1 (London): 11:00 PM, Jun.22- 2:00 AM, Jun.23, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Jun.22 - 3:00 AM, Jun.23, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Jun.23, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Jun.23, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Jun.23, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Jun.23, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. New Content
+* New Battlefield: Cargo Station
+ - A small map that allows up to 20 players.
+ - In this map, players will not parachute down but will select a spawn area to enter the battlefield directly.
+ - Players in the Prep Zone can choose their spawn area freely and change it any time while in the Prep Zone.
+ - This map has a faster circle shrinking rate and higher circle damage. Please stay alert!
+ 
+*New Look - Ultimate Mechatron
+ - Ultimate Mechatron has arrived! During the event, collecting all 4 Looks: Red Mechatron, Yellow Mechatron, Blue Mechatron, and Gray Mechatron will obtain the ultra-cool Wingman - Ultimate Mechatron immediately!
+ - Ultimate Mechatron Looks can even be shared among teammates! Teammates equipped with all 4 Looks will be able to perform a super cool Interlink in the Prep Zone!
+ - This Appearance is a shareable Looks that can be shared with teammates. When certain conditions are met, it will trigger a special Entrance Prompt as the team enters the battle!
+
+
+$< $nor  $H:Notice on May.25-26$h: $>
+
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900May.25-26#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,May.25, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, May.25, 2021
+        UTC : 10:00 PM, May.25 - 1:00 AM, May.26, 2021
+        UTC+1 (London): 11:00 PM, May.25- 2:00 AM, May.26, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, May.25 - 3:00 AM, May.26, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, May.26, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, May.26, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, May.26, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,May.26, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. New Content
+* Rules of Survival x Ravelo Komiks Universe Crossover Event
+* Weekly Sign-In
+ - During the event, there'll be a weekly superhero theme, and players can obtain each superhero theme's emoji or emote by signing in for 5 days during that week.
+
+*Crossover Training Manual
+ - During the crossover, a special Superhero Training Manual will be released, and players can obtain superhero appearances and amazing rewards by gaining EXP and leveling up.
+
+* Superhero Relics
+ - Superhero Relics can be found in these treasures. So, come get a superhero appearance and transform into one!
+
+* Arrival of the Superheroes
+ - Not only will the superheroes meet up with survivors on Ghillie Island, but players can also interact and shake hands with them in the Prep Zone. Superheroes will even fight alongside survivors on the battlefield. Those who first locate the Special Training Medals will be granted the superhero's ability temporarily. Each week, a unique superhero will debut and will only appear in Ranked Matches between 12:00-13:00 and 19:00-20:00 each day.
+
+* Season Rush Cash Event
+ - At the end of each season, in addition to the season rewards, top players can now also get cash rewards according to their region server and season ranking.
+The cash rewards are accumulated in the player's personal prize pool, which can be withdrawn or converted into Diamonds at any time at a ratio of USD 1:60 Diamonds. So, what are you waiting for? Come join the season rush to win cash prizes!
+
+* Season Updates
+- New Season available: Season 18 will begin and Season 17 will end after maintenance on May 26. When the new season begins, all ranking data related to Ranked Matches as well as current battle stats and historical data will be cleared. Players that participated in Ranked Matches can claim season rewards according to tiers:
+  Grand Master: Adv. Supply Tickets x60, Season Exclusive Reward - Lover (F) set, S17 Grand Master Medallion;
+  Master: Adv. Supply Tickets x50, Season Exclusive Reward - Lover (F) set, S17 Master Medallion;
+  Diamond: Adv. Supply Tickets x33, Season Exclusive Reward - Lover (F) set, S17 Elite Medallion;
+  Platinum: Adv. Supply Tickets x25, Season Exclusive Reward - Lover (F) set;
+  Gold: Adv. Supply Tickets x16, Season Exclusive Reward - Lover (F) set;
+  Silver: Adv. Supply Tickets x8;
+  Bronze: Adv. Supply Tickets x5.
+
+* Credit System:
+ - Added an all-new credit deduction system on cheating behaviors. The system will now implement strict credit deductions for verified cheating and suspicious behaviors.
+ - Optimized credit deduction system based on players' reports.
+ - The credit score limit is now set to 160.
+ - Optimized the matching mechanism using players' Credit Score in Ranked Matches.
+
+* Optimized top-up and other related interfaces.
+
+
+2. Bug Fixes
+* Fixed the issue where some players would get stuck.
+
+The Rules of Survival Development and Community Team
+
+
+$< $nor  $H:Notice on May.11-12$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900May.11-12#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,May.11, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, May.11, 2021
+        UTC : 10:00 PM, May.11 - 1:00 AM, May.12, 2021
+        UTC+1 (London): 11:00 PM, May.11- 2:00 AM, May.12, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, May.11 - 3:00 AM, May.12, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, May.12, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, May.12, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, May.12, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,May.12, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. New Content
+* Due to the sizeable amount of content, S18 will be postponed to May 26 in order to undergo comprehensive testing to provide a more pleasant gaming experience for all players.
+A much-anticipated new map will be available in the new season, as well as a variety of events and benefits. So stay tuned!
+
+2. Bug Fixes
+* Fixed the issue where some players would get stuck.
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Apr.27-28$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Apr.27-28#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Apr.27, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Apr.27, 2021
+        UTC : 10:00 PM, Apr.27 - 1:00 AM, Apr.28, 2021
+        UTC+1 (London): 11:00 PM, Apr.27- 2:00 AM, Apr.28, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Apr.27 - 3:00 AM, Apr.28, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Apr.28, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Apr.28, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Apr.28, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Apr.28, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. Bug Fixes
+* Fixed the issue where the position of passengers would appear to be abnormal after getting off the vehicle with the Portable Bicycle skin;
+* Fixed the issue where some players would get stuck.
+
+The Rules of Survival Development and Community Team
+
+
+$< $nor  $H:Notice on Apr.20-21$h: $>
+
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Apr.20-21#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Apr.20, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Apr.20, 2021
+        UTC : 10:00 PM, Apr.20 - 1:00 AM, Apr.21, 2021
+        UTC+1 (London): 11:00 PM, Apr.20- 2:00 AM, Apr.21, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Apr.20 - 3:00 AM, Apr.21, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Apr.21, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Apr.21, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Apr.21, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Apr.21, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. New Content
+ * To save the data consumed by players for the updates and provide a better gaming experience (smaller packages), we've decided to change the maintenance frequency from once a week to once every two weeks.
+
+2. Bug Fixes
+* Fixed the issue where the shotgun damage was displayed incorrectly;
+* Fixed the issue where the Portable Bicycle skin could not be removed;
+* Fixed the issue where too many supplies would be refreshed in Prep Zone.
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Apr.13-14$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Apr.13-14#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Apr.13, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Apr.13, 2021
+        UTC : 10:00 PM, Apr.13 - 1:00 AM, Apr.14, 2021
+        UTC+1 (London): 11:00 PM, Apr.13- 2:00 AM, Apr.14, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Apr.13 - 3:00 AM, Apr.14, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Apr.14, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Apr.14, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Apr.14, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Apr.14, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. Bug Fixes
+* Fixed the display issues for Mary and Angela avatar frames;
+* Fixed the issue where the camera angle may be incorrect when boarding the plane in the Prep Zone.
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Apr.6-7$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Apr.6-7#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Apr.6, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Apr.6, 2021
+        UTC : 10:00 PM, Apr.6 - 1:00 AM, Apr.7, 2021
+        UTC+1 (London): 11:00 PM, Apr.6- 2:00 AM, Apr.7, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Apr.6 - 3:00 AM, Apr.7, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Apr.7, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Apr.7, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Apr.7, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Apr.7, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. New Content
+* Support your Goddess Event has ended.
+ - Players' unclaimed support rewards will be issued by email after the event.
+
+2. Bug Fixes
+* Fixed the display issues for Mary and Angel avatar frames;
+* Fixed the issue where PK rewards for Support your Goddess Event were given abnormally.
+
+The Rules of Survival Development and Community Team
+
+
+$< $nor  $H:Notice on Mar.30-31$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Mar.30-31#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Mar.30, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Mar.30, 2021
+        UTC : 10:00 PM, Mar.30 - 1:00 AM, Mar.31, 2021
+        UTC+1 (London): 11:00 PM, Mar.30- 2:00 AM, Mar.31, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Mar.30 - 3:00 AM, Mar.31, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Mar.31, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Mar.31, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Mar.31, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Mar.31, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. Bug Fixes
+* Fixed the issue where players could get stuck when using the Durian Surfboard.
+* Fixed the issue where diamonds were missing in the next season's ROS Ranks rewards
+* Fixed the issue where shooting enemies from the new garage's window might not deal any damage.
+* Fixed the compatibility issues of damage counter in full screen.
+* Optimized the animation of damage counter.
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Mar.23-24$h: $>
+
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Mar.23-24#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Mar.23, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Mar.23, 2021
+        UTC : 10:00 PM, Mar.23 - 1:00 AM, Mar.24, 2021
+        UTC+1 (London): 11:00 PM, Mar.23- 2:00 AM, Mar.24, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Mar.23 - 3:00 AM, Mar.24, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Mar.24, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Mar.24, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Mar.24, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Mar.24, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. New Content
+* Support your Goddess!
+* Debut Support Event is here!
+ - During this debut event, idols Mary and Angela will participate in a talent show on Ghillie Island. So, choose your favorite idol and support her debut! Each player only has one chance to select the idol you support. Once the choice is made, it cannot be changed, so please think carefully.
+ - During the event, the players' support for their idol will be summed up, and the winning team will receive rewards and the idol's exclusive Looks (the corresponding item required).
+ - Players on both teams' Support Leaderboard will also receive small gifts from their idols.
+
+* Support Mission for Idol Debut!
+ - In Ghillie Island Ranked Matches, each match will have a new NPC with whom players can interact to accept in-battle missions. After completing the missions, players will obtain certain support items and buffs.
+
+* Idol's Support Gift
+ - The limited support roulette is now available, and players can obtain rare Looks from it. When a team's support point is higher, players in this team will have a chance to upgrade Looks to their idol's limited editions.
+
+2. Bug Fixes
+* Fixed the issue where the zipline in ROStopia was suspended in the air.
+* Fixed the issue where ammo was given abnormally after the first top-up.
+
+3. Game Optimization
+* Optimized the effects of damage counter.
+* Added hit alerts for some firearms.
+* Added KO/Kill alerts (can be enabled/disabled in Settings).
+* Optimized teammates' Name Cards displayed in-battle.
+* Optimized camera changes while sprinting.
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Mar.16-17$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Mar.16-17#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Mar.16, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Mar.16, 2021
+        UTC : 10:00 PM, Mar.16 - 1:00 AM, Mar.17, 2021
+        UTC+1 (London): 11:00 PM, Mar.16- 2:00 AM, Mar.17, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Mar.16 - 3:00 AM, Mar.17, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Mar.17, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Mar.17, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Mar.17, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Mar.17, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. Bug Fixes
+* Fixed the issue where the sound of footsteps could be inconsistent with the actions of the character under some circumstances;
+* Modified the character movement actions to make the experience closer to the original effect before optimization;
+* Fixed the infinite flying issue with certain Wingman during the parachuting stage;
+* Fixed the issue where the weapon would be abnormal when the drone switches the weapons quickly.
+
+2. Game Optimization
+* Playing with the updated PC version will greatly reduce the lag issues.
+* The map of Ghillie Island has been updated with multiple room types optimized, enriching battle terrains and enlarging space for players.
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Mar.9-10$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Mar.9-10#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Mar.9, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Mar.9, 2021
+        UTC : 10:00 PM, Mar.9 - 1:00 AM, Mar.10, 2021
+        UTC+1 (London): 11:00 PM, Mar.9- 2:00 AM, Mar.10, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Mar.9 - 3:00 AM, Mar.10, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Mar.10, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Mar.10, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Mar.10, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Mar.10, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. Bug Fixes
+* Fixed the issue where results would not be carried out after the game finished in Fearless Fiord in FPS Mode.
+* Fixed the issue where Rocket Tube could not be used during vehicle battles.
+
+2. Game Optimization
+* Optimized character's movements to better match its speed and to make turns more natural.
+
+The Rules of Survival Development and Community Team
+
+
+$< $nor  $H:Notice on Mar.2-3$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Mar.2-3#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Mar.2, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Mar.2, 2021
+        UTC : 10:00 PM, Mar.2 - 1:00 AM, Mar.3, 2021
+        UTC+1 (London): 11:00 PM, Mar.2- 2:00 AM, Mar.3, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Mar.2 - 3:00 AM, Mar.3, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Mar.3, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Mar.3, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Mar.3, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Mar.3, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. New Content
+* Season Updates
+- New Season available: Season 17 will begin and Season 16 will end after maintenance on March 3. When the new season begins, all ranking data related to Ranked Matches as well as current battle stats and historical data will be cleared. Players that participated in Ranked Matches can claim season rewards according to tiers:
+  Grand Master: Adv. Supply Tickets x60, Season Exclusive Reward - Spring Festival (F) set, S16 Grand Master Medallion;
+  Master: Adv. Supply Tickets x50, Season Exclusive Reward - Spring Festival (F) set, S16 Master Medallion;
+  Diamond: Adv. Supply Tickets x33, Season Exclusive Reward - Spring Festival (F) set, S16 Elite Medallion;
+  Platinum: Adv. Supply Tickets x25, Season Exclusive Reward - Spring Festival (F) set;
+  Gold: Adv. Supply Tickets x16, Season Exclusive Reward - Spring Festival (F) set;
+  Silver: Adv. Supply Tickets x8;
+  Bronze: Adv. Supply Tickets x5.
+
+* Added all-new rewards to Roulette and Super Carnival.
+* Updated Platoon Level rewards and Platoon Store.
+
+* Casual Mode
+ - Added an all-new Casual Mode system. All matches other than Ranked Match will now be categorized as Casual Mode and will no longer grant Rank Points.
+ - Participation in Casual Mode will now grant players Casual Points, EXP, and Level rewards.
+- FPS Ranked Game is now renamed as Battle Royale (FPS) and Ranked Match (RoS Ultra) is now renamed as Battle Royale (RoS Ultra).
+ - Casual Points will be reset each season.
+
+2. Bug Fixes
+* Fixed the issue where using a melee weapon with special controls in PC Version could be used to shorten attack animation and quickly proceed to the next attack.
+
+The Rules of Survival Development and Community Team
+
+
+$< $nor  $H:Notice on Feb.23-24$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Feb.23-24#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Feb.23, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Feb.23, 2021
+        UTC : 10:00 PM, Feb.23 - 1:00 AM, Feb.24, 2021
+        UTC+1 (London): 11:00 PM, Feb.23- 2:00 AM, Feb.24, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Feb.23 - 3:00 AM, Feb.24, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Feb.24, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Feb.24, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Feb.24, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Feb.24, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. New Content
+* Special Training
+ - All-new benefits - Special Training will be available after the update, and players will be able to activate it upon the first login.
+ - Players can choose a desired reward set in Special Training, and after completing the shooting training, players will obtain the pre-selected set and a ton of amazing rewards.
+ - Shooting training costs bullets, and players can obtain them via daily spending.
+ - During the Special Training period, exclusive high-discount packs will be available at the same time, and players can purchase them from the Daily Special Offer.
+ - Both Special Training and exclusive packs have a 30-day limit, and will be removed automatically after that.
+
+The Rules of Survival Development and Community Team
+
+$< $nor $H:Notice on Feb.7-8$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Feb.7-8#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Feb.7, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Feb.7, 2021
+        UTC : 10:00 PM, Feb.7 - 1:00 AM, Feb.8, 2021
+        UTC+1 (London): 11:00 PM, Feb.7- 2:00 AM, Feb.8, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Feb.7 - 3:00 AM, Feb.8, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Feb.8, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Feb.8, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Feb.8, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Feb.8, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+ Due to the huge update for the new season, we decided to push back the beginning of S17 to Wednesday, March 3 to conduct a full test and provide players with the best gaming experience possible.
+In the new season, we will launch a new map, and optimize the Ranking Rules — there will be separate rankings for those who play Casual Mode and those who play Ranked Mode. Based on player feedback, we will also optimize the details of some buildings in the current Ghillie Island. Stay tuned!
+
+ As the Chinese New Year is fast approaching, we decided to advance the maintenance scheduled from 2/10 to 2/7 22:00 (UTC+0)
+This week's new patch optimizes the performance of the PC version. During our testing, we saw a huge reduction of more than 90% in crashes, as such, we recommend using the ROS launcher to log into the game.
+We wish survivors a happy lunar new year. ROS will continue to accompany you in 2021!
+
+1. Bug Fixes
+* Fixed the issue where survivors would continue to sprint even after calling back the Drone if it was called for while sprinting.
+* Fixed the issue where players could shoot if they used hotkey and left-click button underwater at the same time in PC version.
+* Fixed the issue where survivors could get stuck when landing with Wingman.
+* Fixed the issue where survivors' paragliders could disappear while descending.
+* Fixed the issue where survivors might get stuck when jumping through windows, at stairs, and in buildings.
+
+2. Game Optimization
+* Optimized muzzle spark effects.
+* Optimized character's actions when hit, and provided dynamic directional feedback according to the damage source.
+* Optimized character's shooting action.
+* Happy Derby Optimizations:
+ - Added Racers' status.
+ - Optimized results interface.
+ - Optimized winning notifications.
+
+The Rules of Survival Development and Community Team
+
+
+$< $nor  $H:Notice on Feb.2-3$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Feb.2-3#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Feb.2, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Feb.2, 2021
+        UTC : 10:00 PM, Feb.2 - 1:00 AM, Feb.3, 2021
+        UTC+1 (London): 11:00 PM, Feb.2- 2:00 AM, Feb.3, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Feb.2 - 3:00 AM, Feb.3, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Feb.3, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Feb.3, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Feb.3, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Feb.3, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. Bug Fixes
+* Fixed the issue where screens would freeze while watching Happy Derby.
+
+2. Gameplay Optimization
+* Optimized muzzle spark effects.
+* Optimized character's actions when hit, and provided dynamic directional feedback according to the damage source.
+* Optimized character's shooting action.
+* Happy Derby Optimizations:
+ - Optimized some interface's interactions.
+ - Fixed the issue where live racing graphics were stretched.
+ - Fixed the issue where racers' actions were out of sync in the arena.
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Jan.26-27$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Jan.26-27#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Jan.26, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Jan.26, 2021
+        UTC : 10:00 PM, Jan.26 - 1:00 AM, Jan.27, 2021
+        UTC+1 (London): 11:00 PM, Jan.26- 2:00 AM, Jan.27, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Jan.26 - 3:00 AM, Jan.27, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Jan.27, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Jan.27, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Jan.27, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Jan.27, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. New Content
+* Happy Derby
+ - All-new game style, Happy Derby, is here now. This event is available on Friday and weekends (UTC+0) and begins every hour on the hour.
+ - Players will bet the Top 2 racers every round based on their numbers. Winners will be rewarded according to the odds.
+ - After each round of bet placement, players can enter the arena to experience intense live racing.
+
+2. Bug Fixes
+* Fixed the issue where players could not move after the explosion of vehicles.
+* Fixed the issue where the reloading countdown interface did not disappear in time after getting out of the vehicle upon reloading in the vehicle.
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Jan.19-20$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Jan.19-20#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Jan.19, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Jan.19, 2021
+        UTC : 10:00 PM, Jan.19 - 1:00 AM, Jan.20, 2021
+        UTC+1 (London): 11:00 PM, Jan.19- 2:00 AM, Jan.20, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Jan.19 - 3:00 AM, Jan.20, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Jan.20, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Jan.20, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Jan.20, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Jan.20, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. Bug Fixes
+* Optimized the camera angle when shooting while leaning on vehicles;
+* Fixed the incorrect actions when shooting while leaning on the Battle Jeep;
+* Fixed the issue where players riding on Wingman could not move after landing.
+
+The Rules of Survival Development and Community Team
+
+
+$< $nor  $H:Notice on Jan.12-13$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Jan.12-13#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Jan.12, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Jan.12, 2021
+        UTC : 10:00 PM, Jan.12 - 1:00 AM, Jan.13, 2021
+        UTC+1 (London): 11:00 PM, Jan.12- 2:00 AM, Jan.13, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Jan.12 - 3:00 AM, Jan.13, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Jan.13, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Jan.13, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Jan.13, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Jan.13, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. New Content
+* Weapon Archives Available Now:
+ - Added Weapon Archives system for players to view and compare the attributes of different weapons;
+ - Added weapon proficiency and proficiency rankings, where the players with higher proficiency can obtain the time-limited title "Gun King".
+
+2. Bug Fixes
+* Fixed the inconsistency between the explosion model and collision of all vehicles;
+* Fixed the issue of invisible barriers in certain locations on the map.
+
+The Rules of Survival Development and Community Team
+
+$< $nor  $H:Notice on Jan.5-6$h: $>
+
+Attention Survivors:
+
+Rules of Survival will be updated from #cFF9900Jan.5-6#n with the aim of improving your gaming experience. Check maintenance times below to see when it takes place in your region.
+        PDT (Los Angeles): 3:00 PM, - 6:00 PM,Jan.5, 2021
+        EDT (New York): 6:00 PM - 9:00 PM, Jan.5, 2021
+        UTC : 10:00 PM, Jan.5 - 1:00 AM, Jan.6, 2021
+        UTC+1 (London): 11:00 PM, Jan.5- 2:00 AM, Jan.6, 2021
+        UTC+2 (Paris, Berlin): 11:59 PM, Jan.5 - 3:00 AM, Jan.6, 2021
+        UTC+3 (Istanbul, Moscow): 1:00 AM - 4:00 AM, Jan.6, 2021
+        UTC+7 (Bangkok, Hanoi): 05:00 - 08:00, Jan.6, 2021
+        UTC+8 (Singapore, Manila): 06:00 - 09:00, Jan.6, 2021
+        UTC+9 (Tokyo, Seoul): 07:00 - 10:00,Jan.6, 2021
+The maintenance times above are subject to change, but we will do our upmost to get back up and running ASAP.
+
+1. New Content
+* Xmas Event has ended
+
+2. Bug Fixes
+* Fixed the issue of self-driving vehicles on the PC version; 
+* Fixed the inconsistency between the explosion model and collision of Sports Car; 
+* Fixed the issue where the characters with Wingman - Monsieur X may turn around when the camera angle changes.
+
+The Rules of Survival Development and Community Team
+
+
+$AED$
+
+Official website:  #cFF9900http://www.rulesofsurvivalgame.com/#n
+
+Official FACEBOOK:  #cFF9900https://www.facebook.com/RulesofSurvival/#n
+
+Customer Service : 
+    1. Click #cFF9900"Settings"#n in lobby --> #cFF9900CS Center#n (Recommended)
+    2. Email to #cFF9900gamerulesofsurvival@global.netease.com#n (if you can't log in the game)
+
+Cheater reporting process:
+    1. Reporting in the game itself. If you found evidence of cheating, report the player on the post-death screen or while spectating the cheater.
+    2. Reporting on the website here: #cFF9900https://rulesofsurvival.neteasegamer.com/thread-5167-1-1.html#n
+    3. Appeal an unjustified ban: #cFF9900https://rulesofsurvival.neteasegamer.com/thread-5164-1-1.html#n
+
+
+$CED$

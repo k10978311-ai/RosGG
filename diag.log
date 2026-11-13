@@ -1,0 +1,9 @@
+﻿13:33:20 Device: Android Emulator 5554 (emulator-5554)
+13:33:21 Attached to pid 18665
+13:33:21 [*] modules matching client/neox:
+13:33:21     libdebuggerd_client.so  base=0x763913f16000  size=24576  path=/system/lib64/libdebuggerd_client.so
+13:33:21     libcamera_client.so  base=0x763914117000  size=352256  path=/system/lib64/libcamera_client.so
+13:33:21     libaudioclient.so  base=0x763915702000  size=503808  path=/system/lib64/libaudioclient.so
+13:33:21     libnetd_client.so  base=0x7639159ca000  size=16384  path=/system/lib64/libnetd_client.so
+13:33:21     libtombstoned_client.so  base=0x763892aa6000  size=24576  path=/system/lib64/libtombstoned_client.so
+13:33:21 [*] findModuleByName(libclient.so) = NULL
