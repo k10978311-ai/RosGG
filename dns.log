@@ -1423,3 +1423,9 @@
 16:15:06 [DNS] dl.nstool.easebar.com (type 1) -> 192.168.1.18
 16:15:06 [DNS] data-detect.nie.easebar.com (type 28) -> empty
 16:15:06 [DNS] data-detect.nie.easebar.com (type 1) -> 192.168.1.18
+16:22:16 [DNS] dl.nstool.easebar.com (type 28) -> empty
+16:22:16 [DNS] dl.nstool.easebar.com (type 1) -> 192.168.1.18
+16:22:16 [DNS] data-detect.nie.easebar.com (type 28) -> empty
+16:22:16 [DNS] data-detect.nie.easebar.com (type 1) -> 192.168.1.18
+16:23:19 [DNS] proxy-state.nie.easebar.com (type 28) -> empty
+16:23:19 [DNS] proxy-state.nie.easebar.com (type 1) -> 192.168.1.18
