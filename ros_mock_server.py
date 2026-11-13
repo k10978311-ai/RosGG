@@ -287,24 +287,34 @@ class GateUDP(asyncio.DatagramProtocol):
 
             try:
                 import loginapp
-                bf_key = CURRENT_BF_KEY or bytes.fromhex("0b6afd8e")
+                bf_key = CURRENT_BF_KEY
+                if not bf_key:
+                    try:
+                        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "latest_bf_key.bin"), "rb") as f:
+                            bf_key = f.read().strip()
+                    except Exception:
+                        bf_key = bytes.fromhex("aa6a4a51")
                 
                 # Check if this is a BaseApp login request:
                 # flags=0x0001 (HAS_REQUESTS), msg_id=0 (baseAppLogin)
                 if data[:3] == b"\x01\x00\x00":
-                    req_id = data[5:9]
-                    print(f"  [{ts}] [BASEAPP LOGIN REQ] from {addr} req_id={req_id.hex()} ({struct.unpack('<I', req_id)[0]})")
-                    session_key = struct.pack("<I", 0x11223344)
-                    reply_body = req_id + session_key
-                    reply_msg = b"\xff" + struct.pack("<I", len(reply_body)) + reply_body
-                    clear_reply = struct.pack("<H", 0x0040) + reply_msg + struct.pack("<I", 1)  # 19 bytes
+                    req_id_5 = data[5:9]
+                    req_id_7 = data[7:11]
+                    session_key = data[11:15] if len(data) >= 15 else struct.pack("<I", 0x11223344)
+                    print(f"  [{ts}] [BASEAPP LOGIN REQ] from {addr} req5={req_id_5.hex()} req7={req_id_7.hex()} sess={session_key.hex()} bf={bf_key.hex() if bf_key else None}")
+                    
+                    # Bundle both candidate reply IDs and createBasePlayer:
+                    reply_msg1 = b"\xff" + struct.pack("<I", 8) + req_id_7 + session_key
+                    reply_msg2 = b"\xff" + struct.pack("<I", 8) + req_id_5 + session_key
+                    cbp_msg = b"\x04" + struct.pack("<H", 6) + struct.pack("<I", 10001) + struct.pack("<H", 1)
+                    clear_reply = struct.pack("<H", 0x0040) + reply_msg1 + reply_msg2 + cbp_msg + struct.pack("<I", 1)
                     
                     # Pad to multiple of 8 with wastage byte for EncryptionFilter
                     pad_len = 8 - (len(clear_reply) % 8)
                     padded = clear_reply + b"\x00" * (pad_len - 1) + bytes([pad_len])
                     enc_reply = loginapp.custom_bf_encrypt(bytes(bf_key), padded)
                     self.transport.sendto(enc_reply, addr)
-                    print(f"  [{ts}] [BASEAPP LOGIN REPLY] Sent BF-encrypted reply ({len(enc_reply)}B, req_id={req_id.hex()}) to {addr}")
+                    print(f"  [{ts}] [BASEAPP LOGIN REPLY] Sent BF-encrypted reply ({len(enc_reply)}B) to {addr}")
                     return
 
                 # Encrypted BaseApp traffic (channel established)
