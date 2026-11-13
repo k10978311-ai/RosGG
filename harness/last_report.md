@@ -1,43 +1,46 @@
-# RoS Harness — Iteration 2
+# RoS Harness — Iteration 3 (LD debug)
 
-**When:** 2026-11-13 23:06  
-**Command:** `harness_loop.ps1 -TapPlay` (`REPLY_VARIANT=24`, default `SESSION_U32` → `0x11223344`)
+**When:** 2026-11-13 23:44  
+**Branch:** `harness/baseapp-bf-key` (PR #1)  
+**Command:** `harness\ld_debug.ps1 -TapPlay` (`REPLY_VARIANT=24`, `BF_SPEC=1:4`)
 
-## Coherence check (LoginApp ↔ BaseApp)
+## Results
 
-| Piece | Behavior |
-|-------|----------|
-| `loginapp.build_reply` | `LoginReplyRecord.session_key` from `extract_session_u32(params)` (default **11223344**; override `SESSION_U32_HEX` or `SESSION_U32_SPEC=off:4` on `LogOnParams.rest`) |
-| `loginapp.build_baseapp_reply` | `rdata` = probe bytes **[11:15]**; reply payload **req_id@[7:11] + sess_key** (variant 1); flags `0x0040` + seq footer `1` |
-| `ros_mock_server` BaseApp handler | Parses `req_id@5:9`, `sess@11:15`, attempt; sends `build_baseapp_reply` when `BASEAPP_ACK≠on` |
+| Check | Outcome |
+|-------|---------|
+| LDPlayer ping PC | OK |
+| Phone (Note10+) ping PC | FAIL (different LAN — unchanged) |
+| Mercury LOGIN on wire | Yes — seq `5c67`, bf=`20b0ed72` (4-byte key) |
+| BaseApp probes | Yes — `0100000b` probes; capture totals **LOGIN 45 / PROBE 115** (+64 B delta this tap) |
+| Logcat | UniSDK **:8080 ConnectException** (aux); EntityDef init noise; **no** clear LoginHandler success string |
+| Mock server | Restarted with branch code + `BF_SPEC=1:4` |
 
-**Wire-level:** BaseApp handler mirrors `build_baseapp_reply` (same offsets, same 8-byte inner payload). **Semantic gap:** latest probe `sess=968f892b` still ≠ login record `session_key=11223344` — client likely not applying `onLoginReply` yet; probes use client-local nonce.
+**Latest variant-24 reply (40B):**  
+`4000ff1d0000005c670100019a48af099cf8587d9a48af099cf8587d68ee1e8b47a8663301000000`
 
-## Harness results
+## Harness tweak
 
-| Device | Ping PC | Logcat lines | Mercury / ServerConnection / logOn |
-|--------|---------|--------------|-------------------------------------|
-| LDPlayer | OK | 602 | **No hits** (widened patterns); UniSDK **8080 ConnectException** only |
-| Note10+ | **FAIL** | 112 | Same — phone off LAN |
+- `ld_debug.ps1` now defaults `BF_SPEC=1:4` (was `1:16`).
 
-**Captures:** LOGIN **57** (+1), PROBE **50** (+5); `gate_capture_delta=0` (server process not restarted this tap — counts from existing `gate_capture.bin` tail).
+## Frida discovery (blocked this run)
 
-## Code (iteration 2)
+`run_frida.py` attached to **phone** (`R3CM90BCXGJ`) — Frida server not running there. For LD-only discovery: unplug phone **or** add device selection; then:
 
-- `extract_session_u32()` in `loginapp.py` (`SESSION_U32_SPEC`, `SESSION_U32_HEX`, default `0x11223344`)
-- Wider logcat patterns in `harness_loop.ps1` (Mercury, ServerConnection, logOn, LoginHandler, …)
-- Removed unreachable tail in `build_baseapp_reply`
+```powershell
+$env:ANDROID_SERIAL='emulator-5554'  # if supported
+python run_frida.py frida/neox_py_discover.js --attach --realm emulated
+E:\LDPlayer\LDPlayer9\adb.exe -s emulator-5554 shell cat /sdcard/neox_py_discover.log
+```
 
-## Next
+## Next hypothesis
+
+1. Align `SESSION_U32` with probe `field` bytes once client accepts login record (try `SESSION_U32_SPEC` / `SESSION_U32_HEX` from latest probe `d361245d` region).
+2. Watch **new** mock-server window for `[BASEAPP LOGIN REPLY]` + `createBasePlayer` after this restart (older `server.log` is stale).
+3. Optional stub **:8080** in mock server if UniSDK blocks UI thread before Mercury retry.
 
 ```powershell
 $env:ROS_PC_IP = "192.168.100.137"
 $env:REPLY_VARIANT = "24"
-$env:BASEAPP_REPLY_VARIANT = "1"
-# A/B once login accepted: $env:SESSION_U32_HEX = "968f892b"
-# Restart mock server so UDP handler picks up loginapp changes:
-python -u ros_mock_server.py
-.\harness\harness_loop.ps1 -TapPlay
+$env:BF_SPEC = "1:4"
+.\harness\ld_debug.ps1 -TapPlay
 ```
-
-**Follow-up (parent):** BaseApp replies now use `_seq_footer(probe)`; server logs `session_u32=` per login; harness saves `*_mercury.log`; A/B via `.\harness\ab_login_reply.ps1 -TapPlay`.

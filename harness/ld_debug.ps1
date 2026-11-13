@@ -6,7 +6,7 @@ Set-Location $Root
 
 $env:ROS_PC_IP = if ($env:ROS_PC_IP) { $env:ROS_PC_IP } else { "192.168.100.137" }
 $env:REPLY_VARIANT = if ($env:REPLY_VARIANT) { $env:REPLY_VARIANT } else { "24" }
-$env:BF_SPEC = "1:16"
+$env:BF_SPEC = if ($env:BF_SPEC) { $env:BF_SPEC } else { "1:4" }
 $env:BASEAPP_ACK = "off"
 $env:BASEAPP_REPLY_VARIANT = if ($env:BASEAPP_REPLY_VARIANT) { $env:BASEAPP_REPLY_VARIANT } else { "1" }
 
