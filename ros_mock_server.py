@@ -14,6 +14,7 @@ LOCAL_SERVER_IP = os.environ.get("ROS_PC_IP", "192.168.100.137")  # match real/s
 HTTP_PORT = 80
 GATE_TCP_PORT = 20001
 CURRENT_BF_KEY = None
+CURRENT_SESSION_U32 = None
 
 # Hosts still alive at NetEase: requests are passed through to the real server (resolved via 8.8.8.8).
 PASSTHROUGH_HOSTS = {
@@ -268,8 +269,10 @@ class GateUDP(asyncio.DatagramProtocol):
                 if res:
                     global CURRENT_BF_KEY
                     pkt, params, bf = res
+                    global CURRENT_SESSION_U32
                     CURRENT_BF_KEY = bf
-                    sk = loginapp.extract_session_u32(params).hex()
+                    CURRENT_SESSION_U32 = loginapp.extract_session_u32(params)
+                    sk = CURRENT_SESSION_U32.hex()
                     print(f"  [{_t.strftime('%H:%M:%S')}] [LOGIN] TRY msgid={msgid} (0x{msgid:02x}) -> {len(pkt)}B: {pkt.hex()}")
                     print(f"      user={params.get('username')} session_u32={sk} rest={params.get('rest',b'').hex()} bf={bf.hex() if bf else None}")
                     self.transport.sendto(pkt, addr)
@@ -294,20 +297,38 @@ class GateUDP(asyncio.DatagramProtocol):
                             bf_key = f.read().strip()
                     except Exception:
                         bf_key = bytes.fromhex("aa6a4a51")
+
+                # Pre-channel baseAppLogin probes (cleartext, magic 0x0b)
+                if data[:4] == b"\x01\x00\x00\x0b":
+                    var = os.environ.get("BASEAPP_REPLY_VARIANT", "1")
+                    try:
+                        variant = int(var)
+                    except ValueError:
+                        variant = 1
+                    probe_bf = bf_key if os.environ.get("BASEAPP_PROBE_BF", "off") == "on" else None
+                    pkt = loginapp.build_baseapp_reply(data, variant, probe_bf)
+                    if pkt:
+                        self.transport.sendto(pkt, addr)
+                        print(
+                            f"  [{ts}] [BASEAPP PROBE 0x0b] variant={variant} -> {len(pkt)}B: {pkt.hex()}"
+                        )
+                    return
                 
                 # Check if this is a BaseApp login request:
                 # flags=0x0001 (HAS_REQUESTS), msg_id=0 (baseAppLogin)
                 if data[:3] == b"\x01\x00\x00":
                     req_id_5 = data[5:9]
                     req_id_7 = data[7:11]
-                    session_key = data[11:15] if len(data) >= 15 else struct.pack("<I", 0x11223344)
+                    if CURRENT_SESSION_U32 and len(CURRENT_SESSION_U32) == 4:
+                        session_key = CURRENT_SESSION_U32
+                    else:
+                        session_key = data[11:15] if len(data) >= 15 else struct.pack("<I", 0x11223344)
                     print(f"  [{ts}] [BASEAPP LOGIN REQ] from {addr} req5={req_id_5.hex()} req7={req_id_7.hex()} sess={session_key.hex()} bf={bf_key.hex() if bf_key else None}")
                     
-                    # Bundle both candidate reply IDs and createBasePlayer:
+                    # Bundle both candidate reply IDs:
                     reply_msg1 = b"\xff" + struct.pack("<I", 8) + req_id_7 + session_key
                     reply_msg2 = b"\xff" + struct.pack("<I", 8) + req_id_5 + session_key
-                    cbp_msg = b"\x04" + struct.pack("<H", 6) + struct.pack("<I", 10001) + struct.pack("<H", 1)
-                    clear_reply = struct.pack("<H", 0x0040) + reply_msg1 + reply_msg2 + cbp_msg + struct.pack("<I", 1)
+                    clear_reply = struct.pack("<H", 0x0040) + reply_msg1 + reply_msg2 + struct.pack("<I", 1)
                     
                     # Pad to multiple of 8 with wastage byte for EncryptionFilter
                     pad_len = 8 - (len(clear_reply) % 8)
@@ -333,7 +354,7 @@ class GateUDP(asyncio.DatagramProtocol):
                 
                 client_seq = 0
                 if flags & 0x0040:  # HAS_SEQUENCE
-                    client_seq = struct.unpack(">I", pkt[-4:])[0]
+                    client_seq = struct.unpack("<I", pkt[-4:])[0]
                     print(f"      [BASEAPP] Client seq #{client_seq}")
                 
                 # Flags: ON_CHANNEL(0x0008) | RELIABLE(0x0010) | HAS_ACKS(0x0004) | HAS_SEQUENCE(0x0040) = 0x005c
@@ -342,8 +363,8 @@ class GateUDP(asyncio.DatagramProtocol):
                 # Messages:
                 # ID 3: resetEntities (1 byte fixed: 0 = dont keep player on base)
                 msg_reset = b"\x03\x00"
-                # ID 4: createBasePlayer (2-byte len, entityID=1001 uint32 LE, entityType=0 uint16 LE)
-                msg_create = b"\x04" + struct.pack("<H", 6) + struct.pack("<I", 1001) + struct.pack("<H", 0)
+                # ID 4: createBasePlayer (entityID=10001, entityType=1 per HANDOFF / Avatar)
+                msg_create = b"\x04" + struct.pack("<H", 6) + struct.pack("<I", 10001) + struct.pack("<H", 1)
                 body = msg_reset + msg_create
                 
                 # Footers (LIFO order: seq footer, ack seqs, nAcks at the very end):
@@ -382,6 +403,30 @@ def start_http_server():
     httpd.serve_forever()
 
 
+class Stub8080Handler(BaseHTTPRequestHandler):
+    """Minimal OK stub so UniSDK JNI stops blocking on PC:8080 ConnectException."""
+
+    def log_message(self, fmt, *args):
+        print(f"[HTTP:8080] {self.address_string()} {fmt % args}")
+
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header("Content-Type", "application/json")
+        self.end_headers()
+        self.wfile.write(b'{"code":0,"status":"ok"}')
+
+    def do_POST(self):
+        self.do_GET()
+
+
+def start_stub_8080():
+    if os.environ.get("STUB_8080", "on") != "on":
+        return
+    httpd = ThreadingHTTPServer((HOST_IP, 8080), Stub8080Handler)
+    print(f"[*] UniSDK stub HTTP on {HOST_IP}:8080 (STUB_8080=off to disable)")
+    httpd.serve_forever()
+
+
 class LoggingTLSServer(ThreadingHTTPServer):
     """HTTPS server that logs handshake failures (e.g. client rejected our cert)."""
     def handle_error(self, request, client_address):
@@ -409,4 +454,5 @@ if __name__ == "__main__":
     builtins.print = functools.partial(builtins.print, flush=True)  # unbuffered logs
     threading.Thread(target=start_http_server, daemon=True).start()
     threading.Thread(target=start_https_server, daemon=True).start()
+    threading.Thread(target=start_stub_8080, daemon=True).start()
     asyncio.run(start_tcp_gate())

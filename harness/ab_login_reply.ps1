@@ -9,7 +9,7 @@ Write-Host "Run each variant with a FRESH ros_mock_server.py process."
 foreach ($v in $Variants) {
     Write-Host "`n========== REPLY_VARIANT=$v =========="
     $env:REPLY_VARIANT = "$v"
-    $env:BF_SPEC = "1:16"
+    $env:BF_SPEC = "1:4"
     $env:BASEAPP_ACK = "off"
     $env:BASEAPP_REPLY_VARIANT = "1"
     Write-Host "Set in server terminal: `$env:REPLY_VARIANT='$v' then restart python ros_mock_server.py"
