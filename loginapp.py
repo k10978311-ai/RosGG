@@ -56,11 +56,13 @@ def decrypt_logon(rsa_block):
 
 def extract_blowfish_key(params):
     """The tail of LogOnParams holds the Blowfish session key.
-    Structure: [len: 1 byte = 0x04] [4-byte BF key] [session nonce / data]
-    The 4-byte key follows at offset 1; encryption mode is CBC with zero IV."""
+    Structure: [0x04 = key length: 4 bytes] [4-byte BF key] ...
+    The client initializes Blowfish with this 4-byte key (BF_SPEC=1:4 on this build)."""
     import os as _os
     rest = params.get("rest", b"")
-    spec = _os.environ.get("BF_SPEC", "1:4")
+    spec = _os.environ.get("BF_SPEC")
+    if not spec or spec in ("1:16", "2:16"):
+        spec = "1:4"
     if spec == "sweep":
         f = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "bf_off.txt")
         try:
@@ -101,6 +103,47 @@ def extract_session_u32(params):
     return struct.pack("<I", int(os.environ.get("SESSION_U32", "0x11223344"), 0))
 
 
+def custom_bf_encrypt(key, data):
+    """NeoX Mercury EncryptionFilter custom plaintext-feedback Blowfish mode.
+    Block 0: BF_ecb_encrypt(P[0])
+    Block i: BF_ecb_encrypt(P[i] ^ P[i-1])
+    """
+    from Crypto.Cipher import Blowfish
+    cipher = Blowfish.new(key, Blowfish.MODE_ECB)
+    out = bytearray()
+    prev_plain = None
+    for i in range(0, len(data), 8):
+        block = data[i:i+8]
+        if prev_plain is not None:
+            xored = bytes(a ^ b for a, b in zip(block, prev_plain))
+        else:
+            xored = block
+        out.extend(cipher.encrypt(xored))
+        prev_plain = block
+    return bytes(out)
+
+
+def custom_bf_decrypt(key, data):
+    """NeoX Mercury EncryptionFilter custom plaintext-feedback Blowfish mode decrypt.
+    Block 0: BF_ecb_decrypt(C[0])
+    Block i: BF_ecb_decrypt(C[i]) ^ P[i-1]
+    """
+    from Crypto.Cipher import Blowfish
+    cipher = Blowfish.new(key, Blowfish.MODE_ECB)
+    out = bytearray()
+    prev_plain = None
+    for i in range(0, len(data), 8):
+        block = data[i:i+8]
+        dec = cipher.decrypt(block)
+        if prev_plain is not None:
+            plain = bytes(a ^ b for a, b in zip(dec, prev_plain))
+        else:
+            plain = dec
+        out.extend(plain)
+        prev_plain = plain
+    return bytes(out)
+
+
 def build_reply(data, local_ip, baseapp_port, variant=0):
     """Build a candidate reply for a captured login request `data`."""
     if len(data) < 145 or data[:4] != b"\x01\x00\x00\x84":
@@ -137,12 +180,12 @@ def build_reply(data, local_ip, baseapp_port, variant=0):
     else:
         request_id = data[7:11]
 
-    # LoginReplyRecord: Mercury::Address(serverAddr) + sessionKey(uint32) + ticket/padding (8 bytes) = 20 bytes total (read at libclient.so+0x93c58c)
+    # LoginReplyRecord in NeoX ARM64 (20 bytes read by LoginHandler::onLoginReply):
     ip_bytes = socket.inet_aton(local_ip)
     port_be = struct.pack(">H", baseapp_port)
-    salt = b"\x00\x00"
     session_key = extract_session_u32(params)
-    record = ip_bytes + port_be + salt + session_key + (b"\x00" * 8)     # 20 bytes
+    record20 = ip_bytes + port_be + b"\x00" * 10 + session_key   # 20 bytes
+    record = record20 + b"\x00" * 4                              # 24 bytes (BF block alignment)
 
     # Variant selects the reply-data shape / encryption while we converge on the client's reaction.
     if variant == 10:        # LoginReplyRecord, plaintext
@@ -162,21 +205,11 @@ def build_reply(data, local_ip, baseapp_port, variant=0):
             pass
     elif variant == 23:      # status(LOGGED_ON) + plaintext record
         rdata = bytes([LOGON_STATUS_LOGGED_ON]) + record
-    elif variant == 24:      # status + blowfish-encrypted record
-        import os as _os
-        mode = _os.environ.get("BF_MODE", "cbc")
+    elif variant == 24:      # status + NeoX custom_bf encrypted 24-byte record
         enc_rec = record
         try:
-            from Crypto.Cipher import Blowfish
             if bf:
-                padded = record + b"\x00" * ((-len(record)) % 8)
-                if mode == "cbc":
-                    c = Blowfish.new(bytes(bf), Blowfish.MODE_CBC, b"\x00" * 8)
-                elif mode == "cfb":
-                    c = Blowfish.new(bytes(bf), Blowfish.MODE_CFB, b"\x00" * 8)
-                else:
-                    c = Blowfish.new(bytes(bf), Blowfish.MODE_ECB)
-                enc_rec = c.encrypt(padded)
+                enc_rec = custom_bf_encrypt(bytes(bf), record)
         except Exception as _e:
             print(f"      [BF enc err] {_e}")
         rdata = bytes([LOGON_STATUS_LOGGED_ON]) + enc_rec

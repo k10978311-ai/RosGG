@@ -13,6 +13,7 @@ HOST_IP = "0.0.0.0"          # Listen on all interfaces
 LOCAL_SERVER_IP = os.environ.get("ROS_PC_IP", "192.168.100.137")  # match real/server_list_ad.local.txt
 HTTP_PORT = 80
 GATE_TCP_PORT = 20001
+CURRENT_BF_KEY = None
 
 # Hosts still alive at NetEase: requests are passed through to the real server (resolved via 8.8.8.8).
 PASSTHROUGH_HOSTS = {
@@ -231,6 +232,7 @@ class GateUDP(asyncio.DatagramProtocol):
     def __init__(self, port):
         self.port = port
         self._login_replied = {}   # addr -> True, to track post-login packets
+        self._server_seq = 0
     def connection_made(self, transport):
         self.transport = transport
     def datagram_received(self, data, addr):
@@ -264,11 +266,12 @@ class GateUDP(asyncio.DatagramProtocol):
                         fh.write(str((msgid + 1) & 0xFF))
                 res = loginapp.build_reply(data, LOCAL_SERVER_IP, 25000, msgid)
                 if res:
+                    global CURRENT_BF_KEY
                     pkt, params, bf = res
+                    CURRENT_BF_KEY = bf
                     sk = loginapp.extract_session_u32(params).hex()
-                    print(f"  [{_t.strftime('%H:%M:%S')}] [LOGIN] SENT REPLY variant={msgid} -> {len(pkt)}B: {pkt.hex()}")
-                    print(f"      Decrypted: user={params.get('username')} error={params.get('error')}")
-                    print(f"      session_u32={sk} rest={params.get('rest',b'').hex() if isinstance(params.get('rest'), (bytes, bytearray)) else ''} bf={bf.hex() if bf else None}")
+                    print(f"  [{_t.strftime('%H:%M:%S')}] [LOGIN] TRY msgid={msgid} (0x{msgid:02x}) -> {len(pkt)}B: {pkt.hex()}")
+                    print(f"      user={params.get('username')} session_u32={sk} rest={params.get('rest',b'').hex()} bf={bf.hex() if bf else None}")
                     self.transport.sendto(pkt, addr)
                     self._login_replied[addr] = True
             except Exception as e:
@@ -276,43 +279,81 @@ class GateUDP(asyncio.DatagramProtocol):
                 print(f"  [REPLY ERROR] {e}\n{traceback.format_exc()}")
             return
 
-        # --- BaseApp Mercury channel probe handler ---
-        # After login reply, client sends Mercury channel-creation packets here.
-        # Log them prominently so we can study them.
+        # --- BaseApp Mercury channel handler ---
         if self.port == 25000 and not is_login:
             ts = _t.strftime('%H:%M:%S')
-            print(f"  [{ts}] *** BASEAPP PROBE from {addr}: {data.hex()} ***")
-            # Capture to a separate file for easy analysis
             with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "baseapp_capture.bin"), "ab") as f:
                 f.write(len(data).to_bytes(2, 'little') + data)
 
-            if data[:4] == b"\x01\x00\x00\x0b" and len(data) >= 15:
-                req_id = data[5:9]
-                sess_key = data[11:15]
-                attempt = struct.unpack("<I", data[15:19])[0] if len(data) >= 19 else 1
-                print(
-                    f"  [{ts}] [BASEAPP] baseAppLogin attempt {attempt}: "
-                    f"req_id={req_id.hex()} sess_key={sess_key.hex()} seq_footer={data[7:11].hex()}"
-                )
+            try:
+                import loginapp
+                bf_key = CURRENT_BF_KEY or bytes.fromhex("0b6afd8e")
+                
+                # Check if this is a BaseApp login request:
+                # flags=0x0001 (HAS_REQUESTS), msg_id=0 (baseAppLogin)
+                if data[:3] == b"\x01\x00\x00":
+                    req_id = data[5:9]
+                    print(f"  [{ts}] [BASEAPP LOGIN REQ] from {addr} req_id={req_id.hex()} ({struct.unpack('<I', req_id)[0]})")
+                    session_key = struct.pack("<I", 0x11223344)
+                    reply_body = req_id + session_key
+                    reply_msg = b"\xff" + struct.pack("<I", len(reply_body)) + reply_body
+                    clear_reply = struct.pack("<H", 0x0040) + reply_msg + struct.pack("<I", 1)  # 19 bytes
+                    
+                    # Pad to multiple of 8 with wastage byte for EncryptionFilter
+                    pad_len = 8 - (len(clear_reply) % 8)
+                    padded = clear_reply + b"\x00" * (pad_len - 1) + bytes([pad_len])
+                    enc_reply = loginapp.custom_bf_encrypt(bytes(bf_key), padded)
+                    self.transport.sendto(enc_reply, addr)
+                    print(f"  [{ts}] [BASEAPP LOGIN REPLY] Sent BF-encrypted reply ({len(enc_reply)}B, req_id={req_id.hex()}) to {addr}")
+                    return
 
-                import loginapp, importlib
-                importlib.reload(loginapp)
-                if os.environ.get("BASEAPP_ACK", "off") == "on":
-                    variant = 0
+                # Encrypted BaseApp traffic (channel established)
+                if len(data) % 8 == 0:
+                    pt = loginapp.custom_bf_decrypt(bytes(bf_key), data)
+                    wastage = pt[-1]
+                    if wastage <= 8:
+                        pkt = bytes(pt[:-wastage])
+                    else:
+                        pkt = bytes(pt)
                 else:
-                    variant = os.environ.get("BASEAPP_REPLY_VARIANT", "1")
-                    try:
-                        variant = int(variant)
-                    except ValueError:
-                        pass
-                pkt = loginapp.build_baseapp_reply(data, variant)
-                if pkt:
-                    self.transport.sendto(pkt, addr)
-                    print(
-                        f"  [{ts}] [BASEAPP] SENT REPLY variant={variant} -> "
-                        f"{len(pkt)}B: {pkt.hex()} to {addr}"
-                    )
-                return
+                    pkt = data
+                
+                flags = struct.unpack("<H", pkt[:2])[0]
+                print(f"  [{ts}] [BASEAPP RECV] {len(pkt)}B flags=0x{flags:04x} pt={pkt.hex()}")
+                
+                client_seq = 0
+                if flags & 0x0040:  # HAS_SEQUENCE
+                    client_seq = struct.unpack(">I", pkt[-4:])[0]
+                    print(f"      [BASEAPP] Client seq #{client_seq}")
+                
+                # Flags: ON_CHANNEL(0x0008) | RELIABLE(0x0010) | HAS_ACKS(0x0004) | HAS_SEQUENCE(0x0040) = 0x005c
+                header = struct.pack("<H", 0x005c)
+                
+                # Messages:
+                # ID 3: resetEntities (1 byte fixed: 0 = dont keep player on base)
+                msg_reset = b"\x03\x00"
+                # ID 4: createBasePlayer (2-byte len, entityID=1001 uint32 LE, entityType=0 uint16 LE)
+                msg_create = b"\x04" + struct.pack("<H", 6) + struct.pack("<I", 1001) + struct.pack("<H", 0)
+                body = msg_reset + msg_create
+                
+                # Footers (LIFO order: seq footer, ack seqs, nAcks at the very end):
+                # Note: NeoX ARM64 uses Little-Endian (<I) for SeqNum on the wire!
+                # [server_seq: 4B LE] [ack_seq: 4B LE] [nAcks: 1B = 1]
+                footer = struct.pack("<I", self._server_seq) + struct.pack("<I", client_seq) + b"\x01"
+                self._server_seq += 1
+                
+                cleartext = header + body + footer
+                pad_len = 8 - (len(cleartext) % 8)
+                if pad_len == 0:
+                    pad_len = 8
+                padded = cleartext + b"\x00" * (pad_len - 1) + bytes([pad_len])
+                
+                enc = loginapp.custom_bf_encrypt(bytes(bf_key), padded)
+                self.transport.sendto(enc, addr)
+                print(f"  [{ts}] [BASEAPP SEND] Sent on-channel ACK + createBasePlayer ({len(enc)}B, seq={self._server_seq-1}, ack_client_seq={client_seq})")
+            except Exception as e:
+                import traceback
+                print(f"  [{ts}] [BASEAPP ERROR] {e}\n{traceback.format_exc()}")
 
 
 async def start_tcp_gate():
