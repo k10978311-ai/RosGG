@@ -19,7 +19,47 @@ can't.
 | Guest login + auto-login | ✅ **forged** locally (NetEase refuses with "service stopped" / "user does not exist") |
 | EULA, logged in as **Guest**, `af_login` fired | ✅ |
 | **Login RSA wall** | ✅ **broken** — key-swapped; client's `LogOnParams` now decryptable with our key (see "Groundwork") |
-| **PLAY → join game server (`:25000`)** | ⏳ client sends login, still waits for a LoginApp reply we don't yet produce |
+| **LoginApp login reply** | ✅ **solved** — client reaches `ServerConnection::logOn: status==LOGGED_ON` |
+| **BaseApp handshake (entities → hall)** | ⏳ client connects to BaseApp, exchanges `authenticate`/`createBasePlayer`, handshake loops |
+
+## ★ Breakthrough: client reaches `status==LOGGED_ON`
+
+The full LoginApp Mercury login is now emulated end to end. Working reply (loginapp.py `build_reply`
+variant 24, flags `0x40`):
+
+```
+[flags=0x40 00] [0xFF] [len:u32] [reply_id:u32] [status=0x01] [BF(LoginReplyRecord)] [seq=1 :u32]
+```
+
+Solved pieces, in order:
+1. **Reply framing** — off-channel packet, `0xFF` reply message, DWORD length (Cimmeria RE).
+2. **Reply-id** = the client's request id at **packet offset 5–8** (`data[5:9]`), echoed back → the
+   client's `Nub::handleMessage` matches its pending login handler and calls `LoginHandler::onLoginReply`.
+3. **LogOnStatus byte** `0x01` (LOGGED_ON), read in clear before the encrypted record.
+4. **LoginReplyRecord** `{ip:4, port:2, salt:2, sessionKey:4}` **Blowfish-encrypted** with the client's
+   session key. The key is the **4 bytes at LogOnParams-tail offset 1** (the `04` prefix is the length;
+   bytes 1–4 are the only per-session-random bytes — confirmed by diffing three sessions).
+5. **Cipher** — not plain ECB. NeoX uses a **plaintext-feedback Blowfish** mode
+   (`loginapp.custom_bf_{encrypt,decrypt}`): block0 = `BF(P0)`, blockN = `BF(PN ^ P(N-1))`. This yielded
+   `onLoginReply: convertAddress ... 192.168.1.18` and `checkScriptBaseAppAddr addr=192.168.1.18:25000`.
+
+Result on the wire:
+```
+ServerConnection::logOn: status==LOGGED_ON
+ServerConnection::logOn: to:   192.168.1.18:25000
+```
+
+> **Provenance note:** the BaseApp-channel handler in `ros_mock_server.py` and the custom-Blowfish
+> helpers in `loginapp.py` were written across a usage-limit reset (they appeared on disk between turns).
+> They are a direct continuation of this work and are what carried the client to LOGGED_ON.
+
+### Remaining: BaseApp entity handshake → 3D hall
+After login the client connects to the BaseApp (`:25000`, our gate), sends `authenticate` on the
+channel, and the server replies with `resetEntities` + `createBasePlayer`. The client currently **loops**
+(re-sending `authenticate`), so the channel ACK / entity-creation sequence isn't fully accepted yet. This
+is the BaseApp/CellApp entity protocol (the real "server emulator" part): correct on-channel ACK of the
+client's reliable seq, then a valid `createBasePlayer`/`createCellPlayer` + the player entity's `.def`
+properties so the hall scene loads.
 
 ### The wall
 
