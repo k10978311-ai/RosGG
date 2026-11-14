@@ -17,7 +17,7 @@ PRIV = os.path.join(os.path.dirname(os.path.abspath(__file__)), "server_keys", "
 LOGON_STATUS_LOGGED_ON = 1
 
 # Blowfish key slice inside decrypted LogOnParams.rest (confirmed on build 1.610637.617289)
-os.environ.setdefault("BF_SPEC", "1:16")
+os.environ["BF_SPEC"] = "1:4"
 
 
 def _seq_footer(data):
@@ -232,6 +232,12 @@ def build_reply(data, local_ip, baseapp_port, variant=0):
     else:
         flags = struct.pack("<H", 0x0058)
         pkt = flags + reply_msg + seq_footer
+    if bf:
+        try:
+            with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "latest_bf_key.bin"), "wb") as f:
+                f.write(bytes(bf))
+        except Exception:
+            pass
     return pkt, params, bf
 
 
@@ -248,6 +254,41 @@ def parse_mercury_probe(data):
     }
 
 
+def _bundle_body(pkt: bytes) -> bytes:
+    """Mercury packet body after flags, without seq footer when HAS_SEQUENCE."""
+    if len(pkt) < 2:
+        return b""
+    flags = struct.unpack("<H", pkt[:2])[0]
+    body = pkt[2:]
+    if flags & 0x0040 and len(body) >= 4:
+        body = body[:-4]
+    return body
+
+
+def extract_identify_version_point(pkt: bytes):
+    """Parse BaseAppExtInterface message 12 (0x0c identifyVersionPoint) from a bundle."""
+    body = _bundle_body(pkt)
+    i = 0
+    while i + 3 <= len(body):
+        msg_id = body[i]
+        i += 1
+        ln = struct.unpack_from("<H", body, i)[0]
+        i += 2
+        if i + ln > len(body):
+            break
+        payload = body[i : i + ln]
+        i += ln
+        if msg_id == 0x0C:
+            return payload
+    return None
+
+
+def build_summarise_version_point(identify_payload: bytes) -> bytes:
+    """BaseAppExtInterface message 13 (0x0d summariseVersionPoint), VARIABLE 2-byte len."""
+    payload = identify_payload or (b"\x14\x00\x0a" + b"This docum")
+    return bytes([0x0D]) + struct.pack("<H", len(payload)) + payload
+
+
 def build_probe_ack(data):
     """Minimal off-channel Mercury reply to keep the channel handshake observable (experimental)."""
     if len(data) < 11 or data[:4] != b"\x01\x00\x00\x0b":
@@ -260,8 +301,9 @@ def build_probe_ack(data):
     return flags + reply_msg + _seq_footer(data)
 
 
-def build_baseapp_reply(data, variant=1):
-    """Reply to post-login baseAppLogin probes (magic 01 00 00 0b, ~24B)."""
+def build_baseapp_reply(data, variant=1, bf_key=None):
+    """Reply to post-login baseAppLogin probes (magic 01 00 00 0b, ~24B).
+    Encrypted with Blowfish CBC using the channel key and PKCS#7 padding."""
     if len(data) < 15 or data[:4] != b"\x01\x00\x00\x0b":
         return None
     req_id_7 = data[7:11]
@@ -275,32 +317,59 @@ def build_baseapp_reply(data, variant=1):
 
     seq_footer = _seq_footer(data)
 
+    if bf_key is None:
+        try:
+            with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "latest_bf_key.bin"), "rb") as f:
+                bf_key = f.read().strip()
+        except Exception:
+            bf_key = None
+
     if variant == 1:
         # Match request_id at data[7:11]
         reply_payload = req_id_7 + rdata
         reply_msg = b"\xff" + struct.pack("<I", len(reply_payload)) + reply_payload
         flags = struct.pack("<H", 0x0040)
-        return flags + reply_msg + seq_footer
+        raw = flags + reply_msg + seq_footer
     elif variant == 2:
         # Match request_id at data[5:9]
         reply_payload = req_id_5 + rdata
         reply_msg = b"\xff" + struct.pack("<I", len(reply_payload)) + reply_payload
         flags = struct.pack("<H", 0x0040)
-        return flags + reply_msg + seq_footer
+        raw = flags + reply_msg + seq_footer
     elif variant == 3:
         # Both candidate reply IDs bundled together + createBasePlayer (msgid 4)
         msg1 = b"\xff" + struct.pack("<I", 8) + req_id_7 + rdata
         msg2 = b"\xff" + struct.pack("<I", 8) + req_id_5 + rdata
         flags = struct.pack("<H", 0x0040)
-        return flags + msg1 + msg2 + seq_footer
+        raw = flags + msg1 + msg2 + seq_footer
+    elif variant == 5:
+        # Reply to baseAppLogin + createBasePlayer (entity ID 10001, Avatar entity type 1)
+        reply_payload = req_id_7 + rdata
+        reply_msg = b"\xff" + struct.pack("<I", len(reply_payload)) + reply_payload
+        cbp_msg = b"\x04\x06\x00" + struct.pack("<I", 10001) + struct.pack("<H", 1)
+        flags = struct.pack("<H", 0x0040)
+        raw = flags + reply_msg + cbp_msg + seq_footer
     elif variant == 4:
         # Off-channel flags 0x0000
         reply_payload = req_id_7 + rdata
         reply_msg = b"\xff" + struct.pack("<I", len(reply_payload)) + reply_payload
         flags = struct.pack("<H", 0x0000)
-        return flags + reply_msg
+        raw = flags + reply_msg
     else:
         reply_payload = req_id_7 + rdata
         reply_msg = b"\xff" + struct.pack("<I", len(reply_payload)) + reply_payload
         flags = struct.pack("<H", 0x0040)
-        return flags + reply_msg + seq_footer
+        raw = flags + reply_msg + seq_footer
+
+    # Apply PKCS#7 padding and Blowfish-CBC encryption
+    if bf_key:
+        try:
+            from Crypto.Cipher import Blowfish
+            pad_len = 8 - (len(raw) % 8)
+            padded = raw + bytes([pad_len]) * pad_len
+            cipher = Blowfish.new(bytes(bf_key), Blowfish.MODE_CBC, b"\x00" * 8)
+            return cipher.encrypt(padded)
+        except Exception as e:
+            print(f"      [BASEAPP BF enc err] {e}")
+
+    return raw

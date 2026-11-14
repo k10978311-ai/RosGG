@@ -13,3 +13,4 @@ tdump_*.txt
 tcpdump*.txt
 sweep_*.txt
 bf_off.txt
+latest_bf_key.bin
