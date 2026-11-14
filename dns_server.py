@@ -7,8 +7,10 @@ import struct
 import threading
 import time
 
+import os
+
 LISTEN = ("0.0.0.0", 53)
-LOCAL_IP = "192.168.1.18"
+LOCAL_IP = os.environ.get("ROS_PC_IP", "192.168.100.137")
 UPSTREAM = ("8.8.8.8", 53)
 REDIRECT_SUFFIXES = (
     "easebar.com", "netease.com", "163.com", "126.net", "netease.im",

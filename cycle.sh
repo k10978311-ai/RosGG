@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 # Relaunch the game, wait, then dump NeoX <SCRIPT> logs + screenshot.  Usage: bash cycle.sh [wait_seconds]
 cd "$(dirname "$0")"
-ADB=/c/LDPlayer/LDPlayer9/adb.exe
+if [ -f "/e/LDPlayer/LDPlayer9/adb.exe" ]; then
+    ADB=/e/LDPlayer/LDPlayer9/adb.exe
+else
+    ADB=/c/LDPlayer/LDPlayer9/adb.exe
+fi
 WAIT=${1:-45}
 $ADB shell am force-stop com.netease.chiji
 $ADB logcat -c

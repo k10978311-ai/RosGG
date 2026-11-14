@@ -16,6 +16,20 @@ import os, struct, socket
 PRIV = os.path.join(os.path.dirname(os.path.abspath(__file__)), "server_keys", "loginapp_priv.pem")
 LOGON_STATUS_LOGGED_ON = 1
 
+# Blowfish key slice inside decrypted LogOnParams.rest (confirmed on build 1.610637.617289)
+os.environ.setdefault("BF_SPEC", "1:16")
+
+
+def _seq_footer(data):
+    """u32 footer when Mercury reply uses flags HAS_SEQUENCE (0x40)."""
+    mode = os.environ.get("SEQ_FOOTER", "off7")
+    if mode == "off5":
+        return data[5:9]
+    if mode == "seq16":
+        return struct.pack("<I", struct.unpack("<H", data[5:7])[0])
+    # Client login requests keep bytes [7:11] == 01 00 00 00 while seq at [5:7] increments.
+    return data[7:11]
+
 
 def decrypt_logon(rsa_block):
     """RSA-OAEP decrypt the 128-byte block with our private key -> LogOnParams fields."""
@@ -43,11 +57,11 @@ def decrypt_logon(rsa_block):
 def extract_blowfish_key(params):
     """The tail of LogOnParams holds the Blowfish session key.
     Structure: [0x04 = key length: 4 bytes] [4-byte BF key] ...
-    The client initializes Blowfish with this 4-byte key! (Proven: 69.253.255.76 = 45fdff4c)"""
+    The client initializes Blowfish with this 4-byte key (BF_SPEC=1:4 on this build)."""
     import os as _os
     rest = params.get("rest", b"")
     spec = _os.environ.get("BF_SPEC")
-    if not spec or spec == "1:16" or spec == "2:16":
+    if not spec or spec in ("1:16", "2:16"):
         spec = "1:4"
     if spec == "sweep":
         f = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "bf_off.txt")
@@ -59,8 +73,8 @@ def extract_blowfish_key(params):
             open(f, "w").write(str((off + 1) % 10))
         except Exception:
             pass
-        print(f"      [BF sweep] off={off} key={rest[off:off+16].hex()}")
-        return rest[off:off+16]
+        print(f"      [BF sweep] off={off} key={rest[off:off+4].hex()}")
+        return rest[off:off+4]
     try:
         off, ln = (int(x) for x in spec.split(":"))
         if ln == 0:
@@ -68,6 +82,25 @@ def extract_blowfish_key(params):
         return rest[off:off+ln]
     except Exception:
         return rest[1:5]
+
+
+def extract_session_u32(params):
+    """u32 for LoginReplyRecord.sessionKey — default fixed; override for RE sweeps."""
+    hex_override = os.environ.get("SESSION_U32_HEX", "").strip()
+    if hex_override:
+        h = hex_override.replace("0x", "")
+        if len(h) == 8:
+            return bytes.fromhex(h)
+    spec = os.environ.get("SESSION_U32_SPEC", "")
+    rest = params.get("rest", b"")
+    if spec and rest:
+        try:
+            off, ln = (int(x) for x in spec.split(":"))
+            if ln == 4 and len(rest) >= off + 4:
+                return rest[off : off + 4]
+        except ValueError:
+            pass
+    return struct.pack("<I", int(os.environ.get("SESSION_U32", "0x11223344"), 0))
 
 
 def custom_bf_encrypt(key, data):
@@ -115,28 +148,10 @@ def build_reply(data, local_ip, baseapp_port, variant=0):
     """Build a candidate reply for a captured login request `data`."""
     if len(data) < 145 or data[:4] != b"\x01\x00\x00\x84":
         return None
-    seq = data[5:7]                      # echo the request sequence
     rsa_block = data[15:143]
     params = decrypt_logon(rsa_block)
     bf = extract_blowfish_key(params)
-
-    # LoginReplyRecord: Mercury::Address(serverAddr) + sessionKey(uint32)
-    ip_bytes = socket.inet_aton(local_ip)                 # 4 bytes, network order
-    port_be = struct.pack(">H", baseapp_port)             # BigWorld stores port in network order
-    salt = b"\x00\x00"
-    session_key = struct.pack("<I", 0x11223344)
-    record = ip_bytes + port_be + salt + session_key      # 12 bytes
-
-    # Blowfish-encrypt the record (ECB, pad to 8) if we have a key
-    enc = record
-    try:
-        from Crypto.Cipher import Blowfish
-        if bf:
-            padlen = (-len(record)) % 8
-            padded = record + b"\x00" * padlen
-            enc = Blowfish.new(bytes(bf), Blowfish.MODE_ECB).encrypt(padded)
-    except Exception:
-        pass
+    seq_footer = _seq_footer(data)
 
     # BigWorld Mercury wire format (from Cimmeria RE):
     #   header: flags (2 bytes LE) at offset 0
@@ -165,17 +180,12 @@ def build_reply(data, local_ip, baseapp_port, variant=0):
     else:
         request_id = data[7:11]
 
-    # LoginReplyRecord in NeoX ARM64:
-    # LoginHandler::onLoginReply reads 20 bytes (0x14) directly:
-    #   [0..3]   uint32 IP (network byte order)
-    #   [4..5]   uint16 Port (network byte order)
-    #   [6..15]  10 bytes address padding / salt
-    #   [16..19] uint32 sessionKey
+    # LoginReplyRecord in NeoX ARM64 (20 bytes read by LoginHandler::onLoginReply):
     ip_bytes = socket.inet_aton(local_ip)
     port_be = struct.pack(">H", baseapp_port)
-    session_key = struct.pack("<I", 0x11223344)
+    session_key = extract_session_u32(params)
     record20 = ip_bytes + port_be + b"\x00" * 10 + session_key   # 20 bytes
-    record = record20 + b"\x00" * 4                              # 24 bytes (multiple of 8)
+    record = record20 + b"\x00" * 4                              # 24 bytes (BF block alignment)
 
     # Variant selects the reply-data shape / encryption while we converge on the client's reaction.
     if variant == 10:        # LoginReplyRecord, plaintext
@@ -195,7 +205,7 @@ def build_reply(data, local_ip, baseapp_port, variant=0):
             pass
     elif variant == 23:      # status(LOGGED_ON) + plaintext record
         rdata = bytes([LOGON_STATUS_LOGGED_ON]) + record
-    elif variant == 24:      # status + blowfish-encrypted 24-byte record
+    elif variant == 24:      # status + NeoX custom_bf encrypted 24-byte record
         enc_rec = record
         try:
             if bf:
@@ -215,11 +225,82 @@ def build_reply(data, local_ip, baseapp_port, variant=0):
         pkt = flags + reply_msg
     elif variant in (20, 22, 23, 24):
         flags = struct.pack("<H", 0x0040)         # HAS_SEQUENCE only + seq footer
-        pkt = flags + reply_msg + struct.pack("<I", 1)
+        pkt = flags + reply_msg + seq_footer
     elif variant == 21:
         flags = struct.pack("<H", 0x0001)         # HAS_REQUESTS (mirror request) + firstReqOffset footer
         pkt = flags + reply_msg + struct.pack("<H", 2)
     else:
         flags = struct.pack("<H", 0x0058)
-        pkt = flags + reply_msg + struct.pack("<I", 1)
+        pkt = flags + reply_msg + seq_footer
     return pkt, params, bf
+
+
+def parse_mercury_probe(data):
+    """Best-effort parse of post-login UDP probes (magic 01 00 00 0b… from gate_capture)."""
+    if len(data) < 16 or data[:3] != b"\x01\x00\x00":
+        return None
+    return {
+        "magic": data[3],
+        "seq": struct.unpack("<H", data[5:7])[0] if len(data) >= 7 else None,
+        "field_7_11": data[7:11].hex() if len(data) >= 11 else None,
+        "field_5_9": data[5:9].hex() if len(data) >= 9 else None,
+        "len": len(data),
+    }
+
+
+def build_probe_ack(data):
+    """Minimal off-channel Mercury reply to keep the channel handshake observable (experimental)."""
+    if len(data) < 11 or data[:4] != b"\x01\x00\x00\x0b":
+        return None
+    # Mirror login-reply shape: HAS_SEQUENCE + 0xFF + request_id@5:9 + empty body.
+    request_id = data[5:9]
+    rdata = b""
+    reply_msg = b"\xff" + struct.pack("<I", len(request_id) + len(rdata)) + request_id + rdata
+    flags = struct.pack("<H", 0x0040)
+    return flags + reply_msg + _seq_footer(data)
+
+
+def build_baseapp_reply(data, variant=1):
+    """Reply to post-login baseAppLogin probes (magic 01 00 00 0b, ~24B)."""
+    if len(data) < 15 or data[:4] != b"\x01\x00\x00\x0b":
+        return None
+    req_id_7 = data[7:11]
+    req_id_5 = data[5:9]
+    sess_key = data[11:15] if len(data) >= 15 else b"\x44\x33\x22\x11"
+
+    # In BaseAppLoginRequest::handleMessage (libclient.so+0x93d914):
+    # stream.read(4) -> loads session key / entity ID -> schedules onBaseAppReply(this, key).
+    # So reply payload for a request is: request_id (4B) + session_key (4B) = 8 bytes.
+    rdata = sess_key
+
+    seq_footer = _seq_footer(data)
+
+    if variant == 1:
+        # Match request_id at data[7:11]
+        reply_payload = req_id_7 + rdata
+        reply_msg = b"\xff" + struct.pack("<I", len(reply_payload)) + reply_payload
+        flags = struct.pack("<H", 0x0040)
+        return flags + reply_msg + seq_footer
+    elif variant == 2:
+        # Match request_id at data[5:9]
+        reply_payload = req_id_5 + rdata
+        reply_msg = b"\xff" + struct.pack("<I", len(reply_payload)) + reply_payload
+        flags = struct.pack("<H", 0x0040)
+        return flags + reply_msg + seq_footer
+    elif variant == 3:
+        # Both candidate reply IDs bundled together + createBasePlayer (msgid 4)
+        msg1 = b"\xff" + struct.pack("<I", 8) + req_id_7 + rdata
+        msg2 = b"\xff" + struct.pack("<I", 8) + req_id_5 + rdata
+        flags = struct.pack("<H", 0x0040)
+        return flags + msg1 + msg2 + seq_footer
+    elif variant == 4:
+        # Off-channel flags 0x0000
+        reply_payload = req_id_7 + rdata
+        reply_msg = b"\xff" + struct.pack("<I", len(reply_payload)) + reply_payload
+        flags = struct.pack("<H", 0x0000)
+        return flags + reply_msg
+    else:
+        reply_payload = req_id_7 + rdata
+        reply_msg = b"\xff" + struct.pack("<I", len(reply_payload)) + reply_payload
+        flags = struct.pack("<H", 0x0040)
+        return flags + reply_msg + seq_footer

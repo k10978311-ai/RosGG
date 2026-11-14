@@ -1,7 +1,8 @@
 """List ELF dynsym/symtab entries matching keywords, with file offsets, for libclient.so."""
 import struct, sys
 
-path = r"C:\Users\Lufy\Desktop\Server\extract\libclient.so"
+import os
+path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "libclient.so")
 d = open(path, "rb").read()
 assert d[:4] == b"\x7fELF"
 is64 = d[4] == 2
