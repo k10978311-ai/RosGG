@@ -1,7 +1,8 @@
-# One dual-device harness iteration: env sync, reachability, optional PLAY tap, artifacts.
+﻿# One dual-device harness iteration: env sync, reachability, optional PLAY tap, artifacts.
 param(
     [switch]$TapPlay,
     [switch]$LdOnly,
+    [switch]$KeepSession,
     [int]$WaitSeconds = 40,
     [string]$ReplyVariant = ""
 )
@@ -40,15 +41,21 @@ foreach ($target in $targets) {
     }
 
     Write-Host "`n--- $target ($serial) ---"
-    & $RosAdb -s $serial shell "am force-stop $RosPackage" | Out-Null
     & $RosAdb -s $serial logcat -c | Out-Null
-    & $RosAdb -s $serial shell "monkey -p $RosPackage -c android.intent.category.LAUNCHER 1" | Out-Null
-    Start-Sleep -Seconds 12
+    if (-not $KeepSession) {
+        & $RosAdb -s $serial shell "am force-stop $RosPackage" | Out-Null
+        & $RosAdb -s $serial shell "monkey -p $RosPackage -c android.intent.category.LAUNCHER 1" | Out-Null
+        Start-Sleep -Seconds 12
+    } else {
+        Start-Sleep -Seconds 2
+    }
 
     if ($TapPlay) {
-        # Approximate PLAY button region (1920x1080 landscape); adjust per device in STATE if needed
-        & $RosAdb -s $serial shell "input tap 960 820" | Out-Null
-        Start-Sleep -Seconds ($WaitSeconds - 12)
+        # LDPlayer RoS: screencap is 1920x1080 landscape (use landscape tap coords).
+        & $RosAdb -s $serial shell "input tap 1150 550" | Out-Null   # User Agreement -> Agree
+        Start-Sleep -Seconds 4
+        & $RosAdb -s $serial shell "input tap 960 820" | Out-Null   # PLAY
+        Start-Sleep -Seconds ($WaitSeconds - 16)
     } else {
         Start-Sleep -Seconds ($WaitSeconds - 12)
     }
