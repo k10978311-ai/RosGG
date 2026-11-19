@@ -80,8 +80,16 @@ class RoSMockHTTPHandler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         ua = self.headers.get("User-Agent", "")
-        print(f"[GET] https?={isinstance(self.connection, ssl.SSLSocket)} Host={self.headers.get('Host')} Path={self.path} UA={ua[:80]}")
-        path_lower = self.path.lower()
+        raw_path = self.path
+        if "://" in raw_path:
+            after_host = raw_path.split("://", 1)[1]
+            path_clean = "/" + after_host.split("/", 1)[1] if "/" in after_host else "/"
+        else:
+            path_clean = raw_path
+        path_clean = path_clean.split("?")[0]
+        path_lower = path_clean.lower()
+
+        print(f"[GET] https?={isinstance(self.connection, ssl.SSLSocket)} Host={self.headers.get('Host')} Path={path_clean} UA={ua[:80]}")
         if (self.headers.get("Host") or "").split(":")[0] in PASSTHROUGH_HOSTS:
             print(f"  headers: {dict(self.headers)}")
             return passthrough(self)
@@ -93,7 +101,7 @@ class RoSMockHTTPHandler(BaseHTTPRequestHandler):
             "/server_list_ad.txt": ("server_list_ad.local.txt", "text/plain"),
             "/notice_pc_hw.txt": ("notice_pc_hw.txt", "text/plain"),
         }
-        route = static_map.get(self.path.split("?")[0])
+        route = static_map.get(path_clean)
         if route:
             fpath = os.path.join(os.path.dirname(os.path.abspath(__file__)), "real", route[0])
             with open(fpath, "rb") as f:
@@ -106,13 +114,18 @@ class RoSMockHTTPHandler(BaseHTTPRequestHandler):
             self.wfile.write(body)
             return
 
-        # 1. Catch Patch List / Version Check Requests
+        # 1. Catch file_list_res requests (no extra patch resource files needed)
+        if "file_list" in path_lower:
+            self.send_response(404)
+            self.end_headers()
+            return
+
+        # 2. Catch Patch List / Version Check Requests
         if "patch" in path_lower or "version" in path_lower or "update" in path_lower:
-            print(f"  -> Serving Mock Patch Manifest (Up-to-date) for {self.path}")
+            print(f"  -> Serving Mock Patch Manifest (Up-to-date) for {path_clean}")
             self.send_response(200)
             self.send_header("Content-Type", "application/json")
             self.end_headers()
-            # Standard NeoX / NetEase patcher up-to-date response structure
             patch_response = {
                 "code": 200,
                 "status": 0,
@@ -126,29 +139,20 @@ class RoSMockHTTPHandler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(patch_response).encode("utf-8"))
             return
 
-        # 2. Catch Server List Requests (Loaded right after patch check finishes)
-        if "server" in path_lower or "list" in path_lower:
-            print(f"  -> Serving Mock Server List pointing to {LOCAL_SERVER_IP}:{GATE_TCP_PORT}")
+        # 3. Catch Server List Requests
+        if "server_list" in path_lower or "serverlist" in path_lower:
+            fpath = os.path.join(os.path.dirname(os.path.abspath(__file__)), "real", "server_list_ad.local.txt")
+            print(f"  -> Serving Text Server List from {fpath}")
+            with open(fpath, "rb") as f:
+                body = f.read()
             self.send_response(200)
-            self.send_header("Content-Type", "application/json")
+            self.send_header("Content-Type", "text/plain")
+            self.send_header("Content-Length", str(len(body)))
             self.end_headers()
-            server_list = {
-                "code": 200,
-                "servers": [
-                    {
-                        "id": 1,
-                        "name": "Local Emulator Server",
-                        "ip": LOCAL_SERVER_IP,
-                        "port": GATE_TCP_PORT,
-                        "status": 1,       # 1 = Online / Green
-                        "recommend": 1
-                    }
-                ]
-            }
-            self.wfile.write(json.dumps(server_list).encode("utf-8"))
+            self.wfile.write(body)
             return
 
-        # 3. Default Catch-All (UniSDK / Announcements / Notices)
+        # 4. Default Catch-All (UniSDK / Announcements / Notices)
         self.send_response(200)
         self.send_header("Content-Type", "application/json")
         self.end_headers()
@@ -234,8 +238,34 @@ class GateUDP(asyncio.DatagramProtocol):
         self.port = port
         self._login_replied = {}   # addr -> True, to track post-login packets
         self._server_seq = 0
+        self._base_player_created = False
+        self._heartbeat_task = None
+        self._heartbeat_addr = None
+        self._probe_replied = set()
+        self._summarised = False
+
     def connection_made(self, transport):
         self.transport = transport
+
+    async def _heartbeat_loop(self, addr, bf_key):
+        import time as _t, loginapp
+        game_time = 100
+        while True:
+            await asyncio.sleep(0.5)
+            try:
+                game_time += 5
+                header = struct.pack("<H", 0x0008)
+                msg_time = b"\x02" + struct.pack("<I", game_time)
+                cleartext = header + msg_time
+                pad_len = 8 - (len(cleartext) % 8) or 8
+                padded = cleartext + b"\x00" * (pad_len - 1) + bytes([pad_len])
+                enc = loginapp.custom_bf_encrypt(bytes(bf_key), padded)
+                self.transport.sendto(enc, addr)
+            except asyncio.CancelledError:
+                break
+            except Exception as e:
+                print(f"      [HEARTBEAT ERR] {e}")
+
     def datagram_received(self, data, addr):
         import time as _t
         is_login = data[:4] == b"\x01\x00\x00\x84"
@@ -272,11 +302,24 @@ class GateUDP(asyncio.DatagramProtocol):
                     global CURRENT_SESSION_U32
                     CURRENT_BF_KEY = bf
                     CURRENT_SESSION_U32 = loginapp.extract_session_u32(params)
+                    if bf:
+                        try:
+                            with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "latest_bf_key.bin"), "wb") as f:
+                                f.write(bf)
+                        except Exception:
+                            pass
                     sk = CURRENT_SESSION_U32.hex()
                     print(f"  [{_t.strftime('%H:%M:%S')}] [LOGIN] TRY msgid={msgid} (0x{msgid:02x}) -> {len(pkt)}B: {pkt.hex()}")
                     print(f"      user={params.get('username')} session_u32={sk} rest={params.get('rest',b'').hex()} bf={bf.hex() if bf else None}")
                     self.transport.sendto(pkt, addr)
                     self._login_replied[addr] = True
+                    self._server_seq = 0
+                    self._base_player_created = False
+                    self._probe_replied = set()
+                    self._summarised = False
+                    if self._heartbeat_task and not self._heartbeat_task.done():
+                        self._heartbeat_task.cancel()
+                        self._heartbeat_task = None
             except Exception as e:
                 import traceback
                 print(f"  [REPLY ERROR] {e}\n{traceback.format_exc()}")
@@ -298,45 +341,54 @@ class GateUDP(asyncio.DatagramProtocol):
                     except Exception:
                         bf_key = bytes.fromhex("aa6a4a51")
 
-                # Pre-channel baseAppLogin probes (cleartext, magic 0x0b)
+                session_key = CURRENT_SESSION_U32
+                if not session_key or len(session_key) != 4:
+                    session_key = struct.pack("<I", 0x11223344)
+
+                def _send_enc(addr, cleartext, label):
+                    pad_len = 8 - (len(cleartext) % 8) or 8
+                    padded = cleartext + b"\x00" * (pad_len - 1) + bytes([pad_len])
+                    enc = loginapp.custom_bf_encrypt(bytes(bf_key), padded)
+                    self.transport.sendto(enc, addr)
+                    print(f"  [{ts}] [BASEAPP SEND] {label} ({len(enc)}B)")
+
+                # Cleartext baseAppLogin probe — single 0xFF reply per reply_id
                 if data[:4] == b"\x01\x00\x00\x0b":
-                    var = os.environ.get("BASEAPP_REPLY_VARIANT", "1")
-                    try:
-                        variant = int(var)
-                    except ValueError:
-                        variant = 1
-                    probe_bf = bf_key if os.environ.get("BASEAPP_PROBE_BF", "off") == "on" else None
-                    pkt = loginapp.build_baseapp_reply(data, variant, probe_bf)
-                    if pkt:
-                        self.transport.sendto(pkt, addr)
-                        print(
-                            f"  [{ts}] [BASEAPP PROBE 0x0b] variant={variant} -> {len(pkt)}B: {pkt.hex()}"
+                    probe = loginapp.parse_baseapp_login_probe(data)
+                    if not probe:
+                        return
+                    reply_ids = []
+                    if probe["reply_id"] not in (b"\x00\x00\x00\x00",):
+                        reply_ids.append(probe["reply_id"])
+                    if b"\x01\x00\x00\x00" not in reply_ids:
+                        reply_ids.append(b"\x01\x00\x00\x00")
+                    for rid in reply_ids:
+                        if rid in self._probe_replied:
+                            continue
+                        stub = bytearray(data)
+                        stub[7:11] = rid
+                        enc_reply = loginapp.build_baseapp_probe_reply_encrypted(
+                            stub, bytes(bf_key), session_key
                         )
+                        if enc_reply:
+                            self.transport.sendto(enc_reply, addr)
+                            self._probe_replied.add(rid)
+                            print(
+                                f"  [{ts}] [BASEAPP LOGIN REPLY] 0xFF reply_id={rid.hex()} "
+                                f"sess={session_key.hex()}"
+                            )
                     return
-                
-                # Check if this is a BaseApp login request:
-                # flags=0x0001 (HAS_REQUESTS), msg_id=0 (baseAppLogin)
-                if data[:3] == b"\x01\x00\x00":
-                    req_id_5 = data[5:9]
-                    req_id_7 = data[7:11]
-                    if CURRENT_SESSION_U32 and len(CURRENT_SESSION_U32) == 4:
-                        session_key = CURRENT_SESSION_U32
-                    else:
-                        session_key = data[11:15] if len(data) >= 15 else struct.pack("<I", 0x11223344)
-                    print(f"  [{ts}] [BASEAPP LOGIN REQ] from {addr} req5={req_id_5.hex()} req7={req_id_7.hex()} sess={session_key.hex()} bf={bf_key.hex() if bf_key else None}")
-                    
-                    # Bundle both candidate reply IDs:
-                    reply_msg1 = b"\xff" + struct.pack("<I", 8) + req_id_7 + session_key
-                    reply_msg2 = b"\xff" + struct.pack("<I", 8) + req_id_5 + session_key
-                    clear_reply = struct.pack("<H", 0x0040) + reply_msg1 + reply_msg2 + struct.pack("<I", 1)
-                    
-                    # Pad to multiple of 8 with wastage byte for EncryptionFilter
-                    pad_len = 8 - (len(clear_reply) % 8)
-                    padded = clear_reply + b"\x00" * (pad_len - 1) + bytes([pad_len])
-                    enc_reply = loginapp.custom_bf_encrypt(bytes(bf_key), padded)
-                    self.transport.sendto(enc_reply, addr)
-                    print(f"  [{ts}] [BASEAPP LOGIN REPLY] Sent BF-encrypted reply ({len(enc_reply)}B) to {addr}")
-                    return
+
+                # Cleartext on-channel identify (authenticate + identifyVersionPoint), no 0xFF
+                if len(data) % 8 != 0:
+                    wrapped = data if data[:2] == b"\x08\x00" else (b"\x08\x00" + data if data[:1] == b"\x01" else None)
+                    if wrapped and not self._summarised:
+                        ident = loginapp.extract_identify_version_point(wrapped)
+                        if ident:
+                            summarise = loginapp.build_summarise_version_point(ident)
+                            _send_enc(addr, struct.pack("<H", 0x0018) + summarise, "summariseVersionPoint")
+                            self._summarised = True
+                            return
 
                 # Encrypted BaseApp traffic (channel established)
                 if len(data) % 8 == 0:
@@ -352,39 +404,75 @@ class GateUDP(asyncio.DatagramProtocol):
                 flags = struct.unpack("<H", pkt[:2])[0]
                 print(f"  [{ts}] [BASEAPP RECV] {len(pkt)}B flags=0x{flags:04x} pt={pkt.hex()}")
                 
-                client_seq = 0
+                # Unpack Mercury footers from end of packet:
+                off = len(pkt)
+                n_acks = 0
+                acks = []
+                if flags & 0x0004:  # HAS_ACKS
+                    n_acks = pkt[off - 1]
+                    off -= 1
+                    for _ in range(n_acks):
+                        ack = struct.unpack("<I", pkt[off - 4 : off])[0]
+                        acks.append(ack)
+                        off -= 4
+                
+                client_seq = None
                 if flags & 0x0040:  # HAS_SEQUENCE
-                    client_seq = struct.unpack("<I", pkt[-4:])[0]
-                    print(f"      [BASEAPP] Client seq #{client_seq}")
+                    client_seq = struct.unpack("<I", pkt[off - 4 : off])[0]
+                    off -= 4
                 
-                # Flags: ON_CHANNEL(0x0008) | RELIABLE(0x0010) | HAS_ACKS(0x0004) | HAS_SEQUENCE(0x0040) = 0x005c
-                header = struct.pack("<H", 0x005c)
-                
-                body = b""
+                body_in = pkt[2:off]
+                print(f"      [BASEAPP] client_seq={client_seq} acks={acks} body={body_in.hex()}")
+
                 ident = loginapp.extract_identify_version_point(pkt)
-                if ident is not None:
-                    body += loginapp.build_summarise_version_point(ident)
-                    print(f"      [BASEAPP] identifyVersionPoint {len(ident)}B -> summariseVersionPoint")
-                # ClientInterface: resetEntities then createBasePlayer
-                msg_reset = b"\x03\x00"
-                msg_create = b"\x04" + struct.pack("<H", 6) + struct.pack("<I", 10001) + struct.pack("<H", 1)
-                body += msg_reset + msg_create
-                
-                # Footers (LIFO order: seq footer, ack seqs, nAcks at the very end):
-                # Note: NeoX ARM64 uses Little-Endian (<I) for SeqNum on the wire!
-                # [server_seq: 4B LE] [ack_seq: 4B LE] [nAcks: 1B = 1]
-                footer = struct.pack("<I", self._server_seq) + struct.pack("<I", client_seq) + b"\x01"
-                self._server_seq += 1
-                
-                cleartext = header + body + footer
-                pad_len = 8 - (len(cleartext) % 8)
-                if pad_len == 0:
-                    pad_len = 8
-                padded = cleartext + b"\x00" * (pad_len - 1) + bytes([pad_len])
-                
-                enc = loginapp.custom_bf_encrypt(bytes(bf_key), padded)
-                self.transport.sendto(enc, addr)
-                print(f"  [{ts}] [BASEAPP SEND] Sent on-channel ACK + createBasePlayer ({len(enc)}B, seq={self._server_seq-1}, ack_client_seq={client_seq})")
+                if ident and not self._summarised:
+                    summarise = loginapp.build_summarise_version_point(ident)
+                    _send_enc(addr, struct.pack("<H", 0x0018) + summarise, "summariseVersionPoint (enc path)")
+                    self._summarised = True
+
+                # If BasePlayer has not been created yet for this session:
+                if not self._base_player_created:
+                    entity_type = int(os.environ.get("BASE_ENTITY_TYPE", "1"))
+                    msg_reset = b"\x03\x00"
+                    msg_time = b"\x02" + struct.pack("<I", 100)
+                    msg_create = (
+                        b"\x04"
+                        + struct.pack("<H", 6)
+                        + struct.pack("<I", 10001)
+                        + struct.pack("<H", entity_type)
+                    )
+                    body = msg_reset + msg_time + msg_create
+                    header = struct.pack("<H", 0x005c)
+                    ack_seq = client_seq if client_seq is not None else 0
+                    footer = struct.pack("<I", self._server_seq) + struct.pack("<I", ack_seq) + b"\x01"
+                    self._server_seq += 1
+                    self._base_player_created = True
+                    _send_enc(
+                        addr,
+                        header + body + footer,
+                        f"ClientInterface reset+setGameTime+createBasePlayer type={entity_type} "
+                        f"seq={self._server_seq - 1} ack={ack_seq}",
+                    )
+                    if self._heartbeat_task is None or self._heartbeat_task.done():
+                        self._heartbeat_addr = addr
+                        loop = asyncio.get_running_loop()
+                        self._heartbeat_task = loop.create_task(self._heartbeat_loop(addr, bf_key))
+                        print(f"  [{ts}] [BASEAPP HEARTBEAT] Started for {addr}")
+                    return
+
+                # Client sent a reliable packet on an established channel:
+                if client_seq is not None:
+                    header = struct.pack("<H", 0x000c)  # ON_CHANNEL | HAS_ACKS
+                    footer = struct.pack("<I", client_seq) + b"\x01"
+                    cleartext = header + footer
+                    pad_len = 8 - (len(cleartext) % 8) or 8
+                    padded = cleartext + b"\x00" * (pad_len - 1) + bytes([pad_len])
+
+                    enc = loginapp.custom_bf_encrypt(bytes(bf_key), padded)
+                    self.transport.sendto(enc, addr)
+                    print(f"  [{ts}] [BASEAPP SEND] Sent on-channel ACK ({len(enc)}B, ack={client_seq})")
+                else:
+                    print(f"  [{ts}] [BASEAPP] Client packet unsequenced (acks={acks}), heartbeat active.")
             except Exception as e:
                 import traceback
                 print(f"  [{ts}] [BASEAPP ERROR] {e}\n{traceback.format_exc()}")
@@ -458,4 +546,11 @@ if __name__ == "__main__":
     threading.Thread(target=start_http_server, daemon=True).start()
     threading.Thread(target=start_https_server, daemon=True).start()
     threading.Thread(target=start_stub_8080, daemon=True).start()
-    asyncio.run(start_tcp_gate())
+    import time
+    while True:
+        try:
+            asyncio.run(start_tcp_gate())
+        except Exception as e:
+            import traceback
+            print(f"[TCP/UDP GATE CRASH] {e}\n{traceback.format_exc()}")
+            time.sleep(1)

@@ -1,11 +1,12 @@
 # LDPlayer-only debug cycle (emulator-5554).
-param([switch]$TapPlay, [switch]$FridaDiag)
+param([switch]$TapPlay, [switch]$FridaDiag, [switch]$KeepSession)
 
 $Root = Split-Path $PSScriptRoot -Parent
 Set-Location $Root
 
 $env:ROS_PC_IP = if ($env:ROS_PC_IP) { $env:ROS_PC_IP } else { "192.168.100.137" }
 $env:REPLY_VARIANT = if ($env:REPLY_VARIANT) { $env:REPLY_VARIANT } else { "24" }
+$env:RECORD_LAYOUT = if ($env:RECORD_LAYOUT) { $env:RECORD_LAYOUT } else { "legacy" }
 $env:BF_SPEC = if ($env:BF_SPEC) { $env:BF_SPEC } else { "1:4" }
 $env:BASEAPP_ACK = "off"
 $env:BASEAPP_REPLY_VARIANT = if ($env:BASEAPP_REPLY_VARIANT) { $env:BASEAPP_REPLY_VARIANT } else { "3" }
@@ -17,9 +18,10 @@ Write-Host "ROS_PC_IP=$env:ROS_PC_IP REPLY_VARIANT=$env:REPLY_VARIANT BASEAPP_RE
 & powershell -ExecutionPolicy Bypass -File "$Root\setup_emulator.ps1"
 & powershell -ExecutionPolicy Bypass -File "$Root\verify_play_path.ps1"
 
-$harnessArgs = @("-ExecutionPolicy", "Bypass", "-File", "$PSScriptRoot\harness_loop.ps1", "-LdOnly")
-if ($TapPlay) { $harnessArgs += "-TapPlay" }
-& powershell @harnessArgs
+$loopArgs = @("-ExecutionPolicy", "Bypass", "-File", "$PSScriptRoot\harness_loop.ps1", "-LdOnly")
+if ($TapPlay) { $loopArgs += "-TapPlay" }
+if ($KeepSession) { $loopArgs += "-KeepSession" }
+& powershell @loopArgs
 
 if ($FridaDiag) {
     Write-Host "`n--- Frida diag (emulated realm) ---"

@@ -62,10 +62,18 @@ def forward(sock, data, addr):
 
 def main():
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    if hasattr(socket, "SIO_UDP_CONNRESET"):
+        try:
+            sock.ioctl(socket.SIO_UDP_CONNRESET, False)
+        except Exception:
+            pass
     sock.bind(LISTEN)
     log(f"[*] DNS server on {LISTEN[0]}:{LISTEN[1]} -> redirecting {REDIRECT_SUFFIXES} to {LOCAL_IP}")
     while True:
-        data, addr = sock.recvfrom(4096)
+        try:
+            data, addr = sock.recvfrom(4096)
+        except Exception as e:
+            continue
         try:
             name, off = parse_qname(data, 12)
             qtype = struct.unpack(">H", data[off:off + 2])[0]
@@ -73,7 +81,10 @@ def main():
             continue
         if any(name == s or name.endswith("." + s) for s in REDIRECT_SUFFIXES):
             log(f"[DNS] {name} (type {qtype}) -> {LOCAL_IP if qtype == 1 else 'empty'}")
-            sock.sendto(build_reply(data, off, qtype, LOCAL_IP), addr)
+            try:
+                sock.sendto(build_reply(data, off, qtype, LOCAL_IP), addr)
+            except Exception as e:
+                log(f"[DNS] send reply error: {e}")
         else:
             threading.Thread(target=forward, args=(sock, data, addr), daemon=True).start()
 

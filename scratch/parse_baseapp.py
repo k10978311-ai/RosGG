@@ -51,11 +51,13 @@ def main():
             print(f"         hex={pkt.hex()}")
     print(f"\nTotals: {counts}")
     if last_login:
+        import os as _os
+        variant = int(_os.environ.get("REPLY_VARIANT", "23"))
         reply, params, bf = loginapp.build_reply(
-            last_login, "192.168.100.137", 25000, 24
+            last_login, "192.168.100.137", 25000, variant
         )
         print(f"\nLatest login user={params.get('username')!r} bf={bf.hex() if bf else None}")
-        print(f"variant=24 reply ({len(reply)}B): {reply.hex()}")
+        print(f"variant={variant} reply ({len(reply)}B): {reply.hex()}")
 
 
 if __name__ == "__main__":

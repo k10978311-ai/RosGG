@@ -84,6 +84,30 @@ def extract_blowfish_key(params):
         return rest[1:5]
 
 
+def _build_record20(local_ip, baseapp_port, session_key):
+    """20-byte LoginReplyRecord (layout selectable via RECORD_LAYOUT)."""
+    ip_bytes = socket.inet_aton(local_ip)
+    port_mode = os.environ.get("MERCURY_PORT_ENDIAN", "be").lower()
+    if port_mode == "le":
+        port_bytes = struct.pack("<H", baseapp_port)
+    else:
+        port_bytes = struct.pack(">H", baseapp_port)
+    layout = os.environ.get("RECORD_LAYOUT", "compact").lower()
+    if layout == "legacy":
+        return ip_bytes + port_bytes + b"\x00" * 10 + session_key
+    if layout == "compact":
+        # Mercury::Address (8) + sessionKey (4) + pad (8) — matches scratch/port_check.py
+        return ip_bytes + port_bytes + b"\x00\x00" + session_key + b"\x00" * 8
+    if layout == "session_first":
+        return session_key + ip_bytes + port_bytes + b"\x00" * 10
+    if layout == "port_tail":
+        # Client convertAddress reads port from last u16 (bytes 18-19); ip @ 0-3, session @ 8-11
+        return ip_bytes + b"\x00" * 4 + session_key + b"\x00" * 4 + port_bytes
+    if layout == "port_both":
+        return ip_bytes + port_bytes + b"\x00\x00" + session_key + b"\x00" * 6 + port_bytes
+    return ip_bytes + port_bytes + b"\x00\x00" + session_key + b"\x00" * 8
+
+
 def extract_session_u32(params):
     """u32 for LoginReplyRecord.sessionKey — default fixed; override for RE sweeps."""
     hex_override = os.environ.get("SESSION_U32_HEX", "").strip()
@@ -180,20 +204,19 @@ def build_reply(data, local_ip, baseapp_port, variant=0):
     else:
         request_id = data[7:11]
 
-    # LoginReplyRecord in NeoX ARM64 (20 bytes read by LoginHandler::onLoginReply):
-    ip_bytes = socket.inet_aton(local_ip)
-    port_be = struct.pack(">H", baseapp_port)
     session_key = extract_session_u32(params)
-    record20 = ip_bytes + port_be + b"\x00" * 10 + session_key   # 20 bytes
+    record20 = _build_record20(local_ip, baseapp_port, session_key)
     record = record20 + b"\x00" * 4                              # 24 bytes (BF block alignment)
 
     # Variant selects the reply-data shape / encryption while we converge on the client's reaction.
-    if variant == 10:        # LoginReplyRecord, plaintext
-        rdata = record
-    elif variant == 11:      # status byte + record
-        rdata = bytes([LOGON_STATUS_LOGGED_ON]) + record
+    if variant == 10:        # LoginReplyRecord only (20B), no leading status byte
+        rdata = record20
+    elif variant == 11:      # status byte + record (exactly 20B LoginReplyRecord)
+        rdata = bytes([LOGON_STATUS_LOGGED_ON]) + record20
     elif variant == 12:      # Cimmeria connect-reply shape: ticket_len=20 + 20-byte ticket
-        rdata = bytes([20]) + (session_key + ip_bytes + port_be + b"\x00"*10)[:20]
+        ip_b = socket.inet_aton(local_ip)
+        port_b = struct.pack(">H", baseapp_port)
+        rdata = bytes([20]) + (session_key + ip_b + port_b + b"\x00" * 10)[:20]
     elif variant == 13:      # record blowfish-encrypted with the LogOnParams key
         rdata = record
         try:
@@ -203,9 +226,9 @@ def build_reply(data, local_ip, baseapp_port, variant=0):
                 rdata = Blowfish.new(bytes(bf), Blowfish.MODE_ECB).encrypt(padded)
         except Exception:
             pass
-    elif variant == 23:      # status(LOGGED_ON) + plaintext record
-        rdata = bytes([LOGON_STATUS_LOGGED_ON]) + record
-    elif variant == 24:      # status + NeoX custom_bf encrypted 24-byte record
+    elif variant == 23:      # status(LOGGED_ON) + plaintext 20-byte LoginReplyRecord
+        rdata = bytes([LOGON_STATUS_LOGGED_ON]) + record20
+    elif variant == 24:      # status + NeoX custom_bf encrypted 24-byte record (20B + alignment pad)
         enc_rec = record
         try:
             if bf:
@@ -220,10 +243,10 @@ def build_reply(data, local_ip, baseapp_port, variant=0):
 
     # The login reply is OFF-channel (no channel exists yet), so ON_CHANNEL(0x08) must be
     # cleared or the client drops it: "absence of local channel". Try off-channel flags.
-    if variant in (10, 11, 12, 13):
+    if variant in (11, 12, 13):
         flags = struct.pack("<H", 0x0000)         # plain off-channel packet
         pkt = flags + reply_msg
-    elif variant in (20, 22, 23, 24):
+    elif variant in (10, 20, 22, 23, 24):
         flags = struct.pack("<H", 0x0040)         # HAS_SEQUENCE only + seq footer
         pkt = flags + reply_msg + seq_footer
     elif variant == 21:
@@ -239,6 +262,38 @@ def build_reply(data, local_ip, baseapp_port, variant=0):
         except Exception:
             pass
     return pkt, params, bf
+
+
+def parse_baseapp_login_probe(data: bytes):
+    """Post-login UDP probe `01 00 00 0b` (baseAppLogin channel setup)."""
+    if len(data) < 12 or data[:4] != b"\x01\x00\x00\x0b":
+        return None
+    reply_id = data[7:11]
+    if reply_id in (b"\x00\x00\x00\x00", b"\x00\x00\x00\x01"):
+        # Some builds register the probe reply handler on data[5:9] instead.
+        alt = data[5:9]
+        if alt != b"\x00\x00\x00\x00":
+            reply_id = alt
+    return {
+        "reply_id": reply_id,
+        "req_field_5_9": data[5:9],
+        "client_sess": data[11:15] if len(data) >= 15 else None,
+        "seq_footer": _seq_footer(data),
+    }
+
+
+def build_baseapp_probe_reply_encrypted(data: bytes, bf_key: bytes, session_key: bytes):
+    """Exactly one 0xFF reply for a baseAppLogin probe — no duplicate reply IDs."""
+    probe = parse_baseapp_login_probe(data)
+    if not probe or not bf_key:
+        return None
+    reply_id = probe["reply_id"]
+    sess = session_key or probe.get("client_sess") or struct.pack("<I", 0x11223344)
+    reply_msg = b"\xff" + struct.pack("<I", 8) + reply_id + sess
+    pkt = struct.pack("<H", 0x0040) + reply_msg + probe["seq_footer"]
+    pad_len = 8 - (len(pkt) % 8) or 8
+    padded = pkt + b"\x00" * (pad_len - 1) + bytes([pad_len])
+    return custom_bf_encrypt(bytes(bf_key), padded)
 
 
 def parse_mercury_probe(data):
