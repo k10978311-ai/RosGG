@@ -1,0 +1,36 @@
+<root>
+	<Implements>
+	</Implements>
+	<Properties>
+		<successInterval>
+			<Type>		FLOAT		</Type>
+			<Flags>		CELL_PRIVATE		</Flags>
+		</successInterval>
+		<runningInterval>
+			<Type>		FLOAT		</Type>
+			<Flags>		CELL_PRIVATE		</Flags>
+		</runningInterval>
+		<failureInterval>
+			<Type>		FLOAT		</Type>
+			<Flags>		CELL_PRIVATE		</Flags>
+		</failureInterval>
+	</Properties>
+	<CellMethods>
+		<reloadAI> <Exposed/>
+			<Arg>	STRING	</Arg>
+		</reloadAI>
+		<aiProfile> <Exposed/>
+			<Arg>	STRING	</Arg>
+			<Arg>	STRING	</Arg>
+		</aiProfile>
+	</CellMethods>
+	<ClientMethods>
+		<debugBTree>
+			<Arg>	PYTHON	</Arg>
+		</debugBTree>
+		<onAIProfileResult>
+			<Arg>	STRING	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</onAIProfileResult>
+	</ClientMethods>
+</root>

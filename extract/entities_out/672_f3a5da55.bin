@@ -1,0 +1,56 @@
+<root>
+	<Properties>
+		<dtsRos2TaskNpcPosition>
+			<Type>	PYTHON		</Type>
+			<Flags> ALL_CLIENTS	</Flags>
+			<Default>	{}	</Default>
+		</dtsRos2TaskNpcPosition>
+		<ros2TaskAllEntity>
+			<Type>	PYTHON		</Type>
+			<Flags> ALL_CLIENTS	</Flags>
+			<Default>	{}	</Default>
+		</ros2TaskAllEntity>
+	</Properties>
+	<CellMethods>
+		<onMessageRos2TeamTasks>
+			<Arg>	GID		</Arg>
+			<Arg>	INT8	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</onMessageRos2TeamTasks>
+		<onMessageRos2TeamTasksByTeamID>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT8	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</onMessageRos2TeamTasksByTeamID>
+		
+		<registMainTaskFromDtsRos2Avatar>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</registMainTaskFromDtsRos2Avatar>
+
+		<onAddDtsRos2TaskNpcInSpace>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	VECTOR3	</Arg>
+		</onAddDtsRos2TaskNpcInSpace>
+		
+		<onDelDtsRos2TaskNpcInSpace>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</onDelDtsRos2TaskNpcInSpace>
+
+		<onAddDtsRos2TaskNpcInSpaceByNpcID>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</onAddDtsRos2TaskNpcInSpaceByNpcID>
+
+		<onDelDtsRos2TaskNpcInSpaceByNpcID>
+			<Arg> 	INT32	</Arg>
+			<Arg> 	INT32	</Arg>
+		</onDelDtsRos2TaskNpcInSpaceByNpcID>
+
+
+	</CellMethods>
+</root>

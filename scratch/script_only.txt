@@ -1,0 +1,151 @@
+11-18 02:59:12.870 I/[02:59:12.870] M   <SCRIPT> ( 3682): [cj]test patch!!!!!!!!
+11-18 02:59:13.494 I/[02:59:13.493] M   <SCRIPT> ( 3682): prepare_md5_info PatchConst.FILES_HASH_PATH=hash_list not found!
+11-18 02:59:13.537 I/[02:59:13.537] M   <SCRIPT> ( 3682): @@@@@@@showLoadingTexture
+11-18 02:59:13.541 I/[02:59:13.541] M   <SCRIPT> ( 3682): @@@@@@@showInitPanel
+11-18 02:59:14.309 I/[02:59:14.309]     <SCRIPT> ( 3682): fetch_by_domain
+11-18 02:59:14.309 I/[02:59:14.309]     <SCRIPT> ( 3682): http_get url=https://h45na.update.easebar.com/pl/h45na_hc,host=h45na.update.easebar.com
+11-18 02:59:14.414 I/[02:59:14.414]     <SCRIPT> ( 3682): verify_result
+11-18 02:59:14.415 I/[02:59:14.415]     <SCRIPT> ( 3682): _fetch_http_data_antihijack h45na_hc
+11-18 02:59:14.434 I/[02:59:14.434]     <SCRIPT> ( 3682): fbn, fetchMd5AndCode  hotfix 1111 af9febf319e367cf4c1ce3a84f694212
+11-18 02:59:14.459 I/[02:59:14.459] M   <SCRIPT> ( 3682): fbn verifyHotfixCode, md5 af9febf319e367cf4c1ce3a84f694212
+11-18 02:59:14.491 I/[02:59:14.491] M   <SCRIPT> ( 3682): This is a test for headCode hotfix
+11-18 02:59:14.491 I/[02:59:14.491] M   <SCRIPT> ( 3682): hotfix_20180717 begin
+11-18 02:59:14.491 I/[02:59:14.491] M   <SCRIPT> ( 3682): hotfix_20190115_patch_func begin
+11-18 02:59:14.492 I/[02:59:14.492] M   <SCRIPT> ( 3682): hotfix_20190115_patch_func end
+11-18 02:59:14.492 I/[02:59:14.492] M   <SCRIPT> ( 3682): hotfix_20190508_MultiThreadPatchFix begin
+11-18 02:59:14.535 I/[02:59:14.535] M   <SCRIPT> ( 3682): hotfix_20190508_MultiThreadPatchFix end
+11-18 02:59:14.535 I/[02:59:14.535] M   <SCRIPT> ( 3682): hotfix_20190617_FixVersionInfoError begin
+11-18 02:59:14.535 I/[02:59:14.535] M   <SCRIPT> ( 3682): hotfix_20190617_FixVersionInfoError end
+11-18 02:59:14.536 I/[02:59:14.536] M   <SCRIPT> ( 3682): discard hotfix_unisdk_whitelist 617289
+11-18 02:59:14.536 I/[02:59:14.536] M   <SCRIPT> ( 3682): hotfix_unisdk_whitelist end
+11-18 02:59:14.536 I/[02:59:14.536] M   <SCRIPT> ( 3682): hotfix_20200303 begin
+11-18 02:59:14.536 I/[02:59:14.536] M   <SCRIPT> ( 3682): 20200327 modified
+11-18 02:59:14.536 I/[02:59:14.536] M   <SCRIPT> ( 3682): 20200416 modified
+11-18 02:59:14.536 I/[02:59:14.536] M   <SCRIPT> ( 3682): hotfix_20200303 shutdown USE_CHECK_FILE_MD5 on mobile devices
+11-18 02:59:14.536 I/[02:59:14.536] M   <SCRIPT> ( 3682): hotfix_20200303 pass: 617289
+11-18 02:59:14.536 I/[02:59:14.536] M   <SCRIPT> ( 3682): hotfix_20200818 start
+11-18 02:59:14.536 I/[02:59:14.536] M   <SCRIPT> ( 3682): hotfix_20200818 end
+11-18 02:59:14.536 I/[02:59:14.536] M   <SCRIPT> ( 3682): hotfix_axeso_2020_08_25 .... start
+11-18 02:59:14.537 I/[02:59:14.537] M   <SCRIPT> ( 3682): hotfix_axeso_2020_08_25 .... end
+11-18 02:59:14.537 I/[02:59:14.537] M   <SCRIPT> ( 3682): hotfix_natproxy_20210331 start
+11-18 02:59:14.543 I/[02:59:14.543] M   <SCRIPT> ( 3682): hotfix_natproxy_20210331 end
+11-18 02:59:14.544 I/[02:59:14.544] M   <SCRIPT> ( 3682): fbn, HeadCode on suc!
+11-18 02:59:14.914 I/[02:59:14.914]     <SCRIPT> ( 3682): fetch_by_domain
+11-18 02:59:14.914 I/[02:59:14.914]     <SCRIPT> ( 3682): http_get url=https://h45na.update.easebar.com/pl/npk_version_na_android.plist,host=h45na.upd
+11-18 02:59:15.001 I/[02:59:14.001]     <SCRIPT> ( 3682): verify_result
+11-18 02:59:15.004 I/[02:59:15.004]     <SCRIPT> ( 3682): process_result host=h45na.update.easebar.com, success=True, fault=None
+11-18 02:59:15.081 I/[02:59:15.081] M   <SCRIPT> ( 3682): hardware_instancing_enbled: True
+11-18 02:59:15.082 I/[02:59:15.082] M   <SCRIPT> ( 3682): fubingnan version info: {'assets.npk_size': 8255000, 'assets.npk_md5': 'e78491456d1afd8d3106
+11-18 02:59:15.084 I/[02:59:15.084] M   <SCRIPT> ( 3682): settingLanguage: en
+11-18 02:59:15.084 I/[02:59:15.084] M   <SCRIPT> ( 3682): LINYUAN___useDLCClothes:  False
+11-18 02:59:15.084 I/[02:59:15.084] M   <SCRIPT> ( 3682): fubingnan local-ver: 610637.617289, min-ver: 610141.448899
+11-18 02:59:15.092 I/[02:59:15.092] M   <SCRIPT> ( 3682): patch_language: en
+11-18 02:59:15.092 I/[02:59:15.092] M   <SCRIPT> ( 3682): fubingnan patch local-patch-ver: 610637.617289, min-patch-ver: 610637.617289
+11-18 02:59:15.092 I/[02:59:15.092] M   <SCRIPT> ( 3682): fubingnan patch version is equal!
+11-18 02:59:15.373 I/[02:59:15.373]     <SCRIPT> ( 3682): [WARNING] LINYUAN___ cpythonoverrides file is: 'assets/claudia/CythonOverrides.txt '
+11-18 02:59:15.375 I/[02:59:15.375]     <SCRIPT> ( 3682): [WARNING] Ignoring not-a-py file from line 1: '#0' in CythonOverrides.txt
+11-18 02:59:15.375 I/[02:59:15.375]     <SCRIPT> ( 3682): [WARNING] Ignoring not-a-py file from line 11: '#293088' in CythonOverrides.txt
+11-18 02:59:15.375 I/[02:59:15.375]     <SCRIPT> ( 3682): [WARNING] Ignoring not-a-py file from line 14: '#381568' in CythonOverrides.txt
+11-18 02:59:15.375 I/[02:59:15.375]     <SCRIPT> ( 3682): [WARNING] Ignoring not-a-py file from line 23: '#400014' in CythonOverrides.txt
+11-18 02:59:17.521 I/[02:59:17.521]     <SCRIPT> ( 3682): [trouger] properties.init()... assets/data/properties
+11-18 02:59:20.204 I/[02:59:20.204] M   <SCRIPT> ( 3682): Type <class 'libclaudia.internals.ResourceController.ResourceController'> should be initiali
+11-18 02:59:20.358 I/[02:59:20.358] M   <SCRIPT> ( 3682): Type <class 'libclaudia.Settings.TagsAndLayers.TagLayerManager'> should be initialized immed
+11-18 02:59:20.361 I/[02:59:20.361] M   <SCRIPT> ( 3682): Type <class 'libclaudia.Settings.CanvasManager.CanvasManager'> should be initialized immedia
+11-18 02:59:21.179 I/[02:59:21.179] M   <SCRIPT> ( 3682): Type <class 'ui.chat.voiceUtils.VoiceUtils'> should be initialized immediately after creatio
+11-18 02:59:21.316 I/[02:59:21.316] M   <SCRIPT> ( 3682): Type <class 'libclaudia.Settings.CanvasManager.Canvas'> should be initialized immediately af
+11-18 02:59:21.866 I/[02:59:21.866] M   <SCRIPT> ( 3682): Type <class 'scenario.helper.scenario_gameobj.ScenarioGameObject'> should be initialized imm
+11-18 02:59:21.867 I/[02:59:21.867] M   <SCRIPT> ( 3682): Type <class 'scenario.helper.scenario_ui._ScenarioUIMgr'> should be initialized immediately 
+11-18 02:59:21.876 I/[02:59:21.876] M   <SCRIPT> ( 3682): Type <class 'scenario.helper.scenario_camera.NeoXCamera'> should be initialized immediately 
+11-18 02:59:21.878 I/[02:59:21.878] M   <SCRIPT> ( 3682): Type <class 'scenario.helper.scenario_ui.ScenarioUI'> should be initialized immediately afte
+11-18 02:59:23.729 I/[02:59:23.729] M   <SCRIPT> ( 3682): Type <class 'helpers.async_task.TaskCallback'> should be initialized immediately after creat
+11-18 02:59:23.730 I/[02:59:23.730] M   <SCRIPT> ( 3682): Type <class 'helpers.async_task.WorkerTask'> should be initialized immediately after creatio
+11-18 02:59:24.113 I/[02:59:24.113] M   <SCRIPT> ( 3682): fetch_by_domain
+11-18 02:59:24.113 I/[02:59:24.113] M   <SCRIPT> ( 3682): http_get url=https://h45na.update.easebar.com/server_list_ad.txt,host=h45na.update.easebar.c
+11-18 02:59:24.135 I/[02:59:24.135] M   <SCRIPT> ( 3682): verify_result
+11-18 02:59:24.140 I/[02:59:24.140] M   <SCRIPT> ( 3682): fetch_by_domain
+11-18 02:59:24.140 I/[02:59:24.140] M   <SCRIPT> ( 3682): http_get url=https://h45na.update.easebar.com/server_list_ad.txt,host=h45na.update.easebar.c
+11-18 02:59:24.164 I/[02:59:24.164] M   <SCRIPT> ( 3682): verify_result
+11-18 02:59:37.643 I/[02:59:37.643] M   <SCRIPT> ( 3682): fetch_by_domain
+11-18 02:59:37.643 I/[02:59:37.643] M   <SCRIPT> ( 3682): http_get url=https://h45na.update.easebar.com/notice_pc_hw.txt,host=h45na.update.easebar.com
+11-18 02:59:37.677 I/[02:59:37.677] M   <SCRIPT> ( 3682): verify_result
+11-18 02:59:37.678 I/[02:59:37.678] M   <SCRIPT> ( 3682): fetch_by_domain
+11-18 02:59:37.678 I/[02:59:37.678] M   <SCRIPT> ( 3682): http_get url=https://h45na.update.easebar.com/notice_pc_hw.txt,host=h45na.update.easebar.com
+11-18 02:59:37.707 I/[02:59:37.707] M   <SCRIPT> ( 3682): verify_result
+11-18 02:59:43.019 I/[02:59:43.019]     <SCRIPT> ( 3682): fetch_by_domain
+11-18 02:59:43.019 I/[02:59:43.019]     <SCRIPT> ( 3682): http_get url=https://h45na.update.easebar.com/notice_pc_hw.txt,host=h45na.update.easebar.com
+11-18 02:59:43.051 I/[02:59:43.051]     <SCRIPT> ( 3682): verify_result
+11-18 02:59:43.051 I/[02:59:43.051]     <SCRIPT> ( 3682): fetch_by_domain
+11-18 02:59:43.052 I/[02:59:43.052]     <SCRIPT> ( 3682): http_get url=https://h45na.update.easebar.com/notice_pc_hw.txt,host=h45na.update.easebar.com
+11-18 02:59:43.077 I/[02:59:43.077]     <SCRIPT> ( 3682): verify_result
+11-18 03:00:26.945 I/[03:00:26.945] M   <SCRIPT> ( 3682): Type <class 'libclaudia.internals.Level.Level'> should be initialized immediately after crea
+11-18 03:00:26.947 I/[03:00:26.947] M   <SCRIPT> ( 3682): Type <class 'libclaudia.internals.Asset.Asset'> should be initialized immediately after crea
+11-18 03:00:26.948 I/[03:00:26.948] M   <SCRIPT> ( 3682): Type <class 'libclaudia.Classes.SceneSystem.Scene'> should be initialized immediately after 
+11-18 03:00:27.702 I/[03:00:27.702] M   <SCRIPT> ( 3682): GetAllSubObj set([<Scene (GameObject) at 0x763835B1ABB0>])
+11-18 03:00:28.819 I/[03:00:28.819] M   <SCRIPT> ( 3682): Asset: ui/in_game/ui_jump_tip/ui_jump_tip.csb
+11-18 03:00:28.819 I/[03:00:28.819] M   <SCRIPT> ( 3682): Asset: character/dataosha_male/male.gim
+11-18 03:00:28.866 I/[03:00:28.866] M   <SCRIPT> ( 3682): Type <class 'libclaudia.internals.ResourceController.Resource'> should be initialized immedi
+11-18 03:00:28.951 I/[03:00:28.951] M   <SCRIPT> ( 3682): ======== Level Destroy (-1) ======
+11-18 03:00:28.951 I/[03:00:28.951] M   <SCRIPT> ( 3682): [Level] Scene (GameObject) destroy
+11-18 03:00:28.951 I/[03:00:28.951] M   <SCRIPT> ( 3682): ==================================
+11-18 03:00:28.953 I/[03:00:28.953] M   <SCRIPT> ( 3682): GetAllSubObj set([<Scene (GameObject) at 0x76383B2A92C0>])
+11-18 03:01:39.734 I/[03:01:39.734] M   <SCRIPT> ( 3682): DEBUG clear_obj_cache for path=  character/dataosha_male/male.gim
+11-18 03:01:40.437 I/[03:01:40.437] M   <SCRIPT> ( 3682): Asset: ui/in_game/ui_jump_tip/ui_jump_tip.csb
+11-18 03:01:40.437 I/[03:01:40.437] M   <SCRIPT> ( 3682): Asset: character/dataosha_male/male.gim
+11-18 03:01:40.989 I/[03:01:40.989] M   <SCRIPT> ( 3682): ======== Level Destroy (20) ======
+11-18 03:01:40.989 I/[03:01:40.989] M   <SCRIPT> ( 3682): [Level] scene destroy
+11-18 03:01:40.991 I/[03:01:40.991] M   <SCRIPT> ( 3682): ==================================
+11-18 03:01:41.122 I/[03:01:41.122] M   <SCRIPT> ( 3682): GetAllSubObj set([<Scene (GameObject) at 0x763835B1AAE0>])
+11-18 03:02:45.653 I/[03:02:45.653] M   <SCRIPT> ( 3682): DEBUG clear_obj_cache for path=  ui/in_game/ui_jump_tip/ui_jump_tip.csb
+11-18 03:02:45.654 I/[03:02:45.654] M   <SCRIPT> ( 3682): DEBUG clear_obj_cache for path=  character/dataosha_male/male.gim
+11-18 03:02:46.240 I/[03:02:46.240] M   <SCRIPT> ( 3682): Asset: ui/in_game/ui_jump_tip/ui_jump_tip.csb
+11-18 03:02:46.240 I/[03:02:46.240] M   <SCRIPT> ( 3682): Asset: character/dataosha_male/male.gim
+11-18 03:02:46.342 I/[03:02:46.342] M   <SCRIPT> ( 3682): ======== Level Destroy (20) ======
+11-18 03:02:46.342 I/[03:02:46.342] M   <SCRIPT> ( 3682): [Level] scene destroy
+11-18 03:02:46.342 I/[03:02:46.342] M   <SCRIPT> ( 3682): ==================================
+11-18 03:02:46.358 I/[03:02:46.358] M   <SCRIPT> ( 3682): GetAllSubObj set([<Scene (GameObject) at 0x76384E02FAE0>])
+11-18 03:04:02.456 I/        ( 3682): SCRIPT ERROR **********************************************************************
+11-18 03:04:02.457 I/[03:04:02.456] M   <SCRIPT> ( 3682): Traceback (most recent call last):
+11-18 03:04:02.457 I/[03:04:02.457] M   <SCRIPT> ( 3682):   File "libclaudia/Classes/Coroutine.py", line 41, in libclaudia.Classes.Coroutine.YieldInst
+11-18 03:04:02.457 I/[03:04:02.457] M   <SCRIPT> ( 3682):   File "libclaudia/Classes/Coroutine.py", line 199, in libclaudia.Classes.Coroutine.Coroutin
+11-18 03:04:02.457 I/[03:04:02.457] M   <SCRIPT> ( 3682):   File "libclaudia\Classes\SceneSystem.py", line 222, in DoLoadNeoxScene
+11-18 03:04:02.458 I/[03:04:02.458] M   <SCRIPT> ( 3682):   File "entities\Athlete.py", line 606, in onHallSceneReady
+11-18 03:04:02.458 I/[03:04:02.458] M   <SCRIPT> ( 3682):   File "ui\UIMgr.py", line 1154, in enterHallUI
+11-18 03:04:02.458 I/[03:04:02.458] M   <SCRIPT> ( 3682):   File "ui\UIMgr.py", line 520, in enter_ui
+11-18 03:04:02.458 I/[03:04:02.458] M   <SCRIPT> ( 3682):   File "ui\UIMgr.py", line 445, in _enter_ui
+11-18 03:04:02.458 I/[03:04:02.458] M   <SCRIPT> ( 3682):   File "ui\UIMgr.py", line 584, in _do_enter_ui
+11-18 03:04:02.458 I/[03:04:02.458] M   <SCRIPT> ( 3682):   File "ui\UIMain.py", line 1449, in on_enter
+11-18 03:04:02.458 I/[03:04:02.458] M   <SCRIPT> ( 3682):   File "libclaudia/Classes/Component.py", line 95, in libclaudia.Classes.Component.Component
+11-18 03:04:02.458 I/[03:04:02.458] M   <SCRIPT> ( 3682):   File "libclaudia/Classes/GameObject.py", line 369, in libclaudia.Classes.GameObject.GameOb
+11-18 03:04:02.458 I/[03:04:02.458] M   <SCRIPT> ( 3682):   File "ui\main\UIMainActivityRightTop.py", line 61, in on_enter
+11-18 03:04:02.458 I/[03:04:02.458] M   <SCRIPT> ( 3682):   File "ui\main\UIMainActivityRightTop.py", line 143, in initPanelInfo
+11-18 03:04:02.458 I/[03:04:02.458] M   <SCRIPT> ( 3682): AttributeError: 'PlayerAthlete' object has no attribute 'iLuckyCarnivalIsSuper'
+11-18 03:04:03.453 I/[03:04:03.453] M   <SCRIPT> ( 3682): Type <class 'libclaudia.Classes.Mesh.Mesh'> should be initialized immediately after creation
+11-18 03:04:03.455 I/[03:04:03.455] M   <SCRIPT> ( 3682): Type <class 'libclaudia.Classes.Mesh.PreCreatedMesh'> should be initialized immediately afte
+11-18 03:12:16.913 I/[03:12:16.913] M   <SCRIPT> ( 3682): Traceback (most recent call last):
+11-18 03:12:16.913 I/[03:12:16.913] M   <SCRIPT> ( 3682):   File "libclaudia\Classes\WidgetTouchesBinder.py", line 224, in ____on_widget_touch_event__
+11-18 03:12:16.913 I/[03:12:16.913] M   <SCRIPT> ( 3682):   File "libclaudia/Classes/Component.py", line 95, in libclaudia.Classes.Component.Component
+11-18 03:12:16.913 I/[03:12:16.913] M   <SCRIPT> ( 3682):   File "libclaudia/Classes/GameObject.py", line 373, in libclaudia.Classes.GameObject.GameOb
+11-18 03:12:16.913 I/[03:12:16.913] M   <SCRIPT> ( 3682):   File "ui\UISubModesEnter.py", line 1291, in onSeasonBountyBtnClick
+11-18 03:12:16.913 I/[03:12:16.913] M   <SCRIPT> ( 3682):   File "ui\UIBase.py", line 492, in leave_self_ui
+11-18 03:12:16.913 I/[03:12:16.913] M   <SCRIPT> ( 3682):   File "ui\UIMgr.py", line 771, in leave_ui
+11-18 03:12:16.914 I/[03:12:16.914] M   <SCRIPT> ( 3682):   File "ui\UIMgr.py", line 889, in _leave_ui_general
+11-18 03:12:16.914 I/[03:12:16.914] M   <SCRIPT> ( 3682):   File "ui\UISubModesEnter.py", line 2244, in on_leave
+11-18 03:12:16.914 I/[03:12:16.914] M   <SCRIPT> ( 3682):   File "libclaudia/Classes/Component.py", line 95, in libclaudia.Classes.Component.Component
+11-18 03:12:16.914 I/[03:12:16.914] M   <SCRIPT> ( 3682):   File "libclaudia/Classes/GameObject.py", line 373, in libclaudia.Classes.GameObject.GameOb
+11-18 03:12:16.914 I/[03:12:16.914] M   <SCRIPT> ( 3682):   File "ui\UIMain.py", line 4278, in displayAll
+11-18 03:12:16.914 I/[03:12:16.914] M   <SCRIPT> ( 3682):   File "ui\UIMain.py", line 2708, in showRedPoint
+11-18 03:12:16.914 I/[03:12:16.914] M   <SCRIPT> ( 3682): TypeError: 'NoneType' object is not iterable
+11-18 03:12:27.638 I/[03:12:27.638] M   <SCRIPT> ( 3682): Traceback (most recent call last):
+11-18 03:12:27.638 I/[03:12:27.638] M   <SCRIPT> ( 3682):   File "libclaudia\Classes\WidgetTouchesBinder.py", line 224, in ____on_widget_touch_event__
+11-18 03:12:27.638 I/[03:12:27.638] M   <SCRIPT> ( 3682):   File "libclaudia/Classes/Component.py", line 95, in libclaudia.Classes.Component.Component
+11-18 03:12:27.638 I/[03:12:27.638] M   <SCRIPT> ( 3682):   File "libclaudia/Classes/GameObject.py", line 373, in libclaudia.Classes.GameObject.GameOb
+11-18 03:12:27.639 I/[03:12:27.639] M   <SCRIPT> ( 3682):   File "ui\UIMain.py", line 2447, in onProfileEvent
+11-18 03:12:27.639 I/[03:12:27.639] M   <SCRIPT> ( 3682):   File "ui\UIMain.py", line 2469, in doProfileEvent
+11-18 03:12:27.639 I/[03:12:27.639] M   <SCRIPT> ( 3682):   File "ui\UIMgr.py", line 520, in enter_ui
+11-18 03:12:27.639 I/[03:12:27.639] M   <SCRIPT> ( 3682):   File "ui\UIMgr.py", line 445, in _enter_ui
+11-18 03:12:27.639 I/[03:12:27.639] M   <SCRIPT> ( 3682):   File "ui\UIMgr.py", line 589, in _do_enter_ui
+11-18 03:12:27.639 I/[03:12:27.639] M   <SCRIPT> ( 3682):   File "ui\UIMeetMainPage.py", line 2041, in on_enter
+11-18 03:12:27.639 I/[03:12:27.639] M   <SCRIPT> ( 3682):   File "ui\UIMain.py", line 4263, in hideAll
+11-18 03:12:27.640 I/[03:12:27.640] M   <SCRIPT> ( 3682):   File "ui\UIMain.py", line 3925, in _show_all
+11-18 03:12:27.640 I/[03:12:27.640] M   <SCRIPT> ( 3682):   File "ui\UIMain.py", line 4111, in setModelVisible
+11-18 03:12:27.640 I/[03:12:27.640] M   <SCRIPT> ( 3682): AttributeError: 'NoneType' object has no attribute 'isVisible'

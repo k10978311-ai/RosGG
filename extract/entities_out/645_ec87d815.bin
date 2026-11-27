@@ -1,0 +1,78 @@
+<root>
+	<Implements>
+		<Interface>	iCell </Interface>
+		<Interface>	iCombatUnit </Interface>
+		<Interface>	iMove </Interface>
+	</Implements>
+	<ClientName>	DtsChirst2021OldManEntity		</ClientName>
+	<Properties>
+		<curState>
+			<Type>	INT32	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	1		</Default>
+		</curState>
+
+		<curEndTimeStamp>
+			<Type>	TIMESTAMP_INT	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	0		</Default>
+		</curEndTimeStamp>
+
+		<curCircleStage>
+			<Type>	INT32	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</curCircleStage>
+		
+	</Properties>
+	<CellMethods>
+		<trySubmitChirsmasBell> <Exposed/>
+		</trySubmitChirsmasBell> 
+
+		<doSubmitChirsmasBell> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</doSubmitChirsmasBell> 
+
+		<quitSubmitChirstmasBell> <Exposed/>
+		</quitSubmitChirstmasBell> 
+
+		<updatePosition>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</updatePosition> 
+
+		<startPlayAnimation>
+			<Arg>	INT32	</Arg>
+		</startPlayAnimation> 
+
+	</CellMethods>
+	<ClientMethods>
+		<onDtsSnowmanHit>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	BOOL	</Arg>
+		</onDtsSnowmanHit>
+
+		<onSumitPlayerAction>
+			<Arg> ENTITY_ID </Arg>
+		</onSumitPlayerAction>
+
+		<onUpdateCurrentState>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</onUpdateCurrentState>
+
+		<onStartPlayAnimation>
+			<Arg> INT32 </Arg>
+		</onStartPlayAnimation>
+
+		<onSumitPlayerActionFailed>
+		</onSumitPlayerActionFailed>
+
+	</ClientMethods>
+	<BaseMethods>
+	</BaseMethods>
+</root>

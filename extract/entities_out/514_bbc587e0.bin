@@ -1,0 +1,12 @@
+<root>
+  <Parent> DtsRos2TaskNpc </Parent>
+	<ClientName>	DtsRos2TaskNpcTravel		</ClientName>
+  <Properties>
+  </Properties>
+  <ClientMethods>
+
+  </ClientMethods>
+  <CellMethods>
+  </CellMethods>
+
+</root>

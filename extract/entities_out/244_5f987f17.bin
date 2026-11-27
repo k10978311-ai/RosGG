@@ -1,0 +1,63 @@
+<root>
+	<Parent>	RankedMatchStub		</Parent>
+	<Properties>
+		<ros2CashPool>
+			<Type>		 FLOAT 		</Type>
+			<Flags>		BASE		</Flags>
+		</ros2CashPool>
+	</Properties>
+	<BaseMethods>
+		<testros2match>
+			<Arg> INT8 </Arg>
+			<Arg> INT8 </Arg>
+			<Arg> INT8 </Arg>
+		</testros2match>
+		<setCampCanJoin>
+			<Arg>		UINT64		</Arg>
+			<Arg>		INT8		</Arg>
+			<Arg>		BOOL		</Arg>
+			<Arg>		INT8		</Arg>
+		</setCampCanJoin>
+		<setCampLeftNum>
+			<Arg>		UINT64		</Arg>
+			<Arg>		INT8		</Arg>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT8		</Arg>
+		</setCampLeftNum>
+		<setSpaceLevelTolerance>
+			<Arg>		UINT64		</Arg>
+			<Arg>		INT8		</Arg>
+			<Arg>		INT8		</Arg>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</setSpaceLevelTolerance>
+		<clearJoinedPlayerGid>
+			<Arg>		UINT64		</Arg>
+		</clearJoinedPlayerGid>
+		<gmDoOpenDefenderGame>
+		</gmDoOpenDefenderGame>
+		<gmSetMaxRos2Player>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</gmSetMaxRos2Player>
+		<setRos2WorldLevelGameType>
+			<Arg>		INT32		</Arg>
+		</setRos2WorldLevelGameType>
+		
+		<gmSetRos2MapID>
+			<Arg>		INT32		</Arg>
+		</gmSetRos2MapID>
+		
+		<gmSetAttackerOpenTime>
+		</gmSetAttackerOpenTime>
+
+		<updateRos2CashPool>
+			<Arg>		INT32		</Arg>
+		</updateRos2CashPool>
+		<subRos2CashPool>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</subRos2CashPool>
+	</BaseMethods>
+</root>

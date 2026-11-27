@@ -1,0 +1,38 @@
+<root>
+	<Implements>
+		<Interface>	iCell </Interface>
+		<Interface>	iCombatUnit </Interface>
+	</Implements>
+	<ClientName>	Ros2MineralDeposits		</ClientName>
+	<Properties>
+		<curMineralState>
+			<Type>	INT32 	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</curMineralState>
+
+		<scale>
+			<Type>	FLOAT	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</scale>
+
+	</Properties>
+
+	<CellMethods>
+		<startMining> <Exposed/>
+		</startMining>
+
+		<stopMining> <Exposed/>
+		</stopMining>
+
+		<doMining> <Exposed/>
+		</doMining>
+
+	</CellMethods>
+	
+	<ClientMethods>
+		<onDepositStartMiningCB>
+			<Arg>	INT32	</Arg>
+		</onDepositStartMiningCB>
+
+	</ClientMethods> 
+</root>

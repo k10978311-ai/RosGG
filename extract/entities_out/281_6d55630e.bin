@@ -1,0 +1,105 @@
+<root>
+	<!-- # ros2.0 EXO 数据 -->
+	<Properties>
+		<curRos2ExoID>
+			<Type>			INT32		</Type>
+			<Flags>			BASE_AND_CLIENT		</Flags>
+			<Default>		1		</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</curRos2ExoID>
+		<ros2ExoList>
+			<Type>			ROS2_EXO_DATA		</Type>
+			<Flags>			BASE_AND_CLIENT		</Flags>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2ExoList>
+		
+		<ros2ExoMilitaryRankReward>
+			<Type>			PYTHON		</Type>
+			<Flags>			BASE_AND_CLIENT		</Flags>
+			<Default>	{}		</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2ExoMilitaryRankReward>
+		
+		<ros2ExoLoyaltyLevelReward>
+			<Type>			PYTHON		</Type>
+			<Flags>			BASE_AND_CLIENT		</Flags>
+			<Default>	{}		</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2ExoLoyaltyLevelReward>
+		
+	</Properties>
+
+	<BaseMethods>
+		<requestLevelUpRos2ExoEquipItem> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+		</requestLevelUpRos2ExoEquipItem>
+		
+		<requestGetRos2ExoMilitaryRankReward> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</requestGetRos2ExoMilitaryRankReward>
+
+		<selectRos2Exo> <Exposed/>
+			<Arg>	INT32	</Arg>
+		</selectRos2Exo>
+
+		<requestLevelUpRos2ExoLoyalty> <Exposed/>
+			<Arg>	INT32	</Arg>
+		</requestLevelUpRos2ExoLoyalty>
+
+		<requestGetRos2ExoLoyaltyLevelReward> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</requestGetRos2ExoLoyaltyLevelReward>
+	</BaseMethods>
+
+	<ClientMethods>
+		<onAddRos2Exo>
+			<Arg>	INT32	</Arg>
+		</onAddRos2Exo>
+		<onRos2ExoEquipItemLevelUp>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</onRos2ExoEquipItemLevelUp>
+		
+		<onRos2ExoMilitaryRankLevelUp>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</onRos2ExoMilitaryRankLevelUp>
+		
+		<onGetRos2ExoMilitaryRankReward>
+			<Arg>	INT32	</Arg>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</onGetRos2ExoMilitaryRankReward>
+
+		<onRos2ExoLoyaltyLevelUp>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</onRos2ExoLoyaltyLevelUp>
+		
+		<onGetRos2ExoLoyaltyReward>
+			<Arg>	INT32	</Arg>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</onGetRos2ExoLoyaltyReward>
+		
+		<onAddRos2ExoBuff>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</onAddRos2ExoBuff>
+
+		<onSelectRos2Exo>
+			<Arg>	INT32	</Arg>
+		</onSelectRos2Exo>
+		
+		<syncHallTeamMemberRos2ExoInfo>
+			<Arg> GID </Arg>
+			<Arg> PYTHON </Arg>
+		</syncHallTeamMemberRos2ExoInfo>
+
+	</ClientMethods>
+</root>

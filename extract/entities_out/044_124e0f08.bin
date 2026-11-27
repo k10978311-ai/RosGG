@@ -1,0 +1,18 @@
+<root>
+	<Parent>	RankedMatchStub		</Parent>
+	
+	<Properties>
+	</Properties>
+
+	<BaseMethods>
+		<testtitanmatch>
+			<Arg> INT8 </Arg>
+		</testtitanmatch>
+
+		<testentertitan>
+			<Arg> UINT32 </Arg>
+			<Arg> PYTHON </Arg>
+		</testentertitan>
+		
+	</BaseMethods>
+</root>

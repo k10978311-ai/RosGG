@@ -1,0 +1,67 @@
+[menu after 42s]
+=== CLIENT (Mercury, from logOnBegin)
+12:49:45.181 [INFO] ServerConnection::logOnBegin conneting to 192.168.1.18:25000 for loginAPP
+12:49:45.400 [INFO] ServerConnection::logOn: status==LOGGED_ON
+12:49:45.400 [INFO] ServerConnection::logOn: to:   192.168.1.18:25000
+12:49:45.440 [INFO] ServerConnection::createBasePlayer: id 10001
+12:49:46.293 [ERROR] setPlayer::new player is null
+12:49:46.293 [INFO] ServerConnection::createBasePlayer: id 10003
+12:49:46.887 [INFO] ServerConnection::createCellPlayer: id 10003
+12:49:46.897 [WARNING] ClientApp::enterEntity(10003): enterCount is now 2.
+12:49:47.355 [ERROR] Vegetation mgr already registered in this scene!
+12:49:48.381 [WARNING] GetColliderMeshData with warnings: model\new_props\props\xiutz_water02.gim
+12:49:52.128 [WARNING] [GameThreadBlocking] WaitResTask character\bot\bot_base.gim 931.15 ms
+12:49:52.163 [ERROR] Invalid bone name: biped_hair04
+12:49:52.163 [ERROR] Invalid bone name: biped_hair01
+12:49:52.164 [ERROR] [Animator] Invalid clip name: hand_stand_move_fr in model <character\bot\bot_base.gim>
+12:49:52.164 [ERROR] [Animator] Invalid clip name: hand_stand_move_fl in model <character\bot\bot_base.gim>
+12:49:52.164 [ERROR] [Animator] Invalid clip name: hand_stand_move_f in model <character\bot\bot_base.gim>
+12:49:52.164 [ERROR] [Animator] Invalid clip name: hand_stand_jump_fwd_low_l in model <character\bot\bot_base.gim>
+12:49:52.164 [ERROR] [Animator] Invalid clip name: hand_stand_jump_fwd_1_l in model <character\bot\bot_base.gim>
+12:49:52.164 [ERROR] [Animator] Invalid clip name: hand_stand_jump_fwd_2_l in model <character\bot\bot_base.gim>
+12:49:52.164 [ERROR] [Animator] Invalid clip name: shuitong_stand_fire_left in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: drive_turn_lt_sn_00 in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: drive_turn_bl_sn_00 in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: drive_jump_start_sn_00 in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: drive_turn_lt_sn_00 in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: drive_turn_bl_sn_00 in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: drive_jump_start_sn_00 in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: tt_stand_move_back in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: tt_stand_turn_left in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: tt_stand_jump_1 in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: tt_jump_fire_00 in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: tt_rush_1 in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: drone_takeoff in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: drone_back in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: aircraft1_idle1 in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: aircraft1_idle2 in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: hx_idle in model <character\bot\bot_base.gim>
+12:49:52.165 [ERROR] [Animator] Invalid clip name: hx_move_back in model <character\bot\bot_base.gim>
+12:50:03.217 [ERROR] setPlayer::new player is null
+12:50:03.218 [INFO] ServerConnection::createBasePlayer: id 10002
+12:50:03.993 [INFO] ServerConnection::createCellPlayer: id 10002
+12:50:04.008 [WARNING] ClientApp::enterEntity(10002): enterCount is now 2.
+12:50:04.021 [ERROR] File not found: ""!
+=== CLIENT (<SCRIPT>)
+[cj]test patch!!!!!!!!
+prepare_md5_info PatchConst.FILES_HASH_PATH=hash_list not found!
+@@@@@@@showLoadingTexture
+@@@@@@@showInitPanel
+GetAllSubObj set([<Scene (GameObject) at 0x76383804CA10>])
+======== Level Destroy (-1) ======
+[Level] Scene (GameObject) destroy
+==================================
+GetAllSubObj set([<Scene (GameObject) at 0x7638379C7870>])
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Fatal res not in preload_resource: character/bot/bot_base.gim 
+Traceback (most recent call last):
+  File "player\appearance\PlayerAnimationTreeManager.py", line 2318, in Awake
+  File "player\appearance\PlayerAnimationTreeManager.py", line 2221, in _refreshPitchNode
+ValueError: [Animator] set bone chain failed.
+Exception ValueError: '[Animator] set bone chain failed.' in 'libclaudia.Classes.Behaviour.CBehaviour.____on_active_changed__' ignored
+Traceback (most recent call last):
+  File "player\appearance\PlayerFPSound.py", line 38, in Awake
+  File "player\appearance\PlayerCommonSound.py", line 62, in Awake
+  File "player\appearance\PlayerFPSound.py", line 89, in setCharacter
+AttributeError: 'PlayerFPSound' object has no attribute 'hurtLight'
+Exception AttributeError: "'PlayerFPSound' object has no attribute 'hurtLight'" in 'libclaudia.Classes.Behaviour.CBehaviour.____on_active_changed__' ignored
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Fatal res not in preload_resource: character/bot/bot_hit.gim 

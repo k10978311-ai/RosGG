@@ -1,0 +1,82 @@
+-02.gdl.netease.com	classes4.dex
+-02.gph.netease.com	classes4.dex
+-04.gdl.netease.com	classes4.dex
+-04.gph.netease.com	classes4.dex
+-11.gdl.easebar.com	classes4.dex
+-11.gdl.netease.com	classes4.dex
+-11.gph.easebar.com	classes4.dex
+-11.gph.netease.com	classes4.dex
+-12.gdl.easebar.com	classes4.dex
+-12.gdl.netease.com	classes4.dex
+-12.gph.easebar.com	classes4.dex
+-12.gph.netease.com	classes4.dex
+163.com	lib/*/libclient.so
+acsdk.gameyw.easebar.com	lib/*/libclient.so
+api.cc.163.com	classes5.dex
+api.vop.netease.com	lib/*/libclient.so
+appdump.nie.easebar.com	classes.dex
+appdump.nie.netease.com	classes.dex, classes5.dex
+applog.matrix.easebar.com	classes.dex
+applog.matrix.netease.com	classes.dex
+applogsg.matrix.easebar.com	classes.dex
+audiouser.cc.163.com	lib/*/libAudioEngine.so
+cc.netease.com	classes5.dex
+cgi.v.cc.163.com	classes5.dex, lib/*/libijkplayer.so, lib/*/libstreammgr.so
+clientdump.x.netease.com	lib/*/libclient.so
+data-detect.nie.easebar.com	classes.dex, lib/*/libunisdkdctool.so
+data-detect.nie.netease.com	classes.dex, lib/*/libunisdkdctool.so
+dl.nstool.easebar.com	classes4.dex, lib/*/libunisdkdctool.so
+dns.update.easebar.com	classes4.dex
+drpf-h45na.proxima.nie.easebar.com	classes.dex
+g55-02.gph.netease.com	classes5.dex
+g55-03.gph.netease.com	classes5.dex
+g55-04.gph.netease.com	classes5.dex
+gate.cc.163.com	lib/*/libAudioEngine.so
+httpdns.nie.easebar.com	classes.dex, classes4.dex, classes5.dex
+httpdns.nie.netease.com	classes.dex, classes5.dex
+impression.update.easebar.com	classes.dex
+impression.update.netease.com	classes.dex
+km.netease.com	lib/*/libclient.so, lib/*/libunisdkdctool.so
+log.cc.netease.com	lib/*/libstreammgr.so
+logs.dev.cc.163.com	lib/*/libstreammgr.so
+mbdl.update.easebar.com	classes5.dex
+mbdl.update.netease.com	classes3.dex, classes4.dex, classes5.dex
+mcount.easebar.com	classes.dex, classes4.dex
+mgbsdknaeast.matrix.easebar.com	classes.dex
+mima.163.com	assets/unisdk_protocol_default_txt
+netlink-sigma.proxima.nie.easebar.com	classes.dex, classes5.dex
+netlink-sigma.proxima.nie.netease.com	classes.dex, classes5.dex
+nglbs.nie.netease.com	classes.dex
+notice.easebar.com	assets/GameTheme.skin, resources.arsc
+nstool.netease.com	classes4.dex, lib/*/libunisdkdctool.so
+omega-monetization-spring.proxima.nie.netease.com	classes.dex
+pharossdk.x.netease.com	classes.dex
+proxy-state.nie.easebar.com	lib/*/libunisdkdctool.so
+proxy-state.nie.netease.com	lib/*/libunisdkdctool.so
+push.v.cc.163.com	lib/*/libstreammgr.so
+push.x.netease.com	res/raw/pushconfig.properties
+qr.mpsdk.easebar.com	classes.dex
+query.v.cc.163.com	classes4.dex, lib/*/libijkplayer.so
+reg.163.com	assets/unisdk_protocol_default_txt, assets/unisdk_protocol_privacy_txt
+sdk-os.mpsdk.easebar.com	classes.dex
+service.netease.com	assets/unisdk_protocol_privacy_txt
+sigma-echoes.proxima.nie.netease.com	classes.dex
+statlog.cc.netease.com	lib/*/libAudioEngine.so, lib/*/libstreammgr.so
+udt-sigma.proxima.nie.easebar.com	classes4.dex
+udt-sigma.proxima.nie.netease.com	classes3.dex, classes4.dex
+unisdk.proxima.nie.easebar.com	classes.dex, classes4.dex
+unisdk.proxima.nie.netease.com	classes.dex, classes4.dex
+unisdk.update.easebar.com	classes.dex
+unisdk.update.netease.com	assets/unisdk_protocol_base_txt, assets/unisdk_protocol_base_txt2, classes.dex
+update.unisdk.easebar.com	classes.dex
+vapi.cc.easebar.com	classes4.dex, lib/*/libijkplayer.so
+vod.cc.163.com	lib/*/libstreammgr.so
+vquery.cc.easebar.com	lib/*/libijkplayer.so
+vquery.cc.vapi.cc.easebar.com	classes4.dex
+who.nie.easebar.com	classes.dex
+who.nie.netease.com	classes.dex
+who6.nie.easebar.com	classes4.dex
+who6.nie.netease.com	classes4.dex
+whoami.nie.easebar.com	classes4.dex
+whoami.nie.netease.com	classes4.dex
+www.rulesofsurvivalgame.com	classes.dex

@@ -1,0 +1,7 @@
+Avatar:MapLoader.doLoadMap file=helpers\MapLoader.py line=48 keys=['loadMap']
+Avatar:MapLoader.onHandshake file=helpers\MapLoader.py line=33 keys=['doLoadMap', 'loadMap']
+Avatar:MapLoader.onLoadMap file=helpers\MapLoader.py line=41 keys=['doLoadMap']
+RPCCache:SceneSystem.DoLoadNeoxScene file=libclaudia\Classes\SceneSystem.py line=86 keys=['loadMap']
+RPCCache:SceneSystem._preloadLevelResCoro.<lambda> file=libclaudia\Classes\SceneSystem.py line=476 keys=['LoadNeoxScene']
+RPCCache:SceneSystem._reloadMapData file=libclaudia\Classes\SceneSystem.py line=257 keys=['loadMap']
+done 6

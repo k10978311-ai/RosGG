@@ -1,0 +1,24 @@
+<root>
+	<Implements>
+		<Interface>	iCell </Interface>
+		<Interface>	iCombatUnit </Interface>
+		<Interface>	iSkill </Interface>
+	</Implements>
+	<ClientName>	DtsValentineSupportNpc		</ClientName>
+	<Properties>
+		<valentineNpcTask>
+			<Type>		PYTHON		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>	{}		</Default>
+		</valentineNpcTask>
+	</Properties>
+	<CellMethods>
+		<updateValentineNpcTask>
+			<Arg>			INT32			</Arg>
+		</updateValentineNpcTask>
+	</CellMethods>
+	<ClientMethods>
+	</ClientMethods>
+	<BaseMethods>
+	</BaseMethods>
+</root>

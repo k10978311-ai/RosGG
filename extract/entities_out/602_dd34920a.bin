@@ -1,0 +1,14 @@
+<root>
+	<Implements>
+		<Interface> iCell </Interface>
+		<Interface> iMove </Interface>
+	</Implements>
+	<Properties>
+	</Properties>
+
+	<CellMethods>
+		<tryFollowTrain>
+			<Arg> ENTITY_ID </Arg>
+		</tryFollowTrain>
+	</CellMethods>
+</root>

@@ -1,0 +1,9 @@
+bodyAppearanceData <type 'NoneType'> len=None
+wearableAppearanceData <type 'NoneType'> len=None
+BodyCat [('FACE', 1), ('GENDER', 3), ('HAIR', 2)]
+WearCat [('ALL', 0), ('COAT', 6), ('DECORATION_FACE', 11), ('DECORATION_GLASS', 12), ('FLYINGACCESSORY', 15), ('HAT', 1), ('PANTS', 3), ('PENDANT', 94), ('PREVIEW', 999), ('SHOES', 4), ('SHORTS', 7), ('SLIRT', 8), ('TRANSFORMSUIT', 93), ('TSHIRT', 2), ('VEST', 5)]
+Traceback (most recent call last):
+  File "/storage/emulated/0/Android/data/com.netease.chiji/files/py_payload.py", line 20, in <module>
+    for k, v in d.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+

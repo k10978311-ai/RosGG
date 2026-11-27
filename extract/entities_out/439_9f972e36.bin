@@ -1,0 +1,31 @@
+<root>
+	<Implements>
+		<Interface>	iCell		</Interface>
+		<Interface>	iBaseWithCell	</Interface>
+		<Interface>	iCombatUnit </Interface>
+	</Implements>
+	<ClientName> TitanBase </ClientName>
+
+	<Properties>
+		<titanCamp>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> 0 </Default>
+		</titanCamp>
+
+	</Properties>
+
+	<CellMethods>
+		<!-- 获取道具 -->
+		<pickItem> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</pickItem>
+
+		<!-- 提交积分 -->
+		<deliverScoreItem> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</deliverScoreItem>
+	</CellMethods>
+</root>

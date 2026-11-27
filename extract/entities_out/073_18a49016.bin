@@ -1,0 +1,32 @@
+<root>
+	<Properties> 
+		<finishedExploreKeyRoom>
+			<Type>	PYTHON		</Type>
+			<Flags>	CELL_PUBLIC_AND_OWN		</Flags>
+			<Default>	{}		</Default>
+		</finishedExploreKeyRoom>
+		<canOpenTreasureRoomIDSet>
+			<Type>	PYTHON		</Type>
+			<Flags>	CELL_PUBLIC_AND_OWN		</Flags>
+		</canOpenTreasureRoomIDSet>
+	</Properties>
+
+	<CellMethods> 
+		<toFinishExploreKeyRoom>
+		</toFinishExploreKeyRoom>
+		<onShowFinishExploreKeyRoomTips>
+			<Arg>		ENTITY_ID		</Arg>
+			<Arg>		STRING			</Arg>
+		</onShowFinishExploreKeyRoomTips>
+	</CellMethods>
+
+	<ClientMethods>
+		<onSyncNewAddedOpenTreasureRoomIDSet>
+			<Arg>		PYTHON			</Arg>
+		</onSyncNewAddedOpenTreasureRoomIDSet>
+		<onShowFinishExploreKeyRoomTips>
+			<Arg>		ENTITY_ID		</Arg>
+			<Arg>		STRING			</Arg>
+		</onShowFinishExploreKeyRoomTips>
+	</ClientMethods>
+</root>

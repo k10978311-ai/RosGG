@@ -1,0 +1,95 @@
+<root>
+  <Implements>
+    <Interface> iCell </Interface>
+  </Implements>
+
+  <ClientName>  DtsRos2TaskNpc  </ClientName>
+
+  <Properties>
+    <npcID>
+      <Type>  INT32 </Type>
+      <Flags> ALL_CLIENTS </Flags>
+    </npcID>
+    <gidTeamIDDict>
+      <Type>	PYTHON		</Type>
+      <Flags> ALL_CLIENTS </Flags>
+      <Default>	{}	</Default>
+    </gidTeamIDDict>
+    <entidTeamIDDict>
+      <Type>	PYTHON		</Type>
+      <Flags> ALL_CLIENTS </Flags>
+      <Default>	{}	</Default>
+    </entidTeamIDDict>
+    <entIDFinishedInteract>
+      <Type>	PYTHON		</Type>
+      <Flags> ALL_CLIENTS </Flags>
+      <Default>	{}	</Default>
+    </entIDFinishedInteract>
+    <teamIDFinishedInteract>
+      <Type>	PYTHON		</Type>
+      <Flags> ALL_CLIENTS </Flags>
+      <Default>	{}	</Default>
+    </teamIDFinishedInteract>
+    <msgType>
+      <Type>  INT32 </Type>
+      <Flags> ALL_CLIENTS </Flags>
+    </msgType>
+    <inInteractingEntidDict>
+      <Type>	PYTHON		</Type>
+      <Flags> ALL_CLIENTS </Flags>
+      <Default>	{}	</Default>
+    </inInteractingEntidDict>
+  </Properties>
+
+  <ClientMethods>
+    <onTaskNpcInteractBegin>
+      <Arg>       GID           </Arg>
+      <Arg>       INT32         </Arg>
+      <Arg>       INT32         </Arg>
+      <Arg>       PYTHON        </Arg>
+    </onTaskNpcInteractBegin>
+    <onTaskNpcInteractFinish>
+      <Arg>       GID           </Arg>
+      <Arg>       INT32         </Arg>
+      <Arg>       INT32         </Arg>
+      <Arg>       PYTHON        </Arg>
+    </onTaskNpcInteractFinish>
+    <onTaskNpcInteractCancel>
+      <Arg>       GID           </Arg>
+      <Arg>       INT32         </Arg>
+      <Arg>       INT32         </Arg>
+      <Arg>       PYTHON        </Arg>
+    </onTaskNpcInteractCancel>
+  </ClientMethods>
+
+  <CellMethods>
+    <requestTaskNpcInteractFinish> <Exposed/>
+      <Arg>       GID           </Arg>
+      <Arg>       INT32         </Arg>
+      <Arg>       INT32         </Arg>
+    </requestTaskNpcInteractFinish>
+    <requestTaskNpcInteractCancel> <Exposed/>
+      <Arg>       GID           </Arg>
+      <Arg>       INT32         </Arg>
+      <Arg>       INT32         </Arg>
+    </requestTaskNpcInteractCancel>
+    <requestTaskNpcInteractStart> <Exposed/>
+      <Arg>       GID           </Arg>
+      <Arg>       INT32         </Arg>
+      <Arg>       INT32         </Arg>
+    </requestTaskNpcInteractStart>
+    <addRos2PlayerTaskInfo>
+      <Arg>       GID           </Arg>
+      <Arg>       INT32         </Arg>
+      <Arg>       INT32         </Arg>
+      <Arg>       INT32         </Arg>
+      <Arg>       INT32         </Arg>
+    </addRos2PlayerTaskInfo>
+    <addRos2PlayerTeammate>
+      <Arg>       GID           </Arg>
+      <Arg>       INT32         </Arg>
+      <Arg>       INT32         </Arg>
+    </addRos2PlayerTeammate>
+  </CellMethods>
+
+</root>

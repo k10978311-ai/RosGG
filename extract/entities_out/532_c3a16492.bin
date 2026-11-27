@@ -1,0 +1,121 @@
+<root>
+	<Properties>
+		<christmas2021BellLastRefrshTime>
+			<Type>		INT32		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default> 0 </Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</christmas2021BellLastRefrshTime>
+		<christmas2021BellGotToday>
+			<Type>		INT32		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default> 0 </Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</christmas2021BellGotToday>
+
+		<christmas2021DiamondCnt>
+			<Type>		INT32		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default> 0 </Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</christmas2021DiamondCnt>
+
+		<chirstmasGuideShow>
+			<Type>		BOOL		</Type>
+			<Flags>		BASE	</Flags>
+			<Default> 	0 		</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</chirstmasGuideShow>
+
+		<christmas2021SignInDay>
+			<Type>		ARRAY <of>	INT8	</of>		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	[]		</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</christmas2021SignInDay>
+
+		<christmas2021DaysFromSignInStart>
+			<Type>	INT8	</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	0	</Default>
+		</christmas2021DaysFromSignInStart>
+		<christmas2021DrawTicket>
+			<Type>	INT8	</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	0	</Default>
+			<PersistentMongo>	true		</PersistentMongo>
+		</christmas2021DrawTicket>
+		<christmas2021PayRebates>
+			<Type>	INT8	</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	0	</Default>
+			<PersistentMongo>	true		</PersistentMongo>
+		</christmas2021PayRebates>
+		<christmas2021NewBell>
+			<Type>		BOOL		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default> 	0 		</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</christmas2021NewBell>
+	</Properties>
+
+	<BaseMethods>
+		<get2021ChristmasBell>
+			<Arg>	INT32 </Arg>
+			<Arg>	INT32 </Arg>
+		</get2021ChristmasBell>
+
+		<onPickChristmasDiamondCnt>
+			<Arg>	INT32 </Arg>
+			<Arg>	INT32 </Arg>
+		</onPickChristmasDiamondCnt>
+		
+		<setChirstmasGuideShow>
+			<Arg>	BOOL </Arg>
+		</setChirstmasGuideShow>
+
+		<requestChristmas2021SignIn> <Exposed />
+		</requestChristmas2021SignIn>
+		<buyChritsmas2021Good> <Exposed />
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</buyChritsmas2021Good>
+
+		<gmClearChristmas2021SignIn>
+		</gmClearChristmas2021SignIn>
+		<gmAddChristmas2021Bell>
+			<Arg> INT32	</Arg>
+		</gmAddChristmas2021Bell>
+		<requestDtsLTDoLotteryByChristmas2021DrawTicket> <Exposed />
+		</requestDtsLTDoLotteryByChristmas2021DrawTicket>
+		<updateChristmas2021GetNewBellState>	<Exposed />
+			<Arg>	BOOL </Arg>
+		</updateChristmas2021GetNewBellState>
+	</BaseMethods>
+
+	<ClientMethods>
+		<updateChristmas2021BellRreshTime>
+			<Arg>	INT32	</Arg>
+		</updateChristmas2021BellRreshTime>
+		<updateChristmas2021BellGotToday>
+			<Arg>	INT32	</Arg>
+		</updateChristmas2021BellGotToday>
+		<updateChristmas2021SignInDay>
+			<Arg>		ARRAY <of>	INT8	</of>		</Arg>
+		</updateChristmas2021SignInDay>
+		<updateChristmas2021DaysFromSignInStart>
+			<Arg>	INT8 	</Arg>
+		</updateChristmas2021DaysFromSignInStart>
+		<updateChristmas2021DrawTicket>
+			<Arg> INT8	</Arg>
+		</updateChristmas2021DrawTicket>
+		<onSyncChristmas2021PayRebate>
+			<Arg>	STRING	</Arg>
+			<Arg>	INT8	</Arg>
+		</onSyncChristmas2021PayRebate>
+		<onUpdateChristmas2021GetNewBellState>
+			<Arg>	BOOL </Arg>
+		</onUpdateChristmas2021GetNewBellState>
+
+	</ClientMethods>
+</root>

@@ -1,0 +1,156 @@
+<root>
+	<Properties>
+		<ros2AllTaskContracts>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2AllTaskContracts>
+		<resetRos2AllTaskContractsTimes>
+			<Type> PYTHON </Type>
+			<Flags> BASE </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</resetRos2AllTaskContractsTimes>
+
+		<ros2CurrentTaskContract>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> [] </Default>
+		</ros2CurrentTaskContract>
+
+		<addRos2ContractTaskExp>
+			<Type>		FLOAT		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	0		</Default>
+			<PersistentMongo> true </PersistentMongo>
+		</addRos2ContractTaskExp>
+		<addRos2ContractTaskCash>
+			<Type>		FLOAT		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	0		</Default>
+			<PersistentMongo> true </PersistentMongo>
+		</addRos2ContractTaskCash>
+
+		<addRos2PatrolTaskExp>
+			<Type>		FLOAT		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	0		</Default>
+			<PersistentMongo> true </PersistentMongo>
+		</addRos2PatrolTaskExp>
+		<addRos2PatrolTaskCash>
+			<Type>		FLOAT		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	0		</Default>
+			<PersistentMongo> true </PersistentMongo>
+		</addRos2PatrolTaskCash>
+		<addRos2FightExp>
+			<Type>		FLOAT		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	0		</Default>
+			<PersistentMongo> true </PersistentMongo>
+		</addRos2FightExp>
+
+		<ros2TaskExplore>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	{}	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2TaskExplore>
+		<ros2TaskContract>
+			<Type>		INT8		</Type>
+			<Flags>		BASE	</Flags>
+			<Default>	5	</Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2TaskContract>
+		<ros2TaskContractReward>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	{}	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2TaskContractReward>
+		<ros2AutoMatchTaskIDList>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	[]	</Default>
+		</ros2AutoMatchTaskIDList>
+		<ros2AutoMatchTaskDiffculty>
+			<Type>		INT32		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+		</ros2AutoMatchTaskDiffculty>
+	</Properties>
+	<ClientMethods>
+		<syncRos2AllTaskContracts>
+			<Arg> PYTHON </Arg>
+		</syncRos2AllTaskContracts>
+		<syncHallTeamMemberAllRos2TaskContracts>
+			<Arg> GID </Arg>
+			<Arg> PYTHON </Arg>
+		</syncHallTeamMemberAllRos2TaskContracts>
+
+		<syncRos2CurrentTaskContract>
+			<Arg> PYTHON </Arg>
+		</syncRos2CurrentTaskContract>
+		<syncHallTeamMemberRos2CurrentTaskContract>
+			<Arg> GID </Arg>
+			<Arg> PYTHON </Arg>
+		</syncHallTeamMemberRos2CurrentTaskContract>
+		<onRequestTaskContractNextRefreshTime>
+			<Arg> FLOAT </Arg>
+		</onRequestTaskContractNextRefreshTime>
+		<syncAddRos2ContractTaskExpAndCash>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</syncAddRos2ContractTaskExpAndCash>
+		<syncAddRos2PatrolTaskExpAndCash>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</syncAddRos2PatrolTaskExpAndCash>
+		<syncRos2MapExplore>
+			<Arg> PYTHON </Arg>
+		</syncRos2MapExplore>
+		<getExploreReward>
+			<Arg> PYTHON </Arg>
+			<Arg> INT32 </Arg>
+		</getExploreReward>
+		<setRos2AutoMatchTaskID>
+			<Arg> PYTHON	</Arg>
+			<Arg> INT32		</Arg>
+		</setRos2AutoMatchTaskID>
+	</ClientMethods>
+	<BaseMethods>
+		<selectCurrentTaskContract> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</selectCurrentTaskContract>
+		<requestTaskContractNextRefreshTime> <Exposed/>
+		</requestTaskContractNextRefreshTime>
+		<finishTaskContract>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</finishTaskContract>
+		<rechangeRos2TaskContract>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</rechangeRos2TaskContract>
+		<sendDtsRos2AvatarBattleTaskReward>
+			<Arg> PYTHON </Arg>
+		</sendDtsRos2AvatarBattleTaskReward>
+		<addRos2TaskExploreLevel>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</addRos2TaskExploreLevel>
+		<getExploreReward><Exposed/>
+			<Arg> INT32 </Arg>
+		</getExploreReward>
+		<setRos2AutoMatchTaskID>
+			<Arg> PYTHON	</Arg>
+			<Arg> INT32		</Arg>
+		</setRos2AutoMatchTaskID>
+	</BaseMethods>
+</root>

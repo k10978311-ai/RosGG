@@ -1,0 +1,139 @@
+<root>
+	<Properties>
+		<!-- 战术道具免费购买次数 -->
+		<ros2TacticalPropPurchaseTimes>
+			<Type>		INT32			</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	0			</Default>
+			<PersistentMongo>	true		</PersistentMongo>
+		</ros2TacticalPropPurchaseTimes>
+		<!-- 战术道具剩余使用次数 -->
+		<ros2TacticalPropUseTimes>
+			<Type>		PYTHON			</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}			</Default>
+			<PersistentMongo>	true		</PersistentMongo>
+		</ros2TacticalPropUseTimes>
+		<!-- 当前携带的战术道具, 道具ID -->
+		<ros2CarryingTacticalProp>
+			<Type> ARRAY <of>	INT32	</of>	</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	[]			</Default>
+			<PersistentMongo>	true		</PersistentMongo>
+		</ros2CarryingTacticalProp>
+		<!-- 战术道具等级 -->
+		<ros2TacticalPropLevel>
+			<Type>		PYTHON			</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}			</Default>
+			<PersistentMongo>	true		</PersistentMongo>
+		</ros2TacticalPropLevel>
+		
+		<dtsRos2PropAthleteDoneTask>
+			<Type>		PYTHON			</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	set()			</Default>
+			<PersistentMongo>	true		</PersistentMongo>
+		</dtsRos2PropAthleteDoneTask>
+		
+		<dtsRos2PropAthleteTaskSeq>
+			<Type>	PYTHON		</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	{}	</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</dtsRos2PropAthleteTaskSeq>
+		
+		<dtsRos2PropAthleteTaskRecord>
+			<Type>	PYTHON		</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	{}	</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</dtsRos2PropAthleteTaskRecord>
+		
+		<dtsRos2PropAthleteTaskReward>
+			<Type>	PYTHON		</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	set()	</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</dtsRos2PropAthleteTaskReward>
+		
+	</Properties>
+
+	<BaseMethods>
+		<requestLevelRos2TacticalProp> <Exposed/>
+			<Arg>	INT32	</Arg>
+		</requestLevelRos2TacticalProp>
+		
+		<sendDtsRos2TacticalPropTaskData>
+			<Arg>   PYTHON       </Arg>
+			<Arg>   PYTHON       </Arg>
+		</sendDtsRos2TacticalPropTaskData>
+		<selectRos2TacticalProp> <Exposed/>
+			<Arg>	INT8	</Arg>
+			<Arg>	INT8	</Arg>
+		</selectRos2TacticalProp>
+		<buyRos2TacticalPropFree> <Exposed/>
+			<Arg>	INT8	</Arg>
+		</buyRos2TacticalPropFree>
+		<buyRos2TacticalProp> <Exposed/>
+			<Arg>	INT8	</Arg>
+		</buyRos2TacticalProp>		
+		<uninstallRos2TacticalProp> <Exposed/>
+			<Arg>	INT8	</Arg>
+		</uninstallRos2TacticalProp>
+		<gmSetRos2TacticalPropLevel>
+			<Arg>	INT8	</Arg>
+			<Arg>	INT8	</Arg>
+		</gmSetRos2TacticalPropLevel>
+		<gmSetRos2CarryingTacticalProp>
+			<Arg>	INT8	</Arg>
+		</gmSetRos2CarryingTacticalProp>
+		
+		<gmAddRos2TacticalPropType>
+			<Arg>	INT8	</Arg>
+		</gmAddRos2TacticalPropType>
+		
+		<gmHandleDtsRos2TacticalPropTaskDone>
+			<Arg>	INT8	</Arg>
+		</gmHandleDtsRos2TacticalPropTaskDone>
+		
+		<requestSubmitRos2TacticalPropTaskItem> <Exposed/>
+			<Arg> STRING </Arg>
+			<Arg> INT32 </Arg>
+		</requestSubmitRos2TacticalPropTaskItem>
+	</BaseMethods>
+
+	<ClientMethods>
+		<onUnlockRos2TacticalProp>
+			<Arg> INT32	</Arg>
+		</onUnlockRos2TacticalProp>
+
+		<onSelectRos2TacticalProp>
+			<Arg> ARRAY <of> INT32  </of> </Arg>
+			<Arg> PYTHON	</Arg>
+		</onSelectRos2TacticalProp>
+
+		<onBuyRos2TacticalProp>
+			<Arg> INT32	</Arg>
+			<Arg> PYTHON	</Arg>
+		</onBuyRos2TacticalProp>
+
+		<onLevelRos2TacticalProp>
+			<Arg> INT32	</Arg>
+			<Arg> INT32	</Arg>
+		</onLevelRos2TacticalProp>
+
+		<onUpdateRos2TacticalPropTaskSeq>
+			<Arg> INT32	</Arg>
+			<Arg> INT32	</Arg>
+		</onUpdateRos2TacticalPropTaskSeq>
+		
+		<onDoneDtsRos2PropAthleteTask>
+			<Arg> INT32	</Arg>
+		</onDoneDtsRos2PropAthleteTask>
+		
+		<updateDtsRos2PropAthleteTaskRecord>
+			<Arg> PYTHON	</Arg>
+		</updateDtsRos2PropAthleteTaskRecord>
+	</ClientMethods>
+</root>

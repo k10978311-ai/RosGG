@@ -1,0 +1,73 @@
+<root>
+	<Implements>
+		<Interface>	iBaseNoCell </Interface>
+	</Implements>
+	<Properties>
+		<members>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE		</Flags>
+			<Default>	{}		</Default>
+		</members>
+	</Properties>
+
+	<BaseMethods>
+		<onPlayerEnter>
+			<Arg> PYTHON </Arg> 
+		</onPlayerEnter>
+		<onPlayerLeave>
+			<Arg> GID </Arg> 
+		</onPlayerLeave>
+		<invitePlayer>
+			<Arg> GID </Arg>
+			<Arg> GID </Arg>
+			<Arg> STRING </Arg>
+		</invitePlayer>
+		<addBusinessRoomItem>
+			<Arg> GID </Arg>
+			<Arg> INT8 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> PYTHON </Arg>
+		</addBusinessRoomItem>
+		<removeBusinessRoomItem>
+			<Arg> GID </Arg>
+			<Arg> INT8 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+		</removeBusinessRoomItem>
+		<businessRoomPlayerSetReady>
+			<Arg> GID </Arg>
+			<Arg> BOOL </Arg>
+		</businessRoomPlayerSetReady>
+		<businessRoomPlayerSetMoney>
+			<Arg> GID </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</businessRoomPlayerSetMoney>
+		<onTradePreProcessData>
+			<Arg> GID </Arg>
+			<Arg> INT8 </Arg>
+		</onTradePreProcessData>
+		<onTradeProcessData>
+			<Arg> GID </Arg>
+		</onTradeProcessData>
+		<onInvitePlayerFail>
+			<Arg> INT8 </Arg>
+			<Arg> GID </Arg>
+			<Arg> GID </Arg>
+		</onInvitePlayerFail>
+		<onChat>
+			<Arg> INT32 </Arg> <!-- channel -->
+ 			<Arg> STRING </Arg> <!-- content -->
+ 			<Arg> CHAT_RECIVER </Arg> <!-- receiver -->
+ 			<Arg> CHAT_PARAMS </Arg> <!-- params -->
+ 			<Arg> GID </Arg>
+		</onChat>
+		<onMemberDataChagne>
+			<Arg> GID </Arg>
+			<Arg> STRING </Arg>
+			<Arg> PYTHON </Arg>
+		</onMemberDataChagne>
+	</BaseMethods>
+</root>

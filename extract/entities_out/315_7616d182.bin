@@ -1,0 +1,62 @@
+<root>
+	<Implements>
+		<Interface> iCell </Interface>
+		<Interface> iMove </Interface>
+	</Implements>
+
+	<Properties>
+		<elevatorPropID>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</elevatorPropID>
+		<cageNo>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</cageNo>
+		<currentFloor>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</currentFloor>
+		<nextFloor>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</nextFloor>
+		<opened>
+			<Type> BOOL </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</opened>
+	</Properties>
+
+	<ClientName> ElevatorCage </ClientName>
+
+	<CellMethods>
+		<openDoor> <Exposed/>
+		</openDoor>
+		<closeDoor> <Exposed/>
+		</closeDoor>
+
+		<setNextFloor>
+			<Arg> INT8 </Arg>
+		</setNextFloor>
+
+		<bindTPAvatar>
+			<Arg> ENTITY_ID </Arg>
+			<Arg> VECTOR3	</Arg>
+		</bindTPAvatar>
+		<updateOnTrainEntities>
+			<Arg> INT32 </Arg>
+			<Arg> VECTOR3 </Arg>
+		</updateOnTrainEntities>
+	</CellMethods>
+	<ClientMethods>
+		<bindTPAvatar>
+			<Arg> ENTITY_ID </Arg>
+			<Arg> VECTOR3	</Arg>
+		</bindTPAvatar>
+
+		<onOpenDoorFail>
+		</onOpenDoorFail>
+		<onCloseDoorFail>
+		</onCloseDoorFail>
+	</ClientMethods>
+</root>

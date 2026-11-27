@@ -1,0 +1,203 @@
+<root>
+	<Properties>
+		<ros2BattleTaskRewardInfo>
+			<Type>	PYTHON		</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	{}	</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2BattleTaskRewardInfo>
+		<ros2BattleTaskRewardInfoTemp>
+			<!-- 		为了红点，战斗奖励领取状态 <id, state>		 	-->
+			<Type>		PYTHON			</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}			</Default>
+		</ros2BattleTaskRewardInfoTemp>
+		<ros2BattleTaskActiveRewardInfo>
+			<Type>	PYTHON		</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	{}	</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2BattleTaskActiveRewardInfo>
+		<ros2BattleTaskProgressInfo>
+			<!-- 		根据表不会被重置的任务数据记录 <taskId: cnt>	-->
+			<Type>		PYTHON			</Type> 
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}			</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2BattleTaskProgressInfo>
+		<ros2BattleTaskLastResetTimeDaily>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2BattleTaskLastResetTimeDaily>
+		<ros2BattleTaskLastResetTimeWeekly>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2BattleTaskLastResetTimeWeekly>
+		<ros2BattleTaskDailyActivePoint>
+			<Type> INT32 </Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2BattleTaskDailyActivePoint>
+		<ros2BattleTaskWeeklyActivePoint>
+			<Type> INT32 </Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2BattleTaskWeeklyActivePoint>
+		<ros2RandomDailyBattleTask>
+			<Type>	PYTHON		</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	{}	</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2RandomDailyBattleTask>
+		<ros2RandomWeeklyBattleTask>
+			<Type>	PYTHON		</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	{}	</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2RandomWeeklyBattleTask>
+		<ros2ActivityBattleTask>
+			<Type>	PYTHON		</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	{}	</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2ActivityBattleTask>
+		<ros2MainBattleTaskProgressInfo>
+			<Type>	PYTHON		</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	{}	</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2MainBattleTaskProgressInfo>
+		<ros2SpecialBattleTaskInfo>
+			<Type>	PYTHON		</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	{}	</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2SpecialBattleTaskInfo>
+		<ros2SpecialBattleTaskRewardInfo>
+			<Type>	PYTHON		</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	{}	</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2SpecialBattleTaskRewardInfo>
+		<ros2BattleTaskTriggerInfo>
+			<Type>	PYTHON		</Type>
+			<Flags>	BASE_AND_CLIENT	</Flags>
+			<Default>	{}	</Default>
+		</ros2BattleTaskTriggerInfo>
+		<ros2BattleTaskRefreshDayNo>
+			<Type>	INT32		</Type>
+			<Flags>	BASE	</Flags>
+			<Default>	0	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2BattleTaskRefreshDayNo>
+		<ros2EnableRefreshMainBattleTask>
+			<Type>	BOOL		</Type>
+			<Flags>	BASE	</Flags>
+			<Default>	False	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2EnableRefreshMainBattleTask>
+	</Properties>
+	<BaseMethods>
+		<queryRos2BattleTask> <Exposed/>
+			<Arg>		INT32		</Arg>
+		</queryRos2BattleTask>
+		<getRos2BattleTaskReward> <Exposed/>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</getRos2BattleTaskReward>
+		<getRos2BattleTaskActiveReward> <Exposed/>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</getRos2BattleTaskActiveReward>
+		<getAllRos2BattleTaskAndActiveReward> <Exposed/>
+			<Arg>		INT32		</Arg>
+		</getAllRos2BattleTaskAndActiveReward>
+		<getRos2BattleTaskMainReward> <Exposed/>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</getRos2BattleTaskMainReward>
+		<getRos2BattleTaskChallengeReward> <Exposed/>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</getRos2BattleTaskChallengeReward>
+		<getRos2ActivityBattleTaskActiveReward> <Exposed/>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</getRos2ActivityBattleTaskActiveReward>
+		<checkRos2BattleTaskTimes> <Exposed/>
+		</checkRos2BattleTaskTimes>
+		<triggerUpdateRos2SpecialBattleTask>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</triggerUpdateRos2SpecialBattleTask>
+		<getRos2BattleTaskSpecialSeqReward> <Exposed/>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</getRos2BattleTaskSpecialSeqReward>
+		<getRos2BattleTaskSpecialFinalReward> <Exposed/>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</getRos2BattleTaskSpecialFinalReward>
+		<gmRos2ActivityBattleTaskCanAward>
+			<Arg>		INT32		</Arg>
+		</gmRos2ActivityBattleTaskCanAward>
+	</BaseMethods>
+
+	<ClientMethods>
+		<onQueryRos2BattleTask>
+			<Arg>	INT32	</Arg>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</onQueryRos2BattleTask>
+		<onUpdateRos2BattleTaskRewardInfo>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</onUpdateRos2BattleTaskRewardInfo>
+		<onGetRos2BattleTaskReward>
+			<Arg>	PYTHON	</Arg>
+		</onGetRos2BattleTaskReward>
+		<onUpdateRos2BattleTaskActivePoint>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</onUpdateRos2BattleTaskActivePoint>
+		<onUpdateRos2BattleTaskActiveRewardInfo>
+			<Arg>	INT32	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</onUpdateRos2BattleTaskActiveRewardInfo>
+		<onGetRos2BattleTaskMainReward>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</onGetRos2BattleTaskMainReward>
+		<onGetRos2BattleTaskChallengeReward>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</onGetRos2BattleTaskChallengeReward>
+		<onGetRos2BattleTaskSpecialSeqReward>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</onGetRos2BattleTaskSpecialSeqReward>
+		<onGetRos2BattleTaskSpecialFinalReward>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</onGetRos2BattleTaskSpecialFinalReward>
+		<onGetRos2ActivityBattleTaskActiveReward>
+			<Arg>		INT32		</Arg>
+			<Arg>		PYTHON		</Arg>
+		</onGetRos2ActivityBattleTaskActiveReward>
+	</ClientMethods>
+</root>

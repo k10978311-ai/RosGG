@@ -1,0 +1,142 @@
+<root>
+	<Properties>
+		<fallFollowTargetID>
+			<Type> ENTITY_ID </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</fallFollowTargetID>
+		<fallFollowerList>
+			<Type>	ARRAY <of>	ENTITY_ID	</of>		</Type>
+			<Flags>	ALL_CLIENTS </Flags>
+		</fallFollowerList>
+		<fallFollowInviteID> <!-- 被谁邀请了 -->
+			<Type> ENTITY_ID </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</fallFollowInviteID>
+		<bornFollowerID>
+			<Type>		ENTITY_ID	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	0		</Default>
+		</bornFollowerID>
+		<bornBeFollowedID>
+			<Type>	ARRAY <of> ENTITY_ID </of>	</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+			<Default>	[]		</Default>
+		</bornBeFollowedID>
+		<bornAreaID>
+			<Type>		INT32		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	-1		</Default>
+		</bornAreaID>
+	</Properties>
+	<CellMethods>
+		<reqFallFollowTeammateFollow> <Exposed/>
+			<Arg> 	ENTITY_ID	</Arg>
+		</reqFallFollowTeammateFollow>
+		<reqFallFollowTeammateCancel> <Exposed/>
+			<Arg> 	ENTITY_ID	</Arg>
+		</reqFallFollowTeammateCancel>
+		<reqFallFollowTeammateInvite> <Exposed/>
+			<Arg> 	ENTITY_ID	</Arg>
+		</reqFallFollowTeammateInvite>
+		<reqFallFollowTeammateInviteResponse> <Exposed/>
+			<Arg>	ENTITY_ID	</Arg>
+			<Arg> 	INT8	</Arg>
+		</reqFallFollowTeammateInviteResponse>
+		<reqFallFollowCurrentInfo> <Exposed/>
+		</reqFallFollowCurrentInfo>
+
+		<fallFollowBroadcastChanged>
+		</fallFollowBroadcastChanged>
+		<addFallFollower>
+			<Arg>	ENTITY_ID	</Arg>
+		</addFallFollower>
+		<removeFallFollower>
+			<Arg>	ENTITY_ID	</Arg>
+		</removeFallFollower>
+		<beInvitedAsFallFollower>
+			<Arg>	ENTITY_ID	</Arg>
+		</beInvitedAsFallFollower>
+		<onFallFollowInviteResponse>
+			<Arg>	ENTITY_ID	</Arg>
+			<Arg>	INT8	</Arg>
+		</onFallFollowInviteResponse>
+		<onFallFollowTargetGetOffPlane>
+			<Arg>	VECTOR3		</Arg>
+		</onFallFollowTargetGetOffPlane>
+		<setFallFollowTargetID>
+			<Arg>	INT32		</Arg>
+		</setFallFollowTargetID>
+		<selectBornPosition> <Exposed/>
+			<Arg>	INT32		</Arg>
+		</selectBornPosition>
+		<onSelectBornPositionResult>
+			<Arg>	STRING		</Arg>
+			<Arg>	INT32		</Arg>
+		</onSelectBornPositionResult>
+		<onChangeBornPosition>
+			<Arg>	STRING		</Arg>
+			<Arg>	INT32		</Arg>
+		</onChangeBornPosition>
+		<removeBornFollower>
+			<Arg>	ENTITY_ID	</Arg>
+		</removeBornFollower>
+		<beInvitedAsBornFollower>
+			<Arg>	ENTITY_ID	</Arg>
+			<Arg>	STRING		</Arg>
+		</beInvitedAsBornFollower>
+		<acceptFollowBornWithOther> <Exposed/>
+			<Arg>	ENTITY_ID	</Arg>
+		</acceptFollowBornWithOther>
+		<onAddNewBornFollower>
+			<Arg>	ENTITY_ID	</Arg>
+			<Arg>	STRING		</Arg>
+		</onAddNewBornFollower>
+		<inviteTeammateAsBornFollower> <Exposed/>
+			<Arg>	ENTITY_ID	</Arg>
+		</inviteTeammateAsBornFollower>
+		<refuseFollowBornWithOther> <Exposed/>
+			<Arg>	ENTITY_ID	</Arg>
+			<Arg>	STRING		</Arg>
+		</refuseFollowBornWithOther>
+		<reqBornWithTeammate> <Exposed/>
+			<Arg>	ENTITY_ID	</Arg>
+		</reqBornWithTeammate>
+		<cancelBornWithTeammate> <Exposed/>
+			<Arg>	ENTITY_ID	</Arg>
+		</cancelBornWithTeammate>
+		<onConfirmKickFollowers> <Exposed/>
+		</onConfirmKickFollowers>
+		<changeBornFollowTarget>
+			<Arg>	ENTITY_ID	</Arg>
+		</changeBornFollowTarget>
+		<resetStatusBeforeBorn>
+		</resetStatusBeforeBorn>
+	</CellMethods>
+	<ClientMethods>
+		<resFallFollowInfo>
+			<Arg>	ENTITY_ID	</Arg>
+			<Arg>	ENTITY_ID	</Arg>
+			<Arg>	ENTITY_ID	</Arg>
+			<Arg>	INT8	</Arg>
+			<Arg>	ARRAY <of>	ENTITY_ID	</of>	</Arg>
+		</resFallFollowInfo>
+
+		<fallFollowInvite>
+			<Arg>	ENTITY_ID	</Arg>
+		</fallFollowInvite>
+
+		<beginFallFollow>
+			<Arg>	VECTOR3		</Arg>
+		</beginFallFollow>
+
+		<endFallFollow>
+		</endFallFollow>
+		<onInvitedToBornTogether>
+			<Arg>	STRING		</Arg>
+			<Arg>	ENTITY_ID	</Arg>
+			<Arg>	INT32		</Arg>
+		</onInvitedToBornTogether>
+		<confirmKickFollowers>
+		</confirmKickFollowers>
+	</ClientMethods>
+</root>

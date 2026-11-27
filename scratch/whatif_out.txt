@@ -1,0 +1,34 @@
+globals Globals=<module 'Globals' from 'Globals.py'> Application=<libclaudia.Classes.Application.Application object at 0x76384a0d8dd0> switches=<module 'shared.switches' from 'common\shared\switches.py'>
+player=<__ro_payload__.Fake object at 0x76384355c490>
+scene=None gplayer=None stage1=False inLoading=False MAP_ID=-1 -> False
+scene=None gplayer=None stage1=False inLoading=False MAP_ID=0 -> False
+scene=None gplayer=None stage1=False inLoading=False MAP_ID=20 -> False
+scene=None gplayer=None stage1=False inLoading=False MAP_ID=701 -> False
+scene=None gplayer=None stage1=False inLoading=True MAP_ID=-1 -> False
+scene=None gplayer=None stage1=False inLoading=True MAP_ID=0 -> False
+scene=None gplayer=None stage1=False inLoading=True MAP_ID=20 -> False
+scene=None gplayer=None stage1=False inLoading=True MAP_ID=701 -> False
+scene=None gplayer=S stage1=False inLoading=False MAP_ID=-1 -> False
+scene=None gplayer=S stage1=False inLoading=False MAP_ID=0 -> False
+scene=None gplayer=S stage1=False inLoading=False MAP_ID=20 -> False
+scene=None gplayer=S stage1=False inLoading=False MAP_ID=701 -> False
+scene=None gplayer=S stage1=False inLoading=True MAP_ID=-1 -> False
+scene=None gplayer=S stage1=False inLoading=True MAP_ID=0 -> False
+scene=None gplayer=S stage1=False inLoading=True MAP_ID=20 -> False
+scene=None gplayer=S stage1=False inLoading=True MAP_ID=701 -> False
+scene=S gplayer=None stage1=False inLoading=False MAP_ID=-1 -> False
+scene=S gplayer=None stage1=False inLoading=False MAP_ID=0 -> False
+scene=S gplayer=None stage1=False inLoading=False MAP_ID=20 -> False
+scene=S gplayer=None stage1=False inLoading=False MAP_ID=701 -> False
+scene=S gplayer=None stage1=False inLoading=True MAP_ID=-1 -> False
+scene=S gplayer=None stage1=False inLoading=True MAP_ID=0 -> False
+scene=S gplayer=None stage1=False inLoading=True MAP_ID=20 -> False
+scene=S gplayer=None stage1=False inLoading=True MAP_ID=701 -> False
+scene=S gplayer=S stage1=False inLoading=False MAP_ID=-1 -> 'EXC AttributeError("\'object\' object has no attribute \'entity\'",)'
+scene=S gplayer=S stage1=False inLoading=False MAP_ID=0 -> 'EXC AttributeError("\'object\' object has no attribute \'entity\'",)'
+scene=S gplayer=S stage1=False inLoading=False MAP_ID=20 -> 'EXC AttributeError("\'object\' object has no attribute \'entity\'",)'
+scene=S gplayer=S stage1=False inLoading=False MAP_ID=701 -> 'EXC AttributeError("\'object\' object has no attribute \'entity\'",)'
+scene=S gplayer=S stage1=False inLoading=True MAP_ID=-1 -> False
+scene=S gplayer=S stage1=False inLoading=True MAP_ID=0 -> 'EXC AttributeError("\'object\' object has no attribute \'entity\'",)'
+scene=S gplayer=S stage1=False inLoading=True MAP_ID=20 -> False
+scene=S gplayer=S stage1=False inLoading=True MAP_ID=701 -> False

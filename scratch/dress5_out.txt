@@ -1,0 +1,2 @@
+body hits=0
+wear hits=0

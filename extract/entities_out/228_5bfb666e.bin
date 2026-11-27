@@ -1,0 +1,76 @@
+<root>
+	<Properties> 
+		<!-- ros2.0生命相关 --> 		
+		<dtsRos2hp>
+			<Type> FLOAT	</Type>
+			<Flags> CELL_PUBLIC_AND_OWN </Flags> 
+			<Default>		0		</Default>
+		</dtsRos2hp>
+		
+		<!-- ros2.0Debuf -->
+		<dtsRos2DebufManager>
+		    <Type>      PYTHON       </Type>
+		    <Flags> CELL_PUBLIC_AND_OWN </Flags>
+		    <Default>		{}		</Default>
+		</dtsRos2DebufManager>
+
+		<ros2FootSoundBuffPercent>	 <!-- ros2玩家脚步声音音量的buff百分比 -->
+			<Type>		FLOAT							</Type>
+			<Flags>		ALL_CLIENTS						</Flags>
+			<Default>		1		</Default>
+		</ros2FootSoundBuffPercent>
+		<ros2PlayerMoveSpeedBuff>
+			<Type>		FLOAT		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN		</Flags>
+			<Default>		0		</Default>
+		</ros2PlayerMoveSpeedBuff>
+
+		<ros2AttrBuffEntId>
+			<Type>		PYTHON		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN		</Flags>
+			<Default>		{}		</Default>
+		</ros2AttrBuffEntId>
+	</Properties>
+
+	<CellMethods> 
+		<clearRos2Data>
+		</clearRos2Data>
+
+		<gmSetRos2Hp><Exposed/>
+			<Arg> FLOAT </Arg>
+		</gmSetRos2Hp>
+		<gmSetHpRecoverSpeed><Exposed/>
+			<Arg> FLOAT </Arg>
+		</gmSetHpRecoverSpeed>
+
+		<onCureRos2DamageDebuf>
+		    <Arg>   INT32     </Arg>
+		    <Arg>	ARRAY <of>	INT32	</of>	</Arg>
+		</onCureRos2DamageDebuf>
+
+	</CellMethods>
+
+	<ClientMethods>
+	    <onUpdateHp>
+		<Arg>	FLOAT	</Arg>
+	    </onUpdateHp>
+
+		<onRefreshDtsRos2BattleDamageData>
+			<Arg>	PYTHON	</Arg>
+		</onRefreshDtsRos2BattleDamageData>
+
+		<onRefreshDtsRos2BattleRos2HpData>
+			<Arg>	FLOAT	</Arg>
+		</onRefreshDtsRos2BattleRos2HpData>
+
+		<onSetRos2SkillStateEffect>
+			<Arg>	BOOL	</Arg>
+			<Arg>	STRING	</Arg>
+		</onSetRos2SkillStateEffect>
+
+		<onSyncRos2SkillStateHearBuff>
+			<Arg>	FLOAT	</Arg>
+		</onSyncRos2SkillStateHearBuff>
+
+	</ClientMethods>
+</root>

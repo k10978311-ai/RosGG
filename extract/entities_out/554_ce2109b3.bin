@@ -1,0 +1,29 @@
+<root>
+	<Properties>
+		<ros2CurrencyDepot>
+			<Type>		PYTHON			</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}			</Default>
+			<PersistentMongo>	true		</PersistentMongo>
+		</ros2CurrencyDepot>
+		<dtsRos2Currency>	<!-- R钞 -->
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</dtsRos2Currency>
+	</Properties>
+	<BaseMethods>
+	</BaseMethods>
+	<ClientMethods>
+		<onUpdateDtsRos2Currency>
+			<Arg> INT32 </Arg>
+		</onUpdateDtsRos2Currency>
+		
+		<onRos2NormalCurrencyUpdated>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</onRos2NormalCurrencyUpdated>
+		
+	</ClientMethods>
+</root>

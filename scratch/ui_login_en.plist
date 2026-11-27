@@ -1,0 +1,579 @@
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>btn_back_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{274,118}</string>
+                <key>spriteSourceSize</key>
+                <string>{274,118}</string>
+                <key>textureRect</key>
+                <string>{{1885,37},{274,118}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00201_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{841,1},{520,76}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00202_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{1363,1},{520,76}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00203_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{841,79},{520,76}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00204_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{1363,79},{520,76}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00205_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{841,157},{520,76}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00206_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{1363,157},{520,76}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00207_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{1,162},{520,76}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00208_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{799,235},{520,76}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00209_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{1321,235},{520,76}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00210_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{1,240},{520,76}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00211_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{799,313},{520,76}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00212_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{1,318},{520,76}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00213_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{1321,313},{520,76}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00214_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{1935,390},{520,76}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00215_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{799,391},{520,76}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00216_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{1321,391},{520,76}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00217_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{1843,467},{520,76}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00218_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{1921,912},{520,76}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>effect_res/tx_dl_ks/tx_dl_ks_00219_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{520,76}</string>
+                <key>spriteSourceSize</key>
+                <string>{520,76}</string>
+                <key>textureRect</key>
+                <string>{{1,1434},{520,76}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>fx_loading_02_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{136,34}</string>
+                <key>spriteSourceSize</key>
+                <string>{136,34}</string>
+                <key>textureRect</key>
+                <string>{{1885,1},{136,34}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>img_login_logo_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{502,317}</string>
+                <key>spriteSourceSize</key>
+                <string>{502,317}</string>
+                <key>textureRect</key>
+                <string>{{79,1434},{502,317}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>img_login_logo1_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{502,317}</string>
+                <key>spriteSourceSize</key>
+                <string>{502,317}</string>
+                <key>textureRect</key>
+                <string>{{398,396},{502,317}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>tab_account_dwn_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{75,90}</string>
+                <key>spriteSourceSize</key>
+                <string>{75,90}</string>
+                <key>textureRect</key>
+                <string>{{523,162},{75,90}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>tab_account_nml_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{75,90}</string>
+                <key>spriteSourceSize</key>
+                <string>{75,90}</string>
+                <key>textureRect</key>
+                <string>{{615,162},{75,90}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>tab_agreement_dwn_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{75,90}</string>
+                <key>spriteSourceSize</key>
+                <string>{75,90}</string>
+                <key>textureRect</key>
+                <string>{{707,162},{75,90}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>tab_agreement_nml_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{75,90}</string>
+                <key>spriteSourceSize</key>
+                <string>{75,90}</string>
+                <key>textureRect</key>
+                <string>{{523,239},{75,90}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>tab_feedback_dwn_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{75,90}</string>
+                <key>spriteSourceSize</key>
+                <string>{75,90}</string>
+                <key>textureRect</key>
+                <string>{{615,239},{75,90}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>tab_feedback_nml_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{75,90}</string>
+                <key>spriteSourceSize</key>
+                <string>{75,90}</string>
+                <key>textureRect</key>
+                <string>{{707,239},{75,90}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>tab_notice_dwn_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{75,90}</string>
+                <key>spriteSourceSize</key>
+                <string>{75,90}</string>
+                <key>textureRect</key>
+                <string>{{523,316},{75,90}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>tab_notice_nml_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{75,90}</string>
+                <key>spriteSourceSize</key>
+                <string>{75,90}</string>
+                <key>textureRect</key>
+                <string>{{615,316},{75,90}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>tab_qrcode_dwn_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{75,90}</string>
+                <key>spriteSourceSize</key>
+                <string>{75,90}</string>
+                <key>textureRect</key>
+                <string>{{707,316},{75,90}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>tab_qrcode_nml_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{75,90}</string>
+                <key>spriteSourceSize</key>
+                <string>{75,90}</string>
+                <key>textureRect</key>
+                <string>{{1843,313},{75,90}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>tab_xiufu_dwn_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{75,90}</string>
+                <key>spriteSourceSize</key>
+                <string>{75,90}</string>
+                <key>textureRect</key>
+                <string>{{1935,313},{75,90}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>tab_xiufu_nml_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{75,90}</string>
+                <key>spriteSourceSize</key>
+                <string>{75,90}</string>
+                <key>textureRect</key>
+                <string>{{1843,390},{75,90}}</string>
+                <key>textureRotated</key>
+                <true />
+            </dict>
+            <key>txt_enter_game_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{838,159}</string>
+                <key>spriteSourceSize</key>
+                <string>{838,159}</string>
+                <key>textureRect</key>
+                <string>{{1,1},{838,159}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+            <key>vx/fx_loading_02_en_ui_login.png</key>
+            <dict>
+                <key>aliases</key>
+                <array />
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{136,34}</string>
+                <key>spriteSourceSize</key>
+                <string>{136,34}</string>
+                <key>textureRect</key>
+                <string>{{1885,1},{136,34}}</string>
+                <key>textureRotated</key>
+                <false />
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>3</integer>
+            <key>pixelFormat</key>
+            <string>RGBA8888</string>
+            <key>premultiplyAlpha</key>
+            <false />
+            <key>realTextureFileName</key>
+            <string>ui_login_en.png</string>
+            <key>size</key>
+            <string>{2048,2048}</string>
+            <key>smartupdate</key>
+            <string />
+            <key>textureFileName</key>
+            <string>ui_login_en.png</string>
+        </dict>
+    </dict>
+</plist>

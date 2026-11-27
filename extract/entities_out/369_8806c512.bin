@@ -1,0 +1,142 @@
+<root>
+	<Properties> 
+		<skateBoardFuelAmount>
+			<Type>		FLOAT		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+		</skateBoardFuelAmount>
+		<skateBoardLevelScale>
+			<Type>		FLOAT		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+		</skateBoardLevelScale>
+		<camouflageTimes>
+			<Type>		INT8		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+		</camouflageTimes>
+		<camouflageClothes>
+			<Type>		PYTHON		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+		</camouflageClothes>
+		<currentCamouflageLevel>
+			<Type>		INT8		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+		</currentCamouflageLevel>
+		<currentCamouflage>
+			<Type>		ARRAY <of>	INT32	</of>	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+		</currentCamouflage>
+		<usePacemakerTimes>
+			<Type>		INT8	</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+		</usePacemakerTimes>
+		<landDroneMarkTeamID2AvtID>
+			<Type> PYTHON </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> {} </Default>
+		</landDroneMarkTeamID2AvtID>
+		
+		<landDroneMarkAvtID>
+			<Type> PYTHON </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> set() </Default>
+		</landDroneMarkAvtID>
+		<sendCourierDroneTs>
+			<Type>		INT32		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+		</sendCourierDroneTs>
+		<fortressBuildTimes>
+			<Type>		INT32		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+		</fortressBuildTimes>
+		<ros2CarryProps>
+			<Type>		PY_DICT		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	{}		</Default>
+		</ros2CarryProps>
+		<usingCourierDrone>
+			<Type>		INT8	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default> 	0 		</Default>
+		</usingCourierDrone>
+	</Properties>
+
+	<CellMethods> 
+		<syncSkateBoardFuelAmount>
+			<Arg>		FLOAT		</Arg>
+		</syncSkateBoardFuelAmount>
+
+		<tryToSummonRos2SkateBoard> <Exposed/>
+		</tryToSummonRos2SkateBoard>
+
+		<startCamouflage> <Exposed/>
+		</startCamouflage>
+		
+		<addCamouflageClothes>
+			<Arg>		INT32		</Arg>
+			<Arg>		ARRAY <of>	INT32	</of>			</Arg>
+			<Arg>		BOOL		</Arg>
+		</addCamouflageClothes>
+		<usePacemaker>
+			<Arg>		INT32		</Arg>
+		</usePacemaker>
+		<usePacemakerOwn> <Exposed/>
+		</usePacemakerOwn>
+		<usePacemakerForTeammate> <Exposed/>
+			<Arg>		ENTITY_ID		</Arg>
+		</usePacemakerForTeammate>
+
+		<requestStartDronetRidiculeRobot> <Exposed/>
+		</requestStartDronetRidiculeRobot>
+		
+		<requestStopDronetRidiculeRobot> <Exposed/>
+		</requestStopDronetRidiculeRobot>
+
+		<onRos2AvatarMarkedByLandDrone>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+			<Arg>		BOOL		</Arg>
+		</onRos2AvatarMarkedByLandDrone>
+		
+		<onRos2AvatarUnmarkedByLandDrone>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+			<Arg>		BOOL		</Arg>
+		</onRos2AvatarUnmarkedByLandDrone>
+
+		<onNotifyRos2LandDroneRemoveMark>
+			<Arg>		INT32		</Arg>
+		</onNotifyRos2LandDroneRemoveMark>
+
+		<startSendCourierDrone> <Exposed/>
+		</startSendCourierDrone>
+
+		<buildFortressOwn> <Exposed/> 
+			<Arg> VECTOR3 </Arg>
+			<Arg> VECTOR3 </Arg>
+		</buildFortressOwn>
+
+		<removeFixedFortressID>
+		</removeFixedFortressID>
+		<requestOpenCourierDrone> <Exposed/>
+			<Arg> INT8 </Arg>
+		</requestOpenCourierDrone>
+	</CellMethods>
+
+	<ClientMethods>
+		<onBuildFixedFortressCB>
+			<Arg>		INT32		</Arg>
+		</onBuildFixedFortressCB>
+
+		<onSyncCourierDroneMsg> 
+			<Arg>		INT32		</Arg>
+		</onSyncCourierDroneMsg>
+
+		<onUsePacemakerOwnCB> 
+			<Arg>		INT32		</Arg>
+		</onUsePacemakerOwnCB>
+
+		<onUsePacemakerForTeammateCB> 
+			<Arg>		INT32		</Arg>
+		</onUsePacemakerForTeammateCB>
+
+	</ClientMethods>
+</root>

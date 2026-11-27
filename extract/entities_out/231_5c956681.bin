@@ -1,0 +1,111 @@
+<root>
+	<Properties>
+		<!-- RKU特训手册 -->
+		<rkuBraveBookExp>
+			<Type> INT64 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</rkuBraveBookExp>
+		<hasEnterRKUOpenPage>
+			<Type> BOOL </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</hasEnterRKUOpenPage>
+		<rkuTurnableBasicTicket>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</rkuTurnableBasicTicket>
+		<dtsLTRKULotteryTableData>
+			<Type>      PYTHON	        </Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default> 	{} 	</Default>
+			<PersistentMongo>	true		</PersistentMongo>
+		</dtsLTRKULotteryTableData>
+		<showRkuBraveBookOpen>
+			<Type>	BOOL 	</Type>
+			<Flags>	BASE_AND_CLIENT 	</Flags>
+			<Default>	1	</Default>
+			<PersistentMongo>	true 	</PersistentMongo>
+		</showRkuBraveBookOpen>
+		<isFirstTimeOpenRkuTurntable>
+			<Type>	BOOL 	</Type>
+			<Flags>	BASE_AND_CLIENT 	</Flags>
+			<Default>	1	</Default>
+			<PersistentMongo>	true 	</PersistentMongo>
+		</isFirstTimeOpenRkuTurntable>
+		<hasShowManualLabelPanel>
+			<Type>	BOOL 	</Type>
+			<Flags>	BASE_AND_CLIENT 	</Flags>
+			<Default>	0	</Default>
+			<PersistentMongo>	true 	</PersistentMongo>
+		</hasShowManualLabelPanel>
+	</Properties>
+	<BaseMethods>
+		<!-- RKU特训手册 -->
+		<buyRKUBraveBook><Exposed/>
+			<Arg>	INT32 	</Arg> <!-- 特训手册类型 -->
+		</buyRKUBraveBook>
+		<buyRKUBraveBookBundle><Exposed/>
+		</buyRKUBraveBookBundle>
+
+		<distributeRKUBraveBookExp><Exposed/>
+			<Arg>	INT32 	</Arg> <!-- exp number -->
+			<Arg>	INT32 	</Arg> <!-- book type -->
+		</distributeRKUBraveBookExp>
+		<asOnRequestRKUCompensateAwards><Exposed/>
+			<Arg>	INT32 	</Arg>
+		</asOnRequestRKUCompensateAwards>
+		<openRKUOpenPageOnce> <Exposed/>
+		</openRKUOpenPageOnce>
+		<!-- 转盘抽奖 -->
+		<requestGenerateDtsLTRKUBaseTable><Exposed/>
+		</requestGenerateDtsLTRKUBaseTable>
+		<exchangeRKUBaseTicket><Exposed/>
+			<Arg>	INT32 	</Arg>
+		</exchangeRKUBaseTicket>
+		<requestDtsRKULTDoLottery><Exposed/>
+		</requestDtsRKULTDoLottery>
+		<requestDtsLTRKUDoAdvanceLottery><Exposed/>
+		</requestDtsLTRKUDoAdvanceLottery>
+		<asOnRequesRKUGetBatchAwards><Exposed/>
+			<Arg>	INT32 	</Arg>
+			<Arg>ARRAY <of> PYTHON </of></Arg>
+		</asOnRequesRKUGetBatchAwards>
+		<setShowRkuBraveBookOpen><Exposed/>
+			<Arg> BOOL </Arg>
+		</setShowRkuBraveBookOpen>
+		<changeIsFirstTimeOpenRkuTurntable><Exposed/></changeIsFirstTimeOpenRkuTurntable>
+		<setShowManualLabelPanel><Exposed/></setShowManualLabelPanel>
+	</BaseMethods>
+	<ClientMethods>
+		<!-- RKU特训手册 -->
+		<onUpdateRKUBraveBookExp>
+			<Arg> INT64 </Arg>
+		</onUpdateRKUBraveBookExp>
+		<onSuccDistributeRKUBraveBookExp>
+			<Arg> INT32 </Arg> <!-- bookType -->
+			<Arg> INT32 </Arg> <!-- complete state -->
+		</onSuccDistributeRKUBraveBookExp>
+		<onOpenRKUOpenPageOnce>
+		</onOpenRKUOpenPageOnce>
+		<onUpdateRKUTurnableBasicTicket>
+			<Arg>	INT32 	</Arg> <!-- new num -->
+		</onUpdateRKUTurnableBasicTicket>
+		<onGenerateDtsLTRKUBaseTable>
+			<Arg>		PYTHON		</Arg>
+			<Arg>		PYTHON		</Arg>
+		</onGenerateDtsLTRKUBaseTable>
+		<onDtsLTRKUDoLottery>
+			<Arg> PYTHON </Arg>
+			<Arg> PYTHON </Arg>
+		</onDtsLTRKUDoLottery>
+		<onSetShowRkuBraveBookOpen>
+			<Arg> BOOL </Arg>
+		</onSetShowRkuBraveBookOpen>
+		<OnChangeIsFirstTimeOpenRkuTurntable></OnChangeIsFirstTimeOpenRkuTurntable>
+	</ClientMethods>
+</root>

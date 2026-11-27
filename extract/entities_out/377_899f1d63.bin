@@ -1,0 +1,104 @@
+<root>
+	<Properties> 
+		<!-- ros2.0生命相关 --> 		
+		<ros2hp>
+			<Type> FLOAT	</Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<PersistentMongo>	true			</PersistentMongo>
+			<Default>	100		</Default>
+		</ros2hp>
+
+		<ros2hpPoolNum>
+			<Type> FLOAT	</Type>
+			<Flags> BASE_AND_CLIENT  </Flags>
+			<PersistentMongo>	true			</PersistentMongo>
+			<Default>	400		</Default>
+		</ros2hpPoolNum>
+		<ros2hpPoolTimestamp>
+			<Type> FLOAT	</Type>
+			<Flags> BASE_AND_CLIENT  </Flags>
+			<PersistentMongo>	true			</PersistentMongo>
+			<Default>	0		</Default>
+		</ros2hpPoolTimestamp>
+
+		<!-- 血池恢复速度，与医疗所相关  -->
+		<hpPoolRecoverSpeeed>
+			<Type> FLOAT	</Type>
+			<Flags> BASE_AND_CLIENT  </Flags>
+			<PersistentMongo>	true			</PersistentMongo>
+			<Default>	1	</Default>
+		</hpPoolRecoverSpeeed>
+		
+		<ros2MaxHpPoolExtraAdd>
+			<Type>		INT32		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	0		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2MaxHpPoolExtraAdd>
+
+		<!-- 血量恢复速度  -->
+		<ros2HpRecoverSpeed>
+			<Type> FLOAT	</Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default>      0		</Default>
+		</ros2HpRecoverSpeed> 
+
+		<!-- Ros2战斗内受伤相关 -->
+		<dtsRos2BattleDamage>
+			<Type>		PYTHON			</Type> 
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}			</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</dtsRos2BattleDamage>
+		
+	</Properties>
+
+	<BaseMethods>
+		<updateHp>
+			<Arg>	FLOAT	</Arg>
+		</updateHp>
+
+		<cureHpByHpPool> <Exposed/>
+		</cureHpByHpPool>
+		<refreshDtsRos2BattleRos2HpData>
+			<Arg>	FLOAT	</Arg>
+		</refreshDtsRos2BattleRos2HpData>
+
+	</BaseMethods>
+
+	<ClientMethods>
+		<onUpdateHp>
+			<Arg>	FLOAT	</Arg>
+		</onUpdateHp>
+
+		<onCureHpByHpPool>
+			<Arg>			INT32				</Arg>
+		</onCureHpByHpPool>
+
+		<onRefreshRos2HpPool>
+			<Arg> FLOAT </Arg> 
+		</onRefreshRos2HpPool>
+		
+		<onRefreshRos2Hp>
+			<Arg> FLOAT </Arg> 
+		</onRefreshRos2Hp>
+		
+		<onRefreshDtsRos2BattleDamageData>
+			<Arg>	PYTHON	</Arg>
+		</onRefreshDtsRos2BattleDamageData>
+
+		<onRefreshDtsRos2BattleRos2HpData>
+			<Arg>	FLOAT	</Arg>
+		</onRefreshDtsRos2BattleRos2HpData>
+		
+		<onRefreshDtsRos2MaxHpPoolLimit>
+			<Arg>	INT32	</Arg>
+		</onRefreshDtsRos2MaxHpPoolLimit>
+
+		<onRefreshRos2HealthBuff>
+			<Arg>	INT32	</Arg>
+			<Arg>	FLOAT	</Arg>
+		</onRefreshRos2HealthBuff>
+
+	</ClientMethods>
+</root>

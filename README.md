@@ -9,6 +9,8 @@ still answer but refuse service; the actual **game server is gone**. This harnes
 replaces the server-side pieces that can be replaced and documents the one that
 can't.
 
+**Gameplay reference (build 617289):** player-facing systems, a 74-function matrix (client evidence vs. what this mock server implements), and a phased roadmap live under [`ros_server_v2/docs/`](ros_server_v2/docs/GAMEPLAY_REFERENCE_617289.md) (`GAMEPLAY_REFERENCE_617289.md`, `gameplay_function_matrix.json`, `SERVER_GAMEPLAY_ROADMAP.md`). Progress is lobby- and drop-heavy; full BR combat is mostly stubbed — see the matrix, not generic wiki lists.
+
 ## Status
 
 | Stage | Result |
@@ -53,13 +55,43 @@ ServerConnection::logOn: to:   192.168.1.18:25000
 > helpers in `loginapp.py` were written across a usage-limit reset (they appeared on disk between turns).
 > They are a direct continuation of this work and are what carried the client to LOGGED_ON.
 
-### Remaining: BaseApp entity handshake → 3D hall
-After login the client connects to the BaseApp (`:25000`, our gate), sends `authenticate` on the
-channel, and the server replies with `resetEntities` + `createBasePlayer`. The client currently **loops**
-(re-sending `authenticate`), so the channel ACK / entity-creation sequence isn't fully accepted yet. This
-is the BaseApp/CellApp entity protocol (the real "server emulator" part): correct on-channel ACK of the
-client's reliable seq, then a valid `createBasePlayer`/`createCellPlayer` + the player entity's `.def`
-properties so the hall scene loads.
+### ★ BaseApp channel established (iteration 4, 2026-11-14)
+The BaseApp handshake now completes. The client logs `ServerConnection::createBasePlayer: id 10001` and
+`ServerConnection::logOn: status==LOGGED_ON`, and the channel stays up indefinitely. The fixes are listed
+below; details are in `harness/last_report.md`.
+- `01 00 00 0b …` is `baseAppLogin` (`0x0b` is the message length). Its reply must use the custom
+  plaintext-feedback Blowfish; a CBC reply gives `EncryptionFilter::recv: illegal wastage count`.
+- ClientInterface ids are **+1** vs `extract/message_map.txt` (id 0 is `authenticate`):
+  `resetEntities=4`, `createBasePlayer=5`, `createCellPlayer=6`.
+- Footer = `[body][seq u32][acks u32…][nAcks u8]`. ACK only reliable client packets, and keep the
+  channel alive by re-ACKing the last seq (10 s `InactivityTimeout`; bare 2-byte packets are "undersize").
+- Entity type ids come from `extract/entities.xml` (324 types, from `res/entities.npk` in the main OBB),
+  e.g. `Account=133`, `Athlete=148`. Set them with `CBP_TYPE`.
+
+The client's Mercury diagnostics are in logcat under tag `M` (`adb logcat | grep " M ("`). They name
+the exact failure, so read them before guessing.
+
+### ★ Real player entity + first game RPC (iteration 5, 2026-11-14)
+The client now holds a real **`PlayerAccount`** (id 10001, all base-client properties parsed). Its
+script calls **`Account.handshake`** on our server, which is the first game-level RPC. Key rules,
+each confirmed against the live client (details in `harness/last_report.md`):
+- **Wire entity type id = client index**: `entities.xml` order, counting only defs that have a
+  `<ClientName>` (`extract/client_entity_types.json`). `Account=41`, `Athlete=56`.
+- **`createBasePlayer` only after the client's `enableEntities`** (BaseAppExt msg 8). Its stream is
+  the BASE_AND_CLIENT props in .def parse order (`<Implements>` first).
+- **Methods**: client→server `0xC0+exposedIndex` (var16; `handshake`=`0xC5`). Server→client
+  `[0xC0|idx][len u8][entityID u32][args]`.
+- **Current blocker**: method calls only dispatch once the player has *entered the world*. Entering
+  needs the Python `ClientEntity.prerequisites()` to return `True`. At the login screen
+  `Application.scene` and `Globals.player` are `None`, so `onChannelLogin`/`onLogin` stay buffered.
+
+Read-only RE tooling: `frida/neox_py_eval.js` runs introspection payloads (`frida/payloads/`) inside
+the client. CPython is statically linked and stripped; the offsets are in the script.
+
+### Remaining: satisfy entity prerequisites → hall
+Find what makes `prerequisites()` pass in the real login flow: the select-character scene via
+`Globals.loadDefaultScene`, plus `Globals.player`. Then the buffered `onChannelLogin`/`onLogin`
+replay, and the server can hand the client an `Athlete` (hall player, type 56).
 
 ### The wall
 

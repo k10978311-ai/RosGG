@@ -1,0 +1,4 @@
+names ('BigWorld', 'player', 'None', 'hasattr', 'uiMainFunctionEntrance', 'updateRedPointByType', 'UIRedHintEnum', 'UI_TYPE_CCLIVE', 'False', 'processedRedPoints', 'True')
+consts (None, 'processedRedPoints', 'uid', 'mainTab', 0)
+varnames ('self', 'redpoints', 'player', 'i', 'unprocessedRedPoints', 'redpoint') argcount 2
+firstline 2694

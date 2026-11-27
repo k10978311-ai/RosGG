@@ -1,0 +1,6 @@
+CLIENT_INACTIVE_DEFAULT_TIME = 40.0
+CLIENT_INACTIVE_GAME_TIME = 15.0
+CLIENT_INACTIVE_HALL_TIME = 30.0
+CLIENT_INACTIVE_WATCH_AD = 60.0
+switch SysEnableDelayClientInactivity = True
+switch SysEnableInactivityOptimise = True

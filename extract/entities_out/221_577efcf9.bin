@@ -1,0 +1,21 @@
+<root>
+	<Implements>
+	</Implements>
+
+	<ClientName>	DtsAutoTrackBombEntity	</ClientName>
+	
+	<Parent> DtsBombSummonEntity </Parent>
+
+	<Properties>
+	</Properties>
+
+	<ClientMethods>
+	</ClientMethods>
+
+	<CellMethods>
+	</CellMethods>
+
+	<BaseMethods>
+	</BaseMethods>
+
+</root>

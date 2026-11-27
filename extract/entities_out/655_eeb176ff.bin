@@ -1,0 +1,70 @@
+<root>
+  <Implements>
+    <Interface> iCell </Interface>
+    <Interface> iDtsExplode </Interface>
+  </Implements>
+
+  <ClientName>  DtsRemoteControlC4Entity  </ClientName>
+
+<Properties>
+	<lifespan>
+		<Type>	FLOAT 	</Type>
+		<Flags>	ALL_CLIENTS	</Flags>
+	</lifespan>
+	<bombID>
+		<Type>	INT32	</Type>
+		<Flags>	ALL_CLIENTS	</Flags>
+	</bombID>
+	<throwPos>
+		<Type>	VECTOR3	</Type>
+		<Flags>	ALL_CLIENTS	</Flags>
+	</throwPos>
+	<throwDirection>
+		<Type>	VECTOR3 </Type>
+		<Flags>	ALL_CLIENTS	</Flags>
+	</throwDirection>
+	<throwAngle>
+		<Type>	FLOAT 	</Type>
+		<Flags>	ALL_CLIENTS	</Flags>
+	</throwAngle>
+	<hasTouchOnThing>
+		<Type>	BOOL	</Type>
+		<Flags>	ALL_CLIENTS	</Flags>
+		<Default>	False	</Default>
+	</hasTouchOnThing>
+	<trainID>
+		<Type>	INT32	</Type>
+		<Flags>	ALL_CLIENTS	</Flags>
+		<Default>	0	</Default>
+	</trainID>
+	<trainPosition>
+		<Type>  VECTOR3 </Type>
+		<Flags> ALL_CLIENTS </Flags>
+	</trainPosition>
+</Properties>
+
+  <ClientMethods>
+	<bindOnTrain>
+		<Arg> INT32 </Arg>
+	</bindOnTrain>
+  </ClientMethods>
+
+  <CellMethods>
+	<requestExplodeC4ByOwner>
+		<Arg>		INT64		</Arg>
+	</requestExplodeC4ByOwner>
+	
+	<requestExplodeC4ByAttach>
+		<Arg>		INT64		</Arg>
+	</requestExplodeC4ByAttach>
+	
+	<onC4TouchOnThing> <Exposed/>
+		<Arg>		INT32		</Arg>
+		<Arg>		VECTOR3		</Arg>
+	</onC4TouchOnThing>
+  </CellMethods>
+
+  <BaseMethods>
+  </BaseMethods>
+
+</root>

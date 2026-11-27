@@ -1,0 +1,140 @@
+<root>
+	<Properties>
+		<hallhalfyear>
+			<Type>	INT32	</Type>
+			<Flags> 	BASE	</Flags>
+			<PersistentMongo>	true	</PersistentMongo>
+		</hallhalfyear>
+		<hallHalfYearModelIdx>
+			<Type>	INT32	</Type>
+			<Flags> BASE_AND_CLIENT	</Flags>
+			<PersistentMongo>	true	</PersistentMongo>
+		</hallHalfYearModelIdx>
+		<hallHalfYearLotteryData>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<PersistentMongo>	true	</PersistentMongo>
+		</hallHalfYearLotteryData>
+		<halfAnniversaryCoin2021>
+			<Type>	INT32	</Type>
+			<Flags> 	BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</halfAnniversaryCoin2021>
+		<doHallHalfYearLotteryTimes>
+			<Type>	INT32	</Type>
+			<Flags> 	BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</doHallHalfYearLotteryTimes>
+		<halfAnniversaryFinalGift2021>
+			<Type>		ARRAY <of> INT32 </of>	</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	[]	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</halfAnniversaryFinalGift2021>
+		<halfAnniversaryShop2021>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</halfAnniversaryShop2021>
+		<nowHalfAnniversaryLotteryTimes2021>
+			<Type>	INT32	</Type>
+			<Flags> 	BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</nowHalfAnniversaryLotteryTimes2021>
+		<halfDiscount2021>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</halfDiscount2021>
+		<halfAnniversaryDis>
+			<Type>	FLOAT	</Type>
+			<Flags> 	BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</halfAnniversaryDis>
+		<hasHalfAnniversaryMainGift>
+			<Type>	ARRAY <of> INT32 </of>	</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	[]	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</hasHalfAnniversaryMainGift>
+		<HalfYear2021BasicTimes>
+			<Type>	INT32	</Type>
+			<Flags> 	BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</HalfYear2021BasicTimes>
+		<hasPlayHalfYear2021Node>
+			<Type>	INT32	</Type>
+			<Flags> 	BASE_AND_CLIENT	</Flags>
+			<Default>	-1	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</hasPlayHalfYear2021Node>
+	</Properties>
+	<BaseMethods>
+		<setHallHalfYearModelIdx><Exposed/>
+			<Arg>		INT32		</Arg>
+		</setHallHalfYearModelIdx>
+		<doHallHalfYearLottery><Exposed/>
+			<Arg>		INT32		</Arg>
+		</doHallHalfYearLottery>
+		<doHallHalfYearLotteryTen><Exposed/>
+			<Arg>		INT32		</Arg>
+		</doHallHalfYearLotteryTen>
+		<showMeTheLottery2021><Exposed/>
+			<Arg>		INT32		</Arg>
+		</showMeTheLottery2021>
+		<buyHalfAnniversaryLottery2021><Exposed/>
+			<Arg>		INT32		</Arg>
+		</buyHalfAnniversaryLottery2021>
+		<showHalfAnniversaryFinalLottery2021><Exposed/>
+		</showHalfAnniversaryFinalLottery2021>
+		<addHalfDiscount2021><Exposed/>
+			<Arg>		INT32		</Arg>
+		</addHalfDiscount2021>
+		<addHalfAnniversaryDis>
+			<Arg>		FLOAT		</Arg>
+		</addHalfAnniversaryDis>
+		<setHasPlayHalfYear2021Node><Exposed/>
+			<Arg>		INT32		</Arg>
+		</setHasPlayHalfYear2021Node>
+		<_addHalfDiscount2021>
+			<Arg>		INT32		</Arg>
+		</_addHalfDiscount2021>
+	</BaseMethods>
+	<ClientMethods>
+		<doHallHalfYearLottery>
+			<Arg>	ARRAY <of> INT32 </of>	</Arg>
+			<Arg>		BOOL		</Arg>
+			<Arg>		INT32		</Arg>
+			<Arg>		PYTHON		</Arg>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</doHallHalfYearLottery>
+		<showMeTheLottery2021>
+			<Arg>	ARRAY <of> INT32 </of>	</Arg>
+			<Arg>	ARRAY <of> INT32 </of>	</Arg>
+		</showMeTheLottery2021>
+		<buyHalfAnniversaryLottery2021>
+			<Arg>		INT32		</Arg>
+			<Arg>	ARRAY <of> INT32 </of>	</Arg>
+			<Arg>		PYTHON		</Arg>
+			<Arg>		PYTHON		</Arg>
+		</buyHalfAnniversaryLottery2021>
+		<updateHalfDiscount2021>
+			<Arg>		PYTHON		</Arg>
+		</updateHalfDiscount2021>
+		<addHalfAnniversaryDis>
+			<Arg>		FLOAT		</Arg>
+			<Arg>	ARRAY <of> INT32 </of>	</Arg>
+		</addHalfAnniversaryDis>
+		<getWendieGift2021>
+			<Arg>		INT32		</Arg>
+		</getWendieGift2021>
+	</ClientMethods>
+</root>

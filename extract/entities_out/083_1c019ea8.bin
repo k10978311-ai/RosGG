@@ -1,0 +1,73 @@
+<root>
+	<Properties>
+		<titanBraveBookExp>
+			<Type> INT64 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</titanBraveBookExp>
+		<loginTitanTimeStamp>
+			<Type> INT64 </Type>
+			<Flags> BASE </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</loginTitanTimeStamp>
+		<hasEnter2021TitanEntrance>
+			<Type> BOOL </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</hasEnter2021TitanEntrance>
+		<titanKillerExp>
+			<Type> PYTHON </Type>
+			<Flags> BASE </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</titanKillerExp>
+		<titanTokenExp>
+			<Type> PYTHON </Type>
+			<Flags> BASE </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</titanTokenExp>
+	</Properties>
+	
+	<BaseMethods>
+		<asOnRequestTitanCompensateAwards><Exposed/>
+			<Arg>	INT32 	</Arg>
+		</asOnRequestTitanCompensateAwards>
+		<addTitanBraveBookExp>
+			<Arg>	INT32	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</addTitanBraveBookExp>
+		<asOnRequesTitanGetBatchAwards><Exposed/>
+			<Arg>	INT32 	</Arg>
+			<Arg>ARRAY <of> PYTHON </of></Arg>
+		</asOnRequesTitanGetBatchAwards>
+		<batchBuyTitanBookType><Exposed/>
+		</batchBuyTitanBookType>
+		<buyTitanBookType><Exposed/>
+			<Arg> INT32	</Arg>
+		</buyTitanBookType>
+		<distributeTitanExp><Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</distributeTitanExp>
+		<enterTitanEntrance><Exposed/>
+		</enterTitanEntrance>
+		<onPlayerLoginTitan><Exposed/>
+		</onPlayerLoginTitan>
+		<addTitanTokenExp>
+			<Arg>	INT32	</Arg>
+		</addTitanTokenExp>
+		<addTitanKillerExp>
+			<Arg>	INT32	</Arg>
+		</addTitanKillerExp>
+	</BaseMethods>
+
+	<ClientMethods>
+		<onTitanExpChange>
+			<Arg> INT32	</Arg>
+		</onTitanExpChange>
+	</ClientMethods>
+</root>

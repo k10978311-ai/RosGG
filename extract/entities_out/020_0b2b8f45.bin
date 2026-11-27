@@ -1,0 +1,56 @@
+<root>
+	<Implements>
+	</Implements>
+
+	<Parent> LandDrone </Parent>
+
+	<ClientName>	Ros2LandDrone		</ClientName>
+
+	<Properties>
+		<dtsRos2LandDroneLevel>
+			<Type>		INT32		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+		</dtsRos2LandDroneLevel>
+		
+		<dtsRos2LandDroneMarkState>
+			<Type>		BOOL		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	False		</Default>
+		</dtsRos2LandDroneMarkState>
+		
+		<dtsRos2LandDroneMarkEntity>
+			<Type>		PYTHON		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	[]		</Default>
+		</dtsRos2LandDroneMarkEntity>
+		<pose>
+			<Type>		INT8		</Type>
+			<Flags>		CELL_PUBLIC	</Flags>
+		</pose>
+	</Properties>
+
+	<CellMethods>
+		<requestDroneRidiculeRobot>
+		</requestDroneRidiculeRobot>
+		
+		<requestStopDroneRidiculeRobot>
+		</requestStopDroneRidiculeRobot>
+
+		<requestRos2LandDroneMarkEntity> <Exposed/>
+			<Arg>		ENTITY_ID		</Arg>
+		</requestRos2LandDroneMarkEntity>
+		
+		<requestRos2LandDroneUnmarkEntity> <Exposed/>
+			<Arg>		ENTITY_ID		</Arg>
+		</requestRos2LandDroneUnmarkEntity>
+		
+		<onNotifyRemoveRos2AvatarMarkState>
+			<Arg>		INT32		</Arg>
+		</onNotifyRemoveRos2AvatarMarkState>
+	</CellMethods>
+
+	<ClientMethods>
+	</ClientMethods>
+</root>
+
+

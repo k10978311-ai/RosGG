@@ -1,0 +1,236 @@
+<root>
+	<Properties>
+		<ros2HideoutBuildingUpdate>
+			<Type> PYTHON	</Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default>		{}		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2HideoutBuildingUpdate>
+		<buildMap>
+			<Type> PYTHON	</Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default>	{}	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</buildMap>
+		<!-- ROS2.0水泵 -->
+		<waterPumpSave>
+			<Type> PYTHON	</Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default>		{}		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</waterPumpSave>
+		<startWaterPumpTimes>
+			<Type> INT32	</Type>
+			<Flags> BASE </Flags>
+			<Default>		0		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</startWaterPumpTimes>
+		<!-- ROS2.0发电机 -->
+		<ros2Dynamo>
+			<Type> PYTHON	</Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default>		{}		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2Dynamo>
+		<lastFuel>
+			<Type> ARRAY <of>	PYTHON	</of> </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> [] </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</lastFuel>
+		<hpPoolRecoverSpeeed>
+			<Type> FLOAT </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 1.0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</hpPoolRecoverSpeeed>
+		<ros2LightLevel>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 1 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2LightLevel>
+		<!-- 冶金炉相关 -->
+		<ros2Catalyst>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2Catalyst>
+		<ros2SmeltFurnace>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2SmeltFurnace>
+		<ros2SmeltFurnaceRefreshTimes>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2SmeltFurnaceRefreshTimes>
+		<isPowerGrid>
+			<Type> BOOL </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> False </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</isPowerGrid>
+		<ros2Fuel>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2Fuel>
+		<!-- 扭蛋机 -->
+		<ros2CapsuleTask>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2CapsuleTask>
+		<!-- ROS2.0 陨铁矿机 -->
+		<ros2IronMakingSlots>		<!-- 插槽个数 -->
+			<Type> FLOAT </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2IronMakingSlots>
+		<ros2IronMakingModules>		<!-- 已装模块个数 -->
+			<Type> FLOAT </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2IronMakingModules>
+		<ros2IronMakingProgress>	<!-- 生产一块陨铁的进度 -->
+			<Type> FLOAT </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2IronMakingProgress>
+		<ros2CurIronMakingTime>	<!-- 当前生产陨铁的时间 -->
+			<Type> FLOAT </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2CurIronMakingTime>
+		<ros2MakedIronNums>		<!-- 已生产的陨铁数目 -->
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2MakedIronNums>
+		<canUseNewDynamo>
+			<Type> BOOL </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 1 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</canUseNewDynamo>
+	</Properties>
+	<ClientMethods>
+		<reqCheckRos2HideoutIsUpdate>
+			<Arg>	INT32	</Arg>
+			<Arg>   PYTHON  </Arg>
+			<Arg>   PYTHON  </Arg>
+		</reqCheckRos2HideoutIsUpdate>
+		<reqStartRos2HideoutUpdate>
+			<Arg>	INT32	</Arg>
+			<Arg>   PYTHON  </Arg>
+		</reqStartRos2HideoutUpdate>
+		<reqCheckRos2Dynamo>
+			<Arg> PYTHON </Arg>
+			<Arg> PYTHON </Arg>
+		</reqCheckRos2Dynamo>
+		<updateWaterPump>
+			<Arg>PYTHON</Arg>
+		</updateWaterPump>
+		<onCollectWater>
+			<Arg> PYTHON </Arg>
+			<Arg>	INT32	</Arg>
+		</onCollectWater>
+		<onUpdateRos2LightLevel>
+			<Arg> INT32 </Arg>
+		</onUpdateRos2LightLevel>
+		<onUpdateRos2Catalyst>
+			<Arg> INT32 </Arg>
+		</onUpdateRos2Catalyst>
+		<onRefreshSmeltFurnaceData>
+			<Arg> PYTHON </Arg>
+		</onRefreshSmeltFurnaceData>
+		<syncRos2HideoutBuildPowerGridLeviUp>
+			<Arg> BOOL </Arg>
+		</syncRos2HideoutBuildPowerGridLeviUp>
+		<!-- 扭蛋机 -->
+		<syncRos2CapsuleTask>
+			<Arg> PYTHON </Arg>
+		</syncRos2CapsuleTask>
+		<doRos2CapsuleTaskResp>
+			<Arg> INT8 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> PYTHON </Arg>
+		</doRos2CapsuleTaskResp>
+		<!-- ROS2.0 陨铁矿机 -->
+		<onSyncGetIronNums>
+			<Arg> INT32 </Arg>
+		</onSyncGetIronNums>
+		<onSyncIronMakingInfo>
+			<Arg> INT32 </Arg>
+			<Arg> FLOAT </Arg>
+			<Arg> INT8 </Arg>
+			<Arg> INT8 </Arg>
+		</onSyncIronMakingInfo>
+		<!-- ROS2.0 陨铁矿机 -->
+		<updateRos2WorldLevelComfortLevel>
+			<Arg> INT32 </Arg>
+		</updateRos2WorldLevelComfortLevel>
+
+		<syncRos2DynamoSwitch>
+			<Arg> BOOL </Arg>
+		</syncRos2DynamoSwitch>
+	</ClientMethods>
+	<BaseMethods>
+		<startRos2HideoutUpdate><Exposed/>
+			<Arg>	INT32	</Arg>
+		</startRos2HideoutUpdate>
+		<checkRos2HideoutIsUpdate><Exposed/>
+		</checkRos2HideoutIsUpdate>
+		<checkWaterPump> <Exposed/>
+		</checkWaterPump>
+		<checkRos2Dynamo> <Exposed/>
+		</checkRos2Dynamo>
+		<!-- 添加燃料 -->
+		<addRos2Dynamo> <Exposed/>
+			<Arg>	INT32	</Arg>
+		</addRos2Dynamo>
+		<getWaterSave><Exposed/>
+		</getWaterSave>
+
+		<!-- 冶金炉 -->
+		<startRos2Smelt><Exposed/>
+			<Arg> ARRAY <of>	PYTHON	</of> </Arg>
+		</startRos2Smelt>
+		<getRos2SmeltProduct><Exposed/>
+		</getRos2SmeltProduct>
+		<cancelRosSmelt><Exposed/>
+		</cancelRosSmelt>
+		<requireFreshRos2SmeltFurnace><Exposed/>
+		</requireFreshRos2SmeltFurnace>
+		<syncWaterPump><Exposed/>
+		</syncWaterPump>
+		<onAddRos2FightExp>
+			<Arg>	INT32	</Arg>
+		</onAddRos2FightExp>
+		<onCheckRos2Dynamo><Exposed/>
+		</onCheckRos2Dynamo>
+		<doRos2CapsuleTask><Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> ARRAY <of> PYTHON </of> </Arg>
+		</doRos2CapsuleTask>
+		<!-- ROS2.0 陨铁矿机 -->
+		<reqToSyncIronMakingInfo> <Exposed/>
+		</reqToSyncIronMakingInfo>
+		<reqToAddIronMakingModule> <Exposed/>
+		</reqToAddIronMakingModule>
+		<reqToDelIronMakingModule> <Exposed/>
+		</reqToDelIronMakingModule>
+		<reqToGetIron> <Exposed/>
+		</reqToGetIron>
+		<!-- ROS2.0 陨铁矿机 -->
+		<setDynamoSwitch> <Exposed/>
+		</setDynamoSwitch>
+	</BaseMethods>
+</root>

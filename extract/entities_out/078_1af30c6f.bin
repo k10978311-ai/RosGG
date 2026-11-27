@@ -1,0 +1,14 @@
+<root>
+	<Properties>
+		<dtsRos2MineralDepositIDs>
+			<Type>	PYTHON		</Type>
+			<Flags> ALL_CLIENTS	</Flags>
+			<Default>	{}	</Default>
+		</dtsRos2MineralDepositIDs>
+		
+	</Properties>
+	
+	<CellMethods>
+
+	</CellMethods>
+</root>

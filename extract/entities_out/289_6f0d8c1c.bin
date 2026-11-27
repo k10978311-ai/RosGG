@@ -1,0 +1,19 @@
+<root>
+    <Parent>	DtsRos2TaskNpc		</Parent>
+    <ClientName>  DtsRos2Collection    </ClientName>
+
+    <Properties>
+        <teamIDToNumber>
+            <Type>	PYTHON		</Type>
+            <Flags> ALL_CLIENTS </Flags>
+            <Default>	{}	</Default>
+        </teamIDToNumber>
+    </Properties>
+	<CellMethods>
+        <onContentFinish>
+            <Arg>   INT32   </Arg>
+        </onContentFinish>
+	</CellMethods>
+	<ClientMethods>
+	</ClientMethods>
+</root>

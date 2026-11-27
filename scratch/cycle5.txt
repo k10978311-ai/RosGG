@@ -1,0 +1,16 @@
+[menu after 48s]
+=== CLIENT (Mercury, from logOnBegin)
+12:34:44.826 [INFO] ServerConnection::logOnBegin conneting to 192.168.1.18:25000 for loginAPP
+12:34:45.027 [INFO] ServerConnection::logOn: status==LOGGED_ON
+12:34:45.027 [INFO] ServerConnection::logOn: to:   192.168.1.18:25000
+12:34:45.122 [INFO] ServerConnection::createBasePlayer: id 10001
+12:34:45.847 [ERROR] setPlayer::new player is null
+12:34:45.847 [INFO] ServerConnection::createBasePlayer: id 10002
+12:34:46.942 [INFO] ServerConnection::createCellPlayer: id 10002
+12:34:47.034 [WARNING] ClientApp::enterEntity(10002): enterCount is now 2.
+=== CLIENT (<SCRIPT>)
+[cj]test patch!!!!!!!!
+prepare_md5_info PatchConst.FILES_HASH_PATH=hash_list not found!
+@@@@@@@showLoadingTexture
+@@@@@@@showInitPanel
+GetAllSubObj set([<Scene (GameObject) at 0x763839CEEBB0>])

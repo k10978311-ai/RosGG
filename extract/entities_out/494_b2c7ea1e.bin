@@ -1,0 +1,112 @@
+<root>
+	<Implements>
+		<Interface>	iCell		</Interface>
+		<Interface>	iMove		</Interface>
+		<Interface>	iRotate		</Interface>
+		<Interface>	iNormalCombatUnit</Interface>
+		<Interface>	iCombatBehavior	</Interface>
+	</Implements>
+
+	<Volatile>
+		<position/>
+		<yaw/>
+	</Volatile>
+	<ClientName>	RobotTitan		</ClientName>
+
+	<Properties>
+		<maxBaseHP>
+			<Type> INT32 </Type>
+			<Flags> CELL_PRIVATE </Flags>
+			<Default> 1 </Default>
+		</maxBaseHP>
+
+		<robotVisible>
+			<Type>		BOOL	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	1	</Default>
+		</robotVisible>
+		
+		<titanCamp>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> 0 </Default>
+		</titanCamp>
+
+		<nickname>
+			<Type>		STRING		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+		</nickname>
+
+		<monType>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> 0 </Default>
+		</monType>
+
+		<configID>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> 0 </Default>
+		</configID>
+		<robotAttackStatus>
+			<Type>		BOOL	</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+		</robotAttackStatus>
+		<bornTimerID>
+			<Type>	INT32		</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</bornTimerID>
+		<robotFollowID>
+			<Type>	ENTITY_ID		</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</robotFollowID>
+	</Properties>
+
+	<CellMethods>
+		<shootHit><Exposed/>
+			<Arg> SHOOT_WEAPON_INFO </Arg>
+			<Arg> VECTOR3 </Arg>
+			<Arg> ENTITY_ID </Arg>
+			<Arg> HIT_PART </Arg>
+			<Arg> VECTOR3 </Arg>
+			<Arg> INT32	</Arg>
+		</shootHit>
+		<setTitanCamp>
+			<Arg> INT32 </Arg>
+		</setTitanCamp>
+		<recoverHP>
+			<Arg> FLOAT </Arg>
+		</recoverHP>
+		<createDamageByClient><Exposed/>
+			<Arg> ENTITY_ID </Arg>
+			<Arg> INT8 </Arg>
+		</createDamageByClient>
+
+		<syncBattleTeamID>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</syncBattleTeamID>
+		<triggerPlayerEnter><Exposed/>
+			<Arg> ENTITY_ID </Arg>
+		</triggerPlayerEnter>
+	</CellMethods>
+
+	<ClientMethods>
+		<onJumpStart></onJumpStart>
+		<onJumpEnd>
+			<Arg> FLOAT </Arg>
+		</onJumpEnd>
+		<onDelayDestroy>
+		</onDelayDestroy>
+		<onAutoLeaveDelayDestroy>
+		</onAutoLeaveDelayDestroy>
+		<bombAttack>
+		</bombAttack>
+		<handAttack>
+		</handAttack>
+		<onChangeTitanMoveState>
+			<Arg> INT8 </Arg>	
+		</onChangeTitanMoveState>
+	</ClientMethods>
+</root>

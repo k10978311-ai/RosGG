@@ -1,0 +1,61 @@
+<root>
+	<Implements>
+		<Interface>	iCell </Interface>
+	</Implements>
+	<ClientName>	DtsEvacuationEntity		</ClientName>
+	<Properties>
+		<detectPlayerTimerID>
+			<Type>	INT32	</Type>
+			<Flags>	CELL_PRIVATE	</Flags>
+			<Default>	0		</Default>
+		</detectPlayerTimerID>
+		<evacuateCampType>
+			<Type>	INT8	</Type>
+			<Flags>	CELL_PRIVATE	</Flags>
+			<Default>	0		</Default>
+		</evacuateCampType>
+		<evacuateRadius>
+			<Type>	FLOAT	</Type>
+			<Flags>	CELL_PRIVATE	</Flags>
+			<Default>	0		</Default>
+		</evacuateRadius>
+		<evacuateShowTime>
+			<Type>	INT64	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	0		</Default>
+		</evacuateShowTime>
+		<evacuateEndTime>
+			<Type>	INT64		</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	0	</Default>
+		</evacuateEndTime>
+		<evacuateMaxPlayer>
+			<Type>	INT32	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	0	</Default>
+		</evacuateMaxPlayer>
+		<evacuateHeightRange>
+			<Type>	VECTOR2	</Type>
+			<Flags>	CELL_PUBLIC	</Flags>
+		</evacuateHeightRange>
+		<hasEvacuatePlayerCnt>
+			<Type>	INT32	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	0	</Default>
+		</hasEvacuatePlayerCnt>
+		<evacuateSfxPath>
+			<Type>	STRING	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</evacuateSfxPath>
+		<evacuateName>
+			<Type>	STRING	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</evacuateName>
+	</Properties>
+	<CellMethods>
+	</CellMethods>
+	<ClientMethods>
+	</ClientMethods>
+	<BaseMethods>
+	</BaseMethods>
+</root>

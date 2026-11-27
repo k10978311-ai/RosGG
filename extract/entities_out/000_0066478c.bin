@@ -1,0 +1,64 @@
+<root>
+	<!-- # ros2.0 限时活动 -->
+	<Properties>
+		<ros2ExchangeCashTime>
+			<Type>		INT32	</Type>
+			<Flags>		BASE	</Flags>
+			<Default>	0	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2ExchangeCashTime>
+		<ros2CashToExchange>
+			<Type>		INT32		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2CashToExchange>
+		<ros2OtherActCashToExchange>
+			<Type>		INT32		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2OtherActCashToExchange>
+		<ros2CashHadExchange>
+			<Type>		INT32		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2CashHadExchange>
+		<ros2CashExchangeRank>
+			<Type>		INT32		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+		</ros2CashExchangeRank>
+		<ros2ExchangeCashActLeftTime>
+			<Type>		INT32	</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+		</ros2ExchangeCashActLeftTime>
+	</Properties>
+	<BaseMethods>
+		<requestExchangeRos2Cash> <Exposed/>
+			<Arg>	EXCHANGE_CASH_INFO	</Arg>
+		</requestExchangeRos2Cash>
+		<requestRos2CashExchangeRank> <Exposed/>
+		</requestRos2CashExchangeRank>
+		<gmAddRos2Cash>
+			<Arg>	FLOAT			</Arg>
+		</gmAddRos2Cash>
+	</BaseMethods>
+	<ClientMethods>
+		<onExchangeRos2CashResult>
+			<Arg>		FLOAT		</Arg>
+			<Arg>		FLOAT		</Arg>
+		</onExchangeRos2CashResult>
+		<onUpdateRos2ExchangeCashRank>
+			<Arg>		PYTHON		</Arg>
+			<Arg>		FLOAT		</Arg>
+			<Arg>		FLOAT		</Arg>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</onUpdateRos2ExchangeCashRank>
+		<onUpdateRos2ExchangeCashActLeftTime>
+			<Arg>		INT32		</Arg>
+		</onUpdateRos2ExchangeCashActLeftTime>
+		<syncRos2OtherActExchangeCash>
+			<Arg>		INT32		</Arg>
+		</syncRos2OtherActExchangeCash>
+	</ClientMethods>
+</root>

@@ -1,0 +1,6 @@
+special keys sample [1110375, 1110376, 1110377, 1110378, 1110379, 1110409, 1110410, 1110411, 1110412, 1110413]
+getDtsWearableAppearanceGender names=() consts=(None, '%s (%s %s)')
+getDtsBodyAppearancePart names=() consts=(None, '%s (%s %s)')
+getWearableItemList names=() consts=(None, '%s (%s %s)')
+getBodyAppearanceData is <function FuncParamInTracebackInnerFunc at 0x76383fe58848>
+gender1 hall default: None

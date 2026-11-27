@@ -1,0 +1,182 @@
+<root>
+	<Parent>	BattleGroundAvatar	</Parent>
+	<ClientName>	AvatarTitan		</ClientName>
+	<Properties>
+		<titanCamp>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> 0 </Default>
+		</titanCamp>
+
+		<isInvade>
+			<Type> BOOL </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> False </Default>
+		</isInvade>
+
+		<privateWarpGate>
+			<Type> BOOL </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> False </Default>
+		</privateWarpGate>
+
+		<scoreItemCnt>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> 0 </Default>
+		</scoreItemCnt>
+
+		<titanScoreBuffID>
+			<Type> INT32 </Type>
+			<Flags> OWN_CLIENT </Flags>
+			<Default> 0 </Default>
+		</titanScoreBuffID>
+
+		<titanScoreBuffSpeed>
+			<Type> INT32 </Type>
+			<Flags> OWN_CLIENT </Flags>
+			<Default> 0 </Default>
+		</titanScoreBuffSpeed>
+
+		<titanScoreBuffSpeed>
+			<Type> INT32 </Type>
+			<Flags> OWN_CLIENT </Flags>
+			<Default> 0 </Default>
+		</titanScoreBuffSpeed>
+
+		<titanKillNum>
+			<Type> INT32 </Type>
+			<Flags> OWN_CLIENT </Flags>
+			<Default> 0 </Default>
+		</titanKillNum>
+
+		<titanBossDamage>
+			<Type> INT32 </Type>
+			<Flags> OWN_CLIENT </Flags>
+			<Default> 0 </Default>
+		</titanBossDamage>
+
+		<titanDeliverScore>
+			<Type> INT32 </Type>
+			<Flags> OWN_CLIENT </Flags>
+			<Default> 0 </Default>
+		</titanDeliverScore>
+
+		<titanShowEnterTip>
+			<Type> BOOL </Type>
+			<Flags> OWN_CLIENT </Flags>
+			<Default> False </Default>
+		</titanShowEnterTip>
+	</Properties>
+
+	<CellMethods>
+		<setTitanCamp>
+			<Arg> INT32 </Arg>
+		</setTitanCamp>
+
+		<onPickTitanScoreItem>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</onPickTitanScoreItem>
+
+		<onDiscardTitanScoreItem>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</onDiscardTitanScoreItem>
+
+		<onReqDeliverScoreItem>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</onReqDeliverScoreItem>
+
+		<onTitanKillPlayer>
+			<Arg> ENTITY_ID </Arg>
+		</onTitanKillPlayer>
+
+		<setPrivateWarpGate>
+			<Arg> BOOL </Arg>
+		</setPrivateWarpGate>
+
+		<preInvade>
+		</preInvade>
+
+		<onInvade>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</onInvade>
+
+		<attachTitanBuff>
+			<Arg> INT32 </Arg>
+		</attachTitanBuff>
+
+		<onTitanShowMsg>
+			<Arg> STRING </Arg>
+			<Arg> PYTHON </Arg>
+		</onTitanShowMsg>
+
+		<syncKillNum>
+			<Arg> INT32 </Arg>
+		</syncKillNum>
+
+		<syncDeliverScore>
+			<Arg> INT32 </Arg>
+		</syncDeliverScore>
+
+		<syncBossDamage>
+			<Arg> INT32 </Arg>
+		</syncBossDamage>
+
+		<invadeMapLoaded> <Exposed/>
+		</invadeMapLoaded>
+
+		<showEnterTip> <Exposed/>
+		</showEnterTip>
+
+		<addInvadeDamnousScore>
+			<Arg> INT32 </Arg>
+		</addInvadeDamnousScore>
+	</CellMethods>
+
+	<BaseMethods>
+		<reqDeliverScoreItem>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</reqDeliverScoreItem>
+
+	</BaseMethods>
+
+	<ClientMethods>
+		<syncScoreBuffRemainTime>
+			<Arg>	INT32	</Arg>
+		</syncScoreBuffRemainTime>
+		
+		<syncTitanCamp>
+			<Arg> INT32 </Arg>
+		</syncTitanCamp>
+
+		<rebornCountdown>
+			<Arg> INT32 </Arg>
+		</rebornCountdown>
+
+		<onTitanShowMsg>
+			<Arg> STRING </Arg>
+			<Arg> PYTHON </Arg>
+		</onTitanShowMsg>
+		
+		<onBasePickItem>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</onBasePickItem>
+
+		<onBaseDeliverScoreItem>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</onBaseDeliverScoreItem>
+
+		<showGameResult>
+			<Arg> PYTHON </Arg>
+		</showGameResult>
+
+	</ClientMethods>
+</root>

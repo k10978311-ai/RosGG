@@ -1,0 +1,4 @@
+argspec ArgSpec(args=[], varargs='args', keywords='kwargs', defaults=None)
+names () varnames ('args', 'kwargs', 'err')
+call() -> type <type 'dict'> len 264
+sample [(9728, <shared.lib.gametoolslib.properties._types.OneSupplementBoxWithGuarantee object at 0x7638343a3a20>), (1, <shared.lib.gametoolslib.properties._types.OneSupplementBox object at 0x7638343a3ba0>), (2, <shared.lib.gametoolslib.properties._types.AllSupplementBox object at 0x7638343a3d20>), (9731, <shared.lib.gametoolslib.properties._types.OneSupplementBoxWithGuarantee object at 0x7638343a3ea0>), (9732, <shared.lib.gametoolslib.properties._types.OneSupplementBoxWithGuarantee object at 0x763833f7d020>), (5, <shared.lib.gametoolslib.properties._types.AllSupplementBoxWithGuarantee object at 0x763833f7d1a0>)]

@@ -14,4 +14,37 @@ tcpdump*.txt
 sweep_*.txt
 bf_off.txt
 latest_bf_key.bin
+# decompile workspace: large binaries extracted from the XAPK (keep tools/report/docs only)
+decompile/xapk/
+decompile/apk_unzip/
+decompile/patched/
+decompile/tools/*.jar
+certs/*.bak
+decompile/tools/jdk/
+decompile/script/
+
+# game client builds (large binaries; keep the notes/scripts only)
+game/**/*.apk
+game/**/*.obb
 scratch/frida-server*
+
+# nested repo (own GitHub remote: RosGG-Server-v2)
+ros_server_v2/
+
+# local-only: secrets, tools, large / third-party game binaries
+saved_accounts.json
+cloudflared.exe
+tools_dl/
+extract/script.npk
+*.apk
+*.dex
+*.so
+*.wav
+scratch/signed_apk/
+scratch/patch_res/
+scratch/login_extracted/
+scratch/**/*.png
+scratch/*.png
+*.mp3
+*.ogg
+*.fsb

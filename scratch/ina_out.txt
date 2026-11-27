@@ -1,0 +1,4 @@
+== _setInactivityTimeoutOnPause args=() names=['shared', 'switches', 'const', 'Globals', 'inactivityTimer', 'Timer', 'delTimer', 'PCEnableMode', 'SysEnableInactivityOptimise', 'isWathcingAd', 'f4logging', 'BigWorld', 'setInactivityTimeout', 'CLIENT_INACTIVE_DEFAULT_TIME'] consts=['None', '-1', "('switches',)", '0']
+== updateInactivityTimeout args=() names=['shared', 'switches', 'const', 'PCEnableMode', 'SysEnableInactivityOptimise', 'Globals', 'isInHall', 'BigWorld', 'player', 'loadCompFinished', 'setInactivityTimeout', 'CLIENT_INACTIVE_HALL_TIME', 'isInGame', 'CLIENT_INACTIVE_GAME_TIME', 'CLIENT_INACTIVE_DEFAULT_TIME'] consts=['None', '-1', "('switches',)"]
+== setInactivityWatchAd args=() names=['const', 'BigWorld', 'setInactivityTimeout', 'CLIENT_INACTIVE_WATCH_AD'] consts=['None', '-1']
+getInactivityTimeout=10.0

@@ -1,0 +1,500 @@
+<root>
+	<Parent>	BattleGroundAvatar	</Parent>
+	<Implements>
+		<Interface>	iDtsRos2Package			</Interface>
+		<Interface>	iDtsRos2Health			</Interface>
+		<Interface>	iDtsRos2AvatarTask		</Interface>
+		<Interface>	iDtsRos2Dna				</Interface>
+		<Interface>	iDtsRos2Prop			</Interface>
+		<Interface>	iDtsRos2AvatarExplore	</Interface>
+	</Implements>
+	<ClientName>	AvatarRos2		</ClientName>
+	<Properties>
+		<hatred>
+			<Type>		INT32		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+		</hatred>
+		<inAttackList>
+			<Type>		BOOL		</Type>
+			<Flags>		CELL_PUBLIC	</Flags>
+		</inAttackList>
+		<ros2Camp>
+			<Type>		INT8		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+		</ros2Camp>
+		<ros2ModeBullets>
+			 <Type> 	PYTHON 		</Type>
+			 <Flags>  CELL_PUBLIC_AND_OWN </Flags>
+		</ros2ModeBullets>
+		<ros2BulletUseOrder>
+			 <Type>		PYTHON		</Type>
+			 <Flags>  CELL_PUBLIC_AND_OWN </Flags>
+		</ros2BulletUseOrder>
+		<movePathPoints>
+			<Type>	ARRAY <of>	INT32	</of>	</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN	</Flags>
+		</movePathPoints>
+		<ros2PlayerEquipInfo>
+			<Type>		PYTHON		</Type>
+			<Flags>		CELL_PUBLIC	</Flags>
+			<Default>	{}		</Default>
+		</ros2PlayerEquipInfo>
+		<inEvacuationAreaTick>
+			<Type>		INT32		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+		</inEvacuationAreaTick>
+		<dtsRos2Currency>
+			<Type> INT32 </Type>
+			<Flags> OWN_CLIENT </Flags>
+			<Default> 0 </Default>
+		</dtsRos2Currency>
+		<ros2MallLevel>
+			<Type>		INT32		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+		</ros2MallLevel>
+		<ros2HelmetExtendMods>
+			<Type>		PYTHON		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+		</ros2HelmetExtendMods>
+		<ros2VestExtendMods>
+			<Type>		PYTHON		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+		</ros2VestExtendMods>
+		<autoReloadBulletID>
+			<Type>		PYTHON		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+			<Default>	{}		</Default>
+		</autoReloadBulletID>
+		<defenderLoadLeftTime>
+			<Type>		INT32		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+			<Default>	0		</Default>
+		</defenderLoadLeftTime>
+		<dtsRos2Exp>
+			<Type>		INT32		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+		</dtsRos2Exp>
+		<dtsRos2Level>
+			<Type>		INT32		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+		</dtsRos2Level>
+		<dtsRos2ExpBefore>
+			<Type>		INT32		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+		</dtsRos2ExpBefore>
+		<dtsRos2LevelBefore>
+			<Type>		INT32		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+		</dtsRos2LevelBefore>
+		
+		<ros2InsuranceReturnTime>
+			<Type>		INT32		</Type>
+			<Flags>		CELL_PUBLIC	</Flags>
+		</ros2InsuranceReturnTime>
+		<ros2GunBulletOrder>
+			<Type>		PY_DICT		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+			<Default>	{}		</Default>
+		</ros2GunBulletOrder>
+		<gameVisitedState>
+			<Type>		INT32		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+			<Default>	0		</Default>
+		</gameVisitedState>
+		
+		<finishedDtsRos2Training>
+			<Type>		INT8		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+		</finishedDtsRos2Training>
+
+		<ros2InsuredItemGetTimeRange>
+			<Type>	ARRAY <of>	INT32	</of>	</Type>
+			<Flags>	CELL_PUBLIC	</Flags>
+		</ros2InsuredItemGetTimeRange>
+
+		<ros2WeaponRandomAttrSystemInfos>
+			<Type>		PYTHON		</Type>
+			<Flags>		CELL_PUBLIC	</Flags>
+			<Default>	{}		</Default>
+		</ros2WeaponRandomAttrSystemInfos>
+		<isHideRos2WeaponSoundWithRandomAttr>
+			<Type>		BOOL		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	False		</Default>
+		</isHideRos2WeaponSoundWithRandomAttr>
+		
+		<ros2ExoBuffAttr>
+			<Type>		PYTHON			</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>	{}			</Default>
+		</ros2ExoBuffAttr>
+
+		<railInfo>
+			<Type>		PYTHON		</Type>
+			<Flags>		CELL_PUBLIC	</Flags>
+			<Default>	{}		</Default>
+		</railInfo>
+
+		<dtsKillRos2DefenderNum>
+			<Type>		INT32		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>	0	</Default>
+		</dtsKillRos2DefenderNum>
+		<ros2KillPoints>
+			<Type>		INT32		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>	0	</Default>
+		</ros2KillPoints>
+
+		<curRos2ExoID>
+			<Type>		INT32		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>	1	</Default>
+		</curRos2ExoID>
+		
+		<ros2ExoMilitaryRank>
+			<Type>		INT32		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>	0	</Default>
+		</ros2ExoMilitaryRank>
+		<ros2BornPoint>
+			<Type>		VECTOR3		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN	</Flags>
+		</ros2BornPoint>
+
+		<ros2RandomAttrEffectSpeedBuff>
+			<Type>		FLOAT		</Type>
+			<Flags>		OWN_CLIENT	 </Flags>
+			<Default>	0	</Default>
+		</ros2RandomAttrEffectSpeedBuff>
+		<showInvincibleEffect>
+			<Type>		BOOL		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+		</showInvincibleEffect>
+	</Properties>
+	
+	<CellMethods>
+		<setInAttackList>
+			<Arg>		BOOL	</Arg>
+			<Arg>		INT32	</Arg>
+		</setInAttackList>
+		<addHatred>
+			<Arg>		INT32	</Arg>
+		</addHatred>
+		<setHP>
+			<Arg> INT32 </Arg>
+		</setHP>
+
+		<onSyncAttackerOpenLeftTime> <Exposed/>
+			<Arg>		INT32	</Arg>
+		</onSyncAttackerOpenLeftTime>
+		<evacuateFail>
+		</evacuateFail>
+		<evacuateSuccess>
+		</evacuateSuccess>
+		<evacuateSuccessInSpecificWay>
+			<Arg>		INT8			</Arg>
+		</evacuateSuccessInSpecificWay>
+		<onOpenRos2AirProp>
+			<Arg>		ENTITY_ID		</Arg>
+		</onOpenRos2AirProp>
+		<requestRecycleRos2Bullet> <Exposed/>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT8			</Arg>
+		</requestRecycleRos2Bullet>
+		<setAddRos2BulletsOrder> <Exposed/>
+			<Arg>       ARRAY <of> INT32 </of> </Arg>
+			<Arg>		INT32			</Arg>
+		</setAddRos2BulletsOrder>
+		<requestLeaveRos2Space> <Exposed/>
+		</requestLeaveRos2Space>
+		<requestPathRecord> <Exposed/>
+		</requestPathRecord>
+		<requestBeforeMapInfo> <Exposed/>
+		</requestBeforeMapInfo>
+		<onRequestBeforeMapInfoFromSpace>
+			<Arg>	PYTHON		</Arg>
+			<Arg>	ARRAY <of>  ROS2_EVACUATION_POINT   </of>   </Arg>
+			<Arg>	ARRAY <of>  ROS2_EVACUATION_POINT   </of>   </Arg>
+			<Arg>	ARRAY <of>  ROS2_EVACUATION_POINT   </of>   </Arg>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	VECTOR3	</Arg>
+			<Arg>	INT32	</Arg>
+		</onRequestBeforeMapInfoFromSpace>
+		<initRos2AvatarEquipBar>
+		</initRos2AvatarEquipBar>
+		<useProp> <Exposed/>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+			<Arg>		STRING		</Arg>
+		</useProp>
+		<useRos2RecoverItem> <Exposed/>
+			<Arg>		INT32		</Arg>
+			<Arg>		UUID		</Arg>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+			<Arg>		STRING		</Arg>
+		</useRos2RecoverItem>
+		<onStartRos2PropSing> <Exposed/>
+			<Arg>		INT32		</Arg>
+			<Arg> 		UUID 		</Arg> 
+		</onStartRos2PropSing>
+		<cancelPropSing> <Exposed/>
+		</cancelPropSing>
+
+		<onStartRos2RecoverItemSing> <Exposed/>
+			<Arg>		INT32		</Arg>
+			<Arg> 		UUID 		</Arg>
+			<Arg>		INT32		</Arg> 
+		</onStartRos2RecoverItemSing>
+
+		<setLastRecPosition>
+			<Arg>		VECTOR3			</Arg>
+		</setLastRecPosition>
+		
+		<onEnterEvacuateCircle>
+		</onEnterEvacuateCircle>
+		
+		<onLeaveEvacuateCircle>
+		</onLeaveEvacuateCircle>
+		<syncLoadDefenderTime>
+			<Arg>		INT32		</Arg>
+		</syncLoadDefenderTime>
+		<recordRos2StartTime>
+		</recordRos2StartTime>
+		<addRos2DtsExp>
+			<Arg>			INT32			</Arg>
+			<Arg>			INT32			</Arg>
+			<Arg>			INT32			</Arg>
+		</addRos2DtsExp>
+		<payRos2Currency>
+			<Arg>			INT32			</Arg>
+		</payRos2Currency>
+		<getGameVisitedState>
+		</getGameVisitedState>
+		<setGameVisitedState>
+			<Arg>			INT32			</Arg>
+		</setGameVisitedState>
+
+		<notifyInteractWithRos2TaskNpcBegin>
+			<Arg>			INT32			</Arg>
+			<Arg>			INT32			</Arg>
+		</notifyInteractWithRos2TaskNpcBegin>
+		<notifyInteractWithRos2TaskNpcCancel>
+			<Arg>			INT32			</Arg>
+			<Arg>			INT32			</Arg>
+		</notifyInteractWithRos2TaskNpcCancel>
+		<notifyInteractWithRos2TaskNpcFinish>
+			<Arg>			INT32			</Arg>
+			<Arg>			INT32			</Arg>
+		</notifyInteractWithRos2TaskNpcFinish>
+		<notifyInteractWithRos2ExploreNpcBegin>
+			<Arg>			INT32			</Arg>
+			<Arg>			STRING			</Arg>
+			<Arg>			INT32			</Arg>
+		</notifyInteractWithRos2ExploreNpcBegin>
+		<notifyInteractWithRos2ExploreNpcCancel>
+			<Arg>			INT32			</Arg>
+			<Arg>			STRING			</Arg>
+			<Arg>			INT32			</Arg>
+		</notifyInteractWithRos2ExploreNpcCancel>
+		<notifyInteractWithRos2ExploreNpcFinish>
+			<Arg>			INT32			</Arg>
+			<Arg>			STRING			</Arg>
+			<Arg>			INT32			</Arg>
+		</notifyInteractWithRos2ExploreNpcFinish>
+		<subDtsRos2Currency> <Exposed/>
+			<Arg>		INT32			</Arg> <!-- exposed id -->
+			<Arg>		INT32			</Arg> <!-- num -->
+			<Arg>		INT32			</Arg> <!-- src -->
+		</subDtsRos2Currency>
+		<requestRos2GunBulletOrder> <Exposed/>
+			<Arg>		INT32			</Arg> <!-- weapon id -->
+		</requestRos2GunBulletOrder>
+		<requestUseRos2BombBullet> <Exposed/>
+			<Arg>		INT32			</Arg> <!-- weapon id -->
+			<Arg>		INT32			</Arg>
+		</requestUseRos2BombBullet>
+		<wearRos2BombWeapon>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT32			</Arg>
+			<Arg>		STRING			</Arg>
+		</wearRos2BombWeapon>
+		<wearSlotRos2BombWeapon>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT32			</Arg>
+		</wearSlotRos2BombWeapon>
+		<fireRos2> <Exposed/>
+			<Arg>		INT32			</Arg>
+		</fireRos2>
+		<addRos2DefenderKill>
+		</addRos2DefenderKill>
+
+		<addRos2KillPoints>
+			<Arg>		INT32			</Arg>
+		</addRos2KillPoints>
+
+		<syncRos2WeaponInGameDynamicInfos> <Exposed/>
+			<Arg>		INT8			</Arg>
+			<Arg> ARRAY <of> ROS2_RANDOM_ATTR_INFOS  </of> </Arg>
+		</syncRos2WeaponInGameDynamicInfos>
+		<requestMoveToBornPoint> <Exposed/>
+		</requestMoveToBornPoint>
+		<setRos2BornPoint>
+			<Arg>		VECTOR3			</Arg>
+		</setRos2BornPoint>
+	</CellMethods>
+
+	<ClientMethods>
+		<onBattleGroundRos2Result>
+			<Arg>	PY_DICT		</Arg>
+			<Arg>	INT32		</Arg>
+		</onBattleGroundRos2Result>
+		<onSyncAttackerOpenLeftTime>
+			<Arg>		INT32	</Arg>
+		</onSyncAttackerOpenLeftTime>
+		<onClearRos2WeaponBullet>
+		</onClearRos2WeaponBullet>
+		<onSyncRos2TeamResult>
+			<Arg>		PYTHON	</Arg>
+		</onSyncRos2TeamResult>
+		<onRequestPathRecord>
+			<Arg>	ARRAY <of>	INT32	</of>	</Arg>
+			<Arg>	PY_DICT		</Arg>
+			<Arg>	INT8		</Arg>
+			<Arg>	PY_DICT		</Arg>
+			<Arg>	PY_DICT		</Arg>
+			<Arg>	PYTHON		</Arg>
+		</onRequestPathRecord>
+		<onRequestBeforeMapInfo>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	ARRAY <of>  ROS2_EVACUATION_POINT   </of>   </Arg>
+			<Arg>	ARRAY <of>  ROS2_EVACUATION_POINT   </of>   </Arg>
+			<Arg>	ARRAY <of>  ROS2_EVACUATION_POINT   </of>   </Arg>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	INT32	</Arg>
+		</onRequestBeforeMapInfo>
+		<onSyncDtsRos2Exp>
+			<Arg>		INT32	</Arg>
+			<Arg>		INT32	</Arg>
+		</onSyncDtsRos2Exp>
+		<onSyncDtsRos2Level>
+			<Arg>		INT32	</Arg>
+			<Arg>		INT32	</Arg>
+		</onSyncDtsRos2Level>
+		<onRos2PropSingFinishServer>
+			<Arg>		INT32			</Arg>		<!-- item id -->
+			<Arg>		UUID			</Arg>		<!-- uuid -->
+		</onRos2PropSingFinishServer> 
+		<onRos2RecoverItemSingFinishServer>
+			<Arg>		INT32			</Arg>		<!-- item id -->
+			<Arg>		UUID			</Arg>		<!-- uuid -->
+			<Arg>		INT32			</Arg>		<!-- item id -->
+		</onRos2RecoverItemSingFinishServer> 
+		<onInteractWithRos2TaskNpcBegin>
+			<Arg> 		INT32		</Arg>
+			<Arg> 		INT32		</Arg>
+		</onInteractWithRos2TaskNpcBegin>
+		<onInteractWithRos2TaskNpcCancel>
+			<Arg> 		INT32		</Arg>
+			<Arg> 		INT32		</Arg>
+		</onInteractWithRos2TaskNpcCancel>
+		<onInteractWithRos2TaskNpcFinish>
+			<Arg> 		INT32		</Arg>
+			<Arg> 		INT32		</Arg>
+		</onInteractWithRos2TaskNpcFinish>
+		<onInteractWithRos2ExploreNpcBegin>
+			<Arg> 		INT32		</Arg>
+			<Arg>		STRING		</Arg>
+			<Arg> 		INT32		</Arg>
+		</onInteractWithRos2ExploreNpcBegin>
+		<onInteractWithRos2ExploreNpcCancel>
+			<Arg> 		INT32		</Arg>
+			<Arg>		STRING		</Arg>
+			<Arg> 		INT32		</Arg>
+		</onInteractWithRos2ExploreNpcCancel>
+		<onInteractWithRos2ExploreNpcFinish>
+			<Arg> 		INT32		</Arg>
+			<Arg>		STRING		</Arg>
+			<Arg> 		INT32		</Arg>
+		</onInteractWithRos2ExploreNpcFinish>
+		<onShowRos2PickUpLog>
+			<Arg> 		INT32		</Arg>
+			<Arg> 		INT32		</Arg>
+		</onShowRos2PickUpLog>
+		<onRequestRos2GunBulletOrder>
+			<Arg>		INT32			</Arg> <!-- weapon id -->
+			<Arg>		ARRAY <of>	INT32	</of>	</Arg>
+		</onRequestRos2GunBulletOrder>
+		<onChangeRos2GunBulletOrder>
+			<Arg>	INT32	</Arg>
+			<Arg> ARRAY <of> INT32  </of> </Arg>
+		</onChangeRos2GunBulletOrder>
+		<onSyncDtsRos2ExpVal>
+			<Arg>	INT32	</Arg>
+		</onSyncDtsRos2ExpVal>
+	</ClientMethods>
+
+	<BaseMethods>
+		<onBattleGroundRos2EndFight>
+			<Arg> PYTHON </Arg>
+		</onBattleGroundRos2EndFight>
+		<refreshDtsRos2BattleRos2HpData>
+			<Arg>	FLOAT	</Arg>
+		</refreshDtsRos2BattleRos2HpData>
+		<updateScavValidIdentity>
+		</updateScavValidIdentity>
+
+		<sendDtsRos2AvatarBattleTaskReward>
+			<Arg> PYTHON </Arg>
+		</sendDtsRos2AvatarBattleTaskReward>
+		
+		<!-- 任务完成 -->
+		<ros2TaskComplete>
+			<Arg> INT32 </Arg>
+		</ros2TaskComplete>
+
+		<finishTaskContract>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</finishTaskContract>
+
+		<rechangeRos2TaskContract>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</rechangeRos2TaskContract>
+
+		<finishDtsRos2Tutorial> <Exposed/>
+			<Arg>   INT32       </Arg>
+			<Arg>	BOOL		</Arg>
+		</finishDtsRos2Tutorial>
+
+		<subDtsRos2CurrencyInGameCallBack> <!-- 智障从游戏内扣游戏外R钞操作 -->
+			<Arg> INT32 </Arg> <!-- num -->
+			<Arg> INT32 </Arg> <!-- reason -->
+		</subDtsRos2CurrencyInGameCallBack>
+		<sendCourierDroneProp>
+			<Arg>   PYTHON       </Arg>
+		</sendCourierDroneProp>
+		
+		<notifyRos2Event>
+			<Arg>	INT32	</Arg>
+			<Arg>   PYTHON	</Arg>
+		</notifyRos2Event>
+		
+		<sendDtsRos2TacticalPropTaskData>
+			<Arg>   PYTHON       </Arg>
+			<Arg>   PYTHON       </Arg>
+		</sendDtsRos2TacticalPropTaskData>
+		<addRos2TaskExploreLevel>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</addRos2TaskExploreLevel>
+	</BaseMethods>
+</root>

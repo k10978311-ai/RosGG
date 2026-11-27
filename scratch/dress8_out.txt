@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/storage/emulated/0/Android/data/com.netease.chiji/files/py_payload.py", line 6, in <module>
+    b = u.getBodyAppearanceData(); wd = u.getWearableAppearanceData()
+  File "common\decorators.py", line 302, in FuncParamInTracebackInnerFunc
+  File "common\dts_appearance_utils.py", line 1416, in getBodyAppearanceData
+  File "common\decorators.py", line 302, in FuncParamInTracebackInnerFunc
+  File "common\dts_appearance_utils.py", line 1425, in preprocessBodyAppearanceData
+TypeError: 'NoneType' object has no attribute '__getitem__'
+

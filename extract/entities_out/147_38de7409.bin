@@ -1,0 +1,16 @@
+<root>
+  <Parent> DtsRos2TaskNpc </Parent>
+	<ClientName>	DtsRos2TaskNpcExpressItem		</ClientName>
+  <Properties>
+      <desNpcEntityID>
+          <Type>    INT32        	</Type>
+          <Flags>   CELL_PRIVATE	</Flags>
+      </desNpcEntityID>
+  </Properties>
+  <ClientMethods>
+
+  </ClientMethods>
+  <CellMethods>
+  </CellMethods>
+
+</root>

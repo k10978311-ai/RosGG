@@ -1,0 +1,11 @@
+BigWorld.player(): PlayerAthlete at 0x763837563020
+Globals.player: None
+all_ui: ['UILoading']
+loading._recordLoadingMapID: 20
+loading._isLoading: 'N/A'
+loading._lock: False
+loading._isDestroyed: 'N/A'
+loading.is_active: 'N/A'
+loading.is_visible: 'N/A'
+sys.last_type: None
+sys.last_value: None

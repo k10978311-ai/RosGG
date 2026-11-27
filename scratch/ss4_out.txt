@@ -1,0 +1,7 @@
+Athlete:ConnectMonitor.on_disconnected file=helpers\ConnectMonitor.py line=442 keys=['MapLoader']
+Avatar:MapLoader.__init__ file=helpers\MapLoader.py line=21 keys=['MapLoader', 'reconnectMapID']
+Avatar:MapLoader.onHandshake file=helpers\MapLoader.py line=33 keys=['reconnectMapID']
+Avatar:MapLoader.onReconnect file=helpers\MapLoader.py line=27 keys=['reconnectMapID']
+Avatar:PlayerAvatar.loadMap file=entities\Avatar.py line=1565 keys=['MapLoader', 'onLoadMap']
+Avatar:PlayerAvatar.onTransferSpace file=entities\Avatar.py line=2002 keys=['MapLoader']
+done 6

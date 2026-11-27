@@ -1,0 +1,132 @@
+<root>
+	<Properties>
+		<valentine2021TaskID>
+			<Type>		INT32		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN		</Flags>
+			<Default>	0		</Default>
+		</valentine2021TaskID>
+		<valentinePickedAirDrop>
+			<Type>	PYTHON	</Type>
+			<Flags>	CELL_PRIVATE	</Flags>
+			<Default>	[]	</Default>
+		</valentinePickedAirDrop>
+		<valentineAccumulateMoveDis>
+			<Type>	INT32	</Type>
+			<Flags>	CELL_PRIVATE	</Flags>
+			<Default>	0	</Default>
+		</valentineAccumulateMoveDis>
+		<valentineAccumulateKill>
+			<Type>	INT32	</Type>
+			<Flags>	CELL_PRIVATE	</Flags>
+			<Default>	0	</Default>
+		</valentineAccumulateKill>
+		<valentinePickPropNum>
+			<Type>	PYTHON	</Type>
+			<Flags>	CELL_PRIVATE	</Flags>
+			<Default>	{}	</Default>
+		</valentinePickPropNum>
+		<valentineUsePropNum>
+			<Type>	PYTHON	</Type>
+			<Flags>	CELL_PRIVATE	</Flags>
+			<Default>	{}	</Default>
+		</valentineUsePropNum>
+		<valentineTaskHunterID>
+			<Type>	INT32	</Type>
+			<Flags>	CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>	0	</Default>
+		</valentineTaskHunterID>
+		<valentineTaskHuntID>
+			<Type>	INT32	</Type>
+			<Flags>	CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>	0	</Default>
+		</valentineTaskHuntID>
+		<valentineTaskReward>
+			<Type>		PYTHON		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>	{}	</Default>
+		</valentineTaskReward>
+		<valentineAntiKillReward>
+			<Type>		PYTHON		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>	{}	</Default>
+		</valentineAntiKillReward>
+		<valentineGlowStickGetNum>
+			<Type>		PYTHON		</Type>
+			<Flags>		CELL_PRIVATE		</Flags>
+			<Default>	{}		</Default>
+		</valentineGlowStickGetNum>
+		<valentineDanceFinishNum>
+			<Type>		PYTHON		</Type>
+			<Flags>		CELL_PRIVATE		</Flags>
+			<Default>	{}		</Default>
+		</valentineDanceFinishNum>
+		<selectedGoddessInGame>
+			<Type>	INT32	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	-1	</Default>
+		</selectedGoddessInGame>
+	</Properties>
+	<ClientMethods>
+		<onRandomValentineKilledPlayer>
+			<Arg>			ENTITY_ID			</Arg>
+		</onRandomValentineKilledPlayer>
+		<onRandomValentineKillerPlayer>
+			<Arg>			ENTITY_ID			</Arg>
+		</onRandomValentineKillerPlayer>
+		<onRandomValentineTask>
+			<Arg>			INT32			</Arg>
+			<Arg>			PYTHON			</Arg>
+		</onRandomValentineTask>
+		<onRandomValentineReward>
+			<Arg>			INT32			</Arg>
+			<Arg>			PYTHON			</Arg>
+			<Arg>			INT32			</Arg>
+		</onRandomValentineReward>
+		<syncValentineTaskRemainTime>
+			<Arg>			INT32			</Arg>
+			<Arg>			PYTHON			</Arg>
+		</syncValentineTaskRemainTime>
+		<syncValentineKilledTaskRemainTime>
+			<Arg>			INT32			</Arg>
+		</syncValentineKilledTaskRemainTime>
+		<syncKilledPlayerPos>
+			<Arg>			PYTHON			</Arg>
+		</syncKilledPlayerPos>
+		<syncKillerPlayerPos>
+			<Arg>			PYTHON			</Arg>
+		</syncKillerPlayerPos>
+		<onAcceptValentineTaskSucceed>
+		</onAcceptValentineTaskSucceed>
+	</ClientMethods>
+	<BaseMethods>
+	</BaseMethods>
+	<CellMethods>
+		<getValentineTask> <Exposed/>
+			<Arg>			INT32			</Arg>
+		</getValentineTask>
+		<acceptValentineTask> <Exposed/>
+			<Arg>			INT32			</Arg>
+			<Arg>			INT32			</Arg>
+		</acceptValentineTask>
+		<onRandomValentineKilledPlayer>
+			<Arg>			ENTITY_ID			</Arg>
+			<Arg>			ENTITY_ID			</Arg>
+		</onRandomValentineKilledPlayer>
+		<onRandomValentineKillerPlayer>
+			<Arg>			ENTITY_ID			</Arg>
+		</onRandomValentineKillerPlayer>
+		<endValentineSupportTask>
+		</endValentineSupportTask>
+		<checkHunterInKillCertainTask>
+		</checkHunterInKillCertainTask>
+		<getValentineAntiKillReward>
+			<Arg>			INT32			</Arg>
+			<Arg>			PYTHON			</Arg>
+		</getValentineAntiKillReward>
+		<stopValentineTaskCountdown>
+		</stopValentineTaskCountdown>
+		<onCheckValentineTaskHasPlayer>
+			<Arg>			PYTHON			</Arg>
+		</onCheckValentineTaskHasPlayer>
+	</CellMethods>
+</root>

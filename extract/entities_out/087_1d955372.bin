@@ -1,0 +1,62 @@
+<root>
+  <Implements>
+    <Interface> iCell </Interface>
+  </Implements>
+
+  <ClientName>  DtsRos2ExploreNpc  </ClientName>
+
+  <Properties>
+    <npcType>
+      <Type>  STRING </Type>
+      <Flags> ALL_CLIENTS </Flags>
+    </npcType>
+    <exploreID>
+      <Type>  INT32 </Type>
+      <Flags> ALL_CLIENTS </Flags>
+    </exploreID>
+    <gidFinishedInteract>
+      <Type>	PYTHON		</Type>
+      <Flags> ALL_CLIENTS </Flags>
+      <Default>	{}	</Default>
+    </gidFinishedInteract>
+    <inInteractingGidDict>
+      <Type>	PYTHON		</Type>
+      <Flags> ALL_CLIENTS </Flags>
+      <Default>	{}	</Default>
+    </inInteractingGidDict>
+  </Properties>
+
+  <ClientMethods>
+    <onExploreNpcInteractBegin>
+      <Arg>       GID           </Arg>
+      <Arg>       INT32         </Arg>
+      <Arg>       PYTHON        </Arg>
+    </onExploreNpcInteractBegin>
+    <onExploreNpcInteractFinish>
+      <Arg>       GID           </Arg>
+      <Arg>       INT32         </Arg>
+      <Arg>       PYTHON        </Arg>
+    </onExploreNpcInteractFinish>
+    <onExploreNpcInteractCancel>
+      <Arg>       GID           </Arg>
+      <Arg>       INT32         </Arg>
+      <Arg>       PYTHON        </Arg>
+    </onExploreNpcInteractCancel>
+  </ClientMethods>
+
+  <CellMethods>
+    <requestExploreNpcInteractFinish> <Exposed/>
+      <Arg>       GID           </Arg>
+      <Arg>       INT32         </Arg>
+    </requestExploreNpcInteractFinish>
+    <requestExploreNpcInteractCancel> <Exposed/>
+      <Arg>       GID           </Arg>
+      <Arg>       INT32         </Arg>
+    </requestExploreNpcInteractCancel>
+    <requestExploreNpcInteractStart> <Exposed/>
+      <Arg>       GID           </Arg>
+      <Arg>       INT32         </Arg>
+    </requestExploreNpcInteractStart>
+  </CellMethods>
+
+</root>

@@ -1,0 +1,25 @@
+<root>
+	<Implements>
+		<Interface>	iCell </Interface>
+		<Interface>	iCombatUnit </Interface>
+	</Implements>
+	<ClientName>	Ros2FixedFortress		</ClientName>
+	<Properties>
+		<targetPlayerEntID>
+			<Type>	ENTITY_ID 	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</targetPlayerEntID>
+
+		<level>
+			<Type>	INT32	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</level>
+
+	</Properties>
+	<CellMethods>
+	</CellMethods>
+	<ClientMethods>
+		<onDisplayDisappearAnimation>
+		</onDisplayDisappearAnimation>
+	</ClientMethods> 
+</root>

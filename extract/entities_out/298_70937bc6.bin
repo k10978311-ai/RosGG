@@ -1,0 +1,10 @@
+<root>
+	<Parent>	DtsBombSummonEntity	</Parent>
+	<ClientName>	Ros2RobotBombSummonEntity		</ClientName>
+	<Properties>
+		<targetID>
+			<Type>	ENTITY_ID 	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</targetID>
+	</Properties>
+</root>

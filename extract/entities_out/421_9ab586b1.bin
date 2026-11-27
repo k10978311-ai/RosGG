@@ -1,0 +1,63 @@
+<root>
+	<Implements>
+		<Interface>	iCell </Interface>
+		<Interface>	iCombatUnit </Interface>
+	</Implements>
+	<ClientName>	DtsLeviEntity	</ClientName>
+	<Properties>
+		<activePlayerNum>
+			<Type>	INT32	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</activePlayerNum>
+		<activePlayerID>
+			<Type>	ARRAY <of>	INT32	</of>	</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+		</activePlayerID>
+		<isPreNpc>
+			<Type>		BOOL		</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+		</isPreNpc>
+		<npcName>
+			<Type>	STRING	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</npcName>
+		<playerUsePosition>
+			<Type>		PYTHON		</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</playerUsePosition>
+		<checkPlayerInPositionTimerID>
+			<Type>	INT32	</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+		</checkPlayerInPositionTimerID>
+		<destroyDtsLeviEntityTimerID>
+			<Type>	INT32	</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+		</destroyDtsLeviEntityTimerID>
+	</Properties>
+	<CellMethods>
+		<playerJoinLeviPlace><Exposed/>
+		</playerJoinLeviPlace>
+		<playerQuitLeviPlace><Exposed/>
+			<Arg>		INT32			</Arg>
+		</playerQuitLeviPlace>
+		<playerGetFindNpcToken><Exposed/>
+		</playerGetFindNpcToken>
+		<playGetTokenAnimation>
+		</playGetTokenAnimation>
+		<npcLeaveGame><Exposed/>
+		</npcLeaveGame>
+		<setPlayerCanGetTitanToken>
+		</setPlayerCanGetTitanToken>
+	</CellMethods>
+	<ClientMethods>
+		<syncActivePlayerNum>
+		</syncActivePlayerNum>
+		<playGetTokenAnimation>
+		</playGetTokenAnimation>
+		<updatePlayerPosition>
+			<Arg>	PYTHON	</Arg>
+		</updatePlayerPosition>
+	</ClientMethods>
+	<BaseMethods>
+	</BaseMethods>
+</root>

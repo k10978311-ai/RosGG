@@ -1,0 +1,7 @@
+uiMgr <App (UIMgr) at 0x76384933C398>
+UINamesMatchingStateCanNotEnter = set(['UISuperTransformTurntable', 'UIPayment', 'UIWelfareController', 'UIHeroInfoNa', 'UIHeroInfo', 'UIMallController', 'UIPaymentAnniversary', 'UIBraveBookController'])
+_UIMgr____all_ui_enter_times = {}
+current_focus = []
+mouseTouches = []
+uiEnterEventDict = {}
+uiTouchLayer = <ui.UITouchLayer.UITouchLayer object at 0x763849165f18>

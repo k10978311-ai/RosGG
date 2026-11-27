@@ -1,0 +1,10 @@
+cu.exchangeRateDict = None
+cu.functions = [('calcNeedYB', <function calcNeedYB at 0x763844055230>), ('getCurrencyBigIcon', <function getCurrencyBigIcon at 0x76384412bde8>), ('getCurrencyDesc', <function getCurrencyDesc at 0x76384412bcf8>), ('getCurrencyExchangeRateDict', <function getCurrencyExchangeRateDict at 0x763844055140>), ('getCurrencyExchangeRatioFromTo', <function getCurrencyExchangeRatioFromTo at 0x7638440551b8>), ('getCurrencyGetPath', <function getCurrencyGetPath at 0x763844055050>), ('getCurrencyIcon', <function getCurrencyIcon at 0x76384412bd70>), ('getCurrencyName', <function getCurrencyName at 0x76384412bc80>), ('getCurrencySmallIcon', <function getCurrencySmallIcon at 0x76384412be60>), ('getCurrencyTinyIcon', <function getCurrencyTinyIcon at 0x76384412bed8>), ('getCurrencyToastWhenLackOf', <function getCurrencyToastWhenLackOf at 0x76384412bf50>), ('preprocessExchangeRate', <function preprocessExchangeRate at 0x7638440550c8>)]
+cu.name = 'preprocessExchangeRate'
+total 16492 types {None: 16492}
+sample attrs: ['count', 'index']
+sample vals: {}
+sample attrs: ['count', 'index']
+sample vals: {}
+sample attrs: ['count', 'index']
+sample vals: {}

@@ -1,0 +1,310 @@
+<root>
+	<!-- # ros2.0 交易所 -->
+	<Properties>
+		<!-- 交易所减税项目 -->
+		<ros2BusinessTaxReduction>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2BusinessTaxReduction>
+		<ros2BusinessSaleLimit>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2BusinessSaleLimit>
+		<businessUpdateWorldLv>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</businessUpdateWorldLv>
+		<businessTotalTradeValue>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</businessTotalTradeValue>
+		<businessRoomTaxReduction>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</businessRoomTaxReduction>
+		<businessRoomTradeCount>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</businessRoomTradeCount>
+		<businessRoomTriggerViolate>
+			<Type> BOOL </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> FALSE </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</businessRoomTriggerViolate>
+		<businessRoomViolateLv>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</businessRoomViolateLv>
+
+	</Properties>
+
+	<BaseMethods>
+		<businessSale> <Exposed/>
+			<Arg> INT8 </Arg> 
+			<Arg> INT32 </Arg> 
+			<Arg> STRING </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</businessSale>
+
+		<businessStopSale> <Exposed/>
+			<Arg> INT64 </Arg> 
+		</businessStopSale>
+
+		<businessBuy> <Exposed/>
+			<Arg> INT64 </Arg> 
+			<Arg> INT32 </Arg>
+		</businessBuy>
+
+		<businessQueryPlayerGoods> <Exposed/>
+			<Arg> INT64 </Arg>
+		</businessQueryPlayerGoods>
+
+		<businessQueryGoodsList> <Exposed/>
+			<Arg> STRING </Arg> 
+			<Arg> ARRAY <of> ROS2_BUSINESS_FILTER_INFO </of> </Arg>
+			<Arg> INT8 </Arg>
+			<Arg> INT64 </Arg>
+			<Arg> INT64 </Arg>
+		</businessQueryGoodsList>
+
+		<businessQueryGoodsPriceList> <Exposed/>
+			<Arg> INT32 </Arg> 
+		</businessQueryGoodsPriceList>
+
+		<businessQueryGoodsReferencePrice> <Exposed/>
+			<Arg> INT32 </Arg> 
+		</businessQueryGoodsReferencePrice>
+		<onBuffAddBusinessTaxResuction>
+			<Arg> FLOAT </Arg> 
+		</onBuffAddBusinessTaxResuction>
+
+		<!-- 1v1 -->
+		<onEnterBusinessRoom>
+			<Arg> GLOBAL_MAIL_BOX_INFO </Arg>
+			<Arg> INT8 </Arg>
+		</onEnterBusinessRoom>
+		<onBusinessRoomDismiss>
+			<Arg> GLOBAL_MAIL_BOX_INFO </Arg>
+			<Arg> INT8 </Arg>
+		</onBusinessRoomDismiss>
+		
+		<onPlayerEnterBusinessRoom>
+			<Arg> GLOBAL_MAIL_BOX_INFO </Arg>
+			<Arg> PYTHON </Arg>
+		</onPlayerEnterBusinessRoom>
+		<invitePlayerEnterBusinessRoom> <Exposed/>
+			<Arg> GID </Arg>
+			<Arg> STRING </Arg>
+		</invitePlayerEnterBusinessRoom>
+		<onInvitePlayerEnterBusienssRoomFail>
+			<Arg> INT8 </Arg>
+			<Arg> GID </Arg>
+			<Arg> STRING </Arg>
+		</onInvitePlayerEnterBusienssRoomFail>
+		<onInvitedToBusienssRoom>
+			<Arg> GID </Arg>
+			<Arg> STRING </Arg>
+			<Arg> PYTHON </Arg>
+		</onInvitedToBusienssRoom>
+
+		<acceptBusinessRoomInvite> <Exposed/>
+			<Arg> GID </Arg>
+		</acceptBusinessRoomInvite>
+		<refuseBusinessRoomInvite> <Exposed/>
+			<Arg> GID </Arg>
+			<Arg> INT8 </Arg>
+		</refuseBusinessRoomInvite>
+		<addBusinessRoomItem> <Exposed/>
+			<Arg> INT8 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+		</addBusinessRoomItem>
+		<onAddBusinessRoomItem>
+			<Arg> INT8 </Arg>
+			<Arg> INT8 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT32 </Arg>
+		</onAddBusinessRoomItem>
+		<removeBusinessRoomItem> <Exposed/>
+			<Arg> INT8 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+		</removeBusinessRoomItem>
+		<onRemoveBusinessRoomItem>
+			<Arg> INT8 </Arg>
+			<Arg> INT8 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT32 </Arg>
+		</onRemoveBusinessRoomItem>
+		<businessRoomPlayerSetReady> <Exposed/>
+			<Arg> BOOL </Arg>
+		</businessRoomPlayerSetReady>
+
+		<businessRoomPlayerSetMoney> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</businessRoomPlayerSetMoney>
+		<onBusinessRoomPlayerSetMoney>
+			<Arg> INT8 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</onBusinessRoomPlayerSetMoney>
+
+		<businessRoomTradePreProcessData>
+		</businessRoomTradePreProcessData>
+		<businessRoomTradeProcessData>
+		</businessRoomTradeProcessData>
+		<businessRoomTradeInterrupt>
+			<Arg> GID </Arg>
+			<Arg> INT8 </Arg>
+		</businessRoomTradeInterrupt>
+
+		<onBuffAddBusinessRoomTaxReduction>
+			<Arg> FLOAT </Arg> 
+		</onBuffAddBusinessRoomTaxReduction>
+		<businessRoomTradeEnd>
+			<Arg> PYTHON </Arg>
+		</businessRoomTradeEnd>
+		<businessRoomViolateProcess>
+			<Arg> INT32 </Arg>
+		</businessRoomViolateProcess>
+		<leaveBusinessRoom> <Exposed/>
+		</leaveBusinessRoom>
+		<onUpdateBusinessRoomStatus>
+			<Arg> GLOBAL_MAIL_BOX_INFO </Arg>
+			<Arg> INT8 </Arg>
+		</onUpdateBusinessRoomStatus>
+		<onUpdateBusinessRoomMemberData>
+			<Arg> GID </Arg>
+			<Arg> STRING </Arg>
+			<Arg> PYTHON </Arg>
+		</onUpdateBusinessRoomMemberData>
+		<noticeBusinessRoomTriggerViolate>
+		</noticeBusinessRoomTriggerViolate>
+
+		<onBusinessRoomOperationFail>
+			<Arg> INT8 </Arg>
+		</onBusinessRoomOperationFail>
+
+		<!-- gm -->
+		<gmTestBusinessBatchSale>
+			<Arg> INT32 </Arg> 
+		</gmTestBusinessBatchSale>
+		<gmTestBusinessBuy>
+			<Arg> INT32 </Arg> 
+			<Arg> INT32 </Arg>
+		</gmTestBusinessBuy>
+		<gmTestBusinessStop>
+			<Arg> INT64 </Arg> 
+		</gmTestBusinessStop>
+		<gmTestBusinessQuery>
+			<Arg> INT32 </Arg> 
+		</gmTestBusinessQuery>
+	</BaseMethods>
+
+	<ClientMethods>
+		<onBusinessSale>
+			<Arg> INT8 </Arg>
+			<Arg> INT64 </Arg> 
+		</onBusinessSale>
+		<onBusinessStopSale>
+			<Arg> INT8 </Arg>
+			<Arg> INT64 </Arg> 
+		</onBusinessStopSale>
+		<onBusinessBuy>
+			<Arg> INT8 </Arg>
+			<Arg> INT64 </Arg> 
+			<Arg> INT32 </Arg> 
+			<Arg> INT32 </Arg> 
+		</onBusinessBuy>
+
+		<onBusinessQueryPlayerGoods>
+			<Arg> INT8 </Arg>
+			<Arg> INT64 </Arg>
+			<Arg> PYTHON </Arg>
+		</onBusinessQueryPlayerGoods>
+
+		<onBusinessQueryGoodsList>
+			<Arg> INT8 </Arg>
+			<Arg> PYTHON </Arg>
+			<Arg> BOOL </Arg>
+		</onBusinessQueryGoodsList>
+
+		<onBusinessQueryGoodsPriceList>
+			<Arg> INT8 </Arg>
+			<Arg> INT32 </Arg> 
+			<Arg> PYTHON </Arg> 
+		</onBusinessQueryGoodsPriceList>
+
+		<onBusinessQueryGoodsReferencePrice>
+			<Arg> INT8 </Arg> 
+			<Arg> INT32 </Arg> 
+			<Arg> INT32 </Arg> 
+		</onBusinessQueryGoodsReferencePrice>
+		<syncBusinessTaxReduction>
+			<Arg> FLOAT </Arg> 
+		</syncBusinessTaxReduction>
+		<syncRos2BusinessSaleLimit>
+			<Arg> INT32 </Arg> 
+		</syncRos2BusinessSaleLimit>
+		<syncRos2BusinessTotalTradeValue>
+			<Arg> PYTHON </Arg> 
+		</syncRos2BusinessTotalTradeValue>
+		<onUpdateBusinessRoomMemberData>
+			<Arg> GID </Arg>
+			<Arg> STRING </Arg>
+			<Arg> PYTHON </Arg>
+		</onUpdateBusinessRoomMemberData>
+
+		<onEnterBusinessRoomFail>
+			<Arg> INT8 </Arg>
+		</onEnterBusinessRoomFail>
+		<onEnterBusinessRoom>
+			<Arg> INT8 </Arg>
+		</onEnterBusinessRoom>
+		<onLeaveBuisnessRoom>
+		</onLeaveBuisnessRoom>
+		<onPlayerEnterBusinessRoom>
+			<Arg> PYTHON </Arg>
+		</onPlayerEnterBusinessRoom>
+		<onUpdateBusinessRoomStatus>
+			<Arg> INT8 </Arg>
+		</onUpdateBusinessRoomStatus>
+		<onInvitePlayerEnterBusienssRoomFail>
+			<Arg> INT8 </Arg>
+			<Arg> GID </Arg>
+			<Arg> STRING </Arg>
+		</onInvitePlayerEnterBusienssRoomFail>
+		<onBusinessRoomDismiss>
+			<Arg> INT8 </Arg>
+		</onBusinessRoomDismiss>
+		<onBusinessRoomOperaFaile>
+			<Arg> INT8 </Arg>
+		</onBusinessRoomOperaFaile>
+		<businessRoomTradeInterrupt>
+			<Arg> GID </Arg>
+			<Arg> INT8 </Arg>
+		</businessRoomTradeInterrupt>
+		<syncBusinessRoomTradeCount>
+			<Arg> INT32 </Arg>
+		</syncBusinessRoomTradeCount>
+	</ClientMethods>
+</root>

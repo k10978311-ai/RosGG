@@ -1,0 +1,77 @@
+<root>
+	<Implements>
+		<Interface>	iCell		</Interface>
+	</Implements>
+	<ClientName>	DtsRos2AirDrop	</ClientName>
+	<Properties>
+
+		<groupID>
+			<Type>  INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</groupID>
+		<items>
+			<Type>  PY_DICT </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</items>
+		<hasOpen>
+			<Type> BOOL </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</hasOpen>
+		<modelPath>
+			<Type> STRING </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</modelPath>
+		<openTime>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</openTime>
+		<leftItemSfx>
+			<Type> STRING </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</leftItemSfx>
+		
+		<landDroneScanTeamID2AvtID>
+			<Type> PYTHON </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> {} </Default>
+		</landDroneScanTeamID2AvtID>
+		
+		<landDroneScanAvtID>
+			<Type> PYTHON </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> set() </Default>
+		</landDroneScanAvtID>
+	</Properties>
+	<CellMethods>
+		<tryPickUp> <Exposed/>
+			<Arg> UUID </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> BOOL  </Arg>
+		</tryPickUp>
+		<startOpenRos2AirDrop> <Exposed/>
+		</startOpenRos2AirDrop>
+		<stopOpenRos2AirDrop> <Exposed/>
+		</stopOpenRos2AirDrop>
+
+		<onRos2AirDropScan>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> BOOL </Arg>
+		</onRos2AirDropScan>
+
+		<clearRos2AirDropScanInfo>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> BOOL </Arg>
+		</clearRos2AirDropScanInfo>
+	</CellMethods>
+	<ClientMethods>
+		<onOpenRos2AirDrop>
+			<Arg> ARRAY <of> INT32  </of> </Arg>
+		</onOpenRos2AirDrop>
+		<updateItemAmount>
+			<Arg> UUID </Arg>
+			<Arg> INT32 </Arg>
+		</updateItemAmount>
+	</ClientMethods>
+</root>

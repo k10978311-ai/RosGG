@@ -1,0 +1,5 @@
+Avatar:PlayerAvatar.afterEnterSpace.endEnterSpace file=entities\Avatar.py line=2012 keys=['updateInactivityTimeout']
+Avatar:PlayerAvatar.onBecomeNonPlayer file=entities\Avatar.py line=1545 keys=['updateInactivityTimeout']
+GameInit:_resetInactivityTimeoutOnResume.<lambda> file=GameInit.py line=163 keys=['updateInactivityTimeout']
+GameInit:on_pause file=GameInit.py line=79 keys=['_setInactivityTimeoutOnPause']
+done 4

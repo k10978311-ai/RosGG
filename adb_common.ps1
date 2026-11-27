@@ -10,7 +10,17 @@ if (-not $script:RosAdb) {
 }
 
 # PC LAN IP used by dns_server / ros_mock_server (override with $env:ROS_PC_IP).
-$script:RosPcIp = if ($env:ROS_PC_IP) { $env:ROS_PC_IP } else { "192.168.100.137" }
+$script:RosPcIp = if ($env:ROS_PC_IP) { $env:ROS_PC_IP } else {
+    foreach ($cfgPath in @(
+        (Join-Path $PSScriptRoot "ros_server_v2\config.cmd"),
+        (Join-Path $PSScriptRoot "config.cmd")
+    )) {
+        if (-not (Test-Path $cfgPath)) { continue }
+        $m = Select-String -Path $cfgPath -Pattern "set ROS_PC_IP=(\S+)" | Select-Object -First 1
+        if ($m) { break }
+    }
+    if ($m) { $m.Matches[0].Groups[1].Value } else { "192.168.1.18" }
+}
 
 $script:RosPackage = "com.netease.chiji"
 $script:RosPubKey = Join-Path $PSScriptRoot "server_keys\loginapp.pubkey"

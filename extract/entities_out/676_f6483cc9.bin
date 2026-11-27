@@ -1,0 +1,65 @@
+<root>
+	<Properties> 
+		<!-- Ros2当前安装dna芯片的情况 -->
+		<ros2DnaNodeID2ChipID>
+			<Type>		PYTHON			</Type> 
+			<Flags>		ALL_CLIENTS		</Flags>
+			<Default>	{}			</Default>
+		</ros2DnaNodeID2ChipID>
+
+		<!-- Ros2已经安装的Dna导致的存盘必要数据 -->
+		<ros2DnaChipInfos>
+			<Type>		PYTHON			</Type> 
+			<Flags>		ALL_CLIENTS		</Flags>
+			<Default>	{}			</Default>
+		</ros2DnaChipInfos>
+
+		<!-- 2.0Dna的额外一次性血量,不可恢复,优先扣除这个 -->
+		<ros2DnaExtraBlood>
+			<Type>		INT32		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+			<Default>	0		</Default>
+		</ros2DnaExtraBlood>
+		<ros2DnaImmeadatelyOpenAirDropTimes>
+			<Type>		INT32		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>	0		</Default>
+		</ros2DnaImmeadatelyOpenAirDropTimes>
+		<!-- 2.0DnaX光扫描箱子的剩余次数 -->
+		<ros2DnaXrayTimes>
+			<Type>		INT32		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+			<Default>	0		</Default>
+		</ros2DnaXrayTimes>
+		<!-- 2.0DnaX光扫描过的箱子，再扫就不要扣次数了 -->
+		<ros2DnaScanedAirDrop>
+			<Type>		ARRAY <of>	ENTITY_ID	</of>	</Type> 
+			<Flags>		OWN_CLIENT		</Flags>
+		</ros2DnaScanedAirDrop>
+		<ros2EnableWoundedFire>
+			<Type>		BOOL		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN	</Flags>
+		</ros2EnableWoundedFire>
+	</Properties>
+
+	<CellMethods> 
+		<onRos2DnaLeechLife>
+			<Arg>  INT32 </Arg>
+		</onRos2DnaLeechLife>
+		<onUseRos2DnaImmediatelyOpenAirDropTime>
+		</onUseRos2DnaImmediatelyOpenAirDropTime>
+		<tryRos2DnaUseXray>	<Exposed/>
+			<Arg>	ENTITY_ID	</Arg>
+		</tryRos2DnaUseXray>
+	</CellMethods>
+
+	<ClientMethods>
+		<onWearDtsRos2DnaChip>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</onWearDtsRos2DnaChip>
+		<onRos2DnaUseXray>
+			<Arg>	ENTITY_ID	</Arg>
+		</onRos2DnaUseXray>
+	</ClientMethods>
+</root>

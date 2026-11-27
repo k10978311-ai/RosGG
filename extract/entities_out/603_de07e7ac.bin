@@ -1,0 +1,63 @@
+<root>
+	<Implements>
+		<Interface>	iCell </Interface>
+		<Interface>	iCombatUnit </Interface>
+		<Interface>	iSkill </Interface>
+		<Interface>	iRotate		</Interface>
+	</Implements>
+	<ClientName>	DtsRKUMan		</ClientName>
+	<Properties>
+		<rkuname>
+			<Type>	STRING	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</rkuname>
+		<rkuid>
+			<Type>	INT32	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</rkuid>
+		<canGetSkill>
+			<Type> BOOL </Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	True	</Default>
+		</canGetSkill>
+		<isPlayHandShake>
+			<Type> BOOL </Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	False	</Default>
+		</isPlayHandShake>
+		<canRKUManShake>
+			<Type> BOOL </Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	True	</Default>
+		</canRKUManShake>
+	</Properties>
+	<CellMethods>
+		<playHandShake><Exposed/>
+		</playHandShake>
+		<playHandShakeEnd><Exposed/>
+		</playHandShakeEnd>
+		<checkToPlayHandShake><Exposed/>
+			<Arg>	VECTOR3		</Arg>
+		</checkToPlayHandShake>
+		<intoBattleGame><Exposed/>
+		</intoBattleGame>
+		<rkuManleaveGame>
+		</rkuManleaveGame>
+		<setRkuManBattlePosition><Exposed/>
+		</setRkuManBattlePosition>
+		<rkuLeavWorld><Exposed/>
+		</rkuLeavWorld>
+		<setCanGetSkill>
+		</setCanGetSkill>
+	</CellMethods>
+	<ClientMethods>
+		<playLeaveAnimation>
+		</playLeaveAnimation>
+		<playHandShake>
+		</playHandShake>
+		<rkuManleaveGame>
+		</rkuManleaveGame>
+	</ClientMethods>
+	<BaseMethods>
+	</BaseMethods>
+</root>

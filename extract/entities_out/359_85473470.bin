@@ -1,0 +1,30 @@
+<root>
+	<Implements>
+		<Interface>	iGlobal		</Interface>
+		<Interface>	iBaseNoCell	</Interface>
+	</Implements>
+
+	<Properties>
+	</Properties>
+
+	<BaseMethods>
+		<onBuyGoods>
+			<Arg> PYTHON </Arg> 
+			<Arg> PYTHON </Arg>
+		</onBuyGoods>
+
+		<onStopSale>
+			<Arg> PYTHON </Arg> 
+			<Arg> GID </Arg> 
+		</onStopSale>
+
+		<gmUpdateItemConfig>
+		</gmUpdateItemConfig>
+
+		<gmSetItemReferencePrice>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</gmSetItemReferencePrice>
+		
+	</BaseMethods>
+</root>

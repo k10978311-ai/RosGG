@@ -1,0 +1,145 @@
+<root>
+	<Properties>
+		<valentineSupportRole>
+			<Type>		INT32		</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	-1		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</valentineSupportRole>
+		<ownValentineSupportValue>
+			<Type>		INT32		</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	0		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ownValentineSupportValue>
+		<valentineSupportProgressState>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</valentineSupportProgressState>
+		<unsentValentineDailySupportRewardDict>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</unsentValentineDailySupportRewardDict>
+		<doubleTodayValentineSupportValue>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</doubleTodayValentineSupportValue>
+		<doubleTodayValentineLottery>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</doubleTodayValentineLottery>
+		<valentineGlowStickGetNum>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</valentineGlowStickGetNum>
+		<valentineDanceFinishNum>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</valentineDanceFinishNum>
+		<dailyValentineSupportValue>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</dailyValentineSupportValue>
+	</Properties>
+	<ClientMethods>
+		<onChooseValentineSupportRole>
+			<Arg>			INT8			</Arg>
+			<Arg>			INT32			</Arg>
+		</onChooseValentineSupportRole>
+		<onGetValentineGoddessCharmValue>
+			<Arg>			PYTHON			</Arg>
+			<Arg>			INT32			</Arg>
+			<Arg>			PYTHON			</Arg>
+		</onGetValentineGoddessCharmValue>
+		<onGetTotalValentineGoddessCharmValue>
+			<Arg>			PYTHON			</Arg>
+		</onGetTotalValentineGoddessCharmValue>
+		<onClaimValentineSupportProgressAward>
+			<Arg>			PYTHON			</Arg>
+			<Arg>			INT32			</Arg>
+			<Arg>			PYTHON			</Arg>
+		</onClaimValentineSupportProgressAward>
+		<onSupportGoddessValentineItem>
+			<Arg>			INT8			</Arg>
+			<Arg>			INT32			</Arg>
+		</onSupportGoddessValentineItem>
+		<onGetValentineDayNo>
+			<Arg>			INT32			</Arg>
+			<Arg>			PYTHON			</Arg>
+		</onGetValentineDayNo>
+		<onGetValentineSupportValueRankList>
+			<Arg>			PYTHON			</Arg>
+		</onGetValentineSupportValueRankList>
+		<onGetValentineSupportValueRank>
+			<Arg>			INT32			</Arg>
+			<Arg>			INT32			</Arg>
+		</onGetValentineSupportValueRank>
+		<onValentineBulletScreen>
+			<Arg>			INT64				</Arg>
+			<Arg>			INT64				</Arg>
+			<Arg>			STRING				</Arg>
+			<Arg>			STRING				</Arg>
+			<Arg>			INT64				</Arg>
+			<Arg>			INT64				</Arg>
+		</onValentineBulletScreen>
+	</ClientMethods>
+	<BaseMethods>
+		<chooseValentineSupportRole> <Exposed/>
+			<Arg>			INT32			</Arg>
+		</chooseValentineSupportRole>
+		<supportGoddessValentineItem> <Exposed/>
+			<Arg>			INT32			</Arg>
+			<Arg>			INT32			</Arg>
+		</supportGoddessValentineItem>
+		<getValentineGoddessCharmValue> <Exposed/>
+		</getValentineGoddessCharmValue>
+		<onGetValentineGoddessCharmValue>
+			<Arg>			PYTHON			</Arg>
+		</onGetValentineGoddessCharmValue>
+		<getTotalValentineGoddessCharmValue> <Exposed/>
+		</getTotalValentineGoddessCharmValue>
+		<doSendValentineSupportReward>
+			<Arg>			INT32			</Arg>
+		</doSendValentineSupportReward>
+		<claimValentineSupportProgressAward> <Exposed/>
+			<Arg>			INT32			</Arg>
+		</claimValentineSupportProgressAward>
+		<getValentineDayNo> <Exposed/>
+		</getValentineDayNo>
+		<getValentineSupportValueRankList> <Exposed/>
+		</getValentineSupportValueRankList>
+		<getValentineSupportValueRank> <Exposed/>
+		</getValentineSupportValueRank>
+		<sendValentineBulletScreen> <Exposed/> 
+			<Arg>			STRING				</Arg>
+		</sendValentineBulletScreen>
+		<onGetPrevRoleWinRecord>
+			<Arg>			PYTHON			</Arg>
+		</onGetPrevRoleWinRecord>
+		<onGetRoleWinRounds>
+			<Arg>			PYTHON			</Arg>
+		</onGetRoleWinRounds>
+		<onGetValentineSupportValueRank>
+			<Arg>			INT32			</Arg>
+			<Arg>			INT32			</Arg>
+		</onGetValentineSupportValueRank>
+		<gmAddValentineSupportValue>
+			<Arg>			INT32			</Arg>
+		</gmAddValentineSupportValue>
+	</BaseMethods>
+</root>
+

@@ -1,0 +1,98 @@
+[menu after 48s]
+=== CLIENT (Mercury, from logOnBegin)
+12:13:33.150 [INFO] ServerConnection::logOnBegin conneting to 192.168.1.18:25000 for loginAPP
+12:13:33.382 [INFO] ServerConnection::logOn: status==LOGGED_ON
+12:13:33.382 [INFO] ServerConnection::logOn: to:   192.168.1.18:25000
+12:13:33.416 [INFO] ServerConnection::createBasePlayer: id 10001
+12:13:33.951 [ERROR] setPlayer::new player is null
+12:13:33.951 [INFO] ServerConnection::createBasePlayer: id 10003
+12:13:34.567 [INFO] ServerConnection::createCellPlayer: id 10003
+12:13:34.572 [WARNING] ClientApp::enterEntity(10003): enterCount is now 2.
+12:13:34.986 [ERROR] Vegetation mgr already registered in this scene!
+12:13:36.219 [WARNING] GetColliderMeshData with warnings: model\new_props\props\xiutz_water02.gim
+12:13:39.804 [WARNING] [GameThreadBlocking] WaitResTask character\bot\bot_base.gim 986.03 ms
+12:13:39.843 [ERROR] Invalid bone name: biped_hair04
+12:13:39.843 [ERROR] Invalid bone name: biped_hair01
+12:13:39.846 [ERROR] [Animator] Invalid clip name: hand_stand_move_fr in model <character\bot\bot_base.gim>
+12:13:39.846 [ERROR] [Animator] Invalid clip name: hand_stand_move_fl in model <character\bot\bot_base.gim>
+12:13:39.846 [ERROR] [Animator] Invalid clip name: hand_stand_move_f in model <character\bot\bot_base.gim>
+12:13:39.846 [ERROR] [Animator] Invalid clip name: hand_stand_jump_fwd_low_l in model <character\bot\bot_base.gim>
+12:13:39.846 [ERROR] [Animator] Invalid clip name: hand_stand_jump_fwd_1_l in model <character\bot\bot_base.gim>
+12:13:39.846 [ERROR] [Animator] Invalid clip name: hand_stand_jump_fwd_2_l in model <character\bot\bot_base.gim>
+12:13:39.846 [ERROR] [Animator] Invalid clip name: shuitong_stand_fire_left in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: drive_turn_lt_sn_00 in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: drive_turn_bl_sn_00 in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: drive_jump_start_sn_00 in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: drive_turn_lt_sn_00 in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: drive_turn_bl_sn_00 in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: drive_jump_start_sn_00 in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: tt_stand_move_back in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: tt_stand_turn_left in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: tt_stand_jump_1 in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: tt_jump_fire_00 in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: tt_rush_1 in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: drone_takeoff in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: drone_back in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: aircraft1_idle1 in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: aircraft1_idle2 in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: hx_idle in model <character\bot\bot_base.gim>
+12:13:39.847 [ERROR] [Animator] Invalid clip name: hx_move_back in model <character\bot\bot_base.gim>
+12:13:39.960 [WARNING] [GameThreadBlocking] WaitResTask character\bot\bot_hit.gim 11.40 ms
+12:13:51.625 [ERROR] File not found: ""!
+12:14:00.048 [ERROR] setPlayer::new player is null
+12:14:00.049 [INFO] ServerConnection::createBasePlayer: id 10002
+12:14:00.789 [INFO] ServerConnection::createCellPlayer: id 10002
+12:14:00.819 [WARNING] ClientApp::enterEntity(10002): enterCount is now 2.
+12:15:29.258 [WARNING] NXRealFileOpenerAsset: Check whether res is directory is slow
+12:15:29.501 Obb /storage/emulated/0/Android/obb/com.netease.chiji/main.1227927.com.netease.chiji.obb is loaded.
+12:15:29.772 Patch obb /storage/emulated/0/Android/obb/com.netease.chiji/patch.1227927.com.netease.chiji.obb is loaded.
+12:15:30.409 Driver: GLES3
+12:15:30.409 Description: Adreno (TM) 750
+12:15:30.409 Version: OpenGL ES 3.1 v1
+12:15:30.409 Vendor: Qualcomm
+=== CLIENT (<SCRIPT>)
+Traceback (most recent call last):
+  File "player\appearance\PlayerFPSound.py", line 38, in Awake
+  File "player\appearance\PlayerCommonSound.py", line 62, in Awake
+  File "player\appearance\PlayerFPSound.py", line 89, in setCharacter
+AttributeError: 'PlayerFPSound' object has no attribute 'hurtLight'
+Exception AttributeError: "'PlayerFPSound' object has no attribute 'hurtLight'" in 'libclaudia.Classes.Behaviour.CBehaviour.____on_active_changed__' ignored
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Fatal res not in preload_resource: character/bot/bot_hit.gim 
+Traceback (most recent call last):
+  File "entities\Avatar.py", line 2095, in endEnterSpace
+  File "entities\BattleGroundAvatar.py", line 34, in onPlayerInitFinish
+  File "entities\Avatar.py", line 1856, in onPlayerInitFinish
+  File "entities\Avatar.py", line 2595, in onUpdatePose
+  File "entities\ClientEntity.py", line 281, in SendMessage
+  File "player\appearance\PlayerFPSound.py", line 239, in onChangePose
+AttributeError: 'PlayerFPSound' object has no attribute '_flyClip'
+[Claudia] object is called destroy, do not call Destory again for <weapon_obj (AutoShoot)>
+[Claudia] object is called destroy, do not call Destory again for <weapon_obj (BulletActionShot)>
+[Claudia] object is called destroy, do not call Destory again for <weapon_obj (AutoShoot)>
+[Claudia] object is called destroy, do not call Destory again for <weapon_obj (BulletActionShot)>
+Traceback (most recent call last):
+  File "ui\UIDtsOperateGuide.py", line 41, in playGuideAnim
+  File "ui\UIBase.py", line 492, in leave_self_ui
+  File "ui\UIMgr.py", line 782, in leave_ui
+  File "ui\UIMgr.py", line 902, in _leave_ui_tips
+  File "ui\UIDtsOperateGuide.py", line 28, in on_leave
+  File "ui\UIBattlegroundsInGame.py", line 771, in onEnterRookieTraining
+  File "ui\ingame\UIPanelMain.py", line 1187, in showPanel
+  File "ui\UIBase.py", line 1200, in showPanel
+  File "ui\ingame\BattlegroundsWeaponBagComp.py", line 783, in refreshWeaponWidgets
+  File "ui\ingame\BattlegroundsWeaponBagComp.py", line 121, in refreshState
+  File "ui\ingame\BattlegroundsWeaponBagComp.py", line 145, in refreshWeaponImage
+  File "ui\ingame\BattlegroundsWeaponBagComp.py", line 431, in weaponItemID
+  File "ui\ingame\BattlegroundsWeaponBagComp.py", line 54, in getHolderEntity
+AttributeError: 'PlayerAthlete' object has no attribute 'isGod'
+Traceback (most recent call last):
+  File "libclaudia\Classes\WidgetTouchesBinder.py", line 224, in ____on_widget_touch_event__
+  File "ui\ingame\UIPanelMain.py", line 2189, in onFitMoveJoyStick
+  File "ui\ingame\UIPanelMain.py", line 1187, in showPanel
+  File "ui\UIBase.py", line 1200, in showPanel
+  File "ui\ingame\BattlegroundsWeaponBagComp.py", line 783, in refreshWeaponWidgets
+  File "ui\ingame\BattlegroundsWeaponBagComp.py", line 121, in refreshState
+  File "ui\ingame\BattlegroundsWeaponBagComp.py", line 145, in refreshWeaponImage
+  File "ui\ingame\BattlegroundsWeaponBagComp.py", line 431, in weaponItemID
+  File "ui\ingame\BattlegroundsWeaponBagComp.py", line 54, in getHolderEntity
+AttributeError: 'PlayerAthlete' object has no attribute 'isGod'

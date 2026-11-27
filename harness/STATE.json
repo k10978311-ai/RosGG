@@ -1,20 +1,23 @@
 {
     "ros_pc_ip":  "192.168.100.137",
     "reply_variant":  "24",
-    "record_layout":  "legacy",
     "bf_spec":  "1:4",
     "seq_footer":  "off7",
+    "baseapp_ack":  "off",
     "baseapp_reply_variant":  "3",
     "devices":  {
                     "ldplayer":  "emulator-5554",
                     "phone":  "R3CM90BCXGJ"
                 },
     "blockers":  [
-                     "Lobby UI after LOGGED_ON — need entity bundle + summariseVersionPoint on encrypted channel"
+                     "LoginApp Mercury reply framing not accepted (onLoginReply)",
+                     "Phone must be on same LAN + Wi-Fi DNS to PC",
+                     "BaseApp Mercury probes after login need correct ack"
                  ],
     "last_client_symptoms":  {
-                                 "ldplayer":  "LOGGED_ON + createBasePlayer id 10001; REASON_INACTIVITY; reply id 0x1 warning"
+                                 "ldplayer":  "PLAY -\u003e Failed to connect / or UDP LOGIN timeout",
+                                 "phone":  "TBD — run harness_loop with phone on LAN"
                              },
-    "last_run":  "2026-11-14T08:57:11",
-    "gate_capture_bytes":  471343
+    "last_run":  "2026-11-16T08:15:44",
+    "gate_capture_bytes":  11678570
 }

@@ -1,0 +1,107 @@
+<root>
+	<Properties> 
+		<dtsRos2CurrTask>
+			<Type>	PYTHON </Type>
+			<Flags>	CELL_PUBLIC </Flags>
+			<Default>	{}	</Default>
+		</dtsRos2CurrTask>
+		
+		<dtsRos2DoneTask>
+			<Type>	PYTHON </Type>
+			<Flags>	CELL_PUBLIC_AND_OWN </Flags>
+			<Default>	set()	</Default>
+		</dtsRos2DoneTask>
+		
+		<dtsRos2TaskRecord>
+			<Type>	PYTHON </Type>
+			<Flags>	CELL_PUBLIC_AND_OWN </Flags>
+			<Default>	{}	</Default>
+		</dtsRos2TaskRecord>
+		
+		<ros2CurrentTaskContract>
+			<Type>	PYTHON </Type>
+			<Flags>	CELL_PUBLIC_AND_OWN </Flags>
+			<Default>	[]	</Default>
+		</ros2CurrentTaskContract>
+		
+		<ros2CanReceiveTaskContractReward>
+			<Type>	PYTHON </Type>
+			<Flags>	CELL_PUBLIC_AND_OWN </Flags>
+			<Default>	[]	</Default>
+		</ros2CanReceiveTaskContractReward>
+
+		<dtsRos2ContractTaskIDList>
+			<Type>	PYTHON </Type>
+			<Flags>	CELL_PUBLIC_AND_OWN </Flags>
+			<Default>	[]	</Default>
+		</dtsRos2ContractTaskIDList>
+		
+		<dtsRos2PropTaskList>
+			<Type>	PYTHON </Type>
+			<Flags>	CELL_PUBLIC_AND_OWN </Flags>
+			<Default>	{}	</Default>
+		</dtsRos2PropTaskList>
+
+		<addRos2TaskCash>
+			<Type>	INT32 </Type>
+			<Flags>	CELL_PUBLIC_AND_OWN </Flags>
+			<Default>	0	</Default>
+		</addRos2TaskCash>
+		<addRos2TaskExp>
+			<Type>	INT32 </Type>
+			<Flags>	CELL_PUBLIC_AND_OWN </Flags>
+			<Default>	0	</Default>
+		</addRos2TaskExp>
+		<addRos2FightExp>
+			<Type>	INT32 </Type>
+			<Flags>	CELL_PUBLIC_AND_OWN </Flags>
+			<Default>	0	</Default>
+		</addRos2FightExp>
+	</Properties>
+
+	<CellMethods> 
+		<toRequestSyncSurvivalTask> <Exposed/>
+		</toRequestSyncSurvivalTask>
+		<onTriggerDtsRosTaskMsg>
+			<Arg> INT32 </Arg>
+			<Arg>	PYTHON	</Arg>
+		</onTriggerDtsRosTaskMsg>
+		<onContentDectyptFinish>
+			<Arg>	INT32	</Arg>
+		</onContentDectyptFinish>
+		<onNotifyContentFullEquipEnterMessage>
+			<Arg>	BOOL </Arg>
+		</onNotifyContentFullEquipEnterMessage>
+		<onPickExpressItem>
+			<Arg>	INT32 </Arg>
+			<Arg>	INT32 </Arg>
+		</onPickExpressItem>
+		<onContentCollectionFinish>
+			<Arg> INT32	</Arg>
+		</onContentCollectionFinish>
+		<onContentDectyptOutOfTime>
+			<Arg>	INT32 </Arg>
+		</onContentDectyptOutOfTime>
+		<onContentDectyptGetKey>
+			<Arg>	INT32	</Arg>
+		</onContentDectyptGetKey>
+		<onContentDectyptStartCounting>
+			<Arg> INT32	</Arg>
+		</onContentDectyptStartCounting>
+		<toRequestDtsRos2AvatarTask> <Exposed/>
+		</toRequestDtsRos2AvatarTask>
+		<gmFinishedMyRos2Task>
+			<Arg> INT32	</Arg>
+		</gmFinishedMyRos2Task>
+
+		<onNotifyContentPlunderDeltaMessage>
+			<Arg>	INT32 </Arg>
+		</onNotifyContentPlunderDeltaMessage>
+	</CellMethods>
+
+	<ClientMethods>
+		<updateDtsRos2AvatarTaskRecord>
+			<Arg>		PYTHON		</Arg>
+		</updateDtsRos2AvatarTaskRecord>
+	</ClientMethods>
+</root>

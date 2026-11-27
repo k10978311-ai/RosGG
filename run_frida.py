@@ -14,7 +14,11 @@ import os
 import sys
 import time
 
+_cur = os.path.abspath(os.getcwd())
+_orig_path = list(sys.path)
+sys.path = [p for p in sys.path if p and os.path.abspath(p) != _cur]
 import frida
+sys.path = _orig_path
 
 PACKAGE = "com.netease.chiji"
 PROCESS_NAMES = {PACKAGE, "Rules of Survival"}
@@ -55,19 +59,24 @@ def main():
     ap = argparse.ArgumentParser(description="Frida loader for Rules of Survival")
     ap.add_argument("script", nargs="?", default="redirect_ros_17.js", help="Frida .js to inject")
     ap.add_argument("--attach", action="store_true", help="Attach to running game instead of spawn")
+    ap.add_argument("--serial", default=os.environ.get("ADB_SERIAL", ""), help="Device serial / ID")
     ap.add_argument(
         "--realm",
         choices=("native", "emulated"),
         default=os.environ.get("FRIDA_REALM", "native"),
         help="Frida realm (use emulated on LDPlayer for libclient.so)",
     )
+    ap.add_argument("--once", action="store_true", help="Exit after script loads")
     args = ap.parse_args()
 
     script_path = args.script
     if not os.path.isfile(script_path):
         raise SystemExit(f"Script not found: {script_path}")
 
-    device = frida.get_usb_device(timeout=15)
+    if args.serial:
+        device = frida.get_device(args.serial)
+    else:
+        device = frida.get_usb_device(timeout=15)
     log(f"Device: {device.name} ({device.id})  realm={args.realm}")
 
     kw = attach_kw(args.realm)
@@ -89,6 +98,10 @@ def main():
     script.set_log_handler(lambda level, text: log(text))
     script.load()
     log(f"Loaded {script_path}")
+
+    if args.once:
+        time.sleep(1)
+        return
 
     if not args.attach:
         device.resume(pid)

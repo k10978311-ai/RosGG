@@ -1,0 +1,17 @@
+<root>
+	<Parent>	DtsRos2TaskNpc		</Parent>
+	<ClientName>  DtsRos2Chest    </ClientName>
+
+	<Properties>
+	</Properties>
+
+	<CellMethods>
+		<onPlayerFinishTask>
+			<Arg> INT32	</Arg>
+		</onPlayerFinishTask>
+	</CellMethods>
+
+	<ClientMethods>
+	</ClientMethods>
+
+</root>

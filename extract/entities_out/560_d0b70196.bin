@@ -1,0 +1,954 @@
+<root>
+	<Implements>
+		<Interface>	iRos2HideoutBuilding	</Interface>
+		<Interface>	iRos2AthleteTask	</Interface>
+		<Interface>	iRos2Currency		</Interface>
+		<Interface>	iRos2PackageAthlete	</Interface>
+		<Interface>	iRos2Health		</Interface>
+		<Interface> 	iRos2Dna 		</Interface>
+		<Interface> 	iRos2Business		</Interface>
+		<Interface> 	iRos2ExoManager 	</Interface>
+		<Interface>	iRos2WorldLevel		</Interface>
+		<Interface>	iRos2BattleTask 	</Interface>
+		<Interface>	iDtsRos2PropAthlete	</Interface>
+		<Interface>	iRos2LimitTimeActivity	</Interface>
+		<Interface> iRos2BingoActivity </Interface>
+	</Implements>
+	<Properties>
+		<!-- 带到下赛季的数据 -->
+		<ros2NextSeasonData>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2NextSeasonData>
+		<!-- Ros2阵营选择 -->
+		<ros2Camp>
+			<Type> INT8 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+		</ros2Camp>
+		<defenderFatigueValue>	<!-- 疲劳值 -->
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</defenderFatigueValue>
+		
+		<scavValidIdentity>
+		    <Type> ARRAY <of>	INT32	</of> </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> [] </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</scavValidIdentity>
+
+		<finishedDtsRos2Training>
+			<Type>		INT8		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default> 0 </Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</finishedDtsRos2Training>
+
+		<!-- 藏身所外的系统功能开放 -->
+		<ros2SystemOpen>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2SystemOpen>
+
+		<!-- 任务记录辅助数据 -->
+		<loginRos2TimeStamp> <!-- 登陆任务辅助时间戳 -->
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</loginRos2TimeStamp>
+		<!-- ros2每日更新可使用的时间戳 -->
+		<ros2DailyRefreshTimeStamp>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2DailyRefreshTimeStamp>
+		<!-- ROS2注册时间 -->
+		<registerROS2Time>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</registerROS2Time>
+		<!-- 赛季最大总价值 -->
+		<ros2SeasonMaxCash>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2SeasonMaxCash>
+		<!-- 结算奖励箱子 -->
+		<dtsRos2BootyBox0>
+			<Type> DTS_ROS2_BOOTY_BOX </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default>
+				<itemList> [] </itemList>
+				<layoutInfo> {} </layoutInfo>
+				<_packageCapacity> 0 </_packageCapacity>
+				<unlockState> 0 </unlockState>
+				<bootyBoxID> 0 </bootyBoxID>
+			</Default>
+			<PersistentMongo> true </PersistentMongo>
+		</dtsRos2BootyBox0>
+		<dtsRos2BootyBox1>
+			<Type> DTS_ROS2_BOOTY_BOX </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default>
+				<itemList> [] </itemList>
+				<layoutInfo> {} </layoutInfo>
+				<_packageCapacity> 0 </_packageCapacity>
+				<unlockState> 0 </unlockState>
+				<bootyBoxID> 1 </bootyBoxID>
+			</Default>
+			<PersistentMongo> true </PersistentMongo>
+		</dtsRos2BootyBox1>
+		<dtsRos2BootyBox2>
+			<Type> DTS_ROS2_BOOTY_BOX </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default>
+				<itemList> [] </itemList>
+				<layoutInfo> {} </layoutInfo>
+				<_packageCapacity> 0 </_packageCapacity>
+				<unlockState> 0 </unlockState>
+				<bootyBoxID> 2 </bootyBoxID>
+			</Default>
+			<PersistentMongo> true </PersistentMongo>
+		</dtsRos2BootyBox2>
+		<dtsRos2BootyBox3>
+			<Type> DTS_ROS2_BOOTY_BOX </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default>
+				<itemList> [] </itemList>
+				<layoutInfo> {} </layoutInfo>
+				<_packageCapacity> 0 </_packageCapacity>
+				<unlockState> 0 </unlockState>
+				<bootyBoxID> 3 </bootyBoxID>
+			</Default>
+			<PersistentMongo> true </PersistentMongo>
+		</dtsRos2BootyBox3>
+		<dtsRos2TempBootyData>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default>
+				{}
+			</Default>
+			<PersistentMongo> true </PersistentMongo>
+		</dtsRos2TempBootyData>
+		<dtsRos2MallPool>
+			<Type>		PYTHON				</Type>
+			<Flags>		BASE_AND_CLIENT				</Flags>
+			<Default>	{}					</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</dtsRos2MallPool>
+		<dtsRefreshMallPoolDayno>
+			<Type>		STRING				</Type>
+			<Flags>		BASE				</Flags>
+			<PersistentMongo>	true			</PersistentMongo>
+		</dtsRefreshMallPoolDayno>
+		<dtsRos2ProductionMethod>
+			<Type>		PY_DICT		</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</dtsRos2ProductionMethod>
+		<dtsRos2DfdCarriedCurrency> <!-- defender带入战场的R钞 -->
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</dtsRos2DfdCarriedCurrency>
+		<ros2MallLevel>
+			<Type>		INT8		</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	1		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2MallLevel>
+		<ros2ManufacturingStationLevel>   <!-- 物品制造台的level--> 
+			<Type>		INT8		</Type>
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	1		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2ManufacturingStationLevel>
+		<ros2GunComponentPlan>
+			<Type>		PY_DICT		</Type>
+			<Flags>		BASE		</Flags>
+			<Default>	{}		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2GunComponentPlan>
+		<ros2HelmetExtendMods>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+		</ros2HelmetExtendMods>
+		<ros2VestExtendMods>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+		</ros2VestExtendMods>
+
+		<ros2InsuranceDiscount>
+			<Type>		FLOAT		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	1		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2InsuranceDiscount>
+		
+		<ros2InsuranceReturnTime>
+			<Type>		INT32		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	0		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2InsuranceReturnTime>
+		
+		<hasRos2ExoArmsFreeBuff>
+			<Type>		BOOL		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	False		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</hasRos2ExoArmsFreeBuff>
+		
+		<hasRos2RetrofitBuff>
+			<Type>		BOOL		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	False		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</hasRos2RetrofitBuff>
+		
+		<hasRos2BlueprintBuff>
+			<Type>		BOOL		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	False		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</hasRos2BlueprintBuff>
+		
+		<ros2BuffDurabilityReparirCost>
+			<Type>		FLOAT		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	0		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2BuffDurabilityReparirCost>
+		<ros2SpaceOpenTime>
+			<Type>		INT32		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	0		</Default>
+		</ros2SpaceOpenTime>
+		<isWaitForRos2SpaceOpen>
+			<Type>		INT8		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	0		</Default>
+		</isWaitForRos2SpaceOpen>
+		<ros2SpaceBornPoints>
+			<Type>		PY_DICT		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	{}		</Default>
+		</ros2SpaceBornPoints>
+		<ros2SpaceBornIdx>
+			<Type>		INT32		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	0		</Default>
+		</ros2SpaceBornIdx>
+		<ros2GunBulletOrder>
+			<Type>		PY_DICT		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	{}		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2GunBulletOrder>
+
+		<hasGetRos2NewbieManufactureItem>
+			<Type>		BOOL		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	False		</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</hasGetRos2NewbieManufactureItem>
+		<mallItemBoughtCountDict>
+			<Type>		PYTHON		</Type>
+			<Flags>		BASE		</Flags>
+			<Default>	{}			</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</mallItemBoughtCountDict>
+
+		<resetDtsRos2AthleteData>
+			<Type>		STRING		</Type>
+			<Flags>		BASE		</Flags>
+			<PersistentMongo>	true	</PersistentMongo>
+		</resetDtsRos2AthleteData>
+		
+		<isDtsRos2TestPlayer>
+			<Type>		BOOL		</Type>
+			<Flags>		BASE		</Flags>
+			<Default>	False			</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</isDtsRos2TestPlayer>
+
+		<ros2ExoRecoverSpeed>
+			<Type>		FLOAT		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	100	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2ExoRecoverSpeed>
+		<addRos2ExoMaxNumber>
+			<Type>		INT8		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	0	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</addRos2ExoMaxNumber>
+		<ros2InsuredItemGetTimeRange>
+			<Type> ARRAY <of>	INT32	</of> </Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	[]	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2InsuredItemGetTimeRange>
+
+		<!-- 所有拥有的枪械随即词条，一个Set -->
+		<ros2AllWeaponRandomAttrs>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> set() </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2AllWeaponRandomAttrs>
+
+		<ros2MallPriceDiscount>
+			<Type>		FLOAT		</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	1	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2MallPriceDiscount>
+
+		<childPropertyRos2>
+			<Type> 	ROS2_EXP_PROPERTY	</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<PersistentMongo>	true	</PersistentMongo>
+		</childPropertyRos2>
+		<autoMatchRos2Teammate>
+			<Type>		INT8	</Type>
+			<Flags>		BASE_AND_CLIENT	</Flags>
+			<Default>	1	</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</autoMatchRos2Teammate>
+	</Properties>
+	<ClientMethods>
+		<onSyncRos2AllWeaponRandomAttrs>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</onSyncRos2AllWeaponRandomAttrs>
+		<!-- Ros2刷新Defender -->
+		<onRos2RefreshDefenderSucc>
+			<Arg> INT32 </Arg>
+		</onRos2RefreshDefenderSucc>
+		<onRos2RefreshYBNeededToRefresh>
+			<Arg> INT32 </Arg>
+		</onRos2RefreshYBNeededToRefresh>
+		<onRefreshDtsRos2CarriedCurrency>
+			<Arg> INT32 </Arg> <!-- 阵营参见ros2_common Ros2CampType -->
+			<Arg> INT32 </Arg> <!-- 带入R钞的数量 -->
+		</onRefreshDtsRos2CarriedCurrency>
+		
+		<onUnlockDtsRos2OutBattleItemPackage>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg> <!-- ros2_common.PackageType -->
+		</onUnlockDtsRos2OutBattleItemPackage>
+		<onClearDtsRos2OutBattlePackage>
+		</onClearDtsRos2OutBattlePackage>
+
+		<onRefreshDtsRos2BattlePackageData>
+			<Arg>	PYTHON	</Arg>
+		</onRefreshDtsRos2BattlePackageData>
+
+		<!-- Ros2 Dfd背包-->
+		<onAddToRos2DfdBattleItemPackage>
+			<Arg> INT32 </Arg>
+			<Arg> PYTHON </Arg>
+		</onAddToRos2DfdBattleItemPackage>
+		<onClearRos2DfdBattleItemPackage>
+		</onClearRos2DfdBattleItemPackage>
+
+		<!-- Ros2仓库-->
+		<onUnlockDtsRos2RepertoryItemPackage>
+			<Arg>	INT32	</Arg>
+		</onUnlockDtsRos2RepertoryItemPackage>
+		<onClearDtsRos2RepertoryPackage>
+		</onClearDtsRos2RepertoryPackage>
+		<onRefreshRepertoryPackageLayout>
+			<Arg> PYTHON </Arg>
+			<Arg> PYTHON </Arg>
+			<Arg> INT32 </Arg>
+		</onRefreshRepertoryPackageLayout>
+
+		<!-- 更新准备界面装备栏 Start -->
+		<onAddDtsRos2EquipBarItem>
+			<Arg>	INT32	</Arg>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	INT32	</Arg>
+		</onAddDtsRos2EquipBarItem>
+		<onDelDtsRos2EquipBarItem>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT32 </Arg>
+		</onDelDtsRos2EquipBarItem>
+		<onAddToRos2EquipBarGrid>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	INT32	</Arg>
+		</onAddToRos2EquipBarGrid>
+		<onMoveRos2EquipBarItems>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	INT32	</Arg>
+		</onMoveRos2EquipBarItems>
+		<onClearRos2EquipBarPackage>
+			<Arg>	INT32	</Arg>
+		</onClearRos2EquipBarPackage>
+		<onRecoverPacakgeCapacity>
+		</onRecoverPacakgeCapacity>
+		<onUpDateRos2EquipBarItemInfo>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> PYTHON </Arg>
+		</onUpDateRos2EquipBarItemInfo>
+		<!-- 更新准备界面装备栏 End -->
+		<syncRos2CampType>
+			<Arg> INT8 </Arg>
+		</syncRos2CampType>
+		
+		<onDtsRos2PackageItemInsured>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT32 </Arg>
+		</onDtsRos2PackageItemInsured>
+		
+		<onDtsRos2PackageItemBatchInsured>
+			<Arg> INT32 </Arg>
+			<Arg> ARRAY <of> INT32  </of> </Arg>
+			<Arg> ARRAY <of> STRING  </of> </Arg>
+			<Arg> INT32 </Arg>
+		</onDtsRos2PackageItemBatchInsured>
+		
+		<onDtsRos2PackageItemUninsured>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+		</onDtsRos2PackageItemUninsured>
+
+		<doClearDtsRos2PackageAllInsuredItem>
+			<Arg> INT32 </Arg>
+		</doClearDtsRos2PackageAllInsuredItem>
+		
+		<!-- Ros2保险箱-->
+		<onUnlockDtsRos2OutBattleSafeBoxItem>
+			<Arg>	INT32	</Arg>
+		</onUnlockDtsRos2OutBattleSafeBoxItem>
+		<onClearDtsRos2OutBattleSafeBox>
+		</onClearDtsRos2OutBattleSafeBox>
+		<onRefreshDtsRos2BattleSafeBoxData>
+			<Arg>	PYTHON	</Arg>
+		</onRefreshDtsRos2BattleSafeBoxData>
+
+		<onGetDtsRos2ReturnInsuredItem>
+			<Arg> PYTHON </Arg>
+		</onGetDtsRos2ReturnInsuredItem>
+
+		<onUpdateScavValidIdentity>
+		    <Arg>ARRAY <of>	INT32	</of></Arg>
+		</onUpdateScavValidIdentity>
+		<onCheckCanUseCharacter>
+		    <Arg>   BOOL    </Arg>
+		</onCheckCanUseCharacter>
+		<onCheckWeaponDurability>
+		    <Arg>   STRING    </Arg>
+		    <Arg>   INT8    </Arg>
+		</onCheckWeaponDurability>
+
+		<!-- 战利品 -->
+		<onRecvAllSucceed>
+			<Arg> INT32 </Arg> <!-- bootyIdx -->
+		</onRecvAllSucceed>
+
+		<onAddToDtsRos2BootyBox>
+			<Arg> INT32 </Arg> <!-- itemID -->
+			<Arg> PYTHON </Arg> <!-- changed list -->
+			<Arg> INT32 </Arg> <!-- booty box id -->
+		</onAddToDtsRos2BootyBox>
+
+		<onClearDtsRos2BootyBox>
+			<Arg> INT32 </Arg> <!-- booty box id -->
+		</onClearDtsRos2BootyBox>
+
+		<onRefreshUnlockRos2BootyBox>
+			<Arg> INT32 </Arg> <!-- booty box id-->
+			<Arg> INT32 </Arg> <!-- 解锁状态 -->
+			<Arg> INT32 </Arg> <!-- 解锁开始时间 -->
+			<Arg> INT32 </Arg> <!-- 解锁所需总时间 -->
+			<Arg> INT32 </Arg> <!-- 已解锁时间（方便暂停解锁） -->
+		</onRefreshUnlockRos2BootyBox>
+
+		<onClaimRos2BootyBox>
+			<Arg> INT32 </Arg> <!-- booty box id-->
+		</onClaimRos2BootyBox>
+
+		<onUpdateCurrentUnlockBooty>
+			<Arg> INT32 </Arg> <!-- booty box id -->
+		</onUpdateCurrentUnlockBooty>
+
+		<onDelDtsRos2BootyBoxItem>
+			<Arg> INT32 </Arg> <!-- booty box id -->
+			<Arg> INT32 </Arg> <!-- item id  -->
+			<Arg> STRING </Arg> <!-- UUID -->
+		</onDelDtsRos2BootyBoxItem>
+
+		<onBatchDelDtsRos2BootyBoxItems>
+			<Arg> INT32 </Arg> <!-- booty box id -->
+			<Arg> ARRAY <of> INT32  </of> </Arg> <!-- itemID列表 -->
+			<Arg> ARRAY <of> STRING	</of> </Arg> <!-- uuid列表 -->
+		</onBatchDelDtsRos2BootyBoxItems>
+
+		<onBatchAddDtsRos2BootyBoxItems>
+			<Arg> INT32 </Arg> <!-- booty box id -->
+			<Arg> ARRAY <of> INT32  </of> </Arg> <!-- itemID列表 -->
+			<Arg> ARRAY <of> PYTHON	</of> </Arg> <!-- changeList -->
+		</onBatchAddDtsRos2BootyBoxItems>
+
+		<onInitDtsRos2BootyBoxRewardCurrency>
+			<Arg> INT32 </Arg> <!-- booty box id -->
+			<Arg> INT32 </Arg> <!-- 包含的R钞 -->
+		</onInitDtsRos2BootyBoxRewardCurrency>
+
+		<updateRos2TempBootyData>
+			<Arg> PYTHON </Arg>
+		</updateRos2TempBootyData>
+
+		<onUpdateRos2ManufacturingStationLevel>
+			<Arg> INT8 </Arg> 
+		</onUpdateRos2ManufacturingStationLevel>
+		<onGetAllAvailableProductionMethod>
+			<Arg> ARRAY <of> INT32  </of> </Arg>
+			<Arg> ARRAY <of> INT32  </of> </Arg>
+			<Arg> ARRAY <of> INT32	</of> </Arg>
+		</onGetAllAvailableProductionMethod>
+		<!-- 枪，配件维修 -->
+		<onRepairRos2WeaponComp>
+		</onRepairRos2WeaponComp>
+		<onLearnRos2ProductionMethod>
+			<Arg> ARRAY <of> INT32	</of> </Arg>
+		</onLearnRos2ProductionMethod>
+		<onEquipRos2ExtendMod>
+			<Arg>		PYTHON	</Arg>
+			<Arg>		PYTHON	</Arg>
+		</onEquipRos2ExtendMod>
+		<onTakeoffRos2ExtendMod>
+			<Arg>		PYTHON	</Arg>
+			<Arg>		PYTHON	</Arg>
+		</onTakeoffRos2ExtendMod>
+		<onMakeProductionSuccess>
+			<Arg> ARRAY <of> INT32	</of> </Arg>
+		</onMakeProductionSuccess>
+		<onUpdateRos2MarketLevel>
+			<Arg> INT8 </Arg> 
+		</onUpdateRos2MarketLevel>
+		<onUpdateDtsRos2MallPool>
+			<Arg>		PYTHON	</Arg>
+		</onUpdateDtsRos2MallPool>
+		<onUpdateRos2ExtendMod>
+		</onUpdateRos2ExtendMod>
+		<onWearRos2GunCompSuccess>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+		</onWearRos2GunCompSuccess>
+		<onTakeOffRos2GunCompSuccess>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT32 </Arg>
+		</onTakeOffRos2GunCompSuccess>
+
+		<updateDtsRos2InsureanceDiscount>
+			<Arg> FLOAT </Arg>
+		</updateDtsRos2InsureanceDiscount>
+
+		<onSyncDtsRos2ProductionMethod>
+			<Arg>	PYTHON	</Arg>
+		</onSyncDtsRos2ProductionMethod> 
+		<onBuyRos2Item>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</onBuyRos2Item>
+		<onBuyRos2DNAItem>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</onBuyRos2DNAItem>
+		<onSyncRos2SpaceOpenTime>
+			<Arg>	INT32	</Arg>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	INT32	</Arg>
+		</onSyncRos2SpaceOpenTime> 
+		<onRequestRos2GunBulletOrder>
+			<Arg>	INT32	</Arg>
+			<Arg> ARRAY <of> INT32  </of> </Arg>
+		</onRequestRos2GunBulletOrder> 
+		<onChangeRos2GunBulletOrder>
+			<Arg>	INT32	</Arg>
+			<Arg> ARRAY <of> INT32  </of> </Arg>
+		</onChangeRos2GunBulletOrder> 
+		<updateDurabilityReparirCost>
+			<Arg>	FLOAT	</Arg>
+		</updateDurabilityReparirCost>
+		<syncHallTeamMemberRos2MapPos>
+			<Arg>	INT32	</Arg>
+			<Arg>	VECTOR2	</Arg>
+		</syncHallTeamMemberRos2MapPos>
+		<onUpdateRos2MatchTargetTime>
+			<Arg> INT32 </Arg>
+		</onUpdateRos2MatchTargetTime>
+		<onClearAllRos2GunComp>
+			<Arg> INT8 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> PYTHON </Arg>
+		</onClearAllRos2GunComp>
+		<onWearRos2GunCompQuick>
+			<Arg> INT8 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> PYTHON </Arg>
+			<Arg> ARRAY <of> INT32  </of> </Arg>
+		</onWearRos2GunCompQuick>
+		<syncHallTeamMemberRos2DfdCharacter>
+			<Arg> GID </Arg>
+			<Arg> INT32 </Arg>
+		</syncHallTeamMemberRos2DfdCharacter>
+		
+		<syncHallTeamMemberRos2DnaChipInfos>
+			<Arg> GID </Arg>
+			<Arg> PYTHON </Arg>
+		</syncHallTeamMemberRos2DnaChipInfos>
+		<syncHallTeamMemberIsBusiness>
+			<Arg> GID </Arg>
+			<Arg> PYTHON </Arg>
+		</syncHallTeamMemberIsBusiness>
+		
+		<!-- 藏身所外的系统功能开放 -->
+		<onRos2SystemOpen>
+			<Arg> INT32 </Arg>
+		</onRos2SystemOpen>
+
+		<onClearDtsRos2AthleteData>
+		</onClearDtsRos2AthleteData>
+
+		<onRos2BattleInfoResp>
+			<Arg> GID </Arg>
+			<Arg> PYTHON </Arg>
+		</onRos2BattleInfoResp>
+
+		<onRos2SeasonInfoResp>
+			<Arg> GID </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> PYTHON </Arg>
+		</onRos2SeasonInfoResp>
+
+		<syncRos2ExoValidIdentity>
+			<Arg> PYTHON </Arg>
+			<Arg> INT8 </Arg>
+		</syncRos2ExoValidIdentity>
+
+		<!-- 穿随即词条，Args: packageType, itemID, UUID, slot, attrID -->
+		<onWearRos2WeaponRandomAttr>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</onWearRos2WeaponRandomAttr>
+
+		<!-- 拖随即词条，Args: packageType, itemID, UUID, slot -->
+		<onTakeoffRos2WeaponRandomAttr>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT32 </Arg>
+		</onTakeoffRos2WeaponRandomAttr>
+
+		<syncRos2MallPriceDiscount>
+			<Arg>		FLOAT		</Arg>
+		</syncRos2MallPriceDiscount>
+		<onGetCourierDroneProp>
+			<Arg> PYTHON	</Arg>
+			<Arg> BOOL	</Arg>
+			<Arg> PYTHON	</Arg>
+			<Arg> PYTHON	</Arg>
+		</onGetCourierDroneProp>
+		<syncAutoMatchTeammateRos2>
+			<Arg>		INT8		</Arg>
+		</syncAutoMatchTeammateRos2>
+	</ClientMethods>
+	<BaseMethods>
+		<onBattleGroundRos2EndFight>
+			<Arg> PYTHON </Arg>
+		</onBattleGroundRos2EndFight>
+		<onAvatarFinishDtsRos2Tutorial>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+			<Arg>		BOOL		</Arg>
+		</onAvatarFinishDtsRos2Tutorial>
+
+		<getReadyForRos2BattleGround> <Exposed/>
+			<Arg> INT8 </Arg>
+		</getReadyForRos2BattleGround>
+		<getStartForRos2BattleGround> <Exposed/>
+		</getStartForRos2BattleGround>
+		<selectRos2Camp> <Exposed/>
+			<Arg> INT8 </Arg>
+		</selectRos2Camp>
+		<syncRos2CampType>
+			<Arg> INT8 </Arg>
+		</syncRos2CampType>
+		
+		<requestInsuredDtsRos2PackageItem> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT32 </Arg>
+		</requestInsuredDtsRos2PackageItem>
+		
+		<requestBatchInsuredDtsRos2PackageItem> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> ARRAY <of> INT32  </of> </Arg>
+			<Arg> ARRAY <of> STRING  </of> </Arg>
+			<Arg> INT32 </Arg>
+		</requestBatchInsuredDtsRos2PackageItem>
+		
+		<requestUninsuredDtsRos2PackageItem> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+		</requestUninsuredDtsRos2PackageItem>
+
+		<clearDtsRos2AllPackageUnusedInsuredItem> <Exposed/>
+		</clearDtsRos2AllPackageUnusedInsuredItem>
+		<onCheckCanUseCharacter><Exposed/>
+		</onCheckCanUseCharacter>
+
+		<!-- 任务完成 -->
+		<ros2TaskComplete>
+			<Arg> INT32 </Arg>
+		</ros2TaskComplete>
+
+		<!-- ros2登陆 -->
+		<ros2Login> <Exposed/>
+		</ros2Login>
+
+		<!-- ros2 界面登出 -->
+		<ros2Logout> <Exposed/>
+		</ros2Logout>
+
+		<!-- 藏身所外的系统功能开放 -->
+		<onAddRos2SystemOpen>
+			<Arg> INT32 </Arg>
+		</onAddRos2SystemOpen>
+
+		<!-- 战绩查询 -->
+		<queryRos2BattleInfo> <Exposed/>
+			<Arg> GID </Arg>
+		</queryRos2BattleInfo>
+
+		<queryRos2SeasonInfo> <Exposed/>
+			<Arg> GID </Arg>
+			<Arg> INT32 </Arg>
+		</queryRos2SeasonInfo>
+
+		<!-- 解锁战利品 -->
+		<unlockRos2BootyBox> <Exposed/>
+			<Arg> INT32 </Arg> <!-- box ID -->
+		</unlockRos2BootyBox>
+			<speedUpUnlockRos2BootyBox> <Exposed/>
+			<Arg> INT32 </Arg> <!-- box ID -->
+			<Arg> INT32 </Arg> <!-- 解锁进度 0-100 -->
+		</speedUpUnlockRos2BootyBox>
+		<destroyRos2BootyBox> <Exposed/>
+			<Arg> INT32 </Arg> <!-- box ID -->
+		</destroyRos2BootyBox>
+		<claimRos2BootyBox> <Exposed/>
+			<Arg> INT32 </Arg> <!-- box ID -->
+		</claimRos2BootyBox>
+		<sellRos2BootyBox> <Exposed/>
+			<Arg> INT32 </Arg> <!-- box ID -->
+		</sellRos2BootyBox>
+
+		<moveDtsRos2ItemFromBootyBoxToRepertoryGrid> <Exposed/> <!-- 将战利品箱子里的物品放入仓库指定位置 -->
+			<Arg> INT32 </Arg> <!-- box ID -->
+			<Arg> INT32 </Arg> <!-- item ID -->
+			<Arg> STRING </Arg> <!-- UUID -->
+			<Arg> INT32 </Arg> <!-- Grid idx -->
+		</moveDtsRos2ItemFromBootyBoxToRepertoryGrid>
+
+		<updateScavValidIdentity>
+		</updateScavValidIdentity>
+		<moveDtsRos2BatchItemFromBootyBoxToRepertory> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> ARRAY <of> INT32 </of> </Arg>
+			<Arg> ARRAY <of> STRING </of> </Arg>
+		</moveDtsRos2BatchItemFromBootyBoxToRepertory>
+		<abondonBootyAfterBattle><Exposed/>
+		</abondonBootyAfterBattle>
+		<!-- 组队 -->
+		<dtsRos2ChangeInviteState> <Exposed/>
+			<Arg> BOOL </Arg>
+		</dtsRos2ChangeInviteState>
+		<getAllAvailableProductionMethod> <Exposed/>
+		</getAllAvailableProductionMethod>
+		<!-- 枪，配件维修-->
+		<repairRos2WeaponComp> <Exposed/>
+			<Arg> INT32 </Arg> <!-- 枪ItemID -->
+			<Arg> STRING </Arg> <!-- 枪的uuid -->
+			<Arg> INT32 </Arg> <!-- 背包类型 -->
+			<Arg> STRING </Arg> <!-- 配件的json string -->
+			<Arg> BOOL </Arg> <!-- 是否修枪 -->
+		</repairRos2WeaponComp>
+		<repairRos2Item> <Exposed/>
+			<Arg> ARRAY <of> INT32 </of> </Arg>
+			<Arg> ARRAY <of> STRING </of> </Arg>
+			<Arg> ARRAY <of> INT32 </of> </Arg>
+		</repairRos2Item>
+		<learnRos2ProductionMethod> <Exposed/>
+			<Arg> INT32 </Arg>
+		</learnRos2ProductionMethod>
+		<tryMakeProduction> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</tryMakeProduction>
+		<getDtsRos2MallPoolInfo> <Exposed/>
+		</getDtsRos2MallPoolInfo>
+		<buyRos2Item> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</buyRos2Item>
+		<buyRos2DNAItem> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</buyRos2DNAItem>
+
+		<equipRos2ExtendMod> <Exposed/>  <!-- 防具系统 -->
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT32	</Arg>
+		</equipRos2ExtendMod>
+		<takeoffRos2ExtendMod> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32	</Arg>
+		</takeoffRos2ExtendMod>
+
+		<wearRos2WeaponComp> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+		</wearRos2WeaponComp>
+		<takeOffRos2WeaponComp> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+		</takeOffRos2WeaponComp>
+		<startWaitRos2SpaceOpen>
+			<Arg>	INT32	</Arg>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	INT32	</Arg>
+		</startWaitRos2SpaceOpen>
+		<finishRos2SpaceMatch>
+		</finishRos2SpaceMatch>
+		<requestBatchSellRos2Item> <Exposed/>
+			<Arg> ARRAY <of> INT32  </of> </Arg>
+			<Arg> ARRAY <of> STRING  </of> </Arg>
+			<Arg> INT8 </Arg>
+		</requestBatchSellRos2Item>
+		<requestRos2GunBulletOrder> <Exposed/>
+			<Arg> INT32 </Arg>
+		</requestRos2GunBulletOrder>
+		<changeRos2GunBulletOrder> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> ARRAY <of> INT32  </of> </Arg>
+		</changeRos2GunBulletOrder>
+		<requestUseRos2Nutrition><Exposed/>
+			<Arg> INT8 </Arg>
+			<Arg> ARRAY <of> INT32  </of> </Arg>
+			<Arg> ARRAY <of> STRING  </of> </Arg>
+		</requestUseRos2Nutrition>
+		<saleRos2SingleItem> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</saleRos2SingleItem>
+		<subDtsRos2CurrencyInGameCallBack> <!-- 智障从游戏内扣游戏外R钞操作 -->
+			<Arg> INT32 </Arg> <!-- num -->
+			<Arg> INT32 </Arg> <!-- reason -->
+		</subDtsRos2CurrencyInGameCallBack>
+		<markRos2MapPos> <Exposed/>
+			<Arg> VECTOR2 </Arg>
+		</markRos2MapPos>
+		<onUpdateRos2MatchTargetTime>
+			<Arg> GLOBAL_MAIL_BOX_INFO </Arg>
+			<Arg> INT32 </Arg>
+		</onUpdateRos2MatchTargetTime>
+		<wearRos2WeaponCompQuick> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT8 </Arg>
+		</wearRos2WeaponCompQuick>
+		<clearAllRos2WeaponComp> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT8 </Arg>
+		</clearAllRos2WeaponComp>
+		<doNotReadyForRos2BattleGround>
+		</doNotReadyForRos2BattleGround>
+
+		<wearRos2WeaponRandomAttr> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</wearRos2WeaponRandomAttr>
+		<takeoffRos2WeaponRandomAttr> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg>	INT32	</Arg>
+		</takeoffRos2WeaponRandomAttr>
+
+		<onSetRos2MallPriceDiscount>
+			<Type>		FLOAT		</Type>
+		</onSetRos2MallPriceDiscount>
+
+		<onRos2Notify>
+			<Arg>	INT32	</Arg>
+			<Arg>   PYTHON	</Arg>
+		</onRos2Notify>
+		<setAutoMatchTeammateRos2> <Exposed/>
+			<Arg>		INT8		</Arg>
+		</setAutoMatchTeammateRos2>
+	</BaseMethods>
+</root>

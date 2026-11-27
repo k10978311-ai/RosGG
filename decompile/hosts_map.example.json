@@ -1,0 +1,11 @@
+{
+  "_comment": "Replacement MUST be the same length as the original. easebar.com/netease.com = 11 chars, 163.com = 7, rulesofsurvivalgame.com = 23.",
+  "suffix": {
+    "easebar.com": "easebar.lan",
+    "netease.com": "netease.lan"
+  },
+  "exact": {
+    "www.rulesofsurvivalgame.com": "www.rulesofsurvivalgame.lan"
+  },
+  "only_hosts": []
+}

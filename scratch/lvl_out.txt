@@ -1,0 +1,9 @@
+____scene_object__ = None
+____current_level__ = <-1 (Level) at 0x76383F4D1050>
+____next_level__ = None
+____loaded_level__ = {-1: <-1 (Level) at 0x76383F4D1050>}
+____next_level_callback__ = None
+____initialized__ = True
+level attrs: ['ASYNC_PreloadCoro', 'AddObject', 'Boardcast', 'Destroy', 'DestroyImmediate', 'GetAllSubObjects', 'GetObjects', 'Instantiate', 'RemoveObject', 'StartPreload', 'ToString', '_GetAllSubObjects', '_LoadedCallback', '_PreparePreloadList', '_PreparePreloadListForObj', '_UpdatePreloadPercent', '_objects', '_preloadTraverseSet', 'coro', 'name', 'preloadPercent']
+Application.scene = None
+Globals.inLoading=False inLoadingStage1=False

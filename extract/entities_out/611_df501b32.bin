@@ -1,0 +1,56 @@
+<root>
+	<Properties>
+		<rkuSpeedBuff>
+			<Type>		INT32		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+			<Default>	0		</Default>
+		</rkuSpeedBuff>
+		<rkuSpeedBuffTimerId>
+			<Type>			TIMER_ID			</Type>
+			<Flags>			CELL_PRIVATE			</Flags>
+			<Default>	0		</Default>
+		</rkuSpeedBuffTimerId>
+		<remainRkuSpeedBuffTime>
+			<Type>		INT32		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+			<Default>	0		</Default>
+		</remainRkuSpeedBuffTime>
+		<hasRkuSpeedBuff>
+			<Type>		BOOL		</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+			<Default>	False		</Default>
+		</hasRkuSpeedBuff>
+		<rkuSkillId>
+			<Type>		INT32		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+			<Default>	0		</Default>
+		</rkuSkillId>
+		<rkuSpeedId>
+			<Type>		INT32		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+			<Default>	0		</Default>
+		</rkuSpeedId>
+	</Properties>
+	<ClientMethods>
+ 		<playRKUAnimiation>
+		</playRKUAnimiation>
+		<playRKUAnimiationEnd>
+		</playRKUAnimiationEnd>
+		<getRkuManSkill>
+			<Arg>	INT32	</Arg>
+		</getRkuManSkill>
+		<syncRkuManSpeedBuffRemainTime>
+			<Arg>	INT32	</Arg>
+		</syncRkuManSpeedBuffRemainTime>
+	</ClientMethods>
+	<CellMethods>
+		<playRKUAnimiation>
+			<Arg>		INT32		</Arg>
+		</playRKUAnimiation>
+		<playRKUAnimiationEnd>
+		</playRKUAnimiationEnd>
+		<intoBattleGame>
+			<Arg>		INT32		</Arg>
+		</intoBattleGame>
+	</CellMethods>
+</root>

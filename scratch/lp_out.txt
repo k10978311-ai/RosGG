@@ -1,0 +1,6 @@
+utils.legacyProperties = <module 'shared.lib.gametoolslib.properties' from 'common\shared\lib\gametoolslib\properties\__init__.py'>
+Globals.legacyProperties = 'MISSING'
+modules with legacyProperties attr: 201, None in 0
+non-None holders: ['shared', 'cython', 'shared.tables', 'christmas_common', 'dts_hall_prop_utils', 'dts_appearance_utils', 'dts_appearance_cultivate_utils', 'supplement_utils', 'ros2.dna.Ros2DnaNode', 'exchange_series_utils', 'shared.WeaponDataHandler', 'ui_utils', 'brave_book_utils', 'WatchAdReward', 'dts_watch_ad_utils']
+example value <module 'shared.lib.gametoolslib.properties' from 'common\shared\lib\gametoolslib\properties\__init__.py'> attrs ['BuiltinTypeNamespace', 'Composite', 'DATA_FILE_PREFIX', 'DataPath', 'MODULE_EXTENSIONS', 'MODULE_PREFIXES', 'RootSection', 'TYPE_FILE_PREFIX', 'TypeNamespace', '_merge_dict_recursive', '_types', '_write_file', 'createAccessor', 'createAccessorStatic', 'createIterator', 'createIteratorStatic', 'createRawIterator', 'createRawIteratorStatic', 'g_import_py_list_client_skip
+lp module in sys.modules: []

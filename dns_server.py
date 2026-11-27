@@ -10,11 +10,15 @@ import time
 import os
 
 LISTEN = ("0.0.0.0", 53)
-LOCAL_IP = os.environ.get("ROS_PC_IP", "192.168.100.137")
+LOCAL_IP = os.environ.get("ROS_PC_IP", "192.168.1.18")
 UPSTREAM = ("8.8.8.8", 53)
 REDIRECT_SUFFIXES = (
     "easebar.com", "netease.com", "163.com", "126.net", "netease.im",
     "rulesofsurvivalgame.com", "nease.net",
+    # patched APK (decompile/tools/patch_hosts.py) points SDK hosts at our own TLD
+    "easebar.lan", "netease.lan", "rulesofsurvivalgame.lan",
+    # public build hosts (*.vokdev.com); LAN/Gnirehtet testing resolves them to this PC
+    "vokdev.com",
 )
 
 
@@ -62,17 +66,12 @@ def forward(sock, data, addr):
 
 def main():
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    if hasattr(socket, "SIO_UDP_CONNRESET"):
-        try:
-            sock.ioctl(socket.SIO_UDP_CONNRESET, False)
-        except Exception:
-            pass
     sock.bind(LISTEN)
     log(f"[*] DNS server on {LISTEN[0]}:{LISTEN[1]} -> redirecting {REDIRECT_SUFFIXES} to {LOCAL_IP}")
     while True:
         try:
             data, addr = sock.recvfrom(4096)
-        except Exception as e:
+        except Exception:
             continue
         try:
             name, off = parse_qname(data, 12)
@@ -80,11 +79,8 @@ def main():
         except Exception:
             continue
         if any(name == s or name.endswith("." + s) for s in REDIRECT_SUFFIXES):
-            log(f"[DNS] {name} (type {qtype}) -> {LOCAL_IP if qtype == 1 else 'empty'}")
-            try:
-                sock.sendto(build_reply(data, off, qtype, LOCAL_IP), addr)
-            except Exception as e:
-                log(f"[DNS] send reply error: {e}")
+            log(f"[DNS] from {addr[0]}:{addr[1]} {name} (type {qtype}) -> {LOCAL_IP if qtype == 1 else 'empty'}")
+            sock.sendto(build_reply(data, off, qtype, LOCAL_IP), addr)
         else:
             threading.Thread(target=forward, args=(sock, data, addr), daemon=True).start()
 

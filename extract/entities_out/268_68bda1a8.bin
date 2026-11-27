@@ -1,0 +1,45 @@
+<root>
+    <Parent> DtsRos2TaskNpc </Parent>
+    <ClientName>	DtsRos2TaskNpcOccupation		</ClientName>
+    <Properties>
+        <occStartTimeDict>
+            <Type>  	PYTHON		    </Type>
+            <Flags>     ALL_CLIENTS     </Flags>
+            <Default>	{}	            </Default>
+        </occStartTimeDict>
+    </Properties>
+    <CellMethods>
+        <requestOccupationBegin> <Exposed/>
+            <Arg>       GID             </Arg>
+            <Arg>       INT32           </Arg>
+            <Arg>       INT32           </Arg>
+        </requestOccupationBegin>
+        <requestOccupationCancel> <Exposed/>
+            <Arg>       GID             </Arg>
+            <Arg>       INT32           </Arg>
+            <Arg>       INT32           </Arg>
+        </requestOccupationCancel>
+    </CellMethods>
+    <ClientMethods>
+        <onOccupationBegin>
+            <Arg>       GID             </Arg>
+            <Arg>       INT32           </Arg>
+            <Arg>       INT32           </Arg>
+            <Arg>       PYTHON          </Arg>
+        </onOccupationBegin>
+        <onOccupationCancel>
+            <Arg>       GID             </Arg>
+            <Arg>       INT32           </Arg>
+            <Arg>       INT32           </Arg>
+            <Arg>       PYTHON          </Arg>
+        </onOccupationCancel>
+        <onOccupationFinish>
+            <Arg>       GID             </Arg>
+            <Arg>       INT32           </Arg>
+            <Arg>       INT32           </Arg>
+        </onOccupationFinish>
+    </ClientMethods>
+    <CellMethods>
+   </CellMethods>
+
+</root>

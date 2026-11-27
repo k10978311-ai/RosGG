@@ -1,0 +1,109 @@
+<root>
+	<Properties>
+		<ros2FlowActTask>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2FlowActTask>
+		<ros2FlowPickaxe>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2FlowPickaxe>
+		<ros2FlowMiningLoginDay>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2FlowMiningLoginDay>
+		<ros2FlowSignInTime>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2FlowSignInTime>
+		<ros2FlowMineral>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2FlowMineral>
+		<ros2FlowMineralPurifyRound>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2FlowMineralPurifyRound>
+		<ros2FlowMineralRandomPurifyFight>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2FlowMineralRandomPurifyFight>
+		<ros2FlowMineralGetList>
+			<Type> PYTHON </Type>
+			<Flags> BASE </Flags>
+			<Default> [] </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2FlowMineralGetList>
+		<ros2FlowMineralOpenTime>
+			<Type> INT32 </Type>
+			<Flags> BASE </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2FlowMineralOpenTime>
+	</Properties>
+	
+	<BaseMethods>
+		<updateRos2FlowTaskProgress> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</updateRos2FlowTaskProgress>
+		<getRos2FlowTaskAward> <Exposed/>
+			<Arg> INT32 </Arg>
+		</getRos2FlowTaskAward>
+		<ros2FlowMineralPurify> <Exposed/>
+			<Arg> INT8 </Arg>
+			<Arg> INT8 </Arg>
+		</ros2FlowMineralPurify>
+		<ros2FlowRandomMineralPurify> <Exposed/>
+			<Arg> INT8 </Arg>
+		</ros2FlowRandomMineralPurify>
+		<ros2FlowMiningSignUp> <Exposed/>
+		</ros2FlowMiningSignUp>
+		<gmRos2FlowSignIn>
+		</gmRos2FlowSignIn>
+	</BaseMethods>
+
+
+	<ClientMethods>
+		<syncRos2FlowTaskData>
+			<Arg> PYTHON </Arg>
+		</syncRos2FlowTaskData>
+		<syncRos2FlowPickaxeNum>
+			<Arg> INT32 </Arg>
+		</syncRos2FlowPickaxeNum>
+		<ros2FlowTaskClientCheckProcess>
+			<Arg> INT32 </Arg>
+		</ros2FlowTaskClientCheckProcess>
+		<onGetRos2FlowTaskAward>
+			<Arg> INT32 </Arg>
+		</onGetRos2FlowTaskAward>
+		<onRos2FlowMineralPurify>
+			<Arg> INT8 </Arg>
+			<Arg> INT8 </Arg>
+			<Arg> FLOAT </Arg>
+		</onRos2FlowMineralPurify>
+		<syncRos2FlowSignInData>
+			<Arg> INT32 </Arg>
+			<Arg> INT8 </Arg>
+		</syncRos2FlowSignInData>
+		<syncRos2FlowMiningInfo>
+			<Arg> INT32 </Arg>
+			<Arg> INT8 </Arg>
+			<Arg> INT32 </Arg>
+		</syncRos2FlowMiningInfo>
+	</ClientMethods>
+</root>

@@ -1,0 +1,37 @@
+<root>
+	<Parent>	LandSnowboard	</Parent>
+
+	<Volatile>
+		<position/>
+		<yaw/>
+		<pitch/>
+		<roll/>
+		<timestamp> true </timestamp>
+	</Volatile>
+
+	<Properties>
+		<skateBoardFuelAmount>
+			<Type>		FLOAT		</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+		</skateBoardFuelAmount>
+		<skateBoardLevelScale>
+			<Type>		FLOAT		</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+		</skateBoardLevelScale>
+	</Properties>
+
+	<CellMethods>
+
+		<vehicleHit><Exposed/>
+			<Arg> ENTITY_ID </Arg>
+			<Arg> VECTOR3 </Arg>
+			<Arg> ARRAY <of> ENTITY_ID </of> </Arg>
+			<Arg> ARRAY <of> VECTOR3 </of> </Arg>
+			<Arg> ARRAY <of> VECTOR2 </of> </Arg>
+			<Arg> ARRAY <of> FLOAT </of> </Arg>
+		</vehicleHit>
+
+	</CellMethods>
+
+	<ClientName>	LandRos2SkateBoard		</ClientName>
+</root>

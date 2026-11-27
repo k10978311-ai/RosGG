@@ -1,0 +1,7258 @@
+{
+ "hits": [
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 938734,
+   "value": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1340127580,1407454083&fm=26&gp=0.jpg"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1458407,
+   "value": "https://developers.facebook.com/docs/app-events/getting-started-app-events-android#disable-auto-events."
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1535682,
+   "value": "https://developers.facebook.com/docs/app-events/getting-started-app-events-android#disable-auto-events."
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1731887,
+   "value": "http://graph.facebook.com/"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1731915,
+   "value": "http://omega-monetization-spring.proxima.nie.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1731973,
+   "value": "http://play.google.com/store/apps/details?id="
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732020,
+   "value": "http://unisdk.update.easebar.com/html/latest_v36.tw.json"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732078,
+   "value": "http://unisdk.update.easebar.com/html/latest_v39.tw.json"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732136,
+   "value": "http://update.unisdk.easebar.com/html/latest_v21.json"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732191,
+   "value": "http://update.unisdk.easebar.com/html/latest_v21.tw.json"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732249,
+   "value": "http://update.unisdk.easebar.com/html/latest_v36.tw.json"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732307,
+   "value": "http://update.unisdk.easebar.com/html/latest_v39.tw.json"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732365,
+   "value": "http://update.unisdk.easebar.com/html/latest_v6.json"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732640,
+   "value": "https://%sadrevenue.%s/api/v"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732670,
+   "value": "https://%sattr.%s/api/v"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732695,
+   "value": "https://%sconversions.%s/api/v"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732727,
+   "value": "https://%sgcdsdk.%s/install_data/v4.0/"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732767,
+   "value": "https://%sinapps.%s/api/v"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732794,
+   "value": "https://%slaunches.%s/api/v"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732823,
+   "value": "https://%smonitorsdk.%s/remote-debug?app_id="
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732869,
+   "value": "https://%sonelink.%s/shortlink-sdk/v1"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732908,
+   "value": "https://%ssdk-services.%s/validate-android-signature"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732962,
+   "value": "https://%sstats.%s/stats"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1732988,
+   "value": "https://%svalidate.%s/api/v"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733017,
+   "value": "https://api.twitch.tv/kraken/channel"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733055,
+   "value": "https://api.twitch.tv/kraken/ingests"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733093,
+   "value": "https://api.twitter.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733118,
+   "value": "https://api.twitter.com/1.1/account/verify_credentials.json"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733179,
+   "value": "https://appdump.nie.easebar.com/upload"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733219,
+   "value": "https://appdump.nie.netease.com/config"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733259,
+   "value": "https://appdump.nie.netease.com/device"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733299,
+   "value": "https://appdump.nie.netease.com/upload"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733339,
+   "value": "https://applog.matrix.easebar.com/client/sdk/clientlog"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733395,
+   "value": "https://applog.matrix.easebar.com/client/sdk/open_log"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733450,
+   "value": "https://applog.matrix.easebar.com/client/sdk/pay_log"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733504,
+   "value": "https://applog.matrix.netease.com/client/sdk/clientlog"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733560,
+   "value": "https://applog.matrix.netease.com/client/sdk/open_log"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733615,
+   "value": "https://applog.matrix.netease.com/client/sdk/pay_log"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733669,
+   "value": "https://applogsg.matrix.easebar.com/client/sdk/clientlog"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733727,
+   "value": "https://data-detect.nie.easebar.com/client/mobile_upload"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733785,
+   "value": "https://data-detect.nie.netease.com/client/mobile_upload"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733843,
+   "value": "https://drpf-"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733858,
+   "value": "https://drpf-h45na.proxima.nie.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733902,
+   "value": "https://facebook.com/device?user_code=%1$s&qr=1"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1733951,
+   "value": "https://id.twitch.tv/oauth2/authorize?client_id="
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734001,
+   "value": "https://int-api.wbagora.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734030,
+   "value": "https://mcount.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734058,
+   "value": "https://mgbsdknaeast.matrix.easebar.com/h45naxx1gb/sdk"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734114,
+   "value": "https://netlink-sigma.proxima.nie.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734161,
+   "value": "https://netlink-sigma.proxima.nie.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734208,
+   "value": "https://nglbs.nie.netease.com:8000/"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734245,
+   "value": "https://qr.mpsdk.easebar.com/"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734276,
+   "value": "https://sdk-os.mpsdk.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734310,
+   "value": "https://sigma-echoes.proxima.nie.netease.com/query/"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734363,
+   "value": "https://twitter.com/"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734385,
+   "value": "https://twitter.com/#!/search?q=%23"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734422,
+   "value": "https://twitter.com/#!/search?q=%24"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734459,
+   "value": "https://twitter.com/%s/status/%d?ref_src=twsrc%%5Etwitterkit"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734521,
+   "value": "https://unisdk.proxima.nie.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734561,
+   "value": "https://unisdk.proxima.nie.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734601,
+   "value": "https://unisdk.update.easebar.com/feature/"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734645,
+   "value": "https://unisdk.update.easebar.com/html/latest_v36.tw.json"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734704,
+   "value": "https://unisdk.update.easebar.com/html/latest_v39.tw.json"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734763,
+   "value": "https://unisdk.update.netease.com/feature/"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734807,
+   "value": "https://unisdk.update.netease.com/feature/query.json"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734861,
+   "value": "https://unisdk.update.netease.com/feature2/"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734906,
+   "value": "https://unisdk.update.netease.com/html/latest_default.json"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1734966,
+   "value": "https://unisdk.update.netease.com/ngdevice/"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1735011,
+   "value": "https://unisdk.update.netease.com/ngdevice/score_range.json"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1735072,
+   "value": "https://update.unisdk.easebar.com/html/latest_v36.tw.json"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1735131,
+   "value": "https://update.unisdk.easebar.com/html/latest_v39.tw.json"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1735190,
+   "value": "https://who.nie.easebar.com/"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1735220,
+   "value": "https://who.nie.netease.com/"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1735250,
+   "value": "https://www.rulesofsurvivalgame.com/icon"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "url",
+   "offset": 1999167,
+   "value": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3351113425,3755484207&fm=26&gp=0.jpg"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1731922,
+   "value": "omega-monetization-spring.proxima.nie.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1732027,
+   "value": "unisdk.update.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1732085,
+   "value": "unisdk.update.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1732143,
+   "value": "update.unisdk.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1732198,
+   "value": "update.unisdk.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1732256,
+   "value": "update.unisdk.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1732314,
+   "value": "update.unisdk.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1732372,
+   "value": "update.unisdk.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1732555,
+   "value": "httpdns.nie.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1732580,
+   "value": "httpdns.nie.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1733187,
+   "value": "appdump.nie.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1733227,
+   "value": "appdump.nie.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1733267,
+   "value": "appdump.nie.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1733307,
+   "value": "appdump.nie.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1733347,
+   "value": "applog.matrix.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1733403,
+   "value": "applog.matrix.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1733458,
+   "value": "applog.matrix.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1733512,
+   "value": "applog.matrix.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1733568,
+   "value": "applog.matrix.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1733623,
+   "value": "applog.matrix.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1733677,
+   "value": "applogsg.matrix.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1733735,
+   "value": "data-detect.nie.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1733793,
+   "value": "data-detect.nie.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1733866,
+   "value": "drpf-h45na.proxima.nie.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734038,
+   "value": "mcount.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734066,
+   "value": "mgbsdknaeast.matrix.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734122,
+   "value": "netlink-sigma.proxima.nie.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734169,
+   "value": "netlink-sigma.proxima.nie.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734216,
+   "value": "nglbs.nie.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734253,
+   "value": "qr.mpsdk.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734284,
+   "value": "sdk-os.mpsdk.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734318,
+   "value": "sigma-echoes.proxima.nie.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734529,
+   "value": "unisdk.proxima.nie.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734569,
+   "value": "unisdk.proxima.nie.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734609,
+   "value": "unisdk.update.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734653,
+   "value": "unisdk.update.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734712,
+   "value": "unisdk.update.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734771,
+   "value": "unisdk.update.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734815,
+   "value": "unisdk.update.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734869,
+   "value": "unisdk.update.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734914,
+   "value": "unisdk.update.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1734974,
+   "value": "unisdk.update.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1735019,
+   "value": "unisdk.update.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1735080,
+   "value": "update.unisdk.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1735139,
+   "value": "update.unisdk.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1735198,
+   "value": "who.nie.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1735228,
+   "value": "who.nie.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1735258,
+   "value": "www.rulesofsurvivalgame.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1737150,
+   "value": "impression.update.easebar.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1737181,
+   "value": "impression.update.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "host",
+   "offset": 1882116,
+   "value": "pharossdk.x.netease.com"
+  },
+  {
+   "file": "classes.dex",
+   "kind": "ip",
+   "offset": 1015232,
+   "value": "123.58.164.135"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 564957,
+   "value": "https://goo.gl/J1sWQy"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 592193,
+   "value": "https://goo.gl/NAOOOI."
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 776789,
+   "value": "https://goo.gl/NAOOOI"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 919961,
+   "value": "http://www.example.com"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 919985,
+   "value": "http://www.google.com"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 920025,
+   "value": "https://app-measurement.com/a"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 920056,
+   "value": "https://csi.gstatic.com/csi"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 920085,
+   "value": "https://google.com/search?"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 920113,
+   "value": "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/mraid/v2/mraid_app_banner.js"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 920206,
+   "value": "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/mraid/v2/mraid_app_expanded_banner.js"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 920308,
+   "value": "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/mraid/v2/mraid_app_interstitial.js"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 920407,
+   "value": "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/native_ads.html"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 920487,
+   "value": "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/production/native_ads.js"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 920576,
+   "value": "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/production/sdk-core-v40-impl.js"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 920672,
+   "value": "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/sdk-core-v40.html"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 920754,
+   "value": "https://imasdk.googleapis.com/admob/sdkloader/native_video.html"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 920819,
+   "value": "https://pagead2.googlesyndication.com/pagead/gen_204"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 920873,
+   "value": "https://support.google.com/dfp_premium/answer/7160685#push"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 920933,
+   "value": "https://www.google.com"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 920957,
+   "value": "https://www.google.com/dfp/debugSignals"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 920998,
+   "value": "https://www.google.com/dfp/inAppPreview"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921039,
+   "value": "https://www.google.com/dfp/linkDevice"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921078,
+   "value": "https://www.google.com/dfp/sendDebugData"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921120,
+   "value": "https://www.googleadservices.com/pagead/conversion/app/deeplink?id_type=adid&sdk_version=%s&rdid=%s&bundleid=%s"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921233,
+   "value": "https://www.googleapis.com/auth/appstate"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921275,
+   "value": "https://www.googleapis.com/auth/datastoremobile"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921324,
+   "value": "https://www.googleapis.com/auth/drive"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921363,
+   "value": "https://www.googleapis.com/auth/drive.appdata"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921410,
+   "value": "https://www.googleapis.com/auth/drive.apps"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921454,
+   "value": "https://www.googleapis.com/auth/drive.file"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921498,
+   "value": "https://www.googleapis.com/auth/fitness.activity.read"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921553,
+   "value": "https://www.googleapis.com/auth/fitness.activity.write"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921609,
+   "value": "https://www.googleapis.com/auth/fitness.blood_glucose.read"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921669,
+   "value": "https://www.googleapis.com/auth/fitness.blood_glucose.write"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921730,
+   "value": "https://www.googleapis.com/auth/fitness.blood_pressure.read"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921791,
+   "value": "https://www.googleapis.com/auth/fitness.blood_pressure.write"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921853,
+   "value": "https://www.googleapis.com/auth/fitness.body.read"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921904,
+   "value": "https://www.googleapis.com/auth/fitness.body.write"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 921956,
+   "value": "https://www.googleapis.com/auth/fitness.body_temperature.read"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 922019,
+   "value": "https://www.googleapis.com/auth/fitness.body_temperature.write"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 922083,
+   "value": "https://www.googleapis.com/auth/fitness.location.read"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 922138,
+   "value": "https://www.googleapis.com/auth/fitness.location.write"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 922194,
+   "value": "https://www.googleapis.com/auth/fitness.nutrition.read"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 922250,
+   "value": "https://www.googleapis.com/auth/fitness.nutrition.write"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 922307,
+   "value": "https://www.googleapis.com/auth/fitness.oxygen_saturation.read"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 922371,
+   "value": "https://www.googleapis.com/auth/fitness.oxygen_saturation.write"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 922436,
+   "value": "https://www.googleapis.com/auth/fitness.reproductive_health.read"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 922502,
+   "value": "https://www.googleapis.com/auth/fitness.reproductive_health.write"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 922569,
+   "value": "https://www.googleapis.com/auth/games"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 922608,
+   "value": "https://www.googleapis.com/auth/games.firstparty"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 922658,
+   "value": "https://www.googleapis.com/auth/games_lite"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 922702,
+   "value": "https://www.googleapis.com/auth/plus.login"
+  },
+  {
+   "file": "classes2.dex",
+   "kind": "url",
+   "offset": 922746,
+   "value": "https://www.googleapis.com/auth/plus.me"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 819880,
+   "value": "https://developers.facebook.com/docs/sharing/android"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 900806,
+   "value": "https://developers.facebook.com/docs/android/getting-started"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1467948,
+   "value": "http://play.google.com/store/apps/category/GAME"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468140,
+   "value": "https://.facebook.com"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468163,
+   "value": "https://facebook.com"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468185,
+   "value": "https://firebaseremoteconfig.googleapis.com/"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468231,
+   "value": "https://graph-video.%s"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468255,
+   "value": "https://graph.%s"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468273,
+   "value": "https://mbdl.update.netease.com/%s.mbdl"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468314,
+   "value": "https://mbdl.update.netease.com/httpdns.mbdl"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468360,
+   "value": "https://play.google.com/store/apps/details"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468404,
+   "value": "https://play.google.com/store/apps/details?id=%1$s&rdid=%1$s&rdot=%2$d"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468476,
+   "value": "https://plus.google.com/"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468502,
+   "value": "https://plus.google.com/%s/about"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468536,
+   "value": "https://www.googleapis.com/auth/drive"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468575,
+   "value": "https://www.googleapis.com/auth/drive.appdata"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468622,
+   "value": "https://www.googleapis.com/auth/drive.apps"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468666,
+   "value": "https://www.googleapis.com/auth/drive.file"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468710,
+   "value": "https://www.googleapis.com/auth/games"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468749,
+   "value": "https://www.googleapis.com/auth/games.firstparty"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1468799,
+   "value": "https://www.googleapis.com/auth/games_lite"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "url",
+   "offset": 1640935,
+   "value": "http://xml.apache.org/xslt"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "host",
+   "offset": 1468281,
+   "value": "mbdl.update.netease.com"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "host",
+   "offset": 1468322,
+   "value": "mbdl.update.netease.com"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "host",
+   "offset": 1517223,
+   "value": "mbdl.update.netease.com"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "host",
+   "offset": 1615001,
+   "value": "udt-sigma.proxima.nie.netease.com"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "ip",
+   "offset": 814740,
+   "value": "106.2.42.106"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "ip",
+   "offset": 814780,
+   "value": "123.125.48.147"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "ip",
+   "offset": 814796,
+   "value": "123.58.166.46"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "ip",
+   "offset": 814811,
+   "value": "123.58.170.147"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "ip",
+   "offset": 814827,
+   "value": "123.58.173.219"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "ip",
+   "offset": 814843,
+   "value": "13.112.202.90"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "ip",
+   "offset": 814858,
+   "value": "13.54.11.65"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "ip",
+   "offset": 814909,
+   "value": "220.181.30.195"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "ip",
+   "offset": 815010,
+   "value": "34.199.187.221"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "ip",
+   "offset": 815069,
+   "value": "52.221.3.167"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "ip",
+   "offset": 815083,
+   "value": "52.221.84.180"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "ip",
+   "offset": 815098,
+   "value": "52.52.82.138"
+  },
+  {
+   "file": "classes3.dex",
+   "kind": "ip",
+   "offset": 815112,
+   "value": "52.76.137.125"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1770579,
+   "value": "http://192.168.229.158:50000/info_by_urs?urs="
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1770626,
+   "value": "http://192.168.229.163:18899/query?content="
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1770671,
+   "value": "http://192.168.229.163:8282/video_play_url_mobile/"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1770723,
+   "value": "http://localhost/"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1770742,
+   "value": "http://query.v.cc.163.com/query?content="
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1770784,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1770828,
+   "value": "http://vquery.cc.vapi.cc.easebar.com/query?content="
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1771742,
+   "value": "https://accounts.google.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1771771,
+   "value": "https://accounts.google.com/o/oauth2/revoke?token="
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1771823,
+   "value": "https://api.twitter.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1771848,
+   "value": "https://dl.nstool.easebar.com/jsonify/"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1771888,
+   "value": "https://dns.update.easebar.com/hdserver"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1771929,
+   "value": "https://firebaseremoteconfig.googleapis.com/"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1771975,
+   "value": "https://login.live.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1771999,
+   "value": "https://login.yahoo.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772024,
+   "value": "https://mbdl.update.netease.com/%s.mbdl"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772065,
+   "value": "https://mcount.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772093,
+   "value": "https://nstool.netease.com/internalquery/"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772136,
+   "value": "https://nstool.netease.com/jsonify/"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772173,
+   "value": "https://syndication.twitter.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772206,
+   "value": "https://twitter.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772227,
+   "value": "https://twitter.com/intent/tweet?text=%s&url=%s"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772276,
+   "value": "https://udt-sigma.proxima.nie.easebar.com/query"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772325,
+   "value": "https://udt-sigma.proxima.nie.netease.com/query"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772374,
+   "value": "https://unisdk.proxima.nie.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772414,
+   "value": "https://unisdk.proxima.nie.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772454,
+   "value": "https://who6.nie.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772484,
+   "value": "https://who6.nie.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772514,
+   "value": "https://whoami.nie.easebar.com/v2"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772549,
+   "value": "https://whoami.nie.netease.com/v2"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772584,
+   "value": "https://www.facebook.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772610,
+   "value": "https://www.facebook.com/adnw_logging/"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772650,
+   "value": "https://www.googleapis.com/auth/games"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772689,
+   "value": "https://www.googleapis.com/auth/games_lite"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772733,
+   "value": "https://www.linkedin.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "url",
+   "offset": 1772759,
+   "value": "https://www.paypal.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1770749,
+   "value": "query.v.cc.163.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1770835,
+   "value": "vquery.cc.vapi.cc.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1771008,
+   "value": "httpdns.nie.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1771257,
+   "value": "-02.gdl.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1771298,
+   "value": "-02.gph.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1771339,
+   "value": "-04.gdl.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1771381,
+   "value": "-04.gph.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1771423,
+   "value": "-11.gdl.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1771465,
+   "value": "-11.gdl.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1771507,
+   "value": "-11.gph.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1771549,
+   "value": "-11.gph.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1771591,
+   "value": "-12.gdl.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1771633,
+   "value": "-12.gdl.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1771675,
+   "value": "-12.gph.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1771717,
+   "value": "-12.gph.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1771856,
+   "value": "dl.nstool.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1771896,
+   "value": "dns.update.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1772032,
+   "value": "mbdl.update.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1772073,
+   "value": "mcount.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1772101,
+   "value": "nstool.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1772144,
+   "value": "nstool.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1772284,
+   "value": "udt-sigma.proxima.nie.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1772333,
+   "value": "udt-sigma.proxima.nie.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1772382,
+   "value": "unisdk.proxima.nie.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1772422,
+   "value": "unisdk.proxima.nie.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1772462,
+   "value": "who6.nie.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1772492,
+   "value": "who6.nie.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1772522,
+   "value": "whoami.nie.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1772557,
+   "value": "whoami.nie.netease.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1943986,
+   "value": "udt-sigma.proxima.nie.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "host",
+   "offset": 1957101,
+   "value": "vapi.cc.easebar.com"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 955081,
+   "value": "106.2.42.123:9995"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 955100,
+   "value": "106.2.42.128"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 955114,
+   "value": "106.2.42.128:8001"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 955133,
+   "value": "106.2.42.128:8002"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 955294,
+   "value": "123.125.48.147"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 955310,
+   "value": "123.58.164.135"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 955326,
+   "value": "123.58.166.46"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 955341,
+   "value": "123.58.170.147"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 955357,
+   "value": "123.58.173.219"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 955398,
+   "value": "13.112.167.49"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 955413,
+   "value": "13.112.202.90"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 955428,
+   "value": "13.113.85.20"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 955442,
+   "value": "13.248.222.62"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 955457,
+   "value": "13.54.11.65"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 955613,
+   "value": "220.181.30.195"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 960913,
+   "value": "52.221.10.40"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 960927,
+   "value": "52.221.3.167"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 960941,
+   "value": "52.221.84.180"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 960956,
+   "value": "52.52.108.248:8001"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 960976,
+   "value": "52.52.108.248:8002"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 960996,
+   "value": "52.52.233.248"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 961011,
+   "value": "52.52.82.138"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 961025,
+   "value": "52.62.105.72"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 961039,
+   "value": "52.76.137.125"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 1770586,
+   "value": "192.168.229.158:50000"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 1770633,
+   "value": "192.168.229.163:18899"
+  },
+  {
+   "file": "classes4.dex",
+   "kind": "ip",
+   "offset": 1770678,
+   "value": "192.168.229.163:8282"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 812127,
+   "value": "http://192.168.229.163:5566/api/getswitchparams?type=android"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 812189,
+   "value": "http://api.cc.163.com/v1/distroommsg/serviceip"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 812237,
+   "value": "http://cgi.v.cc.163.com/api/getswitchparams?type=android"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 812295,
+   "value": "http://play.google.com/store/apps/details?id=com.facebook.orca"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 812678,
+   "value": "https://%s/%s"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 812693,
+   "value": "https://%sapp.%s"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 812711,
+   "value": "https://%sdlsdk.%s/v1.0/android/"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 812745,
+   "value": "https://%simpression.%s"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 812770,
+   "value": "https://%sregister.%s/api/v"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 812799,
+   "value": "https://appdump.nie.netease.com/config"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 812839,
+   "value": "https://appdump.nie.netease.com/upload"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 812879,
+   "value": "https://long.open.weixin.qq.com/connect/l/qrconnect?f=json&uuid=%s"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 812947,
+   "value": "https://mbdl.update.netease.com/httpdns.mbdl"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 812993,
+   "value": "https://netlink-sigma.proxima.nie.easebar.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 813040,
+   "value": "https://netlink-sigma.proxima.nie.netease.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 813087,
+   "value": "https://open.weixin.qq.com/connect/sdk/qrconnect?appid=%s&noncestr=%s&timestamp=%s&scope=%s&signature=%s"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 813193,
+   "value": "https://pagead2.googlesyndication.com/pagead/gen_204?id=gmob-apps"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 813260,
+   "value": "https://upload.twitter.com/1.1/media/upload.json"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "url",
+   "offset": 813310,
+   "value": "https://www.example.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "host",
+   "offset": 755268,
+   "value": "cc.netease.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "host",
+   "offset": 755291,
+   "value": "cc.netease.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "host",
+   "offset": 784073,
+   "value": "g55-02.gph.netease.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "host",
+   "offset": 784097,
+   "value": "g55-03.gph.netease.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "host",
+   "offset": 784121,
+   "value": "g55-04.gph.netease.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "host",
+   "offset": 812196,
+   "value": "api.cc.163.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "host",
+   "offset": 812244,
+   "value": "cgi.v.cc.163.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "host",
+   "offset": 812554,
+   "value": "httpdns.nie.easebar.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "host",
+   "offset": 812579,
+   "value": "httpdns.nie.netease.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "host",
+   "offset": 812807,
+   "value": "appdump.nie.netease.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "host",
+   "offset": 812847,
+   "value": "appdump.nie.netease.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "host",
+   "offset": 812955,
+   "value": "mbdl.update.netease.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "host",
+   "offset": 813001,
+   "value": "netlink-sigma.proxima.nie.easebar.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "host",
+   "offset": 813048,
+   "value": "netlink-sigma.proxima.nie.netease.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "host",
+   "offset": 834828,
+   "value": "mbdl.update.easebar.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "host",
+   "offset": 834853,
+   "value": "mbdl.update.netease.com"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "ip",
+   "offset": 412665,
+   "value": "112.91.135.105"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "ip",
+   "offset": 412681,
+   "value": "112.91.135.70"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "ip",
+   "offset": 412696,
+   "value": "112.91.135.9"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "ip",
+   "offset": 412710,
+   "value": "119.36.82.67"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "ip",
+   "offset": 412752,
+   "value": "163.177.175.67"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "ip",
+   "offset": 412845,
+   "value": "175.43.124.205"
+  },
+  {
+   "file": "classes5.dex",
+   "kind": "ip",
+   "offset": 812134,
+   "value": "192.168.229.163:5566"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 129156,
+   "value": "https://rules-of-survival-41713999.firebaseio.com"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 146710,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 147411,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 150172,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 151925,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 164632,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 181996,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 184725,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 195724,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 213170,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 213602,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 240664,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 259794,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 274811,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 289037,
+   "value": "https://twitter.com/%1$s/stav/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 291871,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 293893,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 305053,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 309213,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 313147,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 322117,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 329909,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 336444,
+   "value": "https://twitter.com/%1$s/"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 349141,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 359700,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 364862,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 377363,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 379544,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 383232,
+   "value": "https://twitter.com/%1$s/"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 389854,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 401346,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 405655,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 410499,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 415797,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 427415,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 431594,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 442376,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 446698,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 451951,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 458316,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 477214,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 478917,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 518087,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 529372,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "url",
+   "offset": 533138,
+   "value": "https://twitter.com/%1$s/status/%2$s"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "host",
+   "offset": 135975,
+   "value": "notice.easebar.com"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "host",
+   "offset": 169084,
+   "value": "notice.easebar.com"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "host",
+   "offset": 352744,
+   "value": "notice.easebar.com"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "host",
+   "offset": 369515,
+   "value": "notice.easebar.com"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "host",
+   "offset": 512229,
+   "value": "notice.easebar.com"
+  },
+  {
+   "file": "resources.arsc",
+   "kind": "host",
+   "offset": 519590,
+   "value": "notice.easebar.com"
+  },
+  {
+   "file": "assets/GameTheme.skin",
+   "kind": "host",
+   "offset": 845563,
+   "value": "notice.easebar.com"
+  },
+  {
+   "file": "assets/GameTheme.skin",
+   "kind": "host",
+   "offset": 874841,
+   "value": "notice.easebar.com"
+  },
+  {
+   "file": "assets/GameTheme.skin",
+   "kind": "host",
+   "offset": 954779,
+   "value": "notice.easebar.com"
+  },
+  {
+   "file": "assets/GameTheme.skin",
+   "kind": "host",
+   "offset": 1004779,
+   "value": "notice.easebar.com"
+  },
+  {
+   "file": "assets/GameTheme.skin",
+   "kind": "host",
+   "offset": 1012887,
+   "value": "notice.easebar.com"
+  },
+  {
+   "file": "assets/unisdk_protocol_base_txt",
+   "kind": "url",
+   "offset": 408,
+   "value": "https://unisdk.update.netease.com/html/latest_v5.json'"
+  },
+  {
+   "file": "assets/unisdk_protocol_base_txt",
+   "kind": "url",
+   "offset": 583,
+   "value": "https://unisdk.update.netease.com/html/latest_v52.json'"
+  },
+  {
+   "file": "assets/unisdk_protocol_base_txt",
+   "kind": "host",
+   "offset": 416,
+   "value": "unisdk.update.netease.com"
+  },
+  {
+   "file": "assets/unisdk_protocol_base_txt",
+   "kind": "host",
+   "offset": 591,
+   "value": "unisdk.update.netease.com"
+  },
+  {
+   "file": "assets/unisdk_protocol_base_txt2",
+   "kind": "url",
+   "offset": 438,
+   "value": "https://unisdk.update.netease.com/html/latest_v5.json'"
+  },
+  {
+   "file": "assets/unisdk_protocol_base_txt2",
+   "kind": "url",
+   "offset": 613,
+   "value": "https://unisdk.update.netease.com/html/latest_v52.json'"
+  },
+  {
+   "file": "assets/unisdk_protocol_base_txt2",
+   "kind": "host",
+   "offset": 446,
+   "value": "unisdk.update.netease.com"
+  },
+  {
+   "file": "assets/unisdk_protocol_base_txt2",
+   "kind": "host",
+   "offset": 621,
+   "value": "unisdk.update.netease.com"
+  },
+  {
+   "file": "assets/unisdk_protocol_default_txt",
+   "kind": "url",
+   "offset": 39119,
+   "value": "http://reg.163.com/"
+  },
+  {
+   "file": "assets/unisdk_protocol_default_txt",
+   "kind": "url",
+   "offset": 39264,
+   "value": "https://mima.163.com/"
+  },
+  {
+   "file": "assets/unisdk_protocol_default_txt",
+   "kind": "host",
+   "offset": 39126,
+   "value": "reg.163.com"
+  },
+  {
+   "file": "assets/unisdk_protocol_default_txt",
+   "kind": "host",
+   "offset": 39272,
+   "value": "mima.163.com"
+  },
+  {
+   "file": "assets/unisdk_protocol_privacy_txt",
+   "kind": "host",
+   "offset": 6375,
+   "value": "reg.163.com"
+  },
+  {
+   "file": "assets/unisdk_protocol_privacy_txt",
+   "kind": "host",
+   "offset": 38974,
+   "value": "reg.163.com"
+  },
+  {
+   "file": "assets/unisdk_protocol_privacy_txt",
+   "kind": "host",
+   "offset": 47101,
+   "value": "service.netease.com"
+  },
+  {
+   "file": "assets/unisdk_protocol_privacy_txt",
+   "kind": "host",
+   "offset": 73617,
+   "value": "service.netease.com"
+  },
+  {
+   "file": "assets/tuningfork/tuningfork_settings.bin",
+   "kind": "url",
+   "offset": 102,
+   "value": "https://performanceparameters.googleapis.com/v1/"
+  },
+  {
+   "file": "drawable/netease_mpay_oversea_codescanner__alert_dialog_background.xml",
+   "kind": "url",
+   "offset": 66,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "drawable/netease_mpay_oversea_codescanner__confirm_back_background.xml",
+   "kind": "url",
+   "offset": 64,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "drawable/netease_mpay_oversea_codescanner__confirm_titlbar_background.xml",
+   "kind": "url",
+   "offset": 61,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "drawable/netease_mpay_oversea_codescanner__scanner_back_background.xml",
+   "kind": "url",
+   "offset": 64,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "drawable/netease_mpay_oversea_codescanner__scanner_confirm_btn_selector.xml",
+   "kind": "url",
+   "offset": 64,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "drawable/netease_mpay_oversea_codescanner__title_bar_back.xml",
+   "kind": "url",
+   "offset": 64,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "layout/netease_mpay_oversea_codescanner__alert_dialog.xml",
+   "kind": "url",
+   "offset": 68,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "layout/netease_mpay_oversea_codescanner__alert_dialog.xml",
+   "kind": "url",
+   "offset": 129,
+   "value": "http://schemas.android.com/tools"
+  },
+  {
+   "file": "layout/netease_mpay_oversea_codescanner__confirm_login_layout.xml",
+   "kind": "url",
+   "offset": 67,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "layout/netease_mpay_oversea_codescanner__scanner_layout.xml",
+   "kind": "url",
+   "offset": 67,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "layout/netease_mpay_oversea_codescanner__title_bar.xml",
+   "kind": "url",
+   "offset": 67,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "lib/arm64-v8a/libAudioCCReName.so",
+   "kind": "url",
+   "offset": 2720530,
+   "value": "https://android.googlesource.com/toolchain/llvm-project"
+  },
+  {
+   "file": "lib/arm64-v8a/libAudioCore.so",
+   "kind": "url",
+   "offset": 2008834,
+   "value": "https://android.googlesource.com/toolchain/llvm-project"
+  },
+  {
+   "file": "lib/arm64-v8a/libAudioEngine.so",
+   "kind": "url",
+   "offset": 970274,
+   "value": "http://statlog.cc.netease.com/query"
+  },
+  {
+   "file": "lib/arm64-v8a/libAudioEngine.so",
+   "kind": "url",
+   "offset": 972860,
+   "value": "http://gate.cc.163.com/userlogin/get_ex_linkd"
+  },
+  {
+   "file": "lib/arm64-v8a/libAudioEngine.so",
+   "kind": "url",
+   "offset": 976102,
+   "value": "http://audiouser.cc.163.com/v1/sdkctrl/check"
+  },
+  {
+   "file": "lib/arm64-v8a/libAudioEngine.so",
+   "kind": "url",
+   "offset": 1216826,
+   "value": "https://android.googlesource.com/toolchain/llvm-project"
+  },
+  {
+   "file": "lib/arm64-v8a/libAudioEngine.so",
+   "kind": "host",
+   "offset": 970281,
+   "value": "statlog.cc.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libAudioEngine.so",
+   "kind": "host",
+   "offset": 972867,
+   "value": "gate.cc.163.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libAudioEngine.so",
+   "kind": "host",
+   "offset": 976109,
+   "value": "audiouser.cc.163.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libAudioEngine.so",
+   "kind": "ip",
+   "offset": 957776,
+   "value": "114.113.200.143"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 44019175,
+   "value": "http://vop.baidu.com/server_api"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 44019604,
+   "value": "http://api.vop.netease.com/asr_api"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 45275202,
+   "value": "http://en.wikipedia.org/wiki/Tree_traversal#In-order"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 45278363,
+   "value": "http://km.netease.com/article/252749,"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 45278405,
+   "value": "http://km.netease.com/topics/topic/2523/item/18004"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 45289669,
+   "value": "http://github.com/manucorporat/CCNotifications)"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 45455330,
+   "value": "http://particledesigner.71squared.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 45480940,
+   "value": "http://www.apple.com/DTDs/PropertyList-1.0.dtd"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 45945788,
+   "value": "http://www.apple.com/DTDs/PropertyList-1.0.dtd"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 46614747,
+   "value": "http://10.246.14.112:9933"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 48392345,
+   "value": "http://www.w3.org/XML/1998/namespace"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 48392382,
+   "value": "http://www.w3.org/2000/xmlns/"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 48392485,
+   "value": "http://www.w3.org/XML/1998/namespace"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 48467675,
+   "value": "http://www.python.org/peps/pep-0263.html"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 49082742,
+   "value": "https://curl.haxx.se/docs/http-cookies.html"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 49144385,
+   "value": "http://freeimage.sourceforge.net"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 49166510,
+   "value": "http://ns.adobe.com/xap/1.0/"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 51687812,
+   "value": "https://performanceparameters.googleapis.com/v1/"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 51703285,
+   "value": "http://www.boost.org/libs/python/doc/v2/pickle.html)"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 51882616,
+   "value": "http://www.openssl.org/support/faq.html"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 60818972,
+   "value": "http://km.netease.com/wiki/show?page_id=23254"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 60819106,
+   "value": "http://km.netease.com/wiki/show?page_id=24601"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 61640290,
+   "value": "http://clientdump.x.netease.com/upload/"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 61640525,
+   "value": "http://clientdump.x.netease.com/upload/"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 61651423,
+   "value": "http://163.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 61651791,
+   "value": "http://km.netease.com/wikis/gmbridge?cat_id=1210"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 61657243,
+   "value": "https://android.googlesource.com/kernel/common/+/a7827a2a60218b25f222b54f77ed38f57aebe08b/Documentation/cpu-freq/governors.txt"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "url",
+   "offset": 62769846,
+   "value": "http://www.unicode.org/reports/tr44/tr44-4.html)."
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "host",
+   "offset": 44019611,
+   "value": "api.vop.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "host",
+   "offset": 45278370,
+   "value": "km.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "host",
+   "offset": 45278412,
+   "value": "km.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "host",
+   "offset": 46820584,
+   "value": "acsdk.gameyw.easebar.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "host",
+   "offset": 60818979,
+   "value": "km.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "host",
+   "offset": 60819113,
+   "value": "km.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "host",
+   "offset": 61640297,
+   "value": "clientdump.x.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "host",
+   "offset": 61640532,
+   "value": "clientdump.x.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "host",
+   "offset": 61651798,
+   "value": "km.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "ip",
+   "offset": 46614754,
+   "value": "10.246.14.112:9933"
+  },
+  {
+   "file": "lib/arm64-v8a/libclient.so",
+   "kind": "ip",
+   "offset": 62752020,
+   "value": "123.45.67.89"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkffmpeg.so",
+   "kind": "url",
+   "offset": 5831480,
+   "value": "http://www.w3.org/2001/SMIL20/Language"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkffmpeg.so",
+   "kind": "url",
+   "offset": 6026887,
+   "value": "http://www.videolan.org/x264.html"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkffmpeg.so",
+   "kind": "url",
+   "offset": 6206746,
+   "value": "http://www.openssl.org/support/faq.html"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkffmpeg.so",
+   "kind": "url",
+   "offset": 6230193,
+   "value": "http://lame.sf.net"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkplayer.so",
+   "kind": "url",
+   "offset": 398560,
+   "value": "http://vapi.cc.easebar.com/appsvrinfo_byplayer"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkplayer.so",
+   "kind": "url",
+   "offset": 398608,
+   "value": "http://vquery.cc.easebar.com/query?content="
+  },
+  {
+   "file": "lib/arm64-v8a/libijkplayer.so",
+   "kind": "url",
+   "offset": 398888,
+   "value": "http://192.168.229.163:5566/appsvrinfo_byplayer"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkplayer.so",
+   "kind": "url",
+   "offset": 398936,
+   "value": "http://192.168.229.163:5566/visitorhb"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkplayer.so",
+   "kind": "url",
+   "offset": 398976,
+   "value": "http://192.168.229.163:18899/query?content="
+  },
+  {
+   "file": "lib/arm64-v8a/libijkplayer.so",
+   "kind": "url",
+   "offset": 402808,
+   "value": "http://query.v.cc.163.com/query?content="
+  },
+  {
+   "file": "lib/arm64-v8a/libijkplayer.so",
+   "kind": "url",
+   "offset": 402856,
+   "value": "http://cgi.v.cc.163.com/visitorhb"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkplayer.so",
+   "kind": "url",
+   "offset": 402896,
+   "value": "http://cgi.v.cc.163.com/appsvrinfo_byplayer"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkplayer.so",
+   "kind": "host",
+   "offset": 398567,
+   "value": "vapi.cc.easebar.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkplayer.so",
+   "kind": "host",
+   "offset": 398615,
+   "value": "vquery.cc.easebar.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkplayer.so",
+   "kind": "host",
+   "offset": 402815,
+   "value": "query.v.cc.163.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkplayer.so",
+   "kind": "host",
+   "offset": 402863,
+   "value": "cgi.v.cc.163.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkplayer.so",
+   "kind": "host",
+   "offset": 402903,
+   "value": "cgi.v.cc.163.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkplayer.so",
+   "kind": "ip",
+   "offset": 398895,
+   "value": "192.168.229.163:5566"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkplayer.so",
+   "kind": "ip",
+   "offset": 398943,
+   "value": "192.168.229.163:5566"
+  },
+  {
+   "file": "lib/arm64-v8a/libijkplayer.so",
+   "kind": "ip",
+   "offset": 398983,
+   "value": "192.168.229.163:18899"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3188144,
+   "value": "http://192.168.229.163:5566"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3188176,
+   "value": "http://192.168.229.163:18899/query"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3188232,
+   "value": "http://192.168.229.165:10299/live/create_id/?"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3188280,
+   "value": "http://cgi.v.cc.163.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3188304,
+   "value": "http://statlog.cc.netease.com/query"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3188360,
+   "value": "http://vod.cc.163.com/live/create_id/?"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3188800,
+   "value": "http://logs.dev.cc.163.com/game_sdk"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3188840,
+   "value": "http://log.cc.netease.com/game_sdk"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3444474,
+   "value": "http://www.openssl.org/support/faq.html"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "host",
+   "offset": 3175935,
+   "value": "push.v.cc.163.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "host",
+   "offset": 3188287,
+   "value": "cgi.v.cc.163.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "host",
+   "offset": 3188311,
+   "value": "statlog.cc.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "host",
+   "offset": 3188367,
+   "value": "vod.cc.163.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "host",
+   "offset": 3188807,
+   "value": "logs.dev.cc.163.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "host",
+   "offset": 3188847,
+   "value": "log.cc.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "ip",
+   "offset": 3188151,
+   "value": "192.168.229.163:5566"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "ip",
+   "offset": 3188183,
+   "value": "192.168.229.163:18899"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "ip",
+   "offset": 3188216,
+   "value": "192.168.229.164"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "ip",
+   "offset": 3188239,
+   "value": "192.168.229.165:10299"
+  },
+  {
+   "file": "lib/arm64-v8a/libstreammgr.so",
+   "kind": "ip",
+   "offset": 3188344,
+   "value": "106.2.92.236"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2152120,
+   "value": "https://buy.itunes.apple.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2152680,
+   "value": "https://www.sogou.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2152704,
+   "value": "https://www.google.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2152728,
+   "value": "https://hao.360.cn"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2152752,
+   "value": "https://www.facebook.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2152784,
+   "value": "https://m.baidu.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2152808,
+   "value": "https://www.bing.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2152960,
+   "value": "https://nstool.netease.com/internalquery"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2153008,
+   "value": "https://dl.nstool.easebar.com/internalquery"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2159253,
+   "value": "http://t.cn/R5QTXra"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2159809,
+   "value": "http://km.netease.com/wiki/show?page_id=15410#"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2161536,
+   "value": "https://proxy-state.nie.netease.com/status/?project=%s&gid=%s&name=%s"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2161608,
+   "value": "https://proxy-state.nie.easebar.com/status/?project=%s&gid=%s&name=%s"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2161680,
+   "value": "https://data-detect.nie.netease.com/client/mobile_upload/"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2161744,
+   "value": "https://data-detect.nie.easebar.com/client/mobile_upload/"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2161808,
+   "value": "https://data-detect.nie.netease.com/client/country_range"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2161872,
+   "value": "https://data-detect.nie.easebar.com/client/country_range"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2163968,
+   "value": "https://proxy-state.nie.netease.com/status/?project="
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2164086,
+   "value": "http://km.netease.com/wiki/show?page_id=15410#groupid"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2173463,
+   "value": "https://curl.haxx.se/docs/http-cookies.html"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2342561,
+   "value": "http://www.openssl.org/support/faq.html"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 2358760,
+   "value": "http://gcc.gnu.org/bugs.html):"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 2152968,
+   "value": "nstool.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 2153016,
+   "value": "dl.nstool.easebar.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 2159816,
+   "value": "km.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 2161544,
+   "value": "proxy-state.nie.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 2161616,
+   "value": "proxy-state.nie.easebar.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 2161688,
+   "value": "data-detect.nie.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 2161752,
+   "value": "data-detect.nie.easebar.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 2161816,
+   "value": "data-detect.nie.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 2161880,
+   "value": "data-detect.nie.easebar.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 2163976,
+   "value": "proxy-state.nie.netease.com"
+  },
+  {
+   "file": "lib/arm64-v8a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 2164093,
+   "value": "km.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libAudioCCReName.so",
+   "kind": "url",
+   "offset": 1679263,
+   "value": "https://android.googlesource.com/toolchain/llvm-project"
+  },
+  {
+   "file": "lib/armeabi-v7a/libAudioCore.so",
+   "kind": "url",
+   "offset": 1348535,
+   "value": "https://android.googlesource.com/toolchain/llvm-project"
+  },
+  {
+   "file": "lib/armeabi-v7a/libAudioEngine.so",
+   "kind": "url",
+   "offset": 793031,
+   "value": "http://statlog.cc.netease.com/query"
+  },
+  {
+   "file": "lib/armeabi-v7a/libAudioEngine.so",
+   "kind": "url",
+   "offset": 795463,
+   "value": "http://gate.cc.163.com/userlogin/get_ex_linkd"
+  },
+  {
+   "file": "lib/armeabi-v7a/libAudioEngine.so",
+   "kind": "url",
+   "offset": 798061,
+   "value": "http://audiouser.cc.163.com/v1/sdkctrl/check"
+  },
+  {
+   "file": "lib/armeabi-v7a/libAudioEngine.so",
+   "kind": "url",
+   "offset": 891707,
+   "value": "https://android.googlesource.com/toolchain/llvm-project"
+  },
+  {
+   "file": "lib/armeabi-v7a/libAudioEngine.so",
+   "kind": "host",
+   "offset": 793038,
+   "value": "statlog.cc.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libAudioEngine.so",
+   "kind": "host",
+   "offset": 795470,
+   "value": "gate.cc.163.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libAudioEngine.so",
+   "kind": "host",
+   "offset": 798068,
+   "value": "audiouser.cc.163.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libAudioEngine.so",
+   "kind": "ip",
+   "offset": 782408,
+   "value": "114.113.200.143"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 5390296,
+   "value": "http://vop.baidu.com/server_api"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 5394896,
+   "value": "http://api.vop.netease.com/asr_api"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 22243448,
+   "value": "http://www.w3.org/XML/1998/namespace"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 22243488,
+   "value": "http://www.w3.org/2000/xmlns/"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 35436922,
+   "value": "http://en.wikipedia.org/wiki/Tree_traversal#In-order"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 35439449,
+   "value": "http://km.netease.com/article/252749,"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 35439491,
+   "value": "http://km.netease.com/topics/topic/2523/item/18004"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 35447471,
+   "value": "http://github.com/manucorporat/CCNotifications)"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 35571882,
+   "value": "http://particledesigner.71squared.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 35592164,
+   "value": "http://www.apple.com/DTDs/PropertyList-1.0.dtd"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 35902475,
+   "value": "http://www.apple.com/DTDs/PropertyList-1.0.dtd"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 36161826,
+   "value": "http://www.python.org/peps/pep-0263.html"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 36269084,
+   "value": "https://curl.haxx.se/docs/http-cookies.html"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 36293603,
+   "value": "http://freeimage.sourceforge.net"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 36379169,
+   "value": "http://www.boost.org/libs/python/doc/v2/pickle.html)"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 36469703,
+   "value": "http://www.openssl.org/support/faq.html"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 36617936,
+   "value": "http://ns.adobe.com/xap/1.0/"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 38248307,
+   "value": "http://10.246.14.112:9933"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 39794383,
+   "value": "http://www.w3.org/XML/1998/namespace"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 42579796,
+   "value": "https://performanceparameters.googleapis.com/v1/"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 44735288,
+   "value": "http://km.netease.com/wiki/show?page_id=23254"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 44735422,
+   "value": "http://km.netease.com/wiki/show?page_id=24601"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 45374090,
+   "value": "http://clientdump.x.netease.com/upload/"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 45374325,
+   "value": "http://clientdump.x.netease.com/upload/"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 45385223,
+   "value": "http://163.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 45385591,
+   "value": "http://km.netease.com/wikis/gmbridge?cat_id=1210"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 45391043,
+   "value": "https://android.googlesource.com/kernel/common/+/a7827a2a60218b25f222b54f77ed38f57aebe08b/Documentation/cpu-freq/governors.txt"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "url",
+   "offset": 46069270,
+   "value": "http://www.unicode.org/reports/tr44/tr44-4.html)."
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "host",
+   "offset": 5394903,
+   "value": "api.vop.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "host",
+   "offset": 20697424,
+   "value": "acsdk.gameyw.easebar.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "host",
+   "offset": 35439456,
+   "value": "km.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "host",
+   "offset": 35439498,
+   "value": "km.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "host",
+   "offset": 44735295,
+   "value": "km.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "host",
+   "offset": 44735429,
+   "value": "km.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "host",
+   "offset": 45374097,
+   "value": "clientdump.x.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "host",
+   "offset": 45374332,
+   "value": "clientdump.x.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "host",
+   "offset": 45385598,
+   "value": "km.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "ip",
+   "offset": 38248314,
+   "value": "10.246.14.112:9933"
+  },
+  {
+   "file": "lib/armeabi-v7a/libclient.so",
+   "kind": "ip",
+   "offset": 46053680,
+   "value": "123.45.67.89"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkffmpeg.so",
+   "kind": "url",
+   "offset": 4885692,
+   "value": "http://lame.sf.net"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkffmpeg.so",
+   "kind": "url",
+   "offset": 5065537,
+   "value": "http://www.w3.org/2001/SMIL20/Language"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkffmpeg.so",
+   "kind": "url",
+   "offset": 5291843,
+   "value": "http://www.videolan.org/x264.html"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkffmpeg.so",
+   "kind": "url",
+   "offset": 5392162,
+   "value": "http://www.openssl.org/support/faq.html"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkplayer.so",
+   "kind": "url",
+   "offset": 275008,
+   "value": "http://vapi.cc.easebar.com/appsvrinfo_byplayer"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkplayer.so",
+   "kind": "url",
+   "offset": 275056,
+   "value": "http://vquery.cc.easebar.com/query?content="
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkplayer.so",
+   "kind": "url",
+   "offset": 275716,
+   "value": "http://192.168.229.163:5566/appsvrinfo_byplayer"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkplayer.so",
+   "kind": "url",
+   "offset": 275764,
+   "value": "http://192.168.229.163:5566/visitorhb"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkplayer.so",
+   "kind": "url",
+   "offset": 275804,
+   "value": "http://192.168.229.163:18899/query?content="
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkplayer.so",
+   "kind": "url",
+   "offset": 278928,
+   "value": "http://query.v.cc.163.com/query?content="
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkplayer.so",
+   "kind": "url",
+   "offset": 278972,
+   "value": "http://cgi.v.cc.163.com/visitorhb"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkplayer.so",
+   "kind": "url",
+   "offset": 279008,
+   "value": "http://cgi.v.cc.163.com/appsvrinfo_byplayer"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkplayer.so",
+   "kind": "host",
+   "offset": 275015,
+   "value": "vapi.cc.easebar.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkplayer.so",
+   "kind": "host",
+   "offset": 275063,
+   "value": "vquery.cc.easebar.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkplayer.so",
+   "kind": "host",
+   "offset": 278935,
+   "value": "query.v.cc.163.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkplayer.so",
+   "kind": "host",
+   "offset": 278979,
+   "value": "cgi.v.cc.163.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkplayer.so",
+   "kind": "host",
+   "offset": 279015,
+   "value": "cgi.v.cc.163.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkplayer.so",
+   "kind": "ip",
+   "offset": 275723,
+   "value": "192.168.229.163:5566"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkplayer.so",
+   "kind": "ip",
+   "offset": 275771,
+   "value": "192.168.229.163:5566"
+  },
+  {
+   "file": "lib/armeabi-v7a/libijkplayer.so",
+   "kind": "ip",
+   "offset": 275811,
+   "value": "192.168.229.163:18899"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3282352,
+   "value": "http://192.168.229.163:5566"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3282380,
+   "value": "http://192.168.229.163:18899/query"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3282432,
+   "value": "http://192.168.229.165:10299/live/create_id/?"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3282480,
+   "value": "http://cgi.v.cc.163.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3282504,
+   "value": "http://statlog.cc.netease.com/query"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3282556,
+   "value": "http://vod.cc.163.com/live/create_id/?"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3282948,
+   "value": "http://logs.dev.cc.163.com/game_sdk"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3282984,
+   "value": "http://log.cc.netease.com/game_sdk"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "url",
+   "offset": 3395606,
+   "value": "http://www.openssl.org/support/faq.html"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "host",
+   "offset": 3275147,
+   "value": "push.v.cc.163.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "host",
+   "offset": 3282487,
+   "value": "cgi.v.cc.163.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "host",
+   "offset": 3282511,
+   "value": "statlog.cc.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "host",
+   "offset": 3282563,
+   "value": "vod.cc.163.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "host",
+   "offset": 3282955,
+   "value": "logs.dev.cc.163.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "host",
+   "offset": 3282991,
+   "value": "log.cc.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "ip",
+   "offset": 3282359,
+   "value": "192.168.229.163:5566"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "ip",
+   "offset": 3282387,
+   "value": "192.168.229.163:18899"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "ip",
+   "offset": 3282416,
+   "value": "192.168.229.164"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "ip",
+   "offset": 3282439,
+   "value": "192.168.229.165:10299"
+  },
+  {
+   "file": "lib/armeabi-v7a/libstreammgr.so",
+   "kind": "ip",
+   "offset": 3282540,
+   "value": "106.2.92.236"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1474516,
+   "value": "https://buy.itunes.apple.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1475052,
+   "value": "https://www.sogou.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1475076,
+   "value": "https://www.google.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1475100,
+   "value": "https://hao.360.cn"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1475120,
+   "value": "https://www.facebook.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1475148,
+   "value": "https://m.baidu.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1475168,
+   "value": "https://www.bing.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1475304,
+   "value": "https://nstool.netease.com/internalquery"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1475348,
+   "value": "https://dl.nstool.easebar.com/internalquery"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1480933,
+   "value": "http://t.cn/R5QTXra"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1481469,
+   "value": "http://km.netease.com/wiki/show?page_id=15410#"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1483164,
+   "value": "https://proxy-state.nie.netease.com/status/?project=%s&gid=%s&name=%s"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1483236,
+   "value": "https://proxy-state.nie.easebar.com/status/?project=%s&gid=%s&name=%s"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1483308,
+   "value": "https://data-detect.nie.netease.com/client/mobile_upload/"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1483368,
+   "value": "https://data-detect.nie.easebar.com/client/mobile_upload/"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1483428,
+   "value": "https://data-detect.nie.netease.com/client/country_range"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1483488,
+   "value": "https://data-detect.nie.easebar.com/client/country_range"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1485156,
+   "value": "https://proxy-state.nie.netease.com/status/?project="
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1485274,
+   "value": "http://km.netease.com/wiki/show?page_id=15410#groupid"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1496197,
+   "value": "https://curl.haxx.se/docs/http-cookies.html"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "url",
+   "offset": 1609359,
+   "value": "http://www.openssl.org/support/faq.html"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 1475312,
+   "value": "nstool.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 1475356,
+   "value": "dl.nstool.easebar.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 1481476,
+   "value": "km.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 1483172,
+   "value": "proxy-state.nie.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 1483244,
+   "value": "proxy-state.nie.easebar.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 1483316,
+   "value": "data-detect.nie.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 1483376,
+   "value": "data-detect.nie.easebar.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 1483436,
+   "value": "data-detect.nie.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 1483496,
+   "value": "data-detect.nie.easebar.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 1485164,
+   "value": "proxy-state.nie.netease.com"
+  },
+  {
+   "file": "lib/armeabi-v7a/libunisdkdctool.so",
+   "kind": "host",
+   "offset": 1485281,
+   "value": "km.netease.com"
+  },
+  {
+   "file": "org/apache/http/entity/mime/version.properties",
+   "kind": "url",
+   "offset": 423,
+   "value": "http://www.apache.org/licenses/LICENSE-2.0"
+  },
+  {
+   "file": "res/anim/abc_fade_in.xml",
+   "kind": "url",
+   "offset": 128,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/abc_fade_out.xml",
+   "kind": "url",
+   "offset": 128,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/abc_grow_fade_in_from_bottom.xml",
+   "kind": "url",
+   "offset": 250,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/abc_popup_enter.xml",
+   "kind": "url",
+   "offset": 156,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/abc_popup_exit.xml",
+   "kind": "url",
+   "offset": 156,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/abc_shrink_fade_out_from_bottom.xml",
+   "kind": "url",
+   "offset": 250,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/abc_slide_in_bottom.xml",
+   "kind": "url",
+   "offset": 130,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/abc_slide_in_top.xml",
+   "kind": "url",
+   "offset": 130,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/abc_slide_out_bottom.xml",
+   "kind": "url",
+   "offset": 130,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/abc_slide_out_top.xml",
+   "kind": "url",
+   "offset": 130,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/abc_tooltip_enter.xml",
+   "kind": "url",
+   "offset": 128,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/abc_tooltip_exit.xml",
+   "kind": "url",
+   "offset": 128,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/btn_checkbox_to_checked_box_inner_merged_animation.xml",
+   "kind": "url",
+   "offset": 198,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/btn_checkbox_to_checked_box_outer_merged_animation.xml",
+   "kind": "url",
+   "offset": 198,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/btn_checkbox_to_checked_icon_null_animation.xml",
+   "kind": "url",
+   "offset": 174,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/btn_checkbox_to_unchecked_box_inner_merged_animation.xml",
+   "kind": "url",
+   "offset": 198,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/btn_checkbox_to_unchecked_check_path_merged_animation.xml",
+   "kind": "url",
+   "offset": 198,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/btn_checkbox_to_unchecked_icon_null_animation.xml",
+   "kind": "url",
+   "offset": 174,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/btn_radio_to_off_mtrl_dot_group_animation.xml",
+   "kind": "url",
+   "offset": 190,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/btn_radio_to_off_mtrl_ring_outer_animation.xml",
+   "kind": "url",
+   "offset": 190,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/btn_radio_to_off_mtrl_ring_outer_path_animation.xml",
+   "kind": "url",
+   "offset": 186,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/btn_radio_to_on_mtrl_dot_group_animation.xml",
+   "kind": "url",
+   "offset": 190,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/btn_radio_to_on_mtrl_ring_outer_animation.xml",
+   "kind": "url",
+   "offset": 190,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/btn_radio_to_on_mtrl_ring_outer_path_animation.xml",
+   "kind": "url",
+   "offset": 186,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/tw__accelerate_cubic.xml",
+   "kind": "url",
+   "offset": 77,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/anim/tw__slide_out.xml",
+   "kind": "url",
+   "offset": 134,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_background_cache_hint_selector_material_dark.xml",
+   "kind": "url",
+   "offset": 104,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_background_cache_hint_selector_material_light.xml",
+   "kind": "url",
+   "offset": 104,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_btn_colored_borderless_text_material.xml",
+   "kind": "url",
+   "offset": 120,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_btn_colored_borderless_text_material.xml",
+   "kind": "url",
+   "offset": 174,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/color/abc_btn_colored_text_material.xml",
+   "kind": "url",
+   "offset": 120,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_btn_colored_text_material.xml",
+   "kind": "url",
+   "offset": 174,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/color/abc_hint_foreground_material_dark.xml",
+   "kind": "url",
+   "offset": 132,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_hint_foreground_material_light.xml",
+   "kind": "url",
+   "offset": 132,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_primary_text_disable_only_material_dark.xml",
+   "kind": "url",
+   "offset": 100,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_primary_text_disable_only_material_light.xml",
+   "kind": "url",
+   "offset": 100,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_primary_text_material_dark.xml",
+   "kind": "url",
+   "offset": 100,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_primary_text_material_light.xml",
+   "kind": "url",
+   "offset": 100,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_search_url_text.xml",
+   "kind": "url",
+   "offset": 121,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_secondary_text_material_dark.xml",
+   "kind": "url",
+   "offset": 100,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_secondary_text_material_light.xml",
+   "kind": "url",
+   "offset": 100,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_tint_btn_checkable.xml",
+   "kind": "url",
+   "offset": 140,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_tint_btn_checkable.xml",
+   "kind": "url",
+   "offset": 194,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/color/abc_tint_default.xml",
+   "kind": "url",
+   "offset": 223,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_tint_default.xml",
+   "kind": "url",
+   "offset": 277,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/color/abc_tint_edittext.xml",
+   "kind": "url",
+   "offset": 160,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_tint_edittext.xml",
+   "kind": "url",
+   "offset": 214,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/color/abc_tint_seek_thumb.xml",
+   "kind": "url",
+   "offset": 120,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_tint_seek_thumb.xml",
+   "kind": "url",
+   "offset": 174,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/color/abc_tint_spinner.xml",
+   "kind": "url",
+   "offset": 160,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_tint_spinner.xml",
+   "kind": "url",
+   "offset": 214,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/color/abc_tint_switch_track.xml",
+   "kind": "url",
+   "offset": 140,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/abc_tint_switch_track.xml",
+   "kind": "url",
+   "offset": 194,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/color/common_google_signin_btn_text_dark.xml",
+   "kind": "url",
+   "offset": 140,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/common_google_signin_btn_text_light.xml",
+   "kind": "url",
+   "offset": 140,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/common_google_signin_btn_tint.xml",
+   "kind": "url",
+   "offset": 100,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/com_facebook_button_text_color.xml",
+   "kind": "url",
+   "offset": 120,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/com_facebook_send_button_text_color.xml",
+   "kind": "url",
+   "offset": 120,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/netease_mpay_oversea__popup_btn_confirm_color.xml",
+   "kind": "url",
+   "offset": 120,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/netease_mpay_oversea__usercenter_item_color.xml",
+   "kind": "url",
+   "offset": 120,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/switch_thumb_material_dark.xml",
+   "kind": "url",
+   "offset": 100,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/switch_thumb_material_light.xml",
+   "kind": "url",
+   "offset": 100,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color/unisdk_alert_dialog__selector_font_h15.xml",
+   "kind": "url",
+   "offset": 100,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+   "kind": "url",
+   "offset": 104,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color-v11/abc_background_cache_hint_selector_material_light.xml",
+   "kind": "url",
+   "offset": 104,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color-v21/abc_btn_colored_borderless_text_material.xml",
+   "kind": "url",
+   "offset": 100,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color-v23/abc_btn_colored_borderless_text_material.xml",
+   "kind": "url",
+   "offset": 112,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color-v23/abc_btn_colored_text_material.xml",
+   "kind": "url",
+   "offset": 112,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color-v23/abc_color_highlight_material.xml",
+   "kind": "url",
+   "offset": 132,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color-v23/abc_tint_btn_checkable.xml",
+   "kind": "url",
+   "offset": 132,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color-v23/abc_tint_default.xml",
+   "kind": "url",
+   "offset": 215,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color-v23/abc_tint_edittext.xml",
+   "kind": "url",
+   "offset": 152,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color-v23/abc_tint_seek_thumb.xml",
+   "kind": "url",
+   "offset": 112,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color-v23/abc_tint_spinner.xml",
+   "kind": "url",
+   "offset": 152,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/color-v23/abc_tint_switch_track.xml",
+   "kind": "url",
+   "offset": 132,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/drawable-xhdpi/unisdk_protocol_logo_envoy.jpg",
+   "kind": "url",
+   "offset": 268,
+   "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  },
+  {
+   "file": "res/drawable-xhdpi/unisdk_protocol_logo_envoy.jpg",
+   "kind": "url",
+   "offset": 355,
+   "value": "http://ns.adobe.com/xap/1.0/"
+  },
+  {
+   "file": "res/drawable-xhdpi/unisdk_protocol_logo_envoy.jpg",
+   "kind": "url",
+   "offset": 395,
+   "value": "http://purl.org/dc/elements/1.1/"
+  },
+  {
+   "file": "res/drawable-xhdpi/unisdk_protocol_logo_envoy.jpg",
+   "kind": "url",
+   "offset": 446,
+   "value": "http://ns.adobe.com/photoshop/1.0/"
+  },
+  {
+   "file": "res/drawable-xhdpi/unisdk_protocol_logo_envoy.jpg",
+   "kind": "url",
+   "offset": 495,
+   "value": "http://ns.adobe.com/xap/1.0/mm/"
+  },
+  {
+   "file": "res/drawable-xhdpi/unisdk_protocol_logo_envoy.jpg",
+   "kind": "url",
+   "offset": 541,
+   "value": "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+  },
+  {
+   "file": "res/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0.xml",
+   "kind": "url",
+   "offset": 83,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1.xml",
+   "kind": "url",
+   "offset": 83,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml",
+   "kind": "url",
+   "offset": 83,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml",
+   "kind": "url",
+   "offset": 83,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/interpolator/btn_radio_to_off_mtrl_animation_interpolator_0.xml",
+   "kind": "url",
+   "offset": 83,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/interpolator/btn_radio_to_on_mtrl_animation_interpolator_0.xml",
+   "kind": "url",
+   "offset": 83,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/interpolator/fast_out_slow_in.xml",
+   "kind": "url",
+   "offset": 128,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_action_bar_title_item.xml",
+   "kind": "url",
+   "offset": 211,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_action_bar_up_container.xml",
+   "kind": "url",
+   "offset": 148,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_action_bar_view_list_nav_layout.xml",
+   "kind": "url",
+   "offset": 107,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_action_menu_item_layout.xml",
+   "kind": "url",
+   "offset": 269,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_action_menu_layout.xml",
+   "kind": "url",
+   "offset": 160,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_action_menu_layout.xml",
+   "kind": "url",
+   "offset": 214,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout/abc_action_mode_bar.xml",
+   "kind": "url",
+   "offset": 136,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_action_mode_close_item_material.xml",
+   "kind": "url",
+   "offset": 240,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_action_mode_close_item_material.xml",
+   "kind": "url",
+   "offset": 294,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout/abc_activity_chooser_view.xml",
+   "kind": "url",
+   "offset": 327,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_activity_chooser_view_list_item.xml",
+   "kind": "url",
+   "offset": 351,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_alert_dialog_button_bar_material.xml",
+   "kind": "url",
+   "offset": 290,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_alert_dialog_material.xml",
+   "kind": "url",
+   "offset": 308,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_alert_dialog_title_material.xml",
+   "kind": "url",
+   "offset": 315,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_cascading_menu_item_layout.xml",
+   "kind": "url",
+   "offset": 370,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_dialog_title_material.xml",
+   "kind": "url",
+   "offset": 277,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_expanded_menu_layout.xml",
+   "kind": "url",
+   "offset": 112,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_list_menu_item_checkbox.xml",
+   "kind": "url",
+   "offset": 192,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_list_menu_item_icon.xml",
+   "kind": "url",
+   "offset": 274,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_list_menu_item_layout.xml",
+   "kind": "url",
+   "offset": 384,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_list_menu_item_radio.xml",
+   "kind": "url",
+   "offset": 192,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_popup_menu_header_item_layout.xml",
+   "kind": "url",
+   "offset": 260,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_popup_menu_item_layout.xml",
+   "kind": "url",
+   "offset": 450,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_screen_content_include.xml",
+   "kind": "url",
+   "offset": 157,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_screen_simple.xml",
+   "kind": "url",
+   "offset": 196,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_screen_simple_overlay_action_mode.xml",
+   "kind": "url",
+   "offset": 178,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_screen_toolbar.xml",
+   "kind": "url",
+   "offset": 274,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_screen_toolbar.xml",
+   "kind": "url",
+   "offset": 328,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout/abc_search_dropdown_item_icons_2line.xml",
+   "kind": "url",
+   "offset": 390,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_search_view.xml",
+   "kind": "url",
+   "offset": 639,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_select_dialog_material.xml",
+   "kind": "url",
+   "offset": 295,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/abc_select_dialog_material.xml",
+   "kind": "url",
+   "offset": 349,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout/abc_tooltip.xml",
+   "kind": "url",
+   "offset": 328,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/activity_main.xml",
+   "kind": "url",
+   "offset": 118,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/activity_nt_twitch_auth.xml",
+   "kind": "url",
+   "offset": 206,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/activity_permission.xml",
+   "kind": "url",
+   "offset": 136,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/activity_second.xml",
+   "kind": "url",
+   "offset": 170,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/browser_actions_context_menu_page.xml",
+   "kind": "url",
+   "offset": 415,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/browser_actions_context_menu_page.xml",
+   "kind": "url",
+   "offset": 469,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout/browser_actions_context_menu_row.xml",
+   "kind": "url",
+   "offset": 304,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/com_facebook_activity_layout.xml",
+   "kind": "url",
+   "offset": 112,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/com_facebook_device_auth_dialog_fragment.xml",
+   "kind": "url",
+   "offset": 686,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/com_facebook_device_auth_dialog_fragment.xml",
+   "kind": "url",
+   "offset": 740,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout/com_facebook_login_fragment.xml",
+   "kind": "url",
+   "offset": 205,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/com_facebook_smart_device_dialog_fragment.xml",
+   "kind": "url",
+   "offset": 709,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/com_facebook_smart_device_dialog_fragment.xml",
+   "kind": "url",
+   "offset": 763,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout/com_facebook_tooltip_bubble.xml",
+   "kind": "url",
+   "offset": 430,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/crop__activity_crop.xml",
+   "kind": "url",
+   "offset": 160,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/crop__layout_done_cancel.xml",
+   "kind": "url",
+   "offset": 85,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/custom_dialog.xml",
+   "kind": "url",
+   "offset": 179,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/dumpview.xml",
+   "kind": "url",
+   "offset": 205,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/inputview.xml",
+   "kind": "url",
+   "offset": 299,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/inputview2.xml",
+   "kind": "url",
+   "offset": 326,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/main.xml",
+   "kind": "url",
+   "offset": 160,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/messenger_button_send_blue_large.xml",
+   "kind": "url",
+   "offset": 92,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/messenger_button_send_blue_round.xml",
+   "kind": "url",
+   "offset": 129,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/messenger_button_send_blue_small.xml",
+   "kind": "url",
+   "offset": 92,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/messenger_button_send_white_large.xml",
+   "kind": "url",
+   "offset": 92,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/messenger_button_send_white_round.xml",
+   "kind": "url",
+   "offset": 129,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/messenger_button_send_white_small.xml",
+   "kind": "url",
+   "offset": 92,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea_codescanner__alert_dialog.xml",
+   "kind": "url",
+   "offset": 355,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea_codescanner__confirm_login_layout.xml",
+   "kind": "url",
+   "offset": 397,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea_codescanner__scanner_layout.xml",
+   "kind": "url",
+   "offset": 469,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea_codescanner__title_bar.xml",
+   "kind": "url",
+   "offset": 246,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__bind.xml",
+   "kind": "url",
+   "offset": 568,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__boud_item.xml",
+   "kind": "url",
+   "offset": 301,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__channel_login.xml",
+   "kind": "url",
+   "offset": 225,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__channel_login_home.xml",
+   "kind": "url",
+   "offset": 202,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__channel_login_item.xml",
+   "kind": "url",
+   "offset": 257,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__channel_login_item_small.xml",
+   "kind": "url",
+   "offset": 153,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__channel_login_last_type.xml",
+   "kind": "url",
+   "offset": 288,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__channel_login_more.xml",
+   "kind": "url",
+   "offset": 414,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__channel_quick_login.xml",
+   "kind": "url",
+   "offset": 482,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__channel_quick_login_item.xml",
+   "kind": "url",
+   "offset": 379,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__channel_quick_login_item_simple.xml",
+   "kind": "url",
+   "offset": 351,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__content.xml",
+   "kind": "url",
+   "offset": 214,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__delete_warning_dialog.xml",
+   "kind": "url",
+   "offset": 446,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__dialog.xml",
+   "kind": "url",
+   "offset": 376,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__feedback.xml",
+   "kind": "url",
+   "offset": 468,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__guide_dialog.xml",
+   "kind": "url",
+   "offset": 464,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__hydra_email_login.xml",
+   "kind": "url",
+   "offset": 597,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__hydra_email_login_result.xml",
+   "kind": "url",
+   "offset": 356,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__hydra_email_password.xml",
+   "kind": "url",
+   "offset": 541,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__hydra_email_password_new.xml",
+   "kind": "url",
+   "offset": 537,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__hydra_email_register.xml",
+   "kind": "url",
+   "offset": 565,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__hydra_email_verify.xml",
+   "kind": "url",
+   "offset": 537,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__inherit_code_dialog.xml",
+   "kind": "url",
+   "offset": 417,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__inherit_pwd_dialog.xml",
+   "kind": "url",
+   "offset": 607,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__loading_layout.xml",
+   "kind": "url",
+   "offset": 166,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__login_channel_item.xml",
+   "kind": "url",
+   "offset": 253,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__login_new_guest_dialog.xml",
+   "kind": "url",
+   "offset": 416,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__login_second_confirm_dialog.xml",
+   "kind": "url",
+   "offset": 521,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__lvu_content.xml",
+   "kind": "url",
+   "offset": 155,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__lvu_person_info.xml",
+   "kind": "url",
+   "offset": 675,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__lvu_region_item.xml",
+   "kind": "url",
+   "offset": 178,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__lvu_region_picker.xml",
+   "kind": "url",
+   "offset": 382,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__navigation_item.xml",
+   "kind": "url",
+   "offset": 134,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__new_guest.xml",
+   "kind": "url",
+   "offset": 307,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__scroll_dialog.xml",
+   "kind": "url",
+   "offset": 376,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__security_mail_code_input.xml",
+   "kind": "url",
+   "offset": 602,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__security_mail_entry_item.xml",
+   "kind": "url",
+   "offset": 332,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__security_mail_home.xml",
+   "kind": "url",
+   "offset": 418,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__security_mail_input.xml",
+   "kind": "url",
+   "offset": 523,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__security_mail_result.xml",
+   "kind": "url",
+   "offset": 355,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__switch.xml",
+   "kind": "url",
+   "offset": 563,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__switch_quick_login_item.xml",
+   "kind": "url",
+   "offset": 365,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__switch_quick_login_item_simple.xml",
+   "kind": "url",
+   "offset": 366,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__toast.xml",
+   "kind": "url",
+   "offset": 306,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__uc_hydra_email.xml",
+   "kind": "url",
+   "offset": 517,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__uc_hydra_email_login_result.xml",
+   "kind": "url",
+   "offset": 441,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__uc_hydra_email_password.xml",
+   "kind": "url",
+   "offset": 472,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__uc_hydra_email_password_new.xml",
+   "kind": "url",
+   "offset": 472,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__uc_hydra_email_register.xml",
+   "kind": "url",
+   "offset": 517,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__uc_hydra_email_verify.xml",
+   "kind": "url",
+   "offset": 503,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__uc_navigation_item.xml",
+   "kind": "url",
+   "offset": 112,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__unbind_item.xml",
+   "kind": "url",
+   "offset": 337,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__user_center.xml",
+   "kind": "url",
+   "offset": 523,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__user_center_item.xml",
+   "kind": "url",
+   "offset": 379,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__web.xml",
+   "kind": "url",
+   "offset": 457,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_mpay_oversea__web_content_view.xml",
+   "kind": "url",
+   "offset": 434,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_uikit_sdk__cycle_progress.xml",
+   "kind": "url",
+   "offset": 506,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_uikit_sdk__dialog_ui.xml",
+   "kind": "url",
+   "offset": 682,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_uikit_sdk__dialog_ui_one_btn.xml",
+   "kind": "url",
+   "offset": 659,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_uikit_sdk__icon_progress.xml",
+   "kind": "url",
+   "offset": 592,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_uikit_sdk__test_view.xml",
+   "kind": "url",
+   "offset": 227,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/netease_uikit_sdk__text_progress.xml",
+   "kind": "url",
+   "offset": 484,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/notification_action.xml",
+   "kind": "url",
+   "offset": 282,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/notification_action_tombstone.xml",
+   "kind": "url",
+   "offset": 325,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/notification_media_action.xml",
+   "kind": "url",
+   "offset": 199,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/notification_media_cancel_action.xml",
+   "kind": "url",
+   "offset": 234,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/notification_media_cancel_action.xml",
+   "kind": "url",
+   "offset": 288,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout/notification_template_big_media.xml",
+   "kind": "url",
+   "offset": 335,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/notification_template_big_media_custom.xml",
+   "kind": "url",
+   "offset": 508,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/notification_template_big_media_narrow.xml",
+   "kind": "url",
+   "offset": 353,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/notification_template_big_media_narrow_custom.xml",
+   "kind": "url",
+   "offset": 547,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/notification_template_custom_big.xml",
+   "kind": "url",
+   "offset": 485,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/notification_template_icon_group.xml",
+   "kind": "url",
+   "offset": 128,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/notification_template_lines.xml",
+   "kind": "url",
+   "offset": 432,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/notification_template_lines_media.xml",
+   "kind": "url",
+   "offset": 432,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/notification_template_media.xml",
+   "kind": "url",
+   "offset": 208,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/notification_template_media_custom.xml",
+   "kind": "url",
+   "offset": 407,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/notification_template_part_chronometer.xml",
+   "kind": "url",
+   "offset": 150,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/notification_template_part_time.xml",
+   "kind": "url",
+   "offset": 150,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/ntunisdk_scanner.xml",
+   "kind": "url",
+   "offset": 388,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/select_dialog_item_material.xml",
+   "kind": "url",
+   "offset": 232,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/select_dialog_multichoice_material.xml",
+   "kind": "url",
+   "offset": 293,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/select_dialog_singlechoice_material.xml",
+   "kind": "url",
+   "offset": 293,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/status_bar_ongoing_event_progress_bar.xml",
+   "kind": "url",
+   "offset": 480,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/support_simple_spinner_dropdown_item.xml",
+   "kind": "url",
+   "offset": 149,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/tw__action_bar.xml",
+   "kind": "url",
+   "offset": 243,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/tw__action_bar.xml",
+   "kind": "url",
+   "offset": 301,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout/tw__activity_composer.xml",
+   "kind": "url",
+   "offset": 116,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/tw__activity_oauth.xml",
+   "kind": "url",
+   "offset": 165,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/tw__composer_view.xml",
+   "kind": "url",
+   "offset": 363,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/tw__gallery_activity.xml",
+   "kind": "url",
+   "offset": 116,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/tw__media_badge.xml",
+   "kind": "url",
+   "offset": 85,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/tw__player_activity.xml",
+   "kind": "url",
+   "offset": 251,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/tw__tweet.xml",
+   "kind": "url",
+   "offset": 266,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/tw__tweet_compact.xml",
+   "kind": "url",
+   "offset": 251,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/tw__tweet_quote.xml",
+   "kind": "url",
+   "offset": 203,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/tw__video_control.xml",
+   "kind": "url",
+   "offset": 416,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/unisdk_alert_dialog_view.xml",
+   "kind": "url",
+   "offset": 630,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/unisdk_login_loading_progressdialog.xml",
+   "kind": "url",
+   "offset": 177,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/unisdk_protocol_view.xml",
+   "kind": "url",
+   "offset": 753,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/unisdk_webview_progressdialog.xml",
+   "kind": "url",
+   "offset": 182,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/uni_gm_confirm_dialog.xml",
+   "kind": "url",
+   "offset": 411,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/uni_gm_float_view.xml",
+   "kind": "url",
+   "offset": 267,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/uni_gm_loading_dialog.xml",
+   "kind": "url",
+   "offset": 145,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/uni_gm_loading_dialog.xml",
+   "kind": "url",
+   "offset": 199,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout/uni_gm_web_act.xml",
+   "kind": "url",
+   "offset": 608,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/uni_p_view.xml",
+   "kind": "url",
+   "offset": 753,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/videoview.xml",
+   "kind": "url",
+   "offset": 189,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout/welcomeview.xml",
+   "kind": "url",
+   "offset": 175,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_mpay_oversea__bind.xml",
+   "kind": "url",
+   "offset": 570,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_mpay_oversea__channel_login_home.xml",
+   "kind": "url",
+   "offset": 202,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_mpay_oversea__channel_login_more.xml",
+   "kind": "url",
+   "offset": 436,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_mpay_oversea__channel_quick_login.xml",
+   "kind": "url",
+   "offset": 427,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_mpay_oversea__channel_quick_login_item.xml",
+   "kind": "url",
+   "offset": 347,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_mpay_oversea__channel_quick_login_item_simple.xml",
+   "kind": "url",
+   "offset": 366,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_mpay_oversea__content.xml",
+   "kind": "url",
+   "offset": 194,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_mpay_oversea__hydra_email_login.xml",
+   "kind": "url",
+   "offset": 597,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_mpay_oversea__hydra_email_password.xml",
+   "kind": "url",
+   "offset": 541,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_mpay_oversea__hydra_email_password_new.xml",
+   "kind": "url",
+   "offset": 537,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_mpay_oversea__hydra_email_register.xml",
+   "kind": "url",
+   "offset": 565,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_mpay_oversea__hydra_email_verify.xml",
+   "kind": "url",
+   "offset": 537,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_mpay_oversea__switch.xml",
+   "kind": "url",
+   "offset": 563,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_mpay_oversea__switch_quick_login_item.xml",
+   "kind": "url",
+   "offset": 328,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_mpay_oversea__switch_quick_login_item_simple.xml",
+   "kind": "url",
+   "offset": 366,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_mpay_oversea__user_center.xml",
+   "kind": "url",
+   "offset": 483,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_uikit_sdk__cycle_progress.xml",
+   "kind": "url",
+   "offset": 480,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_uikit_sdk__dialog_ui.xml",
+   "kind": "url",
+   "offset": 682,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_uikit_sdk__dialog_ui_one_btn.xml",
+   "kind": "url",
+   "offset": 657,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_uikit_sdk__icon_progress.xml",
+   "kind": "url",
+   "offset": 592,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land/netease_uikit_sdk__text_progress.xml",
+   "kind": "url",
+   "offset": 484,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-land-v17/netease_mpay_oversea__channel_login_home.xml",
+   "kind": "url",
+   "offset": 225,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v16/com_facebook_device_auth_dialog_fragment.xml",
+   "kind": "url",
+   "offset": 707,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v16/com_facebook_device_auth_dialog_fragment.xml",
+   "kind": "url",
+   "offset": 761,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout-v16/com_facebook_smart_device_dialog_fragment.xml",
+   "kind": "url",
+   "offset": 734,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v16/com_facebook_smart_device_dialog_fragment.xml",
+   "kind": "url",
+   "offset": 788,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout-v16/notification_template_custom_big.xml",
+   "kind": "url",
+   "offset": 485,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/abc_action_mode_close_item_material.xml",
+   "kind": "url",
+   "offset": 282,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/abc_action_mode_close_item_material.xml",
+   "kind": "url",
+   "offset": 336,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout-v17/abc_alert_dialog_button_bar_material.xml",
+   "kind": "url",
+   "offset": 312,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/abc_alert_dialog_material.xml",
+   "kind": "url",
+   "offset": 424,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/abc_alert_dialog_title_material.xml",
+   "kind": "url",
+   "offset": 358,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/abc_dialog_title_material.xml",
+   "kind": "url",
+   "offset": 297,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/abc_popup_menu_header_item_layout.xml",
+   "kind": "url",
+   "offset": 280,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/abc_search_view.xml",
+   "kind": "url",
+   "offset": 661,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/abc_select_dialog_material.xml",
+   "kind": "url",
+   "offset": 315,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/abc_select_dialog_material.xml",
+   "kind": "url",
+   "offset": 369,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout-v17/abc_tooltip.xml",
+   "kind": "url",
+   "offset": 364,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/browser_actions_context_menu_page.xml",
+   "kind": "url",
+   "offset": 451,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/browser_actions_context_menu_page.xml",
+   "kind": "url",
+   "offset": 505,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout-v17/browser_actions_context_menu_row.xml",
+   "kind": "url",
+   "offset": 365,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/com_facebook_device_auth_dialog_fragment.xml",
+   "kind": "url",
+   "offset": 755,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/com_facebook_device_auth_dialog_fragment.xml",
+   "kind": "url",
+   "offset": 809,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout-v17/com_facebook_smart_device_dialog_fragment.xml",
+   "kind": "url",
+   "offset": 782,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/com_facebook_smart_device_dialog_fragment.xml",
+   "kind": "url",
+   "offset": 836,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout-v17/inputview.xml",
+   "kind": "url",
+   "offset": 319,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/inputview2.xml",
+   "kind": "url",
+   "offset": 346,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/netease_mpay_oversea__channel_login_home.xml",
+   "kind": "url",
+   "offset": 225,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/netease_mpay_oversea__user_center_item.xml",
+   "kind": "url",
+   "offset": 400,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/notification_action.xml",
+   "kind": "url",
+   "offset": 301,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/notification_action_tombstone.xml",
+   "kind": "url",
+   "offset": 344,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/notification_template_big_media.xml",
+   "kind": "url",
+   "offset": 433,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/notification_template_big_media_custom.xml",
+   "kind": "url",
+   "offset": 629,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/notification_template_big_media_narrow.xml",
+   "kind": "url",
+   "offset": 472,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/notification_template_big_media_narrow_custom.xml",
+   "kind": "url",
+   "offset": 689,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/notification_template_custom_big.xml",
+   "kind": "url",
+   "offset": 533,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/notification_template_lines.xml",
+   "kind": "url",
+   "offset": 493,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/notification_template_lines_media.xml",
+   "kind": "url",
+   "offset": 493,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/notification_template_media.xml",
+   "kind": "url",
+   "offset": 253,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/notification_template_media_custom.xml",
+   "kind": "url",
+   "offset": 500,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/notification_template_part_chronometer.xml",
+   "kind": "url",
+   "offset": 242,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/notification_template_part_time.xml",
+   "kind": "url",
+   "offset": 242,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/select_dialog_multichoice_material.xml",
+   "kind": "url",
+   "offset": 329,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/select_dialog_singlechoice_material.xml",
+   "kind": "url",
+   "offset": 329,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/tw__action_bar.xml",
+   "kind": "url",
+   "offset": 266,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/tw__action_bar.xml",
+   "kind": "url",
+   "offset": 324,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout-v17/tw__composer_view.xml",
+   "kind": "url",
+   "offset": 391,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/tw__tweet.xml",
+   "kind": "url",
+   "offset": 315,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/tw__tweet_compact.xml",
+   "kind": "url",
+   "offset": 324,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v17/tw__tweet_quote.xml",
+   "kind": "url",
+   "offset": 261,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v21/abc_screen_toolbar.xml",
+   "kind": "url",
+   "offset": 303,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v21/abc_screen_toolbar.xml",
+   "kind": "url",
+   "offset": 357,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout-v21/notification_action.xml",
+   "kind": "url",
+   "offset": 267,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v21/notification_action_tombstone.xml",
+   "kind": "url",
+   "offset": 310,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v21/notification_template_custom_big.xml",
+   "kind": "url",
+   "offset": 410,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v21/notification_template_icon_group.xml",
+   "kind": "url",
+   "offset": 267,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v21/tw__video_control.xml",
+   "kind": "url",
+   "offset": 433,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v22/abc_alert_dialog_button_bar_material.xml",
+   "kind": "url",
+   "offset": 335,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v26/abc_screen_toolbar.xml",
+   "kind": "url",
+   "offset": 335,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-v26/abc_screen_toolbar.xml",
+   "kind": "url",
+   "offset": 389,
+   "value": "http://schemas.android.com/apk/res-auto"
+  },
+  {
+   "file": "res/layout-v9/abc_select_dialog_material.xml",
+   "kind": "url",
+   "offset": 263,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
+   "kind": "url",
+   "offset": 268,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/layout-watch-v20/abc_alert_dialog_title_material.xml",
+   "kind": "url",
+   "offset": 275,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/raw/pushconfig.properties",
+   "kind": "url",
+   "offset": 69,
+   "value": "http://push.x.netease.com:32910"
+  },
+  {
+   "file": "res/raw/pushconfig.properties",
+   "kind": "host",
+   "offset": 76,
+   "value": "push.x.netease.com"
+  },
+  {
+   "file": "res/xml/file_paths.xml",
+   "kind": "url",
+   "offset": 84,
+   "value": "http://schemas.android.com/apk/res/android"
+  },
+  {
+   "file": "res/xml/gm_provider_paths.xml",
+   "kind": "url",
+   "offset": 84,
+   "value": "http://schemas.android.com/apk/res/android"
+  }
+ ],
+ "hosts": {
+  "%s": [
+   "classes5.dex"
+  ],
+  "%sadrevenue.%s": [
+   "classes.dex"
+  ],
+  "%sapp.%s": [
+   "classes5.dex"
+  ],
+  "%sattr.%s": [
+   "classes.dex"
+  ],
+  "%sconversions.%s": [
+   "classes.dex"
+  ],
+  "%sdlsdk.%s": [
+   "classes5.dex"
+  ],
+  "%sgcdsdk.%s": [
+   "classes.dex"
+  ],
+  "%simpression.%s": [
+   "classes5.dex"
+  ],
+  "%sinapps.%s": [
+   "classes.dex"
+  ],
+  "%slaunches.%s": [
+   "classes.dex"
+  ],
+  "%smonitorsdk.%s": [
+   "classes.dex"
+  ],
+  "%sonelink.%s": [
+   "classes.dex"
+  ],
+  "%sregister.%s": [
+   "classes5.dex"
+  ],
+  "%ssdk-services.%s": [
+   "classes.dex"
+  ],
+  "%sstats.%s": [
+   "classes.dex"
+  ],
+  "%svalidate.%s": [
+   "classes.dex"
+  ],
+  "-02.gdl.netease.com": [
+   "classes4.dex"
+  ],
+  "-02.gph.netease.com": [
+   "classes4.dex"
+  ],
+  "-04.gdl.netease.com": [
+   "classes4.dex"
+  ],
+  "-04.gph.netease.com": [
+   "classes4.dex"
+  ],
+  "-11.gdl.easebar.com": [
+   "classes4.dex"
+  ],
+  "-11.gdl.netease.com": [
+   "classes4.dex"
+  ],
+  "-11.gph.easebar.com": [
+   "classes4.dex"
+  ],
+  "-11.gph.netease.com": [
+   "classes4.dex"
+  ],
+  "-12.gdl.easebar.com": [
+   "classes4.dex"
+  ],
+  "-12.gdl.netease.com": [
+   "classes4.dex"
+  ],
+  "-12.gph.easebar.com": [
+   "classes4.dex"
+  ],
+  "-12.gph.netease.com": [
+   "classes4.dex"
+  ],
+  ".facebook.com": [
+   "classes3.dex"
+  ],
+  "10.246.14.112": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "106.2.42.106": [
+   "classes3.dex"
+  ],
+  "106.2.42.123": [
+   "classes4.dex"
+  ],
+  "106.2.42.128": [
+   "classes4.dex"
+  ],
+  "106.2.92.236": [
+   "lib/arm64-v8a/libstreammgr.so",
+   "lib/armeabi-v7a/libstreammgr.so"
+  ],
+  "112.91.135.105": [
+   "classes5.dex"
+  ],
+  "112.91.135.70": [
+   "classes5.dex"
+  ],
+  "112.91.135.9": [
+   "classes5.dex"
+  ],
+  "114.113.200.143": [
+   "lib/arm64-v8a/libAudioEngine.so",
+   "lib/armeabi-v7a/libAudioEngine.so"
+  ],
+  "119.36.82.67": [
+   "classes5.dex"
+  ],
+  "123.125.48.147": [
+   "classes3.dex",
+   "classes4.dex"
+  ],
+  "123.45.67.89": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "123.58.164.135": [
+   "classes.dex",
+   "classes4.dex"
+  ],
+  "123.58.166.46": [
+   "classes3.dex",
+   "classes4.dex"
+  ],
+  "123.58.170.147": [
+   "classes3.dex",
+   "classes4.dex"
+  ],
+  "123.58.173.219": [
+   "classes3.dex",
+   "classes4.dex"
+  ],
+  "13.112.167.49": [
+   "classes4.dex"
+  ],
+  "13.112.202.90": [
+   "classes3.dex",
+   "classes4.dex"
+  ],
+  "13.113.85.20": [
+   "classes4.dex"
+  ],
+  "13.248.222.62": [
+   "classes4.dex"
+  ],
+  "13.54.11.65": [
+   "classes3.dex",
+   "classes4.dex"
+  ],
+  "163.177.175.67": [
+   "classes5.dex"
+  ],
+  "163.com": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "175.43.124.205": [
+   "classes5.dex"
+  ],
+  "192.168.229.158": [
+   "classes4.dex"
+  ],
+  "192.168.229.163": [
+   "classes4.dex",
+   "classes5.dex",
+   "lib/arm64-v8a/libijkplayer.so",
+   "lib/arm64-v8a/libstreammgr.so",
+   "lib/armeabi-v7a/libijkplayer.so",
+   "lib/armeabi-v7a/libstreammgr.so"
+  ],
+  "192.168.229.164": [
+   "lib/arm64-v8a/libstreammgr.so",
+   "lib/armeabi-v7a/libstreammgr.so"
+  ],
+  "192.168.229.165": [
+   "lib/arm64-v8a/libstreammgr.so",
+   "lib/armeabi-v7a/libstreammgr.so"
+  ],
+  "220.181.30.195": [
+   "classes3.dex",
+   "classes4.dex"
+  ],
+  "34.199.187.221": [
+   "classes3.dex"
+  ],
+  "52.221.10.40": [
+   "classes4.dex"
+  ],
+  "52.221.3.167": [
+   "classes3.dex",
+   "classes4.dex"
+  ],
+  "52.221.84.180": [
+   "classes3.dex",
+   "classes4.dex"
+  ],
+  "52.52.108.248": [
+   "classes4.dex"
+  ],
+  "52.52.233.248": [
+   "classes4.dex"
+  ],
+  "52.52.82.138": [
+   "classes3.dex",
+   "classes4.dex"
+  ],
+  "52.62.105.72": [
+   "classes4.dex"
+  ],
+  "52.76.137.125": [
+   "classes3.dex",
+   "classes4.dex"
+  ],
+  "accounts.google.com": [
+   "classes4.dex"
+  ],
+  "acsdk.gameyw.easebar.com": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "android.googlesource.com": [
+   "lib/arm64-v8a/libAudioCCReName.so",
+   "lib/arm64-v8a/libAudioCore.so",
+   "lib/arm64-v8a/libAudioEngine.so",
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libAudioCCReName.so",
+   "lib/armeabi-v7a/libAudioCore.so",
+   "lib/armeabi-v7a/libAudioEngine.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "api.cc.163.com": [
+   "classes5.dex"
+  ],
+  "api.twitch.tv": [
+   "classes.dex"
+  ],
+  "api.twitter.com": [
+   "classes.dex",
+   "classes4.dex"
+  ],
+  "api.vop.netease.com": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "app-measurement.com": [
+   "classes2.dex"
+  ],
+  "appdump.nie.easebar.com": [
+   "classes.dex"
+  ],
+  "appdump.nie.netease.com": [
+   "classes.dex",
+   "classes5.dex"
+  ],
+  "applog.matrix.easebar.com": [
+   "classes.dex"
+  ],
+  "applog.matrix.netease.com": [
+   "classes.dex"
+  ],
+  "applogsg.matrix.easebar.com": [
+   "classes.dex"
+  ],
+  "audiouser.cc.163.com": [
+   "lib/arm64-v8a/libAudioEngine.so",
+   "lib/armeabi-v7a/libAudioEngine.so"
+  ],
+  "buy.itunes.apple.com": [
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "cc.netease.com": [
+   "classes5.dex"
+  ],
+  "cgi.v.cc.163.com": [
+   "classes5.dex",
+   "lib/arm64-v8a/libijkplayer.so",
+   "lib/arm64-v8a/libstreammgr.so",
+   "lib/armeabi-v7a/libijkplayer.so",
+   "lib/armeabi-v7a/libstreammgr.so"
+  ],
+  "clientdump.x.netease.com": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "csi.gstatic.com": [
+   "classes2.dex"
+  ],
+  "curl.haxx.se": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libclient.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "data-detect.nie.easebar.com": [
+   "classes.dex",
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "data-detect.nie.netease.com": [
+   "classes.dex",
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "developers.facebook.com": [
+   "classes.dex",
+   "classes3.dex"
+  ],
+  "dl.nstool.easebar.com": [
+   "classes4.dex",
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "dns.update.easebar.com": [
+   "classes4.dex"
+  ],
+  "drpf-": [
+   "classes.dex"
+  ],
+  "drpf-h45na.proxima.nie.easebar.com": [
+   "classes.dex"
+  ],
+  "en.wikipedia.org": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "facebook.com": [
+   "classes.dex",
+   "classes3.dex"
+  ],
+  "firebaseremoteconfig.googleapis.com": [
+   "classes3.dex",
+   "classes4.dex"
+  ],
+  "freeimage.sourceforge.net": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "g55-02.gph.netease.com": [
+   "classes5.dex"
+  ],
+  "g55-03.gph.netease.com": [
+   "classes5.dex"
+  ],
+  "g55-04.gph.netease.com": [
+   "classes5.dex"
+  ],
+  "gate.cc.163.com": [
+   "lib/arm64-v8a/libAudioEngine.so",
+   "lib/armeabi-v7a/libAudioEngine.so"
+  ],
+  "gcc.gnu.org": [
+   "lib/arm64-v8a/libunisdkdctool.so"
+  ],
+  "github.com": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "goo.gl": [
+   "classes2.dex"
+  ],
+  "google.com": [
+   "classes2.dex"
+  ],
+  "googleads.g.doubleclick.net": [
+   "classes2.dex"
+  ],
+  "graph-video.%s": [
+   "classes3.dex"
+  ],
+  "graph.%s": [
+   "classes3.dex"
+  ],
+  "graph.facebook.com": [
+   "classes.dex"
+  ],
+  "hao.360.cn": [
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "httpdns.nie.easebar.com": [
+   "classes.dex",
+   "classes4.dex",
+   "classes5.dex"
+  ],
+  "httpdns.nie.netease.com": [
+   "classes.dex",
+   "classes5.dex"
+  ],
+  "id.twitch.tv": [
+   "classes.dex"
+  ],
+  "imasdk.googleapis.com": [
+   "classes2.dex"
+  ],
+  "impression.update.easebar.com": [
+   "classes.dex"
+  ],
+  "impression.update.netease.com": [
+   "classes.dex"
+  ],
+  "int-api.wbagora.com": [
+   "classes.dex"
+  ],
+  "km.netease.com": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libclient.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "lame.sf.net": [
+   "lib/arm64-v8a/libijkffmpeg.so",
+   "lib/armeabi-v7a/libijkffmpeg.so"
+  ],
+  "localhost": [
+   "classes4.dex"
+  ],
+  "log.cc.netease.com": [
+   "lib/arm64-v8a/libstreammgr.so",
+   "lib/armeabi-v7a/libstreammgr.so"
+  ],
+  "login.live.com": [
+   "classes4.dex"
+  ],
+  "login.yahoo.com": [
+   "classes4.dex"
+  ],
+  "logs.dev.cc.163.com": [
+   "lib/arm64-v8a/libstreammgr.so",
+   "lib/armeabi-v7a/libstreammgr.so"
+  ],
+  "long.open.weixin.qq.com": [
+   "classes5.dex"
+  ],
+  "m.baidu.com": [
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "mbdl.update.easebar.com": [
+   "classes5.dex"
+  ],
+  "mbdl.update.netease.com": [
+   "classes3.dex",
+   "classes4.dex",
+   "classes5.dex"
+  ],
+  "mcount.easebar.com": [
+   "classes.dex",
+   "classes4.dex"
+  ],
+  "mgbsdknaeast.matrix.easebar.com": [
+   "classes.dex"
+  ],
+  "mima.163.com": [
+   "assets/unisdk_protocol_default_txt"
+  ],
+  "netlink-sigma.proxima.nie.easebar.com": [
+   "classes.dex",
+   "classes5.dex"
+  ],
+  "netlink-sigma.proxima.nie.netease.com": [
+   "classes.dex",
+   "classes5.dex"
+  ],
+  "nglbs.nie.netease.com": [
+   "classes.dex"
+  ],
+  "notice.easebar.com": [
+   "assets/GameTheme.skin",
+   "resources.arsc"
+  ],
+  "ns.adobe.com": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so",
+   "res/drawable-xhdpi/unisdk_protocol_logo_envoy.jpg"
+  ],
+  "nstool.netease.com": [
+   "classes4.dex",
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "omega-monetization-spring.proxima.nie.netease.com": [
+   "classes.dex"
+  ],
+  "open.weixin.qq.com": [
+   "classes5.dex"
+  ],
+  "pagead2.googlesyndication.com": [
+   "classes2.dex",
+   "classes5.dex"
+  ],
+  "particledesigner.71squared.com": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "performanceparameters.googleapis.com": [
+   "assets/tuningfork/tuningfork_settings.bin",
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "pharossdk.x.netease.com": [
+   "classes.dex"
+  ],
+  "play.google.com": [
+   "classes.dex",
+   "classes3.dex",
+   "classes5.dex"
+  ],
+  "plus.google.com": [
+   "classes3.dex"
+  ],
+  "proxy-state.nie.easebar.com": [
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "proxy-state.nie.netease.com": [
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "purl.org": [
+   "res/drawable-xhdpi/unisdk_protocol_logo_envoy.jpg"
+  ],
+  "push.v.cc.163.com": [
+   "lib/arm64-v8a/libstreammgr.so",
+   "lib/armeabi-v7a/libstreammgr.so"
+  ],
+  "push.x.netease.com": [
+   "res/raw/pushconfig.properties"
+  ],
+  "qr.mpsdk.easebar.com": [
+   "classes.dex"
+  ],
+  "query.v.cc.163.com": [
+   "classes4.dex",
+   "lib/arm64-v8a/libijkplayer.so",
+   "lib/armeabi-v7a/libijkplayer.so"
+  ],
+  "reg.163.com": [
+   "assets/unisdk_protocol_default_txt",
+   "assets/unisdk_protocol_privacy_txt"
+  ],
+  "rules-of-survival-41713999.firebaseio.com": [
+   "resources.arsc"
+  ],
+  "schemas.android.com": [
+   "classes4.dex",
+   "drawable/netease_mpay_oversea_codescanner__alert_dialog_background.xml",
+   "drawable/netease_mpay_oversea_codescanner__confirm_back_background.xml",
+   "drawable/netease_mpay_oversea_codescanner__confirm_titlbar_background.xml",
+   "drawable/netease_mpay_oversea_codescanner__scanner_back_background.xml",
+   "drawable/netease_mpay_oversea_codescanner__scanner_confirm_btn_selector.xml",
+   "drawable/netease_mpay_oversea_codescanner__title_bar_back.xml",
+   "layout/netease_mpay_oversea_codescanner__alert_dialog.xml",
+   "layout/netease_mpay_oversea_codescanner__confirm_login_layout.xml",
+   "layout/netease_mpay_oversea_codescanner__scanner_layout.xml",
+   "layout/netease_mpay_oversea_codescanner__title_bar.xml",
+   "res/anim/abc_fade_in.xml",
+   "res/anim/abc_fade_out.xml",
+   "res/anim/abc_grow_fade_in_from_bottom.xml",
+   "res/anim/abc_popup_enter.xml",
+   "res/anim/abc_popup_exit.xml",
+   "res/anim/abc_shrink_fade_out_from_bottom.xml",
+   "res/anim/abc_slide_in_bottom.xml",
+   "res/anim/abc_slide_in_top.xml",
+   "res/anim/abc_slide_out_bottom.xml",
+   "res/anim/abc_slide_out_top.xml",
+   "res/anim/abc_tooltip_enter.xml",
+   "res/anim/abc_tooltip_exit.xml",
+   "res/anim/btn_checkbox_to_checked_box_inner_merged_animation.xml",
+   "res/anim/btn_checkbox_to_checked_box_outer_merged_animation.xml",
+   "res/anim/btn_checkbox_to_checked_icon_null_animation.xml",
+   "res/anim/btn_checkbox_to_unchecked_box_inner_merged_animation.xml",
+   "res/anim/btn_checkbox_to_unchecked_check_path_merged_animation.xml",
+   "res/anim/btn_checkbox_to_unchecked_icon_null_animation.xml",
+   "res/anim/btn_radio_to_off_mtrl_dot_group_animation.xml",
+   "res/anim/btn_radio_to_off_mtrl_ring_outer_animation.xml",
+   "res/anim/btn_radio_to_off_mtrl_ring_outer_path_animation.xml",
+   "res/anim/btn_radio_to_on_mtrl_dot_group_animation.xml",
+   "res/anim/btn_radio_to_on_mtrl_ring_outer_animation.xml",
+   "res/anim/btn_radio_to_on_mtrl_ring_outer_path_animation.xml",
+   "res/anim/tw__accelerate_cubic.xml",
+   "res/anim/tw__slide_out.xml",
+   "res/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+   "res/color-v11/abc_background_cache_hint_selector_material_light.xml",
+   "res/color-v21/abc_btn_colored_borderless_text_material.xml",
+   "res/color-v23/abc_btn_colored_borderless_text_material.xml",
+   "res/color-v23/abc_btn_colored_text_material.xml",
+   "res/color-v23/abc_color_highlight_material.xml",
+   "res/color-v23/abc_tint_btn_checkable.xml",
+   "res/color-v23/abc_tint_default.xml",
+   "res/color-v23/abc_tint_edittext.xml",
+   "res/color-v23/abc_tint_seek_thumb.xml",
+   "res/color-v23/abc_tint_spinner.xml",
+   "res/color-v23/abc_tint_switch_track.xml",
+   "res/color/abc_background_cache_hint_selector_material_dark.xml",
+   "res/color/abc_background_cache_hint_selector_material_light.xml",
+   "res/color/abc_btn_colored_borderless_text_material.xml",
+   "res/color/abc_btn_colored_text_material.xml",
+   "res/color/abc_hint_foreground_material_dark.xml",
+   "res/color/abc_hint_foreground_material_light.xml",
+   "res/color/abc_primary_text_disable_only_material_dark.xml",
+   "res/color/abc_primary_text_disable_only_material_light.xml",
+   "res/color/abc_primary_text_material_dark.xml",
+   "res/color/abc_primary_text_material_light.xml",
+   "res/color/abc_search_url_text.xml",
+   "res/color/abc_secondary_text_material_dark.xml",
+   "res/color/abc_secondary_text_material_light.xml",
+   "res/color/abc_tint_btn_checkable.xml",
+   "res/color/abc_tint_default.xml",
+   "res/color/abc_tint_edittext.xml",
+   "res/color/abc_tint_seek_thumb.xml",
+   "res/color/abc_tint_spinner.xml",
+   "res/color/abc_tint_switch_track.xml",
+   "res/color/com_facebook_button_text_color.xml",
+   "res/color/com_facebook_send_button_text_color.xml",
+   "res/color/common_google_signin_btn_text_dark.xml",
+   "res/color/common_google_signin_btn_text_light.xml",
+   "res/color/common_google_signin_btn_tint.xml",
+   "res/color/netease_mpay_oversea__popup_btn_confirm_color.xml",
+   "res/color/netease_mpay_oversea__usercenter_item_color.xml",
+   "res/color/switch_thumb_material_dark.xml",
+   "res/color/switch_thumb_material_light.xml",
+   "res/color/unisdk_alert_dialog__selector_font_h15.xml",
+   "res/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0.xml",
+   "res/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1.xml",
+   "res/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml",
+   "res/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml",
+   "res/interpolator/btn_radio_to_off_mtrl_animation_interpolator_0.xml",
+   "res/interpolator/btn_radio_to_on_mtrl_animation_interpolator_0.xml",
+   "res/interpolator/fast_out_slow_in.xml",
+   "res/layout-land-v17/netease_mpay_oversea__channel_login_home.xml",
+   "res/layout-land/netease_mpay_oversea__bind.xml",
+   "res/layout-land/netease_mpay_oversea__channel_login_home.xml",
+   "res/layout-land/netease_mpay_oversea__channel_login_more.xml",
+   "res/layout-land/netease_mpay_oversea__channel_quick_login.xml",
+   "res/layout-land/netease_mpay_oversea__channel_quick_login_item.xml",
+   "res/layout-land/netease_mpay_oversea__channel_quick_login_item_simple.xml",
+   "res/layout-land/netease_mpay_oversea__content.xml",
+   "res/layout-land/netease_mpay_oversea__hydra_email_login.xml",
+   "res/layout-land/netease_mpay_oversea__hydra_email_password.xml",
+   "res/layout-land/netease_mpay_oversea__hydra_email_password_new.xml",
+   "res/layout-land/netease_mpay_oversea__hydra_email_register.xml",
+   "res/layout-land/netease_mpay_oversea__hydra_email_verify.xml",
+   "res/layout-land/netease_mpay_oversea__switch.xml",
+   "res/layout-land/netease_mpay_oversea__switch_quick_login_item.xml",
+   "res/layout-land/netease_mpay_oversea__switch_quick_login_item_simple.xml",
+   "res/layout-land/netease_mpay_oversea__user_center.xml",
+   "res/layout-land/netease_uikit_sdk__cycle_progress.xml",
+   "res/layout-land/netease_uikit_sdk__dialog_ui.xml",
+   "res/layout-land/netease_uikit_sdk__dialog_ui_one_btn.xml",
+   "res/layout-land/netease_uikit_sdk__icon_progress.xml",
+   "res/layout-land/netease_uikit_sdk__text_progress.xml",
+   "res/layout-v16/com_facebook_device_auth_dialog_fragment.xml",
+   "res/layout-v16/com_facebook_smart_device_dialog_fragment.xml",
+   "res/layout-v16/notification_template_custom_big.xml",
+   "res/layout-v17/abc_action_mode_close_item_material.xml",
+   "res/layout-v17/abc_alert_dialog_button_bar_material.xml",
+   "res/layout-v17/abc_alert_dialog_material.xml",
+   "res/layout-v17/abc_alert_dialog_title_material.xml",
+   "res/layout-v17/abc_dialog_title_material.xml",
+   "res/layout-v17/abc_popup_menu_header_item_layout.xml",
+   "res/layout-v17/abc_search_view.xml",
+   "res/layout-v17/abc_select_dialog_material.xml",
+   "res/layout-v17/abc_tooltip.xml",
+   "res/layout-v17/browser_actions_context_menu_page.xml",
+   "res/layout-v17/browser_actions_context_menu_row.xml",
+   "res/layout-v17/com_facebook_device_auth_dialog_fragment.xml",
+   "res/layout-v17/com_facebook_smart_device_dialog_fragment.xml",
+   "res/layout-v17/inputview.xml",
+   "res/layout-v17/inputview2.xml",
+   "res/layout-v17/netease_mpay_oversea__channel_login_home.xml",
+   "res/layout-v17/netease_mpay_oversea__user_center_item.xml",
+   "res/layout-v17/notification_action.xml",
+   "res/layout-v17/notification_action_tombstone.xml",
+   "res/layout-v17/notification_template_big_media.xml",
+   "res/layout-v17/notification_template_big_media_custom.xml",
+   "res/layout-v17/notification_template_big_media_narrow.xml",
+   "res/layout-v17/notification_template_big_media_narrow_custom.xml",
+   "res/layout-v17/notification_template_custom_big.xml",
+   "res/layout-v17/notification_template_lines.xml",
+   "res/layout-v17/notification_template_lines_media.xml",
+   "res/layout-v17/notification_template_media.xml",
+   "res/layout-v17/notification_template_media_custom.xml",
+   "res/layout-v17/notification_template_part_chronometer.xml",
+   "res/layout-v17/notification_template_part_time.xml",
+   "res/layout-v17/select_dialog_multichoice_material.xml",
+   "res/layout-v17/select_dialog_singlechoice_material.xml",
+   "res/layout-v17/tw__action_bar.xml",
+   "res/layout-v17/tw__composer_view.xml",
+   "res/layout-v17/tw__tweet.xml",
+   "res/layout-v17/tw__tweet_compact.xml",
+   "res/layout-v17/tw__tweet_quote.xml",
+   "res/layout-v21/abc_screen_toolbar.xml",
+   "res/layout-v21/notification_action.xml",
+   "res/layout-v21/notification_action_tombstone.xml",
+   "res/layout-v21/notification_template_custom_big.xml",
+   "res/layout-v21/notification_template_icon_group.xml",
+   "res/layout-v21/tw__video_control.xml",
+   "res/layout-v22/abc_alert_dialog_button_bar_material.xml",
+   "res/layout-v26/abc_screen_toolbar.xml",
+   "res/layout-v9/abc_select_dialog_material.xml",
+   "res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
+   "res/layout-watch-v20/abc_alert_dialog_title_material.xml",
+   "res/layout/abc_action_bar_title_item.xml",
+   "res/layout/abc_action_bar_up_container.xml",
+   "res/layout/abc_action_bar_view_list_nav_layout.xml",
+   "res/layout/abc_action_menu_item_layout.xml",
+   "res/layout/abc_action_menu_layout.xml",
+   "res/layout/abc_action_mode_bar.xml",
+   "res/layout/abc_action_mode_close_item_material.xml",
+   "res/layout/abc_activity_chooser_view.xml",
+   "res/layout/abc_activity_chooser_view_list_item.xml",
+   "res/layout/abc_alert_dialog_button_bar_material.xml",
+   "res/layout/abc_alert_dialog_material.xml",
+   "res/layout/abc_alert_dialog_title_material.xml",
+   "res/layout/abc_cascading_menu_item_layout.xml",
+   "res/layout/abc_dialog_title_material.xml",
+   "res/layout/abc_expanded_menu_layout.xml",
+   "res/layout/abc_list_menu_item_checkbox.xml",
+   "res/layout/abc_list_menu_item_icon.xml",
+   "res/layout/abc_list_menu_item_layout.xml",
+   "res/layout/abc_list_menu_item_radio.xml",
+   "res/layout/abc_popup_menu_header_item_layout.xml",
+   "res/layout/abc_popup_menu_item_layout.xml",
+   "res/layout/abc_screen_content_include.xml",
+   "res/layout/abc_screen_simple.xml",
+   "res/layout/abc_screen_simple_overlay_action_mode.xml",
+   "res/layout/abc_screen_toolbar.xml",
+   "res/layout/abc_search_dropdown_item_icons_2line.xml",
+   "res/layout/abc_search_view.xml",
+   "res/layout/abc_select_dialog_material.xml",
+   "res/layout/abc_tooltip.xml",
+   "res/layout/activity_main.xml",
+   "res/layout/activity_nt_twitch_auth.xml",
+   "res/layout/activity_permission.xml",
+   "res/layout/activity_second.xml",
+   "res/layout/browser_actions_context_menu_page.xml",
+   "res/layout/browser_actions_context_menu_row.xml",
+   "res/layout/com_facebook_activity_layout.xml",
+   "res/layout/com_facebook_device_auth_dialog_fragment.xml",
+   "res/layout/com_facebook_login_fragment.xml",
+   "res/layout/com_facebook_smart_device_dialog_fragment.xml",
+   "res/layout/com_facebook_tooltip_bubble.xml",
+   "res/layout/crop__activity_crop.xml",
+   "res/layout/crop__layout_done_cancel.xml",
+   "res/layout/custom_dialog.xml",
+   "res/layout/dumpview.xml",
+   "res/layout/inputview.xml",
+   "res/layout/inputview2.xml",
+   "res/layout/main.xml",
+   "res/layout/messenger_button_send_blue_large.xml",
+   "res/layout/messenger_button_send_blue_round.xml",
+   "res/layout/messenger_button_send_blue_small.xml",
+   "res/layout/messenger_button_send_white_large.xml",
+   "res/layout/messenger_button_send_white_round.xml",
+   "res/layout/messenger_button_send_white_small.xml",
+   "res/layout/netease_mpay_oversea__bind.xml",
+   "res/layout/netease_mpay_oversea__boud_item.xml",
+   "res/layout/netease_mpay_oversea__channel_login.xml",
+   "res/layout/netease_mpay_oversea__channel_login_home.xml",
+   "res/layout/netease_mpay_oversea__channel_login_item.xml",
+   "res/layout/netease_mpay_oversea__channel_login_item_small.xml",
+   "res/layout/netease_mpay_oversea__channel_login_last_type.xml",
+   "res/layout/netease_mpay_oversea__channel_login_more.xml",
+   "res/layout/netease_mpay_oversea__channel_quick_login.xml",
+   "res/layout/netease_mpay_oversea__channel_quick_login_item.xml",
+   "res/layout/netease_mpay_oversea__channel_quick_login_item_simple.xml",
+   "res/layout/netease_mpay_oversea__content.xml",
+   "res/layout/netease_mpay_oversea__delete_warning_dialog.xml",
+   "res/layout/netease_mpay_oversea__dialog.xml",
+   "res/layout/netease_mpay_oversea__feedback.xml",
+   "res/layout/netease_mpay_oversea__guide_dialog.xml",
+   "res/layout/netease_mpay_oversea__hydra_email_login.xml",
+   "res/layout/netease_mpay_oversea__hydra_email_login_result.xml",
+   "res/layout/netease_mpay_oversea__hydra_email_password.xml",
+   "res/layout/netease_mpay_oversea__hydra_email_password_new.xml",
+   "res/layout/netease_mpay_oversea__hydra_email_register.xml",
+   "res/layout/netease_mpay_oversea__hydra_email_verify.xml",
+   "res/layout/netease_mpay_oversea__inherit_code_dialog.xml",
+   "res/layout/netease_mpay_oversea__inherit_pwd_dialog.xml",
+   "res/layout/netease_mpay_oversea__loading_layout.xml",
+   "res/layout/netease_mpay_oversea__login_channel_item.xml",
+   "res/layout/netease_mpay_oversea__login_new_guest_dialog.xml",
+   "res/layout/netease_mpay_oversea__login_second_confirm_dialog.xml",
+   "res/layout/netease_mpay_oversea__lvu_content.xml",
+   "res/layout/netease_mpay_oversea__lvu_person_info.xml",
+   "res/layout/netease_mpay_oversea__lvu_region_item.xml",
+   "res/layout/netease_mpay_oversea__lvu_region_picker.xml",
+   "res/layout/netease_mpay_oversea__navigation_item.xml",
+   "res/layout/netease_mpay_oversea__new_guest.xml",
+   "res/layout/netease_mpay_oversea__scroll_dialog.xml",
+   "res/layout/netease_mpay_oversea__security_mail_code_input.xml",
+   "res/layout/netease_mpay_oversea__security_mail_entry_item.xml",
+   "res/layout/netease_mpay_oversea__security_mail_home.xml",
+   "res/layout/netease_mpay_oversea__security_mail_input.xml",
+   "res/layout/netease_mpay_oversea__security_mail_result.xml",
+   "res/layout/netease_mpay_oversea__switch.xml",
+   "res/layout/netease_mpay_oversea__switch_quick_login_item.xml",
+   "res/layout/netease_mpay_oversea__switch_quick_login_item_simple.xml",
+   "res/layout/netease_mpay_oversea__toast.xml",
+   "res/layout/netease_mpay_oversea__uc_hydra_email.xml",
+   "res/layout/netease_mpay_oversea__uc_hydra_email_login_result.xml",
+   "res/layout/netease_mpay_oversea__uc_hydra_email_password.xml",
+   "res/layout/netease_mpay_oversea__uc_hydra_email_password_new.xml",
+   "res/layout/netease_mpay_oversea__uc_hydra_email_register.xml",
+   "res/layout/netease_mpay_oversea__uc_hydra_email_verify.xml",
+   "res/layout/netease_mpay_oversea__uc_navigation_item.xml",
+   "res/layout/netease_mpay_oversea__unbind_item.xml",
+   "res/layout/netease_mpay_oversea__user_center.xml",
+   "res/layout/netease_mpay_oversea__user_center_item.xml",
+   "res/layout/netease_mpay_oversea__web.xml",
+   "res/layout/netease_mpay_oversea__web_content_view.xml",
+   "res/layout/netease_mpay_oversea_codescanner__alert_dialog.xml",
+   "res/layout/netease_mpay_oversea_codescanner__confirm_login_layout.xml",
+   "res/layout/netease_mpay_oversea_codescanner__scanner_layout.xml",
+   "res/layout/netease_mpay_oversea_codescanner__title_bar.xml",
+   "res/layout/netease_uikit_sdk__cycle_progress.xml",
+   "res/layout/netease_uikit_sdk__dialog_ui.xml",
+   "res/layout/netease_uikit_sdk__dialog_ui_one_btn.xml",
+   "res/layout/netease_uikit_sdk__icon_progress.xml",
+   "res/layout/netease_uikit_sdk__test_view.xml",
+   "res/layout/netease_uikit_sdk__text_progress.xml",
+   "res/layout/notification_action.xml",
+   "res/layout/notification_action_tombstone.xml",
+   "res/layout/notification_media_action.xml",
+   "res/layout/notification_media_cancel_action.xml",
+   "res/layout/notification_template_big_media.xml",
+   "res/layout/notification_template_big_media_custom.xml",
+   "res/layout/notification_template_big_media_narrow.xml",
+   "res/layout/notification_template_big_media_narrow_custom.xml",
+   "res/layout/notification_template_custom_big.xml",
+   "res/layout/notification_template_icon_group.xml",
+   "res/layout/notification_template_lines.xml",
+   "res/layout/notification_template_lines_media.xml",
+   "res/layout/notification_template_media.xml",
+   "res/layout/notification_template_media_custom.xml",
+   "res/layout/notification_template_part_chronometer.xml",
+   "res/layout/notification_template_part_time.xml",
+   "res/layout/ntunisdk_scanner.xml",
+   "res/layout/select_dialog_item_material.xml",
+   "res/layout/select_dialog_multichoice_material.xml",
+   "res/layout/select_dialog_singlechoice_material.xml",
+   "res/layout/status_bar_ongoing_event_progress_bar.xml",
+   "res/layout/support_simple_spinner_dropdown_item.xml",
+   "res/layout/tw__action_bar.xml",
+   "res/layout/tw__activity_composer.xml",
+   "res/layout/tw__activity_oauth.xml",
+   "res/layout/tw__composer_view.xml",
+   "res/layout/tw__gallery_activity.xml",
+   "res/layout/tw__media_badge.xml",
+   "res/layout/tw__player_activity.xml",
+   "res/layout/tw__tweet.xml",
+   "res/layout/tw__tweet_compact.xml",
+   "res/layout/tw__tweet_quote.xml",
+   "res/layout/tw__video_control.xml",
+   "res/layout/uni_gm_confirm_dialog.xml",
+   "res/layout/uni_gm_float_view.xml",
+   "res/layout/uni_gm_loading_dialog.xml",
+   "res/layout/uni_gm_web_act.xml",
+   "res/layout/uni_p_view.xml",
+   "res/layout/unisdk_alert_dialog_view.xml",
+   "res/layout/unisdk_login_loading_progressdialog.xml",
+   "res/layout/unisdk_protocol_view.xml",
+   "res/layout/unisdk_webview_progressdialog.xml",
+   "res/layout/videoview.xml",
+   "res/layout/welcomeview.xml",
+   "res/xml/file_paths.xml",
+   "res/xml/gm_provider_paths.xml"
+  ],
+  "sdk-os.mpsdk.easebar.com": [
+   "classes.dex"
+  ],
+  "service.netease.com": [
+   "assets/unisdk_protocol_privacy_txt"
+  ],
+  "sigma-echoes.proxima.nie.netease.com": [
+   "classes.dex"
+  ],
+  "ss0.bdstatic.com": [
+   "classes.dex"
+  ],
+  "ss1.bdstatic.com": [
+   "classes.dex"
+  ],
+  "statlog.cc.netease.com": [
+   "lib/arm64-v8a/libAudioEngine.so",
+   "lib/arm64-v8a/libstreammgr.so",
+   "lib/armeabi-v7a/libAudioEngine.so",
+   "lib/armeabi-v7a/libstreammgr.so"
+  ],
+  "support.google.com": [
+   "classes2.dex"
+  ],
+  "syndication.twitter.com": [
+   "classes4.dex"
+  ],
+  "t.cn": [
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "twitter.com": [
+   "classes.dex",
+   "classes4.dex",
+   "resources.arsc"
+  ],
+  "udt-sigma.proxima.nie.easebar.com": [
+   "classes4.dex"
+  ],
+  "udt-sigma.proxima.nie.netease.com": [
+   "classes3.dex",
+   "classes4.dex"
+  ],
+  "unisdk.proxima.nie.easebar.com": [
+   "classes.dex",
+   "classes4.dex"
+  ],
+  "unisdk.proxima.nie.netease.com": [
+   "classes.dex",
+   "classes4.dex"
+  ],
+  "unisdk.update.easebar.com": [
+   "classes.dex"
+  ],
+  "unisdk.update.netease.com": [
+   "assets/unisdk_protocol_base_txt",
+   "assets/unisdk_protocol_base_txt2",
+   "classes.dex"
+  ],
+  "update.unisdk.easebar.com": [
+   "classes.dex"
+  ],
+  "upload.twitter.com": [
+   "classes5.dex"
+  ],
+  "vapi.cc.easebar.com": [
+   "classes4.dex",
+   "lib/arm64-v8a/libijkplayer.so",
+   "lib/armeabi-v7a/libijkplayer.so"
+  ],
+  "vod.cc.163.com": [
+   "lib/arm64-v8a/libstreammgr.so",
+   "lib/armeabi-v7a/libstreammgr.so"
+  ],
+  "vop.baidu.com": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "vquery.cc.easebar.com": [
+   "lib/arm64-v8a/libijkplayer.so",
+   "lib/armeabi-v7a/libijkplayer.so"
+  ],
+  "vquery.cc.vapi.cc.easebar.com": [
+   "classes4.dex"
+  ],
+  "who.nie.easebar.com": [
+   "classes.dex"
+  ],
+  "who.nie.netease.com": [
+   "classes.dex"
+  ],
+  "who6.nie.easebar.com": [
+   "classes4.dex"
+  ],
+  "who6.nie.netease.com": [
+   "classes4.dex"
+  ],
+  "whoami.nie.easebar.com": [
+   "classes4.dex"
+  ],
+  "whoami.nie.netease.com": [
+   "classes4.dex"
+  ],
+  "www.apache.org": [
+   "org/apache/http/entity/mime/version.properties"
+  ],
+  "www.apple.com": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "www.bing.com": [
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "www.boost.org": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "www.example.com": [
+   "classes2.dex",
+   "classes5.dex"
+  ],
+  "www.facebook.com": [
+   "classes4.dex",
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "www.google.com": [
+   "classes2.dex",
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "www.googleadservices.com": [
+   "classes2.dex"
+  ],
+  "www.googleapis.com": [
+   "classes2.dex",
+   "classes3.dex",
+   "classes4.dex"
+  ],
+  "www.linkedin.com": [
+   "classes4.dex"
+  ],
+  "www.openssl.org": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/arm64-v8a/libijkffmpeg.so",
+   "lib/arm64-v8a/libstreammgr.so",
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libclient.so",
+   "lib/armeabi-v7a/libijkffmpeg.so",
+   "lib/armeabi-v7a/libstreammgr.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "www.paypal.com": [
+   "classes4.dex"
+  ],
+  "www.python.org": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "www.rulesofsurvivalgame.com": [
+   "classes.dex"
+  ],
+  "www.sogou.com": [
+   "lib/arm64-v8a/libunisdkdctool.so",
+   "lib/armeabi-v7a/libunisdkdctool.so"
+  ],
+  "www.unicode.org": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/armeabi-v7a/libclient.so"
+  ],
+  "www.videolan.org": [
+   "lib/arm64-v8a/libijkffmpeg.so",
+   "lib/armeabi-v7a/libijkffmpeg.so"
+  ],
+  "www.w3.org": [
+   "lib/arm64-v8a/libclient.so",
+   "lib/arm64-v8a/libijkffmpeg.so",
+   "lib/armeabi-v7a/libclient.so",
+   "lib/armeabi-v7a/libijkffmpeg.so",
+   "res/drawable-xhdpi/unisdk_protocol_logo_envoy.jpg"
+  ],
+  "xml.apache.org": [
+   "classes3.dex"
+  ]
+ }
+}

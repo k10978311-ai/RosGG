@@ -1,0 +1,278 @@
+<root>
+	<Parent>	BattleGroundSpace		</Parent>
+	<Implements>
+		<Interface>	iBattleGroundRos2TaskNpcManager	</Interface>
+		<Interface>	iBattleGroundRos2ActivitySpace	</Interface>
+	</Implements>
+	<ClientName>	BattleGroundRos2Space	</ClientName>
+	
+	<Properties>
+		<attackerEvacuationAreas>
+			<Type>	ARRAY <of>  ROS2_EVACUATION_POINT   </of>   </Type>
+			<Flags>	    ALL_CLIENTS		</Flags>
+		</attackerEvacuationAreas>
+		<defenderEvacuationAreas>
+			<Type>	ARRAY <of>  ROS2_EVACUATION_POINT   </of>   </Type>
+			<Flags>	    ALL_CLIENTS		</Flags>
+		</defenderEvacuationAreas>
+		<commonEvacuationAreas>
+			<Type>	ARRAY <of>  ROS2_EVACUATION_POINT   </of>   </Type>
+			<Flags>	    ALL_CLIENTS		</Flags>
+		</commonEvacuationAreas>
+		<attackerEvacuationID>
+			<Type>	ARRAY <of>  INT32   </of>   </Type>
+			<Flags>	    ALL_CLIENTS		</Flags>
+		</attackerEvacuationID>
+		<commonEvacuationID>
+			<Type>	ARRAY <of>  INT32   </of>   </Type>
+			<Flags>	    ALL_CLIENTS		</Flags>
+		</commonEvacuationID>
+		<defenderEvacuationID>
+			<Type>	ARRAY <of>  INT32   </of>   </Type>
+			<Flags>	    ALL_CLIENTS		</Flags>
+		</defenderEvacuationID>
+		<suppressList>
+			<Type>		PY_DICT		</Type>
+			<Flags>		CELL_PUBLIC	</Flags>
+			<Default>	{}		</Default>
+		</suppressList>
+		<hatredRegion>
+			<Type>	ARRAY <of>  PYTHON   </of>   </Type>
+			<Flags>	    ALL_CLIENTS		</Flags>
+		</hatredRegion>
+		<canAttackerJoin>
+			<Type>		BOOL			</Type>
+			<Flags>		CELL_PUBLIC		</Flags>
+		</canAttackerJoin>
+		<canDefenderJoin>
+			<Type>		BOOL			</Type>
+			<Flags>		CELL_PUBLIC		</Flags>
+		</canDefenderJoin>
+		<curLevelTolerance>
+			<Type>	ARRAY <of>  INT32   </of>   </Type>
+			<Flags>		CELL_PUBLIC		</Flags>
+		</curLevelTolerance>
+		<levelTolerance>
+			<Type>		INT32			</Type>
+			<Flags>		CELL_PUBLIC		</Flags>
+		</levelTolerance>
+		<attackerLeftNum>
+			<Type>		INT32			</Type>
+			<Flags>		CELL_PUBLIC		</Flags>
+		</attackerLeftNum>
+		<defenderLeftNum>
+			<Type>		INT32			</Type>
+			<Flags>		CELL_PUBLIC		</Flags>
+		</defenderLeftNum>
+		<rankType>
+			<Type>		INT8			</Type>
+			<Flags>		CELL_PUBLIC		</Flags>
+		</rankType>
+		<rankType>
+			<Type>		INT8			</Type>
+			<Flags>		CELL_PUBLIC		</Flags>
+		</rankType>
+		<roomInitLevel>
+			<Type>		INT32			</Type>
+			<Flags>		CELL_PUBLIC		</Flags>
+		</roomInitLevel>
+		<attackerTeams>
+			<Type>	ARRAY <of>  INT64   </of>   </Type>
+			<Flags>		CELL_PUBLIC		</Flags>
+		</attackerTeams>
+		<defenderTeams>
+			<Type>	ARRAY <of>  INT64   </of>   </Type>
+			<Flags>		CELL_PUBLIC		</Flags>
+		</defenderTeams>
+		<gidToCamp>
+			<Type>	PYTHON		</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default>	{}	</Default>
+		</gidToCamp>
+		<attackerOpenLeftTime>
+			<Type>		INT32		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	60	</Default>
+		</attackerOpenLeftTime>
+		
+		<dtsRos2AvatarDiscardInsuredItem>
+			<Type>		PYTHON		</Type>
+			<Flags>		CELL_PUBLIC	</Flags>
+			<Default>	{}	</Default>
+		</dtsRos2AvatarDiscardInsuredItem>
+		<ros2PerformanceDict>
+			<Type>		PY_DICT		</Type>
+			<Flags>		CELL_PUBLIC	</Flags>
+			<Default>	{}		</Default>
+		</ros2PerformanceDict>
+		<attackerBornPoint>
+			<Type>		PYTHON	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	[]		</Default>
+		</attackerBornPoint>
+		<defenderBornPoint>
+			<Type>		PYTHON	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	{}		</Default>
+		</defenderBornPoint>
+		<defenderAddToleranceTimerID>
+			<Type>		PY_DICT   </Type>
+			<Flags>		CELL_PUBLIC	</Flags>
+		</defenderAddToleranceTimerID>
+		<defenderEnterPrepareTimerID>
+			<Type>	ARRAY <of>  INT32   </of>   </Type>
+			<Flags>		CELL_PUBLIC	</Flags>
+		</defenderEnterPrepareTimerID>
+		<defenderEnterCloseTimerID>
+			<Type>	ARRAY <of>  INT32   </of>   </Type>
+			<Flags>		CELL_PUBLIC	</Flags>
+		</defenderEnterCloseTimerID>
+		<defenderEnterStartTimerID>
+			<Type>	ARRAY <of>  INT32   </of>   </Type>
+			<Flags>		CELL_PUBLIC	</Flags>
+		</defenderEnterStartTimerID>
+		<defenderEnterLeftTime>
+			<Type>		PYTHON	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	{}		</Default>
+		</defenderEnterLeftTime>
+		<hatredNoToRobot>
+			<Type>		PYTHON	</Type>
+			<Flags>		CELL_PUBLIC	</Flags>
+			<Default>	{}		</Default>
+		</hatredNoToRobot>
+		<ros2GameEndForceRecycleTimerID>
+			<Type>		INT32		</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+			<Default>	0		</Default>
+		</ros2GameEndForceRecycleTimerID>
+		<dtsAirDropsPos>
+			<Type>		ARRAY <of>  VECTOR3   </of> 	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+		</dtsAirDropsPos>
+		<defenderRobot>
+			<Type>	ARRAY <of>  INT64   </of>   </Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	[]		</Default>
+		</defenderRobot>
+		<defenderPlayer>
+			<Type>	ARRAY <of>  INT64   </of>   </Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	[]		</Default>
+		</defenderPlayer>
+		<defenderEnterEffect>
+			<Type>		PYTHON	   </Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+		</defenderEnterEffect>
+		<hasLoadedEvacuationPoint>
+			<Type>	BOOL </Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</hasLoadedEvacuationPoint>
+
+		<ros2Season>
+			<Type>		INT8			</Type>
+			<Flags>		CELL_PUBLIC		</Flags>
+		</ros2Season>
+		<patrolGroup>
+			<Type>		PYTHON		    </Type>
+			<Flags>		CELL_PUBLIC		</Flags>
+		</patrolGroup>
+		<patrolGroupLeader>
+			<Type>		PYTHON		    </Type>
+			<Flags>		CELL_PUBLIC		</Flags>
+		</patrolGroupLeader>
+	</Properties>
+
+	<CellMethods>
+		<chatToAllBattleground>
+			<Arg>     INT32         </Arg>  <!-- channel -->
+			<Arg>     STRING        </Arg>  <!-- content -->
+			<Arg>     CHAT_RECIVER  </Arg>  <!-- sender -->
+			<Arg>     CHAT_PARAMS   </Arg>  <!-- params -->
+		</chatToAllBattleground>
+		<gmCreateRos2Robot>
+			<Arg>		VECTOR3			</Arg>
+			<Arg>		INT32			</Arg>
+		</gmCreateRos2Robot>
+		<createRos2HitRobot>
+			<Arg>		VECTOR3			</Arg>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT32			</Arg>
+		</createRos2HitRobot>
+		<addSuppressList>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT32			</Arg>
+		</addSuppressList>
+		<delSuppressList>
+			<Arg>		INT32			</Arg>
+		</delSuppressList>
+		
+		<reportDtsRos2AvatarInsuredItem>
+			<Arg>		INT32		</Arg>
+			<Arg>		PYTHON		</Arg>
+		</reportDtsRos2AvatarInsuredItem>
+
+		<onDtsRos2InsuredItemPickedup>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT32			</Arg>
+			<Arg>		STRING			</Arg>
+		</onDtsRos2InsuredItemPickedup>
+		
+		<checkRos2GameEnd>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT32			</Arg>
+		</checkRos2GameEnd>
+		
+		<leaveRos2BattleTreasure>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT32			</Arg>
+		</leaveRos2BattleTreasure>
+
+		<batchDiscardProp>
+			<Arg>		PYTHON			</Arg>
+			<Arg>		VECTOR3			</Arg>
+		</batchDiscardProp>
+		<requestBeforeMapInfo>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</requestBeforeMapInfo>
+		<broadcastHatredToRobot>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</broadcastHatredToRobot>
+		<robotOpenElement>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT8			</Arg>
+		</robotOpenElement>
+		<addDefenderPlayerNum>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT32			</Arg>
+		</addDefenderPlayerNum>
+		<createSkateBoardForAvatar>
+			<Arg>		ENTITY_ID		</Arg>
+			<Arg>		VECTOR3			</Arg>
+			<Arg>		VECTOR3			</Arg>
+			<Arg>		FLOAT			</Arg>
+			<Arg>		FLOAT			</Arg>
+			<Arg>		INT32			</Arg>
+		</createSkateBoardForAvatar>
+		<createFortressForAvatar>
+			<Arg>		ENTITY_ID		</Arg>
+			<Arg>		VECTOR3			</Arg>
+			<Arg>		VECTOR3			</Arg>
+			<Arg>		INT32			</Arg>
+		</createFortressForAvatar>
+
+		<requestAllPlayersInfoForComplaint>
+			<Arg>		INT32			</Arg>
+			<Arg>		MAILBOX			</Arg>
+		</requestAllPlayersInfoForComplaint>
+	</CellMethods>
+
+	<ClientMethods>
+	</ClientMethods>
+
+	<BaseMethods>
+	</BaseMethods>
+</root>

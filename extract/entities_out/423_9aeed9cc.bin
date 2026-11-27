@@ -1,0 +1,49 @@
+<root>
+    <Parent> DtsRos2TaskNpc </Parent>
+    <ClientName>	DtsRos2TaskNpcStay		</ClientName>
+    <Properties>
+        <occStartTimeDict>
+            <Type>  	PYTHON		    </Type>
+            <Flags>     ALL_CLIENTS     </Flags>
+            <Default>	{}	            </Default>
+        </occStartTimeDict>
+        <stayTime>
+            <Type>  	FLOAT		    </Type>
+            <Flags>     ALL_CLIENTS     </Flags>
+        </stayTime>
+    </Properties>
+    <CellMethods>
+        <requestStayInPositionBegin> <Exposed/>
+            <Arg>       GID             </Arg>
+            <Arg>       INT32           </Arg>
+            <Arg>       INT32           </Arg>
+        </requestStayInPositionBegin>
+        <requestStayInPositionCancel> <Exposed/>
+            <Arg>       GID             </Arg>
+            <Arg>       INT32           </Arg>
+            <Arg>       INT32           </Arg>
+        </requestStayInPositionCancel>
+    </CellMethods>
+    <ClientMethods>
+        <onStayInPositionBegin>
+            <Arg>       GID             </Arg>
+            <Arg>       INT32           </Arg>
+            <Arg>       INT32           </Arg>
+            <Arg>       PYTHON          </Arg>
+        </onStayInPositionBegin>
+        <onStayInPositionCancel>
+            <Arg>       GID             </Arg>
+            <Arg>       INT32           </Arg>
+            <Arg>       INT32           </Arg>
+            <Arg>       PYTHON          </Arg>
+        </onStayInPositionCancel>
+        <onStayInPositionFinish>
+            <Arg>       GID             </Arg>
+            <Arg>       INT32           </Arg>
+            <Arg>       INT32           </Arg>
+        </onStayInPositionFinish>
+    </ClientMethods>
+    <CellMethods>
+   </CellMethods>
+
+</root>

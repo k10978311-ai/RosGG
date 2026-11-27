@@ -1,0 +1,183 @@
+<Root>
+	<Properties>
+		<annniversaryCoinCnt> <!--一天还能获得多少周年庆硬币-->
+			<Type>		INT32		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>	0		</Default>
+		</annniversaryCoinCnt>
+		<anniversary3rdTreasureOpenTime> <!--一天还能打开多少次宝藏-->
+			<Type>		INT8		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>	0		</Default>
+		</anniversary3rdTreasureOpenTime>
+		<getAirShipReward>
+			<Type>		BOOL		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+		</getAirShipReward>
+		<getAirShipCoinLimit>
+			<Type>		INT8		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>	0		</Default>
+		</getAirShipCoinLimit>
+
+        <dtsTrailTaskChooseRole>
+			<Type>		INT32		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	0		</Default>
+        </dtsTrailTaskChooseRole>
+        <in72TransformCD>
+			<Type>		BOOL		</Type>
+			<Flags>		CELL_PUBLIC_AND_OWN	</Flags>
+        </in72TransformCD>
+	<_72TransformIdx>
+			<Type>		INT32		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			
+	</_72TransformIdx>
+	<_72TransformObjectInfo>
+			<Type>		PYTHON		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+	</_72TransformObjectInfo>
+	</Properties>
+	<ClientMethods>
+		<showTreasureMessage>
+			<Arg>		STRING		</Arg> 
+		</showTreasureMessage>
+		<showTreasureDestroyMessage>
+		</showTreasureDestroyMessage>
+		<showTreasureOpenMessage>
+			<Arg>		INT32		</Arg> 
+			<Arg>		INT8		</Arg> 
+		</showTreasureOpenMessage>
+
+        <onSendDtsTrailTaskInvitation>
+			<Arg>		STRING		</Arg> 
+			<Arg>		INT32		</Arg> 
+			<Arg>		INT32		</Arg> 
+        </onSendDtsTrailTaskInvitation>
+        
+        <onUpdateTeamDtsTrailTaskInvitation>
+			<Arg>		BOOL		</Arg> 
+			<Arg>		INT32		</Arg> 
+			<Arg>		PYTHON		</Arg> 
+        </onUpdateTeamDtsTrailTaskInvitation>
+
+        <onUpdateDtsTrailTaskTeamChooseRoleData>
+			<Arg>		INT32		</Arg> 
+			<Arg>		PYTHON      </Arg> 
+        </onUpdateDtsTrailTaskTeamChooseRoleData>
+
+        <onSyncTeamVoteDtsTrailTaskState>
+			<Arg>		INT32		</Arg> 
+			<Arg>		BOOL		</Arg> 
+        </onSyncTeamVoteDtsTrailTaskState>
+        
+        <onSyncDtsTaskTeamChooseRoleState>
+			<Arg>		INT32		</Arg> 
+			<Arg>		INT64		</Arg> 
+			<Arg>		INT32		</Arg> 
+        </onSyncDtsTaskTeamChooseRoleState>
+
+        <onGetDtsTrailTaskCondition>
+			<Arg>		INT32		</Arg> 
+			<Arg>		PYTHON		</Arg> 
+        </onGetDtsTrailTaskCondition>
+        <onSync72Transform>
+			<Arg>		INT32		</Arg> 
+			<Arg>		PYTHON		</Arg> 
+        </onSync72Transform>
+        <onSyncCancel72Transform>
+        </onSyncCancel72Transform>
+	</ClientMethods>
+	<BaseMethods>
+		<onPickAnniversaryCoin>
+			<Arg>		INT32		</Arg> 
+		</onPickAnniversaryCoin>
+		<onAddTreasureOpenTime>
+		</onAddTreasureOpenTime>
+		<onGetAnniversaryTreasure>
+			<Arg>		INT32		</Arg> 
+		</onGetAnniversaryTreasure>
+
+		<onRefreshHalfAnniversaryTaskData>
+			<Arg>		INT32		</Arg> 
+			<Arg>		PYTHON		</Arg> 
+		</onRefreshHalfAnniversaryTaskData>
+	</BaseMethods>
+	<CellMethods>
+		<onPickAnniversaryCoin>
+			<Arg>		INT32		</Arg> 
+			<Arg>		INT32		</Arg> 
+		</onPickAnniversaryCoin>
+		<getAnniversaryTreasure>
+			<Arg>		INT32		</Arg> 
+			<Arg>		STRING		</Arg> 
+		</getAnniversaryTreasure>
+		<showTreasureMessage>
+			<Arg>		STRING		</Arg> 
+		</showTreasureMessage>
+		<showTreasureDestroyMessage>
+		</showTreasureDestroyMessage>
+
+ 		<requestSendDtsTrailTaskInvitation> <Exposed/>
+ 		</requestSendDtsTrailTaskInvitation>
+ 
+		<onSendDtsTrailTaskInvitation>
+			<Arg>		STRING		</Arg> 
+			<Arg>		INT32		</Arg> 
+			<Arg>		INT32		</Arg> 
+		</onSendDtsTrailTaskInvitation>
+        
+        <onUpdateTeamDtsTrailTaskInvitation>
+			<Arg>		BOOL		</Arg> 
+			<Arg>		INT32		</Arg> 
+			<Arg>		PYTHON		</Arg> 
+        </onUpdateTeamDtsTrailTaskInvitation>
+
+        <onSyncTeamVoteDtsTrailTaskState>
+			<Arg>		INT32		</Arg> 
+			<Arg>		BOOL		</Arg> 
+        </onSyncTeamVoteDtsTrailTaskState>
+
+        <onAcceptDtsTeamTrailTask> <Exposed/>
+			<Arg>		BOOL		</Arg> 
+        </onAcceptDtsTeamTrailTask>
+
+        <onUpdateDtsTrailTaskTeamChooseRoleData>
+			<Arg>		INT32		</Arg> 
+			<Arg>		PYTHON      </Arg> 
+        </onUpdateDtsTrailTaskTeamChooseRoleData>
+
+        <chooseDtsTrailTaskRole> <Exposed/>
+			<Arg>		INT32		</Arg> 
+        </chooseDtsTrailTaskRole>
+
+        <onSyncDtsTaskTeamChooseRoleState>
+			<Arg>		INT32		</Arg> 
+			<Arg>		INT64		</Arg> 
+			<Arg>		INT32		</Arg> 
+        </onSyncDtsTaskTeamChooseRoleState>
+        
+        <onSyncDtsTaskTeamChooseFinalResult>
+			<Arg>		INT32		</Arg> 
+        </onSyncDtsTaskTeamChooseFinalResult>
+
+        <requestDtsTrailTaskCondition> <Exposed/>
+        </requestDtsTrailTaskCondition>
+        
+        <onGetDtsTrailTaskCondition>
+			<Arg>		INT32		</Arg> 
+			<Arg>		PYTHON		</Arg> 
+        </onGetDtsTrailTaskCondition>
+
+		<reqCancel72Transform> <Exposed/>
+		</reqCancel72Transform>
+		<req72Transform> <Exposed/>
+		</req72Transform>
+
+        <updateDtsAnniveraryAvatarKillInfo>
+			<Arg>		INT32		</Arg> 
+			<Arg>		INT32		</Arg> 
+        </updateDtsAnniveraryAvatarKillInfo>
+	</CellMethods>
+</Root>

@@ -1,0 +1,25 @@
+<root>
+	<Implements>
+		<Interface>	iCell </Interface>
+		<Interface>	iCombatUnit </Interface>
+	</Implements>
+	<ClientName>	DtsTitanEntity	</ClientName>
+	<Properties>
+		<titanManIdx>
+			<Type>  INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</titanManIdx>
+		<activePlayerNum>
+			<Type>	INT32	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</activePlayerNum>
+	</Properties>
+	<CellMethods>
+	</CellMethods>
+	<ClientMethods>
+		<syncActivePlayerNum>
+		</syncActivePlayerNum>
+	</ClientMethods>
+	<BaseMethods>
+	</BaseMethods>
+</root>

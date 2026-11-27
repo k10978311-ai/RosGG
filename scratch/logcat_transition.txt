@@ -1,0 +1,863 @@
+﻿
+11-16 04:58:24.927  7950  8073 D NeoX    : [huawei] updateGameAppInfo {"1": 2, "10": 30, "11": 1, "12": 0, "15": 
+"8073|8218|8203", "16": 0}
+11-16 04:58:24.927  7950  8401 I IAwareGameSdk: updateGameAppInfo, json: {"1": 2, "10": 30, "11": 1, "12": 0, "15": 
+"8073|8218|8203", "16": 0}
+11-16 04:58:24.931  7950  8073 I [04:58:24.931] M : [INFO] ServerConnection::logOnBegin conneting to 
+192.168.1.18:25000 for loginAPP
+11-16 04:58:24.934  7950  8073 I [04:58:24.934] M : [INFO] PublicKeyCipher::setKey: Loaded 1024-bit public key
+11-16 04:58:24.935  7950  8073 I [04:58:24.935] M : [INFO] Nub::recreateListeningSocket 0x763846323000 0.0.0.0:56985
+11-16 04:58:25.091  7950  8073 I [04:58:25.091] M : [INFO] LoginHandler::onLoginReply: after Endpoint::convertAddress 
+from 192.168.1.18 to 192.168.1.18:0
+11-16 04:58:25.091  7950  8073 I [04:58:25.091] M : [INFO] ServerConnection::checkScriptBaseAppAddr not call script, 
+script addr=192.168.1.18:25000
+11-16 04:58:25.091  7950  8073 I [04:58:25.091] M : [INFO] Nub::recreateListeningSocket 0x76384b5f6000 0.0.0.0:45919
+11-16 04:58:25.092  7950  8073 I [04:58:25.092] M : [INFO] external channel minUnackPacketResendPeriod: 0.100000, 
+InactivityTimeout 10.000000
+11-16 04:58:25.123  7950  8073 I         : WARNING 
+***************************************************************************
+11-16 04:58:25.124  7950  8073 I [04:58:25.124] M : [WARNING] Mercury::Nub::handleMessage( 192.168.1.18:25000 ): 
+Couldn't find handler for reply id 0x00000000 (maybe it timed out?)
+11-16 04:58:25.169  7950  8073 I [04:58:25.168] M : [INFO] ServerConnection::logOn: status==LOGGED_ON
+11-16 04:58:25.169  7950  8073 I [04:58:25.169] M : [INFO] ServerConnection::logOn: to:   192.168.1.18:25000
+11-16 04:58:25.208  7950  8073 D DCTOOL  : ntStart() queue size (1), current thread=601
+11-16 04:58:25.208  7950  8073 D DCTOOL  : ntStart() after so loaded, current thread=601
+11-16 04:58:25.208  7950  8073 D DCTOOL  : ntStart() with native and reset.
+11-16 04:58:25.209  7950  8073 D DCTOOL  : In C++,  Java_com_netease_unisdk_dctool_unisdkdctool_ntStart. 
+11-16 04:58:25.210  7950  8073 D DCTOOL  : In C++,  Java_com_netease_unisdk_dctool_unisdkdctool_ntStart end. 
+11-16 04:58:25.217  7950  8402 D DCTOOL  : NATIVE [ntGetDeviceInfo] AttachCurrentThread successfully
+11-16 04:58:25.217  7950  8402 D DCTOOL  : NATIVE [ntGetDeviceInfo] callback here.
+11-16 04:58:25.217  7950  8402 D DCTOOL  : In C++, call back Java's ntGetDeviceInfo().
+11-16 04:58:25.233  7950  8402 D DCTOOL  : Getting NETWORK_TYPE in java : wifi
+11-16 04:58:25.266  7950  8073 I [04:58:25.266] M : [INFO] ServerConnection::createBasePlayer: id 10001
+11-16 04:58:25.275  7950  8402 D DCTOOL  : Getting DeviceInfo in java : 
+"network_type":"wifi","mem_total":"5955.6","mem_idle":"4744.6","cpu_model":"AArch64 Processor rev 4 
+(aarch64)","cpu_clockspeed":"2865600","device_id":"9661d8bc590f87ad"
+11-16 04:58:25.275  7950  8402 D DCTOOL  : In C++, get the returned string is 
+"network_type":"wifi","mem_total":"5955.6","mem_idle":"4744.6","cpu_model":"AArch64 Processor rev 4 
+(aarch64)","cpu_clockspeed":"2865600","device_id":"9661d8bc590f87ad"
+11-16 04:58:25.275  7950  8402 D DCTOOL  : In C++, release the returned string. detach. 
+11-16 04:58:25.275  7950  8402 D DCTOOL  : In C++, NATIVE [ntGetDeviceInfo] DetachCurrentThread successed.
+11-16 04:58:25.276  7950  8402 I DCTOOL  : OSVersion: 9
+11-16 04:58:25.276  7950  8402 I DCTOOL  : brand: Xiaomi -- model: MI 9
+11-16 04:58:25.276  7950  8402 I DCTOOL  : Serialno: 0025d161
+11-16 04:58:25.595  7950  8402 D DCTOOL  : NATIVE [OnToolCallback] AttachCurrentThread successfully
+11-16 04:58:25.595  7950  8402 D DCTOOL  : NATIVE [OnToolCallback] calling here.
+11-16 04:58:25.595  7950  8402 D DCTOOL  :  {"code": 200, "status": 1, "uid": "100001", "token": 
+"local_mock_token_123456", "username": "LocalPlayer"} 
+11-16 04:58:25.595  7950  8402 D DCTOOL  : In C++, call back Java's OnToolCallback(String).
+11-16 04:58:25.595  7950  8402 D DCTOOL  : OnToolCallback : {"code": 200, "status": 1, "uid": "100001", "token": 
+"local_mock_token_123456", "username": "LocalPlayer"}
+11-16 04:58:25.595  7950  8402 D DCTOOL  : OnToolCallback, current thread=654
+11-16 04:58:25.595  7950  8402 D DCTOOL  : NATIVE [OnToolCallback] DetachCurrentThread() Successed.
+11-16 04:58:25.624  7950  8073 I         : WARNING 
+***************************************************************************
+11-16 04:58:25.624  7950  8073 I [04:58:25.624] M : [WARNING] Channel::checkResendTimers( 192.168.1.18:25000 ): 
+Resending unacked packet #1 due to inactivity (Packet 0.158s, Channel 0.158s, RTT 0.097s)
+11-16 04:58:25.666  7950  8403 W System.err: java.lang.SecurityException: getSubscriberId
+11-16 04:58:25.666  7950  8403 W System.err: 	at android.os.Parcel.createException(Parcel.java:1967)
+11-16 04:58:25.666  7950  8403 W System.err: 	at android.os.Parcel.readException(Parcel.java:1935)
+11-16 04:58:25.666  7950  8403 W System.err: 	at android.os.Parcel.readException(Parcel.java:1885)
+11-16 04:58:25.666  7950  8403 W System.err: 	at 
+com.android.internal.telephony.IPhoneSubInfo$Stub$Proxy.getSubscriberIdForSubscriber(IPhoneSubInfo.java:578)
+11-16 04:58:25.666  7950  8403 W System.err: 	at 
+android.telephony.TelephonyManager.getSubscriberId(TelephonyManager.java:3097)
+11-16 04:58:25.666  7950  8403 W System.err: 	at 
+android.telephony.TelephonyManager.getSubscriberId(TelephonyManager.java:3080)
+11-16 04:58:25.666  7950  8403 W System.err: 	at 
+com.netease.ntunisdk.base.UniSdkUtils.getMobileIMSI(UniSdkUtils.java:532)
+11-16 04:58:25.666  7950  8403 W System.err: 	at com.netease.ntunisdk.base.ad.run(SdkBase.java:6119)
+11-16 04:58:25.666  7950  8403 W System.err: 	at java.lang.Thread.run(Thread.java:764)
+11-16 04:58:25.711  7950  8403 W System.err: java.lang.SecurityException: getDeviceId
+11-16 04:58:25.711  7950  8403 W System.err: 	at android.os.Parcel.createException(Parcel.java:1967)
+11-16 04:58:25.711  7950  8403 W System.err: 	at android.os.Parcel.readException(Parcel.java:1935)
+11-16 04:58:25.711  7950  8403 W System.err: 	at android.os.Parcel.readException(Parcel.java:1885)
+11-16 04:58:25.711  7950  8403 W System.err: 	at 
+com.android.internal.telephony.ITelephony$Stub$Proxy.getDeviceId(ITelephony.java:5407)
+11-16 04:58:25.712  7950  8403 W System.err: 	at 
+android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:1244)
+11-16 04:58:25.712  7950  8403 W System.err: 	at 
+com.netease.ntunisdk.base.UniSdkUtils.getMobileIMEI(UniSdkUtils.java:566)
+11-16 04:58:25.712  7950  8403 W System.err: 	at com.netease.ntunisdk.base.ad.run(SdkBase.java:6120)
+11-16 04:58:25.712  7950  8403 W System.err: 	at java.lang.Thread.run(Thread.java:764)
+11-16 04:58:25.788  7950  8073 I         : WARNING 
+***************************************************************************
+11-16 04:58:25.788  7950  8073 I [04:58:25.788] M : [WARNING] Channel::checkResendTimers( 192.168.1.18:25000 ): 
+Resending unacked packet #1 due to inactivity (Packet 0.163s, Channel 0.163s, RTT 0.097s)
+11-16 04:58:25.962  7950  8073 I         : WARNING 
+***************************************************************************
+11-16 04:58:25.962  7950  8073 I [04:58:25.962] M : [WARNING] Channel::checkResendTimers( 192.168.1.18:25000 ): 
+Resending unacked packet #1 due to inactivity (Packet 0.173s, Channel 0.173s, RTT 0.097s)
+11-16 04:58:26.129  7950  8073 I         : WARNING 
+***************************************************************************
+11-16 04:58:26.129  7950  8073 I [04:58:26.129] M : [WARNING] Channel::checkResendTimers( 192.168.1.18:25000 ): 
+Resending unacked packet #1 due to inactivity (Packet 0.166s, Channel 0.166s, RTT 0.097s)
+11-16 04:58:26.284  7950  8073 I         : WARNING 
+***************************************************************************
+11-16 04:58:26.284  7950  8073 I [04:58:26.284] M : [WARNING] Channel::checkResendTimers( 192.168.1.18:25000 ): 
+Resending unacked packet #1 due to inactivity (Packet 0.154s, Channel 0.154s, RTT 0.097s)
+11-16 04:58:26.430  7950  8073 I         : WARNING 
+***************************************************************************
+11-16 04:58:26.431  7950  8073 I [04:58:26.430] M : [WARNING] Channel::checkResendTimers( 192.168.1.18:25000 ): 
+Resending unacked packet #1 due to inactivity (Packet 0.146s, Channel 0.146s, RTT 0.097s)
+11-16 04:58:26.596  7950  8073 I         : WARNING 
+***************************************************************************
+11-16 04:58:26.596  7950  8073 I [04:58:26.596] M : [WARNING] Channel::checkResendTimers( 192.168.1.18:25000 ): 
+Resending unacked packet #1 due to inactivity (Packet 0.165s, Channel 0.165s, RTT 0.097s)
+11-16 04:58:26.697  7950  8073 I NeoXDevice: On App CMD 22
+11-16 04:58:26.775  7950  8073 I         : WARNING 
+***************************************************************************
+11-16 04:58:26.775  7950  8073 I [04:58:26.775] M : [WARNING] Channel::checkResendTimers( 192.168.1.18:25000 ): 
+Resending unacked packet #1 due to inactivity (Packet 0.178s, Channel 0.178s, RTT 0.097s)
+11-16 04:58:27.534  7950  8073 I         : 
+11-16 04:58:27.534  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:27.534  7950  8073 I [04:58:27.534] M : [ERROR] setPlayer::new player is null
+11-16 04:58:27.534  7950  8073 I [04:58:27.534] M : [INFO] ServerConnection::createBasePlayer: id 10003
+11-16 04:58:27.542  7950  8073 I [04:58:27.542] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+package_common.PackageConvert3.itemPackageConvert3
+11-16 04:58:27.545  7950  8073 I [04:58:27.545] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+package_common.PackageConvert3.missionPackageConvert3
+11-16 04:58:27.546  7950  8073 I [04:58:27.546] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+package_common.PackageConvert3.costumePackageConvert3
+11-16 04:58:27.560  7950  8073 I [04:58:27.560] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+package_common.PackageConvert3.vehiclePackageConvert3
+11-16 04:58:27.563  7950  8073 I [04:58:27.563] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+package_common.PackageConvert3.temporaryPackageConvert3
+11-16 04:58:27.564  7950  8073 I [04:58:27.564] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+package_common.PackageConvert3.repertoryPackageConvert3
+11-16 04:58:27.565  7950  8073 I [04:58:27.565] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+QuizData.rankInfoListConverter
+11-16 04:58:27.566  7950  8073 I [04:58:27.566] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+QuizData.playerInfoListConverter
+11-16 04:58:27.566  7950  8073 I [04:58:27.566] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+package_common.PackageConvert3.dtsPackageConvert3
+11-16 04:58:27.799  7950  8073 I [04:58:27.799] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+camp_utils.campInfoConverter
+11-16 04:58:27.811  7950  8073 D queryInventory: executed
+11-16 04:58:27.815  7950  7950 E UniSDK Googleplay: The device does not support Google play In-app billing! code=3
+11-16 04:58:27.822  7950  8073 V libnb   : enter native_bridge2_isCompatibleWith 3
+11-16 04:58:27.822  7950  8073 V libnb   : enter native_bridge3_loadLibraryExt 
+/data/app/com.netease.chiji-soAaqoKe__O6tuQE1FahAw==/lib/arm64/libAudioCore.so, 2, 0x3
+11-16 04:58:27.861  7950  8073 V libnb   : native_bridge3_loadLibraryExt: 0x76387164a200
+11-16 04:58:27.862  7950  8073 V libnb   : enter native_bridge2_getTrampoline JNI_OnLoad, trampoline_addr 0x0
+11-16 04:58:27.862  7950  8073 V libnb   : enter native_bridge2_isCompatibleWith 3
+11-16 04:58:27.862  7950  8073 V libnb   : enter native_bridge3_loadLibraryExt 
+/data/app/com.netease.chiji-soAaqoKe__O6tuQE1FahAw==/lib/arm64/libAudioCCReName.so, 2, 0x3
+11-16 04:58:27.974  7950  8073 V libnb   : native_bridge3_loadLibraryExt: 0x76387164a760
+11-16 04:58:27.974  7950  8073 V libnb   : enter native_bridge2_getTrampoline JNI_OnLoad, trampoline_addr 0x0
+11-16 04:58:27.974  7950  8073 V libnb   : enter native_bridge2_isCompatibleWith 3
+11-16 04:58:27.974  7950  8073 V libnb   : enter native_bridge3_loadLibraryExt 
+/data/app/com.netease.chiji-soAaqoKe__O6tuQE1FahAw==/lib/arm64/libAudioEngine.so, 2, 0x3
+11-16 04:58:28.072  7950  8073 V libnb   : native_bridge3_loadLibraryExt: 0x76387164acc0
+11-16 04:58:28.072  7950  8073 V libnb   : enter native_bridge2_getTrampoline JNI_OnLoad, trampoline_addr 
+0x763892a87780
+11-16 04:58:28.072  7950  8073 I AEJNI   : JNI OnLoad
+11-16 04:58:28.072  7950  8073 W System.err: native code library failed to load AudioEngineJni
+11-16 04:58:28.072  7950  8073 W System.err: java.lang.UnsatisfiedLinkError: 
+dalvik.system.PathClassLoader[DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/dat
+a/app/com.netease.chiji-soAaqoKe__O6tuQE1FahAw==/base.apk"],nativeLibraryDirectories=[/data/app/com.netease.chiji-soAaq
+oKe__O6tuQE1FahAw==/lib/arm64, /data/app/com.netease.chiji-soAaqoKe__O6tuQE1FahAw==/base.apk!/lib/arm64-v8a, 
+/system/lib64, /system/vendor/lib64]]] couldn't find "libAudioEngineJni.so"
+11-16 04:58:28.072  7950  8073 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_cc_voice_CCVoiceEngine_GetJsonDataJNI, trampoline_addr 0x0
+11-16 04:58:28.072  7950  8073 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_cc_voice_CCVoiceEngine_GetJsonDataJNI__, trampoline_addr 0x0
+11-16 04:58:28.072  7950  8073 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_cc_voice_CCVoiceEngine_GetJsonDataJNI, trampoline_addr 0x0
+11-16 04:58:28.072  7950  8073 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_cc_voice_CCVoiceEngine_GetJsonDataJNI__, trampoline_addr 0x0
+11-16 04:58:28.073  7950  8073 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_cc_voice_CCVoiceEngine_GetJsonDataJNI, trampoline_addr 0x763892a877a0
+11-16 04:58:28.075  7950  8073 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_cc_voice_CCVoiceEngine_StartCCMiniJNI, trampoline_addr 0x0
+11-16 04:58:28.075  7950  8073 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_cc_voice_CCVoiceEngine_StartCCMiniJNI__Landroid_content_Context_2ZLjava_lang_String_2, 
+trampoline_addr 0x0
+11-16 04:58:28.075  7950  8073 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_cc_voice_CCVoiceEngine_StartCCMiniJNI, trampoline_addr 0x0
+11-16 04:58:28.075  7950  8073 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_cc_voice_CCVoiceEngine_StartCCMiniJNI__Landroid_content_Context_2ZLjava_lang_String_2, 
+trampoline_addr 0x0
+11-16 04:58:28.075  7950  8073 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_cc_voice_CCVoiceEngine_StartCCMiniJNI, trampoline_addr 0x763892a877c0
+11-16 04:58:28.075  7950  8073 I AEJNI   : InitalizeJVM Begin
+11-16 04:58:28.075  7950  8073 D JVM     : JVM::Initialize@[tid=8073], current count 0
+11-16 04:58:28.075  7950  8073 D JVM     : JVM::Initialize new jvm
+11-16 04:58:28.075  7950  8073 D JVM     : JVM::JVM@[tid=8073]
+11-16 04:58:28.096  7950  8073 I AEJNI   : SetAndroidLogDir 
+/storage/emulated/0/Android/data/com.netease.chiji/files/ccmini
+11-16 04:58:28.097  7950  8073 I AEJNI   : InitalizeJVM Finish And CreateAudioService Begin
+11-16 04:58:28.100  7950  8073 I AEJNI   : CreateAudioService Finish
+11-16 04:58:28.108  7950  8411 I AudioEngine: Create Engine Success 
+11-16 04:58:28.108  7950  8411 I AudioEngine: log dir exists 
+11-16 04:58:28.112  7950  8411 I AudioEngine: open log file -1839119752 
+/storage/emulated/0/Android/data/com.netease.chiji/files/ccmini/20261116_045828.log 
+11-16 04:58:28.112  7950  8411 I AudioEngine: AudioEngine::Init - Loading codec 
+11-16 04:58:28.112  7950  8411 I AudioEngine: AudioEngine::Init - Create Capture 
+11-16 04:58:28.113  7950  8411 I AudioEngine: AudioEngine::Init - Create AudioCore 
+11-16 04:58:28.113  7950  8411 D JVM     : AttachCurrentThreadIfNeeded::ctor@[tid=8411]
+11-16 04:58:28.113  7950  8411 D JVM     : Attaching thread to JVM
+11-16 04:58:28.113  7950  8411 D JVM     : JVM::environment@[tid=8411]
+11-16 04:58:28.113  7950  8411 D JVM     : JNIEnvironment::ctor@[tid=8411]
+11-16 04:58:28.113  7950  8411 D [AudioCore]: ctor@[tid=8411]
+11-16 04:58:28.113  7950  8411 D JVM     : 
+JNIEnvironment::RegisterNatives(com/netease/cc/org/webrtc/voiceengine/WebRtcAudioManager)
+11-16 04:58:28.113  7950  8411 D JVM     : NativeRegistration::ctor@[tid=8411]
+11-16 04:58:28.113  7950  8411 D JVM     : NativeRegistration::NewObject@[tid=8411]
+11-16 04:58:28.120  7950  8411 I Logging : JavaWebRtcAudioManager: ctor@[name=Thread-60, id=655]
+11-16 04:58:28.121  7950  8411 I Logging : JavaWebRtcAudioManager: playSample rate is set to 48000, old 0
+11-16 04:58:28.155  7950  8411 I Logging : WebRtcAudioEffects: canUseAcousticEchoCanceler: false
+11-16 04:58:28.158  7950  8411 I Logging : WebRtcAudioEffects: canUseAutomaticGainControl: false
+11-16 04:58:28.160  7950  8411 I Logging : WebRtcAudioEffects: canUseNoiseSuppressor: false
+11-16 04:58:28.164  7950  8411 D [AudioCore]: OnCacheAudioParameters@[tid=8411]
+11-16 04:58:28.164  7950  8411 D [AudioCore]: hardware_aec: 0
+11-16 04:58:28.164  7950  8411 D [AudioCore]: hardware_agc: 0
+11-16 04:58:28.164  7950  8411 D [AudioCore]: hardware_ns: 0
+11-16 04:58:28.164  7950  8411 D [AudioCore]: low_latency_output: 0
+11-16 04:58:28.164  7950  8411 D [AudioCore]: sample_rate: 44100
+11-16 04:58:28.164  7950  8411 D [AudioCore]: play_sample_rate: 48000
+11-16 04:58:28.164  7950  8411 D [AudioCore]: channels: 1
+11-16 04:58:28.164  7950  8411 D [AudioCore]: output_buffer_size: 2052
+11-16 04:58:28.164  7950  8411 D [AudioCore]: input_buffer_size: 1888
+11-16 04:58:28.164  7950  8411 D JVM     : GlobalRef::ctor@[tid=8411]
+11-16 04:58:28.164  7950  8411 D [AudioCore]: JavaAudioManager::ctor@[tid=8411]
+11-16 04:58:28.164  7950  8411 D [AudioCore]: IsLowLatencyPlayoutSupported()
+11-16 04:58:28.165  7950  8411 I AudioCore: Use JAVA Audio
+11-16 04:58:28.165  7950  8411 D JVM     : AttachCurrentThreadIfNeeded::ctor@[tid=8411]
+11-16 04:58:28.165  7950  8411 D JVM     : JVM::environment@[tid=8411]
+11-16 04:58:28.165  7950  8411 D JVM     : JNIEnvironment::ctor@[tid=8411]
+11-16 04:58:28.165  7950  8411 D JVM     : 
+JNIEnvironment::RegisterNatives(com/netease/cc/org/webrtc/voiceengine/WebRtcAudioRouting)
+11-16 04:58:28.166  7950  8411 D JVM     : NativeRegistration::ctor@[tid=8411]
+11-16 04:58:28.166  7950  8411 D JVM     : NativeRegistration::NewObject@[tid=8411]
+11-16 04:58:28.166  7950  8411 D JVM     : GlobalRef::ctor@[tid=8411]
+11-16 04:58:28.166  7950  8411 D [AudioCore]: JavaAudioRouting::ctor@[tid=8411]
+11-16 04:58:28.166  7950  8411 D JVM     : AttachCurrentThreadIfNeeded::ctor@[tid=8411]
+11-16 04:58:28.166  7950  8411 D JVM     : JVM::environment@[tid=8411]
+11-16 04:58:28.166  7950  8411 D JVM     : JNIEnvironment::ctor@[tid=8411]
+11-16 04:58:28.166  7950  8411 D [AudioCore]: ctor@[tid=8411]
+11-16 04:58:28.166  7950  8411 D JVM     : 
+JNIEnvironment::RegisterNatives(com/netease/cc/org/webrtc/voiceengine/WebRtcAudioTrack)
+11-16 04:58:28.166  7950  8411 D JVM     : NativeRegistration::ctor@[tid=8411]
+11-16 04:58:28.166  7950  8411 D JVM     : NativeRegistration::NewObject@[tid=8411]
+11-16 04:58:28.167  7950  8411 I Logging : WebRtcAudioTrack: ctor@[name=Thread-60, id=655]
+11-16 04:58:28.167  7950  8411 D JVM     : GlobalRef::ctor@[tid=8411]
+11-16 04:58:28.167  7950  8411 D JVM     : AttachCurrentThreadIfNeeded::ctor@[tid=8411]
+11-16 04:58:28.167  7950  8411 D JVM     : JVM::environment@[tid=8411]
+11-16 04:58:28.167  7950  8411 D JVM     : JNIEnvironment::ctor@[tid=8411]
+11-16 04:58:28.167  7950  8411 D [AudioCore]: ctor@[tid=8411]
+11-16 04:58:28.167  7950  8411 D JVM     : 
+JNIEnvironment::RegisterNatives(com/netease/cc/org/webrtc/voiceengine/WebRtcAudioRecord)
+11-16 04:58:28.167  7950  8411 D JVM     : NativeRegistration::ctor@[tid=8411]
+11-16 04:58:28.167  7950  8411 D JVM     : NativeRegistration::NewObject@[tid=8411]
+11-16 04:58:28.167  7950  8411 I Logging : JavaWebRtcAudioRecord: ctor@[name=Thread-60, id=655]
+11-16 04:58:28.167  7950  8411 I Logging : WebRtcAudioEffects: ctor@[name=Thread-60, id=655]
+11-16 04:58:28.167  7950  8411 I Logging : JavaWebRtcAudioRecord: enableBuiltInAEC(true)
+11-16 04:58:28.167  7950  8411 I Logging : WebRtcAudioEffects: setAEC(true)
+11-16 04:58:28.167  7950  8411 W Logging : WebRtcAudioEffects: Platform AEC is not supported
+11-16 04:58:28.167  7950  8411 I Logging : JavaWebRtcAudioRecord: enableBuiltInAGC(true)
+11-16 04:58:28.167  7950  8411 I Logging : WebRtcAudioEffects: setAGC(true)
+11-16 04:58:28.167  7950  8411 W Logging : WebRtcAudioEffects: Platform AGC is not supported
+11-16 04:58:28.167  7950  8411 I Logging : JavaWebRtcAudioRecord: enableBuiltInNS(true)
+11-16 04:58:28.167  7950  8411 I Logging : WebRtcAudioEffects: setNS(true)
+11-16 04:58:28.167  7950  8411 W Logging : WebRtcAudioEffects: Platform NS is not supported
+11-16 04:58:28.167  7950  8411 D JVM     : GlobalRef::ctor@[tid=8411]
+11-16 04:58:28.167  7950  8411 D [AudioCore]: SetActiveAudioLayer(5)@[tid=8411]
+11-16 04:58:28.167  7950  8411 D [AudioCore]: delay_estimate_in_milliseconds: 150
+11-16 04:58:28.167  7950  8411 D [AudioCore]: AttachAudioBuffer@[tid=8411]
+11-16 04:58:28.167  7950  8411 D [AudioCore]: SetPlayoutSampleRate(48000)
+11-16 04:58:28.167  7950  8411 D [AudioCore]: SetPlayoutChannels(1)
+11-16 04:58:28.167  7950  8411 D [AudioCore]: AttachAudioBuffer
+11-16 04:58:28.167  7950  8411 D [AudioCore]: SetRecordingSampleRate(44100)
+11-16 04:58:28.167  7950  8411 D [AudioCore]: SetRecordingChannels(1)
+11-16 04:58:28.167  7950  8411 D [AudioCore]: total_delay_in_milliseconds: 150
+11-16 04:58:28.168  7950  8411 D [AudioCore]: Init@[tid=8411]
+11-16 04:58:28.168  7950  8411 I Logging : JavaWebRtcAudioManager: init@[name=Thread-60, id=655]
+11-16 04:58:28.168  7950  8411 D [AudioCore]: Init@[tid=8411]
+11-16 04:58:28.171  7950  8411 I chatty  : uid=10061(com.netease.chiji) Thread-60 identical 1 line
+11-16 04:58:28.171  7950  8411 D [AudioCore]: Init@[tid=8411]
+11-16 04:58:28.171  7950  8411 I AudioEngine: AudioEngine::Init - Create Playback 
+11-16 04:58:28.175  7950  8411 I AudioEngine: AudioEngine::Init - Create Master 
+11-16 04:58:28.175  7950  8411 I AudioEngine: AudioEngine::Init - CoreInit 
+11-16 04:58:28.176  7950  8411 I AudioEngine: AudioEngine::Init - Set Parameters 
+11-16 04:58:28.186  7950  8411 I AudioEngine: Init Engine Success 
+11-16 04:58:28.186  7950  8411 I AudioEngine: Engine Init Time 74 
+11-16 04:58:28.187  7950  8411 I AudioEngine: EngineJsonOption: 16393 {} 
+11-16 04:58:28.189  7950  8411 I AudioEngine: EngineJsonOption: 16397 {
+11-16 04:58:28.189  7950  8411 I AudioEngine: 	"bit0":	21836,
+11-16 04:58:28.189  7950  8411 I AudioEngine: 	"bit16":	26036,
+11-16 04:58:28.189  7950  8411 I AudioEngine: 	"bit32":	30264,
+11-16 04:58:28.189  7950  8411 I AudioEngine: 	"bit48":	0
+11-16 04:58:28.189  7950  8411 I AudioEngine: } 
+11-16 04:58:28.189  7950  8411 I AudioEngine: Start Engine 
+11-16 04:58:28.189  7950  8411 D [AudioCore]: AudioManager::InitPlayback
+11-16 04:58:28.190  7950  8411 I Logging : JavaWebRtcAudioManager: playSample rate is set to 48000, old 48000
+11-16 04:58:28.190  7950  8411 D [AudioCore]: OnCacheAudioParameters@[tid=8411]
+11-16 04:58:28.190  7950  8411 D [AudioCore]: hardware_aec: 0
+11-16 04:58:28.190  7950  8411 D [AudioCore]: hardware_agc: 0
+11-16 04:58:28.190  7950  8411 D [AudioCore]: hardware_ns: 0
+11-16 04:58:28.190  7950  8411 D [AudioCore]: low_latency_output: 0
+11-16 04:58:28.190  7950  8411 D [AudioCore]: sample_rate: 44100
+11-16 04:58:28.190  7950  8411 D [AudioCore]: play_sample_rate: 48000
+11-16 04:58:28.190  7950  8411 D [AudioCore]: channels: 1
+11-16 04:58:28.190  7950  8411 D [AudioCore]: output_buffer_size: 2052
+11-16 04:58:28.191  7950  8411 D [AudioCore]: input_buffer_size: 1888
+11-16 04:58:28.191  7950  8411 D [AudioCore]: InitPlayout @[tid=8411] mode 1 
+11-16 04:58:28.191  7950  8411 D [AudioCore]: before InitPlayout, buffer rate=48000 ch=1, param rate=48000 ch=1
+11-16 04:58:28.191  7950  8411 I Logging : WebRtcAudioTrack: initPlayout(sampleRate=48000, channels=1), 
+streamTypeNeed=3
+11-16 04:58:28.191  7950  8411 I Logging : WebRtcAudioTrack: byteBuffer.capacity: 960
+11-16 04:58:28.191  7950  8411 D [AudioCore]: OnCacheDirectBufferAddress
+11-16 04:58:28.191  7950  8411 D [AudioCore]: direct buffer capacity: 960
+11-16 04:58:28.191  7950  8411 D [AudioCore]: frames_per_buffer: 480
+11-16 04:58:28.191  7950  8411 I Logging : WebRtcAudioTrack: AudioTrack.getMinBufferSize: 4104
+11-16 04:58:28.191  7950  8411 I Logging : WebRtcAudioTrack: initPlayout use streamtype: 3
+11-16 04:58:28.198  7950  8412 I Logging : AudioRoute: AudioRoutingThread begin
+11-16 04:58:28.210  7950  8073 D         : PlayerBase::stop() from IPlayer
+11-16 04:58:28.210  7950  8073 D AudioTrack: stop() called with 2225905 frames delivered
+11-16 04:58:28.233  7950  7950 I Logging : AudioRoute: BT ACTION_SCO_AUDIO_STATE_UPDATED prev -1, new 0
+11-16 04:58:28.239  7950  8411 W AudioTrack: Use of stream types is deprecated for operations other than volume control
+11-16 04:58:28.239  7950  8411 W AudioTrack: See the documentation of AudioTrack() for what to use instead with 
+android.media.AudioAttributes to qualify your playback use case
+11-16 04:58:28.242  7950  8411 D [AudioCore]: StartPlayout@[tid=8411]
+11-16 04:58:28.242  7950  8411 I Logging : WebRtcAudioTrack: startPlayout
+11-16 04:58:28.242  7950  8411 I AudioEngine: Start Engine Success
+11-16 04:58:28.242  7950  8411 I AudioEngine:  
+11-16 04:58:28.242  7950  8411 I AudioEngine: _UpdateEngineVad 
+11-16 04:58:28.243  7950  8411 I AudioEngine: AudioEngine::SetVadMode 0 
+11-16 04:58:28.243  7950  8411 I AudioEngine: CaptureManager::SetVadMode 0 current 0 
+11-16 04:58:28.243  7950  8411 I AudioEngine: AudioEngine::StopCapture, real stop 1 
+11-16 04:58:28.243  7950  8411 I AudioEngine: AudioCore::StopCapture 
+11-16 04:58:28.245  7950  8411 I AudioEngine: Start Engine Success -1 timer 0 with recording 0 
+11-16 04:58:28.245  7950  8411 I AudioEngine: WorkThreadProc 1928299760 
+11-16 04:58:28.247  7950  8414 I Logging : WebRtcAudioTrack: AudioTrackThread@[name=AudioTrackJavaThread, id=658]
+11-16 04:58:28.259  7950  8073 I [04:58:28.259] M : Audio::Init - getDSPBufferSize: buffer_length = 512, num_buffers = 
+4
+11-16 04:58:28.259  7950  8073 I [04:58:28.259] M : Audio::Init - FMOD_INITFLAGS: 0
+11-16 04:58:28.334  7950  7969 D BluetoothHeadset: Proxy object connected
+11-16 04:58:28.334  7950  7950 I Logging : AudioRoute: onServiceConnected 1 =? headset(1)
+11-16 04:58:28.350  7950  8412 I Logging : AudioRoute: setSpeakerOn true
+11-16 04:58:28.381  7950  8412 I Logging : AudioRoute: onCallStateChanged 0
+11-16 04:58:28.498  7950  8073 I NeoX    : isBlueToothHeadsetConnected 0
+11-16 04:58:28.525  7950  8073 D         : PlayerBase::PlayerBase()
+11-16 04:58:28.531  7950  8073 D         : TrackPlayerBase::TrackPlayerBase()
+11-16 04:58:28.531  7950  8073 I libOpenSLES: Emulating old channel mask behavior (ignoring positional mask 0x3, using 
+default mask 0x3 based on channel count of 2)
+11-16 04:58:28.612  7950  8073 W AudioTrack: AUDIO_OUTPUT_FLAG_FAST denied by server; frameCount 0 -> 1032
+11-16 04:58:28.648  7950  8073 I [04:58:28.648] M : Init audio system, FMOD version 00044464.
+11-16 04:58:28.763  7950  8073 I [04:58:28.763] M : -----Load sound\tps.fev succeed!
+11-16 04:58:28.776  7950  8073 I [04:58:28.776] M : -----Load sound\music\music.fev succeed!
+11-16 04:58:28.786  7950  8073 I [04:58:28.786] M : -----Load sound\sound_g89\tps_new.fev succeed!
+11-16 04:58:28.817  7950  8073 I [04:58:28.817] M   <SCRIPT> : Type <class 'libclaudia.internals.Level.Level'> should 
+be initialized immediately after creation.
+11-16 04:58:28.825  7950  8073 I [04:58:28.825] M   <SCRIPT> : Type <class 'libclaudia.internals.Asset.Asset'> should 
+be initialized immediately after creation.
+11-16 04:58:28.826  7950  8073 I [04:58:28.826] M   <SCRIPT> : Type <class 'libclaudia.Classes.SceneSystem.Scene'> 
+should be initialized immediately after creation.
+11-16 04:58:28.959  7950  8073 I [04:58:28.959] M : [INFO] ServerConnection::createCellPlayer: id 10003
+11-16 04:58:28.967  7950  8073 I         : WARNING 
+***************************************************************************
+11-16 04:58:28.967  7950  8073 I [04:58:28.967] M : [WARNING] ClientApp::enterEntity(10003): enterCount is now 2.
+11-16 04:58:28.974  7950  8073 I [04:58:28.974] M   <SCRIPT> : GetAllSubObj set([<Scene (GameObject) at 
+0x7638430D0940>])
+11-16 04:58:28.978  7950  8073 I AudioEngine: GetJsonData {
+11-16 04:58:28.978  7950  8073 I AudioEngine: 	"type":	"engine-state",
+11-16 04:58:28.978  7950  8073 I AudioEngine: 	"result":	-201,
+11-16 04:58:28.978  7950  8073 I AudioEngine: 	"code":	0
+11-16 04:58:28.978  7950  8073 I AudioEngine: } 
+11-16 04:58:28.979  7950  8073 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_cc_voice_CCVoiceEngine_ControlMiniJNI, trampoline_addr 0x0
+11-16 04:58:28.979  7950  8073 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_cc_voice_CCVoiceEngine_ControlMiniJNI__Ljava_lang_String_2I, trampoline_addr 0x0
+11-16 04:58:28.979  7950  8073 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_cc_voice_CCVoiceEngine_ControlMiniJNI, trampoline_addr 0x0
+11-16 04:58:28.979  7950  8073 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_cc_voice_CCVoiceEngine_ControlMiniJNI__Ljava_lang_String_2I, trampoline_addr 0x0
+11-16 04:58:28.979  7950  8073 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_cc_voice_CCVoiceEngine_ControlMiniJNI, trampoline_addr 0x763892a87920
+11-16 04:58:28.981  7950  8422 I AudioEngine: net thread run 817483744 
+11-16 04:58:28.981  7950  8073 I AudioEngine: Service Create Session 0 
+11-16 04:58:28.981  7950  8073 I AudioEngine: JsonControl {"type": "create-session", "session-id": 0} 
+11-16 04:58:28.981  7950  8073 I AudioEngine: JsonControl Res {
+11-16 04:58:28.981  7950  8073 I AudioEngine: 	"type":	"create-session",
+11-16 04:58:28.981  7950  8073 I AudioEngine: 	"session-id":	0,
+11-16 04:58:28.981  7950  8073 I AudioEngine: 	"result":	0
+11-16 04:58:28.981  7950  8073 I AudioEngine: } 
+11-16 04:58:28.985  7950  8423 I AudioEngine: net thread run 817483728 
+11-16 04:58:28.986  7950  8073 I AudioEngine: Service Create Session 1 
+11-16 04:58:28.986  7950  8073 I AudioEngine: JsonControl {"type": "create-session", "session-id": 1} 
+11-16 04:58:28.986  7950  8073 I AudioEngine: JsonControl Res {
+11-16 04:58:28.986  7950  8073 I AudioEngine: 	"type":	"create-session",
+11-16 04:58:28.986  7950  8073 I AudioEngine: 	"session-id":	1,
+11-16 04:58:28.986  7950  8073 I AudioEngine: 	"result":	1
+11-16 04:58:28.986  7950  8073 I AudioEngine: } 
+11-16 04:58:28.987  7950  8073 I AudioEngine: GetJsonData {"type":"engine-state", "result":-212} 
+11-16 04:58:28.988  7950  8073 I AudioEngine: GetJsonData {
+11-16 04:58:28.988  7950  8073 I AudioEngine: 	"type":	"engine-state",
+11-16 04:58:28.988  7950  8073 I AudioEngine: 	"result":	-203,
+11-16 04:58:28.988  7950  8073 I AudioEngine: 	"code":	0
+11-16 04:58:28.988  7950  8073 I AudioEngine: } 
+11-16 04:58:28.999  7950  8073 D NeoX    : [huawei] updateGameAppInfo {"1": 4, "10": 30, "11": 1, "12": 0, "15": 
+"8073|8218|8203", "16": 1}
+11-16 04:58:28.999  7950  8424 I IAwareGameSdk: updateGameAppInfo, json: {"1": 4, "10": 30, "11": 1, "12": 0, "15": 
+"8073|8218|8203", "16": 1}
+11-16 04:58:29.126  7950  8073 I         : WARNING 
+***************************************************************************
+11-16 04:58:29.126  7950  8073 I [04:58:29.126] M : [WARNING] Device do not support texture format A1, try to convert 
+it to A8B8G8R8
+11-16 04:58:29.533  7950  8073 D         : PlayerBase::stop() from IPlayer
+11-16 04:58:29.533  7950  8073 D AudioTrack: stop() called with 23392 frames delivered
+11-16 04:58:29.547  7950  8073 I [04:58:29.547] M : Audio::Init - getDSPBufferSize: buffer_length = 512, num_buffers = 
+4
+11-16 04:58:29.547  7950  8073 I [04:58:29.547] M : Audio::Init - FMOD_INITFLAGS: 0
+11-16 04:58:29.612  7950  8073 I NeoX    : isBlueToothHeadsetConnected 0
+11-16 04:58:29.613  7950  8073 D         : PlayerBase::PlayerBase()
+11-16 04:58:29.613  7950  8073 D         : TrackPlayerBase::TrackPlayerBase()
+11-16 04:58:29.618  7950  8073 I libOpenSLES: Emulating old channel mask behavior (ignoring positional mask 0x3, using 
+default mask 0x3 based on channel count of 2)
+11-16 04:58:29.620  7950  8073 W AudioTrack: AUDIO_OUTPUT_FLAG_FAST denied by server; frameCount 0 -> 1032
+11-16 04:58:29.626  7950  8073 I [04:58:29.626] M : Init audio system, FMOD version 00044464.
+11-16 04:58:29.657  7950  8073 I [04:58:29.657] M : -----Load sound\tps.fev succeed!
+11-16 04:58:29.660  7950  8073 I [04:58:29.660] M : -----Load sound\music\music.fev succeed!
+11-16 04:58:29.689  7950  8073 I [04:58:29.689] M : -----Load sound\sound_g89\tps_new.fev succeed!
+11-16 04:58:29.821  7950  8073 I [04:58:29.821] M   <SCRIPT> : ======== Level Destroy (-1) ======
+11-16 04:58:29.821  7950  8073 I [04:58:29.821] M   <SCRIPT> : [Level] Scene (GameObject) destroy
+11-16 04:58:29.821  7950  8073 I [04:58:29.821] M   <SCRIPT> : ==================================
+11-16 04:58:29.823  7950  8073 I [04:58:29.823] M   <SCRIPT> : GetAllSubObj set([<Scene (GameObject) at 
+0x7638387E1870>])
+11-16 04:58:29.847  7950  8073 I         : 
+11-16 04:58:29.847  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:29.847  7950  8073 I [04:58:29.847] M : [ERROR] Vegetation mgr already registered in this scene!
+11-16 04:58:29.872  7950  8428 W System.err: java.lang.SecurityException: getSubscriberId
+11-16 04:58:29.878  7950  8428 W System.err: 	at android.os.Parcel.createException(Parcel.java:1967)
+11-16 04:58:29.878  7950  8428 W System.err: 	at android.os.Parcel.readException(Parcel.java:1935)
+11-16 04:58:29.878  7950  8428 W System.err: 	at android.os.Parcel.readException(Parcel.java:1885)
+11-16 04:58:29.878  7950  8428 W System.err: 	at 
+com.android.internal.telephony.IPhoneSubInfo$Stub$Proxy.getSubscriberIdForSubscriber(IPhoneSubInfo.java:578)
+11-16 04:58:29.878  7950  8428 W System.err: 	at 
+android.telephony.TelephonyManager.getSubscriberId(TelephonyManager.java:3097)
+11-16 04:58:29.878  7950  8428 W System.err: 	at 
+android.telephony.TelephonyManager.getSubscriberId(TelephonyManager.java:3080)
+11-16 04:58:29.878  7950  8428 W System.err: 	at 
+com.netease.ntunisdk.base.UniSdkUtils.getMobileIMSI(UniSdkUtils.java:532)
+11-16 04:58:29.878  7950  8428 W System.err: 	at com.netease.ntunisdk.base.ad.run(SdkBase.java:6119)
+11-16 04:58:29.878  7950  8428 W System.err: 	at java.lang.Thread.run(Thread.java:764)
+11-16 04:58:29.909  7950  8428 W System.err: java.lang.SecurityException: getDeviceId
+11-16 04:58:29.909  7950  8428 W System.err: 	at android.os.Parcel.createException(Parcel.java:1967)
+11-16 04:58:29.909  7950  8428 W System.err: 	at android.os.Parcel.readException(Parcel.java:1935)
+11-16 04:58:29.909  7950  8428 W System.err: 	at android.os.Parcel.readException(Parcel.java:1885)
+11-16 04:58:29.909  7950  8428 W System.err: 	at 
+com.android.internal.telephony.ITelephony$Stub$Proxy.getDeviceId(ITelephony.java:5407)
+11-16 04:58:29.909  7950  8428 W System.err: 	at 
+android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:1244)
+11-16 04:58:29.909  7950  8428 W System.err: 	at 
+com.netease.ntunisdk.base.UniSdkUtils.getMobileIMEI(UniSdkUtils.java:566)
+11-16 04:58:29.909  7950  8428 W System.err: 	at com.netease.ntunisdk.base.ad.run(SdkBase.java:6120)
+11-16 04:58:29.909  7950  8428 W System.err: 	at java.lang.Thread.run(Thread.java:764)
+11-16 04:58:29.939  7950  7950 I Thread-62: type=1400 audit(0.0:44559): avc: denied { read } for name="drivers" 
+dev="proc" ino=4026531853 scontext=u:r:untrusted_app:s0:c61,c256,c512,c768 tcontext=u:object_r:proc_tty_drivers:s0 
+tclass=file permissive=1
+11-16 04:58:29.939  7950  7950 I Thread-62: type=1400 audit(0.0:44560): avc: denied { open } for 
+path="/proc/tty/drivers" dev="proc" ino=4026531853 scontext=u:r:untrusted_app:s0:c61,c256,c512,c768 
+tcontext=u:object_r:proc_tty_drivers:s0 tclass=file permissive=1
+11-16 04:58:29.939  7950  7950 I Thread-62: type=1400 audit(0.0:44561): avc: denied { getattr } for 
+path="/proc/tty/drivers" dev="proc" ino=4026531853 scontext=u:r:untrusted_app:s0:c61,c256,c512,c768 
+tcontext=u:object_r:proc_tty_drivers:s0 tclass=file permissive=1
+11-16 04:58:31.238  7950  8411 I AudioEngine: Check Engine Capture Stop 
+11-16 04:58:31.275  7950  8073 I AudioEngine: GetJsonData {
+11-16 04:58:31.275  7950  8073 I AudioEngine: 	"type":	"engine-state",
+11-16 04:58:31.275  7950  8073 I AudioEngine: 	"result":	-206
+11-16 04:58:31.275  7950  8073 I AudioEngine: } 
+11-16 04:58:31.377  7950  8073 I PsPrintString: E:\.conan\data\physx\3.4\NeoX\stable\build\76d9053e6d9bdca70135530f55cd
+f9c4ab606c2f\PhysX_3.4\Source\PhysXCooking\src\mesh\TriangleMeshBuilder.cpp (229) : warning : TriangleMesh: triangles 
+are too big, reduce their size to increase simulation stability!
+11-16 04:58:31.378  7950  8073 I         : WARNING 
+***************************************************************************
+11-16 04:58:31.378  7950  8073 I [04:58:31.378] M : [WARNING] GetColliderMeshData with warnings: 
+model\new_props\props\xiutz_water02.gim
+11-16 04:58:31.490  7950  8073 D NeoX    : [huawei] updateGameAppInfo {"1": 5, "10": 30, "11": 1, "12": 0, "15": 
+"8073|8218|8203", "16": 1}
+11-16 04:58:31.500  7950  8436 I IAwareGameSdk: updateGameAppInfo, json: {"1": 5, "10": 30, "11": 1, "12": 0, "15": 
+"8073|8218|8203", "16": 1}
+11-16 04:58:32.233  7950  8073 I NeoXDevice: On App CMD 23
+11-16 04:58:32.578  7950  8073 I [04:58:32.578] M   <SCRIPT> : Type <class 'libclaudia.Classes.Mesh.Mesh'> should be 
+initialized immediately after creation.
+11-16 04:58:33.992  7950  8203 I         : 
+11-16 04:58:33.992  7950  8203 I         : ERROR 
+*****************************************************************************
+11-16 04:58:33.992  7950  8203 I [04:58:33.992] L : [ERROR] shader\diffuse_only.nfx(121:2): warning: last line of file 
+ends without a newline
+11-16 04:58:33.992  7950  8203 I         : 
+11-16 04:58:33.992  7950  8203 I         : ERROR 
+*****************************************************************************
+11-16 04:58:33.992  7950  8203 I [04:58:33.992] L : [ERROR] shader\diffuse_only.nfx(120:5): syntax error
+11-16 04:58:33.992  7950  8203 I         : 
+11-16 04:58:33.992  7950  8203 I         : ERROR 
+*****************************************************************************
+11-16 04:58:33.992  7950  8203 I [04:58:33.992] L : [ERROR] Failed to compile nfx shader\diffuse_only.nfx, Error Count 
+1
+11-16 04:58:34.046  7950  8203 I         : 
+11-16 04:58:34.046  7950  8203 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.046  7950  8203 I [04:58:34.046] L : [ERROR] shader\diffuse_only.nfx(121:2): warning: last line of file 
+ends without a newline
+11-16 04:58:34.046  7950  8203 I         : 
+11-16 04:58:34.046  7950  8203 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.046  7950  8203 I [04:58:34.046] L : [ERROR] shader\diffuse_only.nfx(120:5): syntax error
+11-16 04:58:34.047  7950  8203 I         : 
+11-16 04:58:34.047  7950  8203 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.047  7950  8203 I [04:58:34.047] L : [ERROR] Failed to compile nfx shader\diffuse_only.nfx, Error Count 
+1
+11-16 04:58:34.431  7950  8203 I         : 
+11-16 04:58:34.431  7950  8203 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.431  7950  8203 I [04:58:34.431] L : [ERROR] common\shader\new_effects\blend_uv_mask.nfx(66:2): 
+warning: last line of file ends without a newline
+11-16 04:58:34.431  7950  8203 I         : 
+11-16 04:58:34.431  7950  8203 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.431  7950  8203 I [04:58:34.431] L : [ERROR] common\shader\new_effects\blend_uv_mask.nfx(65:2): syntax 
+error
+11-16 04:58:34.432  7950  8203 I         : 
+11-16 04:58:34.432  7950  8203 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.432  7950  8203 I [04:58:34.432] L : [ERROR] Failed to compile nfx 
+common\shader\new_effects\blend_uv_mask.nfx, Error Count 1
+11-16 04:58:34.479  7950  8203 I         : 
+11-16 04:58:34.479  7950  8203 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.479  7950  8203 I [04:58:34.479] L : [ERROR] common\shader\new_effects\blend_uv_mask.nfx(66:2): 
+warning: last line of file ends without a newline
+11-16 04:58:34.479  7950  8203 I         : 
+11-16 04:58:34.479  7950  8203 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.479  7950  8203 I [04:58:34.479] L : [ERROR] common\shader\new_effects\blend_uv_mask.nfx(65:2): syntax 
+error
+11-16 04:58:34.479  7950  8203 I         : 
+11-16 04:58:34.479  7950  8203 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.479  7950  8203 I [04:58:34.479] L : [ERROR] Failed to compile nfx 
+common\shader\new_effects\blend_uv_mask.nfx, Error Count 1
+11-16 04:58:34.922  7950  8073 I         : WARNING 
+***************************************************************************
+11-16 04:58:34.922  7950  8073 I [04:58:34.922] M : [WARNING] [GameThreadBlocking] WaitResTask 
+character\bot\bot_base.gim 2316.98 ms
+11-16 04:58:34.922  7950  8073 I [04:58:34.922] M   <SCRIPT> : Type <class 
+'libclaudia.internals.ResourceController.Resource'> should be initialized immediately after creation.
+11-16 04:58:34.923  7950  8073 I [04:58:34.923] M   <SCRIPT> : $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Fatal res not in 
+preload_resource: character/bot/bot_base.gim 
+11-16 04:58:34.979  7950  8073 I         : 
+11-16 04:58:34.979  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.979  7950  8073 I [04:58:34.979] M : [ERROR] Invalid bone name: biped_hair04
+11-16 04:58:34.979  7950  8073 I         : 
+11-16 04:58:34.979  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.979  7950  8073 I [04:58:34.979] M : [ERROR] Invalid bone name: biped_hair01
+11-16 04:58:34.981  7950  8073 I         : 
+11-16 04:58:34.981  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.981  7950  8073 I [04:58:34.981] M : [ERROR] [Animator] Invalid clip name: hand_stand_move_fr in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.981  7950  8073 I         : 
+11-16 04:58:34.981  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.981  7950  8073 I [04:58:34.981] M : [ERROR] [Animator] Invalid clip name: hand_stand_move_fl in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.981  7950  8073 I         : 
+11-16 04:58:34.981  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.981  7950  8073 I [04:58:34.981] M : [ERROR] [Animator] Invalid clip name: hand_stand_move_f in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.981  7950  8073 I         : 
+11-16 04:58:34.981  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.981  7950  8073 I [04:58:34.981] M : [ERROR] [Animator] Invalid clip name: hand_stand_jump_fwd_low_l in 
+model <character\bot\bot_base.gim>
+11-16 04:58:34.981  7950  8073 I         : 
+11-16 04:58:34.981  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.981  7950  8073 I [04:58:34.981] M : [ERROR] [Animator] Invalid clip name: hand_stand_jump_fwd_1_l in 
+model <character\bot\bot_base.gim>
+11-16 04:58:34.981  7950  8073 I         : 
+11-16 04:58:34.981  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.981  7950  8073 I [04:58:34.981] M : [ERROR] [Animator] Invalid clip name: hand_stand_jump_fwd_2_l in 
+model <character\bot\bot_base.gim>
+11-16 04:58:34.982  7950  8073 I         : 
+11-16 04:58:34.982  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.982  7950  8073 I [04:58:34.982] M : [ERROR] [Animator] Invalid clip name: shuitong_stand_fire_left in 
+model <character\bot\bot_base.gim>
+11-16 04:58:34.982  7950  8073 I         : 
+11-16 04:58:34.982  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.982  7950  8073 I [04:58:34.982] M : [ERROR] [Animator] Invalid clip name: drive_turn_lt_sn_00 in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.982  7950  8073 I         : 
+11-16 04:58:34.982  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.982  7950  8073 I [04:58:34.982] M : [ERROR] [Animator] Invalid clip name: drive_turn_bl_sn_00 in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.982  7950  8073 I         : 
+11-16 04:58:34.982  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.982  7950  8073 I [04:58:34.982] M : [ERROR] [Animator] Invalid clip name: drive_jump_start_sn_00 in 
+model <character\bot\bot_base.gim>
+11-16 04:58:34.982  7950  8073 I         : 
+11-16 04:58:34.982  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.982  7950  8073 I [04:58:34.982] M : [ERROR] [Animator] Invalid clip name: drive_turn_lt_sn_00 in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.982  7950  8073 I         : 
+11-16 04:58:34.982  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.982  7950  8073 I [04:58:34.982] M : [ERROR] [Animator] Invalid clip name: drive_turn_bl_sn_00 in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.982  7950  8073 I         : 
+11-16 04:58:34.982  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.982  7950  8073 I [04:58:34.982] M : [ERROR] [Animator] Invalid clip name: drive_jump_start_sn_00 in 
+model <character\bot\bot_base.gim>
+11-16 04:58:34.982  7950  8073 I         : 
+11-16 04:58:34.982  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.982  7950  8073 I [04:58:34.982] M : [ERROR] [Animator] Invalid clip name: tt_stand_move_back in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.982  7950  8073 I         : 
+11-16 04:58:34.982  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.982  7950  8073 I [04:58:34.982] M : [ERROR] [Animator] Invalid clip name: tt_stand_turn_left in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.982  7950  8073 I         : 
+11-16 04:58:34.982  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.982  7950  8073 I [04:58:34.982] M : [ERROR] [Animator] Invalid clip name: tt_stand_jump_1 in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.982  7950  8073 I         : 
+11-16 04:58:34.982  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.982  7950  8073 I [04:58:34.982] M : [ERROR] [Animator] Invalid clip name: tt_jump_fire_00 in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.982  7950  8073 I         : 
+11-16 04:58:34.982  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.982  7950  8073 I [04:58:34.982] M : [ERROR] [Animator] Invalid clip name: tt_rush_1 in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.983  7950  8073 I         : 
+11-16 04:58:34.983  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.983  7950  8073 I [04:58:34.983] M : [ERROR] [Animator] Invalid clip name: drone_takeoff in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.983  7950  8073 I         : 
+11-16 04:58:34.983  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.983  7950  8073 I [04:58:34.983] M : [ERROR] [Animator] Invalid clip name: drone_back in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.983  7950  8073 I         : 
+11-16 04:58:34.983  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.983  7950  8073 I [04:58:34.983] M : [ERROR] [Animator] Invalid clip name: aircraft1_idle1 in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.983  7950  8073 I         : 
+11-16 04:58:34.983  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.983  7950  8073 I [04:58:34.983] M : [ERROR] [Animator] Invalid clip name: aircraft1_idle2 in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.983  7950  8073 I         : 
+11-16 04:58:34.983  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.983  7950  8073 I [04:58:34.983] M : [ERROR] [Animator] Invalid clip name: hx_idle in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.983  7950  8073 I         : 
+11-16 04:58:34.983  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:34.983  7950  8073 I [04:58:34.983] M : [ERROR] [Animator] Invalid clip name: hx_move_back in model 
+<character\bot\bot_base.gim>
+11-16 04:58:34.999  7950  8073 I [04:58:34.999] M   <SCRIPT> : Traceback (most recent call last):
+11-16 04:58:34.999  7950  8073 I [04:58:34.999] M   <SCRIPT> :   File 
+"player\appearance\PlayerAnimationTreeManager.py", line 2318, in Awake
+11-16 04:58:34.999  7950  8073 I [04:58:34.999] M   <SCRIPT> :   File 
+"player\appearance\PlayerAnimationTreeManager.py", line 2221, in _refreshPitchNode
+11-16 04:58:34.999  7950  8073 I [04:58:34.999] M   <SCRIPT> : ValueError: [Animator] set bone chain failed.
+11-16 04:58:35.006  7950  8073 I [04:58:35.006] M   <SCRIPT> : Exception ValueError: '[Animator] set bone chain 
+failed.' in 'libclaudia.Classes.Behaviour.CBehaviour.____on_active_changed__' ignored
+11-16 04:58:35.008  7950  8073 I [04:58:35.008] M   <SCRIPT> : Traceback (most recent call last):
+11-16 04:58:35.008  7950  8073 I [04:58:35.008] M   <SCRIPT> :   File "player\appearance\PlayerFPSound.py", line 38, 
+in Awake
+11-16 04:58:35.008  7950  8073 I [04:58:35.008] M   <SCRIPT> :   File "player\appearance\PlayerCommonSound.py", line 
+62, in Awake
+11-16 04:58:35.008  7950  8073 I [04:58:35.008] M   <SCRIPT> :   File "player\appearance\PlayerFPSound.py", line 89, 
+in setCharacter
+11-16 04:58:35.008  7950  8073 I [04:58:35.008] M   <SCRIPT> :   File "libclaudia/internals/CythonUtils/CyObject.pyx", 
+line 262, in libclaudia.internals.CythonUtils.CyObject.Object.__getattribute__ (/Volumes/Samsung_T5/workspace/NeoX/publ
+ish_git/NeoX/src/3d-engine/branches/mobile/engine/cython/build/cython_sources/libclaudia/internals/CythonUtils/CyObject
+.c:4899)
+11-16 04:58:35.009  7950  8073 I [04:58:35.009] M   <SCRIPT> :   File "libclaudia/internals/CythonUtils/CyObject.pyx", 
+line 185, in libclaudia.internals.CythonUtils.CyObject.Object.PyGetAttribute (/Volumes/Samsung_T5/workspace/NeoX/publis
+h_git/NeoX/src/3d-engine/branches/mobile/engine/cython/build/cython_sources/libclaudia/internals/CythonUtils/CyObject.c
+:3894)
+11-16 04:58:35.009  7950  8073 I [04:58:35.009] M   <SCRIPT> :   File "libclaudia/internals/CythonUtils/CyObject.pyx", 
+line 192, in libclaudia.internals.CythonUtils.CyObject.Object.PyGetAttr (/Volumes/Samsung_T5/workspace/NeoX/publish_git
+/NeoX/src/3d-engine/branches/mobile/engine/cython/build/cython_sources/libclaudia/internals/CythonUtils/CyObject.c:4025
+)
+11-16 04:58:35.009  7950  8073 I [04:58:35.009] M   <SCRIPT> : AttributeError: 'PlayerFPSound' object has no attribute 
+'hurtLight'
+11-16 04:58:35.011  7950  8073 I [04:58:35.011] M   <SCRIPT> : Exception AttributeError: "'PlayerFPSound' object has 
+no attribute 'hurtLight'" in 'libclaudia.Classes.Behaviour.CBehaviour.____on_active_changed__' ignored
+11-16 04:58:35.012  7950  8073 I [04:58:35.012] M   <SCRIPT> : Type <class 
+'libclaudia.ScriptExtensions.AutoMeshFilterTransform'> should be initialized immediately after creation.
+11-16 04:58:35.100  7950  8203 I PsPrintString: E:\.conan\data\physx\3.4\NeoX\stable\build\76d9053e6d9bdca70135530f55cd
+f9c4ab606c2f\PhysX_3.4\Source\PhysXCooking\src\mesh\TriangleMeshBuilder.cpp (1042) : internal error : cleaning the 
+mesh failed
+11-16 04:58:35.102  7950  8203 I PsPrintString: E:\.conan\data\physx\3.4\NeoX\stable\build\76d9053e6d9bdca70135530f55cd
+f9c4ab606c2f\PhysX_3.4\Source\PhysXCooking\src\mesh\TriangleMeshBuilder.cpp (1042) : internal error : cleaning the 
+mesh failed
+11-16 04:58:35.117  7950  8073 I         : WARNING 
+***************************************************************************
+11-16 04:58:35.117  7950  8073 I [04:58:35.117] M : [WARNING] [GameThreadBlocking] WaitResTask 
+character\bot\bot_hit.gim 45.22 ms
+11-16 04:58:35.118  7950  8073 I [04:58:35.118] M   <SCRIPT> : $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Fatal res not in 
+preload_resource: character/bot/bot_hit.gim 
+11-16 04:58:36.090  7950  8073 I [04:58:36.090] M   <SCRIPT> : Type <class 
+'ui.uiUtils.SceneWidgetExtension._FontAtlasCache'> should be initialized immediately after creation.
+11-16 04:58:48.700  7950  8073 I         : 
+11-16 04:58:48.700  7950  8073 I         : ERROR 
+*****************************************************************************
+11-16 04:58:48.700  7950  8073 I [04:58:48.700] M : [ERROR] setPlayer::new player is null
+11-16 04:58:48.700  7950  8073 I [04:58:48.700] M : [INFO] ServerConnection::createBasePlayer: id 10002
+11-16 04:58:48.701  7950  8073 I [04:58:48.701] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+RankData.playerRankRecordConverter
+11-16 04:58:48.701  7950  8073 I [04:58:48.701] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+package_common.PackageConvert3.dtsAppearancePackageConvert3
+11-16 04:58:48.702  7950  8073 I [04:58:48.702] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+package_common.PackageConvert3.dtsAppearanceRepertoryPackageConvert3
+11-16 04:58:48.706  7950  8073 I [04:58:48.706] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+brave_book_utils.BraveBookDataListConverter
+11-16 04:58:48.708  7950  8073 I [04:58:48.708] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+package_common.DtsRosPackageConvert3.dtsRos2OutBattlePackageConvert3
+11-16 04:58:48.709  7950  8073 I [04:58:48.709] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+package_common.DtsRosPackageConvert3.dtsRos2DfdOutBattlePackageConvert3
+11-16 04:58:48.711  7950  8073 I [04:58:48.711] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+package_common.DtsRosPackageConvert3.dtsRos2RepertoryPackageConvert3
+11-16 04:58:48.720  7950  8073 I [04:58:48.720] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+package_common.DtsRosPackageConvert3.dtsRos2EquipBarPackageConvert3
+11-16 04:58:48.722  7950  8073 I [04:58:48.722] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+package_common.DtsRosPackageConvert3.dtsRos2OutBattleSafeBoxConvert3
+11-16 04:58:48.723  7950  8073 I [04:58:48.723] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+ros2.Ros2ExoCharacter.ros2ExoCharacterConver
+11-16 04:58:48.723  7950  8073 I [04:58:48.723] M : [INFO] FixedDictDataType::setCustomClassFunctions: 
+package_common.DtsRosPackageConvert3.dtsRos2BootyBoxConverter3
+11-16 04:58:49.991  7950  8073 I NeoXDevice: TuningForkStart on Native Thread
+11-16 04:58:49.991  7950  8073 I NeoXDevice: Current TungingFork Key AIzaSyApK28kofgSuBgr_xxJ83_eorlOQML1sKE
+11-16 04:58:49.992  7950  7950 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_neox_NativeInterface_NativeTuningForkStart, trampoline_addr 0x0
+11-16 04:58:49.992  7950  7950 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_neox_NativeInterface_NativeTuningForkStart__, trampoline_addr 0x0
+11-16 04:58:49.992  7950  7950 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_neox_NativeInterface_NativeTuningForkStart, trampoline_addr 0x0
+11-16 04:58:49.992  7950  7950 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_neox_NativeInterface_NativeTuningForkStart__, trampoline_addr 0x0
+11-16 04:58:49.992  7950  7950 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_neox_NativeInterface_NativeTuningForkStart, trampoline_addr 0x0
+11-16 04:58:49.992  7950  7950 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_neox_NativeInterface_NativeTuningForkStart__, trampoline_addr 0x0
+11-16 04:58:49.993  7950  7950 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_neox_NativeInterface_NativeTuningForkStart, trampoline_addr 0x0
+11-16 04:58:49.993  7950  7950 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_neox_NativeInterface_NativeTuningForkStart__, trampoline_addr 0x0
+11-16 04:58:49.994  7950  8073 I [04:58:49.994] M : [INFO] ServerConnection::createCellPlayer: id 10002
+11-16 04:58:49.995  7950  7950 V libnb   : enter native_bridge2_getTrampoline 
+Java_com_netease_neox_NativeInterface_NativeTuningForkStart, trampoline_addr 0x763892a87940
+11-16 04:58:49.995  7950  7950 I NeoXDevice: TuningForkStart on UI Thread
+11-16 04:58:50.017  7950  8073 I         : WARNING 
+***************************************************************************
+11-16 04:58:50.017  7950  8073 I [04:58:50.017] M : [WARNING] ClientApp::enterEntity(10002): enterCount is now 2.
+11-16 04:58:50.020  7950  8073 D DCTOOL  : ntStart() queue size (1), current thread=601
+11-16 04:58:50.020  7950  8073 D DCTOOL  : ntStart() after so loaded, current thread=601
+11-16 04:58:50.020  7950  8073 D DCTOOL  : ntStart() with native and reset.
+11-16 04:58:50.021  7950  8073 D DCTOOL  : In C++,  Java_com_netease_unisdk_dctool_unisdkdctool_ntStart. 
+11-16 04:58:50.023  7950  8073 D DCTOOL  : In C++,  Java_com_netease_unisdk_dctool_unisdkdctool_ntStart end. 
+11-16 04:58:50.024  7950  8446 D DCTOOL  : NATIVE [ntGetDeviceInfo] AttachCurrentThread successfully
+11-16 04:58:50.024  7950  8446 D DCTOOL  : NATIVE [ntGetDeviceInfo] callback here.
+11-16 04:58:50.024  7950  8446 D DCTOOL  : In C++, call back Java's ntGetDeviceInfo().
+11-16 04:58:50.032  7950  8446 D DCTOOL  : Getting NETWORK_TYPE in java : wifi
+11-16 04:58:50.034  7950  8446 D DCTOOL  : Getting DeviceInfo in java : 
+"network_type":"wifi","mem_total":"5955.6","mem_idle":"4660.1","cpu_model":"AArch64 Processor rev 4 
+(aarch64)","cpu_clockspeed":"2865600","device_id":"9661d8bc590f87ad"
+11-16 04:58:50.034  7950  8446 D DCTOOL  : In C++, get the returned string is 
+"network_type":"wifi","mem_total":"5955.6","mem_idle":"4660.1","cpu_model":"AArch64 Processor rev 4 
+(aarch64)","cpu_clockspeed":"2865600","device_id":"9661d8bc590f87ad"
+11-16 04:58:50.034  7950  8446 D DCTOOL  : In C++, release the returned string. detach. 
+11-16 04:58:50.034  7950  8446 D DCTOOL  : In C++, NATIVE [ntGetDeviceInfo] DetachCurrentThread successed.
+11-16 04:58:50.034  7950  8446 I DCTOOL  : OSVersion: 9
+11-16 04:58:50.034  7950  8446 I DCTOOL  : brand: Xiaomi -- model: MI 9
+11-16 04:58:50.034  7950  8446 I DCTOOL  : Serialno: 0025d161
+11-16 04:58:50.046  7950  7950 I TuningFork: Creating directory /data/user/0/com.netease.chiji/cache/tuningfork
+11-16 04:58:50.050  7950  7950 I TuningFork: Got settings from tuningfork/tuningfork_settings.bin
+11-16 04:58:50.052  7950  7950 I TuningFork: Using local file cache at /data/user/0/com.netease.chiji/cache/tuningfork
+11-16 04:58:50.086  7950  7950 I TuningFork: OpenGL version 3.1 
+11-16 04:58:50.103  7950  7950 I TuningFork: TuningFork.GoogleEndpoint: OK
+11-16 04:58:50.104  7950  7950 I TuningFork: TuningFork Settings:
+11-16 04:58:50.104  7950  7950 I TuningFork:   method: 1
+11-16 04:58:50.104  7950  7950 I TuningFork:   interval: 120000
+11-16 04:58:50.104  7950  7950 I TuningFork:   n_ikeys: 5
+11-16 04:58:50.104  7950  7950 I TuningFork:   n_annotations: 1
+11-16 04:58:50.104  7950  7950 I TuningFork:   n_histograms: 5
+11-16 04:58:50.104  7950  7950 I TuningFork:   base_uri: https://performanceparameters.googleapis.com/v1/
+11-16 04:58:50.104  7950  7950 I TuningFork:   api_key: AIzaSyApK28kofgSuBgr_xxJ83_eorlOQML1sKE
+11-16 04:58:50.104  7950  7950 I TuningFork:   fp filename: dev_tuningfork_fidelityparams_1.bin
+11-16 04:58:50.104  7950  7950 I TuningFork:   itimeout: 1000
+11-16 04:58:50.104  7950  7950 I TuningFork:   utimeout: 100000
+11-16 04:58:50.104  7950  7950 I TuningFork: Settings::Histograms
+11-16 04:58:50.104  7950  7950 I TuningFork: ikey: 0 min: 28.000000 max: 32.000000 nbkts: 70
+11-16 04:58:50.104  7950  7950 I TuningFork: ikey: 64000 min: 10.000000 max: 100.000000 nbkts: 89
+11-16 04:58:50.104  7950  7950 I TuningFork: ikey: 64001 min: 10.000000 max: 100.000000 nbkts: 89
+11-16 04:58:50.104  7950  7950 I TuningFork: ikey: 64002 min: 10.000000 max: 100.000000 nbkts: 89
+11-16 04:58:50.104  7950  7950 I TuningFork: ikey: 64003 min: 10.000000 max: 100.000000 nbkts: 89
+11-16 04:58:50.108  7950  7950 I TFCrashHandler: CrashHandler initialized
+11-16 04:58:50.108  7950  7950 I TuningFork: No PAUSED histograms
+11-16 04:58:50.108  7950  7950 I TuningFork: TuningFork initialized
+11-16 04:58:50.109  7950  7950 I TuningFork: Creating directory 
+/data/user/0/com.netease.chiji/cache/tuningfork/V1227927
+11-16 04:58:50.110  7950  7950 I TuningFork: Using file dev_tuningfork_fidelityparams_1.bin for default params
+11-16 04:58:50.110  7950  7950 I NeoXDevice: TuningFork_init OK
+11-16 04:58:50.110  7950  7950 I NeoXDevice: TuningFork_findFidelityParamsInApk OK
+11-16 04:58:50.120  7950  7950 I NeoXDevice: TuningFork_SetAnnotations
+11-16 04:58:50.135  7950  8446 D DCTOOL  : NATIVE [OnToolCallback] AttachCurrentThread successfully
+11-16 04:58:50.135  7950  8446 D DCTOOL  : NATIVE [OnToolCallback] calling here.
+11-16 04:58:50.135  7950  8446 D DCTOOL  :  {"code": 200, "status": 1, "uid": "100001", "token": 
+"local_mock_token_123456", "username": "LocalPlayer"} 
+11-16 04:58:50.135  7950  8446 D DCTOOL  : In C++, call back Java's OnToolCallback(String).
+11-16 04:58:50.135  7950  8446 D DCTOOL  : OnToolCallback : {"code": 200, "status": 1, "uid": "100001", "token": 
+"local_mock_token_123456", "username": "LocalPlayer"}
+11-16 04:58:50.135  7950  8446 D DCTOOL  : OnToolCallback, current thread=668
+11-16 04:58:50.136  7950  8446 D DCTOOL  : NATIVE [OnToolCallback] DetachCurrentThread() Successed.
+11-16 04:58:50.318  7950  8454 I TuningFork:Web: Connecting to: 
+https://performanceparameters.googleapis.com/v1/applications/com.netease.chiji/apks/1227927:generateTuningParameters
+11-16 04:58:51.689  7950  8073 I NeoXDevice: On App CMD 24
+11-16 04:58:51.910  7950  8454 I TuningFork:Web: Response code: 0
+11-16 04:58:51.911  7950  8454 W TuningFork:Web: java.net.SocketTimeoutException: timeout
+11-16 04:58:51.912  7950  8454 W TuningFork: java.lang.NoSuchFieldError: no "[Landroid/content/pm/ApplicationInfo;" 
+field "applicationInfo" in class "Landroid/content/pm/PackageInfo;" or its superclasses
+11-16 04:58:51.913  7950  8454 I TuningFork: Could not get fidelity params from server : err = 15
+11-16 04:58:51.913  7950  8454 I NeoXDevice: TuningFork_SetFidelityParams
+11-16 04:58:51.930  7950  8454 I TuningFork:Web: Connecting to: 
+https://performanceparameters.googleapis.com/v1/applications/com.netease.chiji/apks/1227927:generateTuningParameters
+11-16 04:58:53.162  7950  8454 I TuningFork:Web: Response code: 200
+11-16 04:58:53.162  7950  8454 I TuningFork:Web: Response message: OK
+11-16 04:58:53.207  7950  8454 I TuningFork:FPDownload: Response to generateTuningParameters: {}
+11-16 04:58:53.208  7950  8454 W TuningFork:FPDownload: No 'parameters' in generateTuningParameters response
+11-16 04:58:53.211  7950  8454 W TuningFork: java.lang.NoSuchFieldError: no "[Landroid/content/pm/ApplicationInfo;" 
+field "applicationInfo" in class "Landroid/content/pm/PackageInfo;" or its superclasses
+11-16 04:58:53.211  7950  8454 I TuningFork: Got empty fidelity params from server
+11-16 04:59:02.956  7950  8073 I [04:59:02.956] M : [AUIDO]freeEventData: ui/ui_button_play, times: 1
+11-16 04:59:02.956  7950  8073 I [04:59:02.956] M : [AUIDO]freeEventData: ui/ui_close, times: 1
+11-16 04:59:02.956  7950  8073 I [04:59:02.956] M : [AUIDO]freeEventData: new_dataosha/landing_v1, times: 1
+11-16 04:59:33.024  7950  8073 I [04:59:33.024] M : [AUIDO]freeEventData: ui/ui_enter_game_new, times: 1
+
+

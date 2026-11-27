@@ -1,0 +1,159 @@
+<root>
+	<Properties>
+		<leviPositionIdx>
+			<Type>	INT32	</Type>
+			<Flags>	OWN_CLIENT	</Flags>
+			<Default>	-1	</Default>
+		</leviPositionIdx>
+		<hasLeviBuff>
+			<Type>		BOOL		</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+			<Default>	False		</Default>
+		</hasLeviBuff>
+		<leviPlayerNum>
+			<Type>	INT32	</Type>
+			<Flags>	CELL_PRIVATE	</Flags>
+		</leviPlayerNum>
+		<leviBuffTimerID>
+			<Type>	INT32	</Type>
+			<Flags>	CELL_PRIVATE	</Flags>
+		</leviBuffTimerID>
+		<leviSeedBuff>
+			<Type>		INT32		</Type>
+			<Flags>		OWN_CLIENT	</Flags>
+			<Default>	0		</Default>
+		</leviSeedBuff>
+		<tiTanFindNpcID>
+			<Type>		INT32		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	-1		</Default>
+		</tiTanFindNpcID>
+		<titanTokenLv>
+			<Type>		INT32		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+		</titanTokenLv>
+		<updateTokenLvTimerID>
+			<Type>	INT32	</Type>
+			<Flags>	CELL_PRIVATE	</Flags>
+		</updateTokenLvTimerID>
+		<checkPlayerTokenAwardTimerID>
+			<Type>	INT32	</Type>
+			<Flags>	CELL_PRIVATE	</Flags>
+		</checkPlayerTokenAwardTimerID>
+		<lastTokenTime>
+			<Type>	INT32	</Type>
+			<Flags>	CELL_PUBLIC	</Flags>
+			<Default>	-1		</Default>
+		</lastTokenTime>
+		<battleTeamFindNpcID>
+			<Type>		INT32		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	-1		</Default>
+		</battleTeamFindNpcID>
+		<getLeviAcitiveGift>
+			<Type> PYTHON </Type>
+			<Flags> BASE </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</getLeviAcitiveGift>
+		<titanTokenExp>
+			<Type> PYTHON </Type>
+			<Flags> CELL_PUBLIC_AND_OWN </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</titanTokenExp>
+		<titanKillerExp>
+			<Type> PYTHON </Type>
+			<Flags> CELL_PUBLIC_AND_OWN </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</titanKillerExp>
+	</Properties>
+	<CellMethods>
+		<gotoLeviPlace>
+			<Arg>	VECTOR3		</Arg>
+			<Arg>	INT32	</Arg>
+		</gotoLeviPlace>
+		<leaveLeviPlace>
+		</leaveLeviPlace>
+		<setLeviBuff>
+		</setLeviBuff>
+		<updateLeviPlayerNum>
+			<Arg>	INT32	</Arg>
+		</updateLeviPlayerNum>
+		<getFindNpcToken>
+			<Arg>	INT32	</Arg>
+		</getFindNpcToken>
+		<syncBattleTeamFindNpcID>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</syncBattleTeamFindNpcID>
+		<sendTokenGift>
+			<Arg>	BOOL	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	BOOL	</Arg>
+		</sendTokenGift>
+		<getOtherTokenAward>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</getOtherTokenAward>
+		<setPlayerToNearestLeviPos><Exposed/>
+			<Arg>	VECTOR3		</Arg>
+		</setPlayerToNearestLeviPos>
+		<tokenPlayerLeaveGame>
+		</tokenPlayerLeaveGame>
+		<otherPlayerTips>
+			<Arg>	STRING		</Arg>
+		</otherPlayerTips>
+		<checkCanGetToken>
+		</checkCanGetToken>
+		<sendTitanTokenTask>
+		</sendTitanTokenTask>
+	</CellMethods>
+	<ClientMethods>
+		<gotoLeviPlace>
+			<Arg>	VECTOR3		</Arg>
+		</gotoLeviPlace>
+		<leaveLeviPlace>
+		</leaveLeviPlace>
+		<syncLeviBuffRemainTime>
+			<Arg>	INT32	</Arg>
+		</syncLeviBuffRemainTime>
+		<getFindNpcToken>
+			<Arg>	INT32	</Arg>
+		</getFindNpcToken>
+		<checkPlayerTokenAward>
+		</checkPlayerTokenAward>
+		<updateTitanTokenTime>
+			<Arg>	INT32	</Arg>
+		</updateTitanTokenTime>
+		<enterLeviPos>
+		</enterLeviPos>
+		<quitLeviAnimation>
+		</quitLeviAnimation>
+		<playGetTokenAnimation>
+			<Arg>	INT32	</Arg>
+		</playGetTokenAnimation>
+		<playLeviAnimation>
+		</playLeviAnimation>
+		<otherPlayerTips>
+			<Arg>	STRING		</Arg>
+		</otherPlayerTips>
+		<updateTitanTokenExp>
+			<Arg> PYTHON </Arg>
+			<Arg> PYTHON </Arg>
+		</updateTitanTokenExp>
+	</ClientMethods>
+	<BaseMethods>
+		<addTitanTokenExp>
+			<Arg>	INT32	</Arg>
+		</addTitanTokenExp>
+		<addTitanKillerExp>
+			<Arg>	INT32	</Arg>
+		</addTitanKillerExp>
+		<sendTitanLeviGift>
+			<Arg>	INT32	</Arg>
+		</sendTitanLeviGift>
+	</BaseMethods>
+</root>

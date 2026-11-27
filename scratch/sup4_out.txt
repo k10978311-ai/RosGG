@@ -1,0 +1,7 @@
+discount fn names=() consts=(None, '%s (%s %s)')
+disc(9728) = 100
+disc(9731) = 100
+disc(5) = 100
+disc(1) = 100
+disc(2) = 100
+adv mod [<module 'ui.UIAdvanceSupplyPackage' from 'ui\UIAdvanceSupplyPackage.py'>]

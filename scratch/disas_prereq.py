@@ -1,0 +1,16 @@
+f = open("/storage/emulated/0/Android/data/com.netease.chiji/files/dis_prereq.txt", "w")
+try:
+    import ClientEntity, dis, sys, StringIO
+    func = ClientEntity.ClientEntity.prerequisites.im_func
+    f.write("co_names: %r\n" % (func.func_code.co_names,))
+    f.write("co_consts: %r\n" % ([c for c in func.func_code.co_consts if not hasattr(c, "co_names")],))
+    f.write("co_varnames: %r\n" % (func.func_code.co_varnames,))
+    old_stdout = sys.stdout
+    sys.stdout = s = StringIO.StringIO()
+    dis.dis(func)
+    sys.stdout = old_stdout
+    f.write("dis:\n" + s.getvalue())
+except Exception:
+    import traceback
+    f.write(traceback.format_exc())
+f.close()

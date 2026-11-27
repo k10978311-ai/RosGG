@@ -1,0 +1,263 @@
+=== Avatar.Avatar.prerequisites ===
+co_names: ('prerequisiteReady', 'Globals', 'inLoadingStage1', 'Application', 'scene', 'None', 'False', 'inLoading', 'MAP_ID', 'getattr', 'player', 'switches', 'SysEnablePlaneNoEnterWorld', 'entity', 'onPlaneID', 'isEnterOnPlane', 'isWaitingPreload', 'True', 'SysEnableEntityFlowControl', 'entityFlowControl', 'appendEntity')
+227           0 <160>                    0
+              3 JUMP_FORWARD           185 (to 191)
+
+228           6 <155>                    1
+              9 DELETE_ATTR              2 (inLoadingStage1)
+             12 JUMP_FORWARD            30 (to 45)
+             15 <155>                    3
+             18 DELETE_ATTR              4 (scene)
+             21 LOAD_NAME                0 (prerequisiteReady)
+             24 <151>                    8
+             27 <148>                   34
+
+229          30 <155>                    6
+             33 PRINT_NEWLINE_TO    
+
+233          34 <155>                    1
+             37 DELETE_ATTR              7 (inLoading)
+             40 <148>                   86
+             43 <155>                    1
+             46 DELETE_ATTR              8 (MAP_ID)
+             49 LOAD_NAME                0 (prerequisiteReady)
+             52 <151>                    8
+             55 JUMP_FORWARD            82 (to 140)
+             58 <155>                    1
+             61 DELETE_ATTR              8 (MAP_ID)
+             64 <155>                    9
+             67 <123>                    1
+             70 LOAD_NAME                0 (prerequisiteReady)
+             73 CALL_FUNCTION            3
+             76 <151>                    3
+             79 <148>                   86
+
+234          82 <155>                    6
+             85 PRINT_NEWLINE_TO    
+
+236          86 <155>                    1
+             89 DELETE_ATTR             10 (player)
+             92 LOAD_NAME                0 (prerequisiteReady)
+             95 <151>                    8
+             98 <148>                  105
+
+237         101 <155>                    6
+            104 PRINT_NEWLINE_TO    
+
+240         105 <155>                   11
+            108 DELETE_ATTR             12 (SysEnablePlaneNoEnterWorld)
+            111 <148>                  163
+            114 <155>                    1
+            117 DELETE_ATTR             10 (player)
+            120 DELETE_ATTR             13 (entity)
+            123 <148>                  163
+            126 <155>                    1
+            129 DELETE_ATTR             10 (player)
+            132 DELETE_ATTR             13 (entity)
+            135 DELETE_ATTR             14 (onPlaneID)
+            138 LOAD_NAME                2 (inLoadingStage1)
+            141 <151>                    4
+            144 <148>                  163
+
+241         147 <160>                   15
+            150 CALL_FUNCTION            0
+            153 JUMP_FORWARD           163 (to 319)
+
+242         156 <155>                    6
+            159 PRINT_NEWLINE_TO    
+            160 MAKE_FUNCTION            0
+
+244         163 <160>                   16
+            166 CALL_FUNCTION            0
+            169 <148>                  176
+
+245         172 <155>                    6
+            175 PRINT_NEWLINE_TO    
+
+248         176 <155>                   17
+            179 <176>                    0
+            182 MAKE_FUNCTION            0
+
+251         185 <155>                   11
+            188 DELETE_ATTR             18 (SysEnableEntityFlowControl)
+        >>  191 <148>                  275
+            194 <155>                    1
+            197 DELETE_ATTR             19 (entityFlowControl)
+            200 <148>                  275
+            203 <155>                    9
+            206 <123>                    3
+            209 <155>                   17
+            212 CALL_FUNCTION            3
+            215 <148>                  275
+
+252         218 <155>                    9
+            221 <123>                    4
+            224 <155>                    6
+            227 CALL_FUNCTION            3
+            230 JUMP_FORWARD           253 (to 486)
+
+253         233 <155>                    1
+            236 DELETE_ATTR             19 (entityFlowControl)
+            239 DELETE_ATTR             20 (appendEntity)
+            242 FOR_ITER                 0 (to 245)
+        >>  245 CALL_FUNCTION            1
+            248 INPLACE_MULTIPLY    
+
+254         249 <155>                    6
+            252 PRINT_NEWLINE_TO    
+
+255         253 <155>                    9
+            256 <123>                    5
+            259 <155>                    6
+            262 CALL_FUNCTION            3
+            265 JUMP_FORWARD           275 (to 543)
+
+256         268 <155>                    6
+            271 PRINT_NEWLINE_TO    
+            272 MAKE_FUNCTION            0
+
+257         275 <155>                   17
+            278 PRINT_NEWLINE_TO    
+
+=== PlayerAvatar.prerequisites ===
+co_names: ('Globals', 'inLoadingStage1', 'Application', 'scene', 'None', 'MAP_ID', 'False', 'True')
+1600           0 <155>                    0
+              3 DELETE_ATTR              1 (inLoadingStage1)
+              6 JUMP_FORWARD            39 (to 48)
+              9 <155>                    2
+             12 DELETE_ATTR              3 (scene)
+             15 LOAD_NAME                0 (Globals)
+             18 <151>                    8
+             21 JUMP_FORWARD            39 (to 63)
+             24 <155>                    0
+             27 DELETE_ATTR              5 (MAP_ID)
+             30 LOAD_NAME                1 (inLoadingStage1)
+             33 <151>                    2
+             36 <148>                   43
+
+1601          39 <155>                    6
+             42 PRINT_NEWLINE_TO    
+
+1602          43 <155>                    7
+             46 PRINT_NEWLINE_TO    
+
+=== Athlete.Athlete.prerequisites ===
+co_names: ('prerequisiteReady', 'Globals', 'inLoadingStage1', 'Application', 'scene', 'None', 'False', 'inLoading', 'MAP_ID', 'getattr', 'player', 'switches', 'SysEnablePlaneNoEnterWorld', 'entity', 'onPlaneID', 'isEnterOnPlane', 'isWaitingPreload', 'True', 'SysEnableEntityFlowControl', 'entityFlowControl', 'appendEntity')
+227           0 <160>                    0
+              3 JUMP_FORWARD           185 (to 191)
+
+228           6 <155>                    1
+              9 DELETE_ATTR              2 (inLoadingStage1)
+             12 JUMP_FORWARD            30 (to 45)
+             15 <155>                    3
+             18 DELETE_ATTR              4 (scene)
+             21 LOAD_NAME                0 (prerequisiteReady)
+             24 <151>                    8
+             27 <148>                   34
+
+229          30 <155>                    6
+             33 PRINT_NEWLINE_TO    
+
+233          34 <155>                    1
+             37 DELETE_ATTR              7 (inLoading)
+             40 <148>                   86
+             43 <155>                    1
+             46 DELETE_ATTR              8 (MAP_ID)
+             49 LOAD_NAME                0 (prerequisiteReady)
+             52 <151>                    8
+             55 JUMP_FORWARD            82 (to 140)
+             58 <155>                    1
+             61 DELETE_ATTR              8 (MAP_ID)
+             64 <155>                    9
+             67 <123>                    1
+             70 LOAD_NAME                0 (prerequisiteReady)
+             73 CALL_FUNCTION            3
+             76 <151>                    3
+             79 <148>                   86
+
+234          82 <155>                    6
+             85 PRINT_NEWLINE_TO    
+
+236          86 <155>                    1
+             89 DELETE_ATTR             10 (player)
+             92 LOAD_NAME                0 (prerequisiteReady)
+             95 <151>                    8
+             98 <148>                  105
+
+237         101 <155>                    6
+            104 PRINT_NEWLINE_TO    
+
+240         105 <155>                   11
+            108 DELETE_ATTR             12 (SysEnablePlaneNoEnterWorld)
+            111 <148>                  163
+            114 <155>                    1
+            117 DELETE_ATTR             10 (player)
+            120 DELETE_ATTR             13 (entity)
+            123 <148>                  163
+            126 <155>                    1
+            129 DELETE_ATTR             10 (player)
+            132 DELETE_ATTR             13 (entity)
+            135 DELETE_ATTR             14 (onPlaneID)
+            138 LOAD_NAME                2 (inLoadingStage1)
+            141 <151>                    4
+            144 <148>                  163
+
+241         147 <160>                   15
+            150 CALL_FUNCTION            0
+            153 JUMP_FORWARD           163 (to 319)
+
+242         156 <155>                    6
+            159 PRINT_NEWLINE_TO    
+            160 MAKE_FUNCTION            0
+
+244         163 <160>                   16
+            166 CALL_FUNCTION            0
+            169 <148>                  176
+
+245         172 <155>                    6
+            175 PRINT_NEWLINE_TO    
+
+248         176 <155>                   17
+            179 <176>                    0
+            182 MAKE_FUNCTION            0
+
+251         185 <155>                   11
+            188 DELETE_ATTR             18 (SysEnableEntityFlowControl)
+        >>  191 <148>                  275
+            194 <155>                    1
+            197 DELETE_ATTR             19 (entityFlowControl)
+            200 <148>                  275
+            203 <155>                    9
+            206 <123>                    3
+            209 <155>                   17
+            212 CALL_FUNCTION            3
+            215 <148>                  275
+
+252         218 <155>                    9
+            221 <123>                    4
+            224 <155>                    6
+            227 CALL_FUNCTION            3
+            230 JUMP_FORWARD           253 (to 486)
+
+253         233 <155>                    1
+            236 DELETE_ATTR             19 (entityFlowControl)
+            239 DELETE_ATTR             20 (appendEntity)
+            242 FOR_ITER                 0 (to 245)
+        >>  245 CALL_FUNCTION            1
+            248 INPLACE_MULTIPLY    
+
+254         249 <155>                    6
+            252 PRINT_NEWLINE_TO    
+
+255         253 <155>                    9
+            256 <123>                    5
+            259 <155>                    6
+            262 CALL_FUNCTION            3
+            265 JUMP_FORWARD           275 (to 543)
+
+256         268 <155>                    6
+            271 PRINT_NEWLINE_TO    
+            272 MAKE_FUNCTION            0
+
+257         275 <155>                   17
+            278 PRINT_NEWLINE_TO    

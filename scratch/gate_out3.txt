@@ -1,0 +1,7 @@
+player=PlayerAthlete id=10002
+inLoadingStage1=False scene=None inLoading=False MAP_ID=-1 Globals.player=None
+p.mapID='?' allowToEnterWorld=False inWorld=False hallScene=None loadCompFinished=False
+isWaitingPreload=False
+prerequisites()=False
+stack=[]
+visible=['UILogin', 'UILoading', 'UILanguageBtn', 'UIFollowonFacebook', 'UIJumpTip']

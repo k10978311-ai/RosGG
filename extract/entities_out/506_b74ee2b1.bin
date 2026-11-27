@@ -1,0 +1,149 @@
+<Root>
+	<Properties>
+		<hasPickupXmasBomb2020>
+			<Type>		BOOL		</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+			<Default>	False	</Default>
+		</hasPickupXmasBomb2020>
+		<hasPickupChirstmasBomb2021>
+			<Type>		BOOL		</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+			<Default>	False	</Default>
+		</hasPickupChirstmasBomb2021>
+
+		<christmas2021BellGotToday>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> 0 </Default>
+		</christmas2021BellGotToday>
+
+		<chirstmasBellItemCnt>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> 0 </Default>
+		</chirstmasBellItemCnt>
+
+		<chirstmasPersonalBellItemCnt>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> 0 </Default>
+		</chirstmasPersonalBellItemCnt>
+
+		<chirstmasSubmitBellItemCnt>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> 0 </Default>
+		</chirstmasSubmitBellItemCnt>
+
+		<chirstmasPersonalSubmitBellItemCnt>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> 0 </Default>
+		</chirstmasPersonalSubmitBellItemCnt>
+
+		<chirstmasSubmitedAmount>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> 0 </Default>
+		</chirstmasSubmitedAmount>
+
+		<chirstmasGuideShow>
+			<Type> BOOL </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> false </Default>
+		</chirstmasGuideShow>
+
+		<christmas2021DiamondCnt>
+			<Type> INT32 </Type>
+			<Flags> ALL_CLIENTS </Flags>
+			<Default> 0 </Default>
+		</christmas2021DiamondCnt>
+
+	</Properties>
+	<ClientMethods>
+		<onOldManSubmitBellNum>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</onOldManSubmitBellNum>
+
+	</ClientMethods>
+	<BaseMethods>
+		<onGetXmasBall>
+			<Arg>		INT32		</Arg>
+		</onGetXmasBall>
+		
+		<onGetDtsSnowmanBrokenReward>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</onGetDtsSnowmanBrokenReward>
+
+		<onGetDtsXmasActivitySpCurrencyReward>
+			<Arg>		INT32		</Arg>
+		</onGetDtsXmasActivitySpCurrencyReward>
+
+		
+		<reqOldManSubmitBellNum>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</reqOldManSubmitBellNum>
+
+		<setChirstmasGuideShow>
+			<Arg>		BOOL		</Arg>
+		</setChirstmasGuideShow>
+
+		<onPickChristmasDiamondCnt>
+			<Arg>		INT32		</Arg>
+		</onPickChristmasDiamondCnt>
+
+	</BaseMethods>
+	<CellMethods>
+		<onPickXmasBall>
+		</onPickXmasBall>
+		
+		<setChirstmasBellItemCnt>
+			<Arg>		INT32		</Arg>
+		</setChirstmasBellItemCnt>
+		
+		<setChirstmasSubmitBellItemCnt>
+			<Arg>		INT32		</Arg>
+		</setChirstmasSubmitBellItemCnt>
+		
+		<onPickChirstmasBellItemCnt>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</onPickChirstmasBellItemCnt>
+		
+		<onPickChristmasDiamondCnt>
+			<Arg>		INT32		</Arg>
+		</onPickChristmasDiamondCnt>
+		
+		<onDiscardChirstmasBellItemCnt>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</onDiscardChirstmasBellItemCnt>
+		
+		<onDelChirstmas2021BellAmount>
+			<Arg>		INT32		</Arg>
+		</onDelChirstmas2021BellAmount>
+		
+		<onGetDtsSnowmanBrokenReward>
+			<Arg>		INT32		</Arg>
+			<Arg>		INT32		</Arg>
+		</onGetDtsSnowmanBrokenReward>
+		
+		<onGetDtsXmasActivity2020Item>
+			<Arg>		INT32		</Arg>
+		</onGetDtsXmasActivity2020Item>
+
+		<onReqOldManSubmitBellNum>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</onReqOldManSubmitBellNum>
+
+		<setChirstmasGuideShow><Exposed/>
+			<Arg> BOOL </Arg>
+		</setChirstmasGuideShow>
+
+	</CellMethods>
+</Root>

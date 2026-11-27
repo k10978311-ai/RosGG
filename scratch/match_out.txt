@@ -1,0 +1,61 @@
+autoMatchRos2Teammate = 1
+canMatchBigMap = 0
+canMatchFPSMode = 0
+canMatchHuoCheZhan = 0
+canMatchLimitGameTypes = set([])
+canMatchNextGen = 0
+canMatchOccupation = 0
+canNotMatchGameTypes = {}
+curHorseRacingMatch = None
+freeModifyRosMatchTeamLogoChance = 0
+frozenPrizeMatchCoin = 0
+iPrizeMatchDayNo = -1
+iPrizeMatchSignCnts = {}
+iPrizeMatchSignFail = False
+iPrizeMatchSignLeftSec = -1
+iPrizeMatchState = 0
+isIntimateRelationshipVisibleInTeam = 0
+lastCancelRosMatchTime = 0
+lastJoinTeam = None
+lastMatchGameCache = {}
+lastMatchGameInfoCache = {}
+logQueue = []
+masterPrizeMatchData = {}
+matchResults = {}
+matchTargetTime = 0
+matchTeamTaskProgress = {}
+matchTeamTaskState = {}
+matchedPlayerSelectionInfo = {}
+matchedTeammates = []
+matches = {}
+matchingAuto = True
+matchingCommander = False
+matchingMapID = 700
+matchingRandom = False
+matchingRandomSize = True
+matchingStartTime = 0
+matchingState = 0
+matchingSubMode = None
+nextHorseRacingMatch = None
+preMatchInfoCache = {}
+preMyMatchInfoCache = {}
+rmtRosMatchTeamRedDot = False
+ros2AutoMatchTaskDiffculty = 0
+ros2AutoMatchTaskIDList = []
+rosMatchAdminConfCache = {}
+rosMatchTeamApplyPlayerList = []
+rosMatchTeamData = None
+rosMatchTeamListData = []
+rosMatchTeamPlayerList = []
+serialGuessBetRecordMatches = {}
+tmpHasSignedUpRosMatch = False
+voiceQueue = []
+yuanbaoBattleCurMatchID = 0
+fn None
+uiMgr.UINamesMatchingStateCanNotEnter
+uiMgr.enterRosMatchTeamUI
+uiMgr.gotoDoubleSevenCPMatch
+uiMgr.gotoDoubleSevenMatch
+uiMgr.gotoNewRosMatchTeam
+uiMgr.gotoPrizeMatch
+uiMgr.leave_ui_on_matching

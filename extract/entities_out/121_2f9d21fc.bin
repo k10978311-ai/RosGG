@@ -1,0 +1,48 @@
+<root>
+	<Properties>
+		<curGuideStepIdx>
+			<Type>			INT32				</Type>
+			<Flags>			ALL_CLIENTS			</Flags>
+			<Default> 		{}					</Default>
+		</curGuideStepIdx>
+		<hasEnterGuideStepIdxSet>
+			<Type>			PYTHON				</Type>
+			<Flags>			ALL_CLIENTS			</Flags>
+			<Default> 		{}					</Default>
+		</hasEnterGuideStepIdxSet>
+		<finishedGuideStepIdxSet>
+			<Type>			PYTHON				</Type>
+			<Flags>			ALL_CLIENTS			</Flags>
+			<Default> 		{}					</Default>
+		</finishedGuideStepIdxSet>
+	</Properties>
+	<CellMethods>
+		<reqFinishCurGuideStep> <Exposed/>
+			<Arg>			UINT32				</Arg>
+		</reqFinishCurGuideStep> 
+		<reqSkipGuide> <Exposed/>
+			<Arg>			UINT16				</Arg>
+		</reqSkipGuide>
+		<reqCurGuideStep> <Exposed/>
+		</reqCurGuideStep>
+		<reqEnterCurGuideStep> <Exposed/>
+			<Arg>			UINT32				</Arg>
+		</reqEnterCurGuideStep>
+		<onTriggerTutorialEvent>
+			<Arg>		INT32			</Arg>
+		</onTriggerTutorialEvent>
+	</CellMethods>
+
+	<ClientMethods>
+		<onGetCurGuideStep>
+			<Arg>			UINT16				</Arg>
+			<Arg>			UINT32				</Arg>
+		</onGetCurGuideStep>
+		<onUpdateCurGuideStepFinished>
+			<Arg>			UINT16				</Arg>
+			<Arg>			UINT32				</Arg>
+			<Arg>			UINT32				</Arg>
+		</onUpdateCurGuideStepFinished>
+	</ClientMethods>
+
+</root>

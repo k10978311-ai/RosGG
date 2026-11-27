@@ -1,0 +1,11 @@
+getWearableAppearanceData(1110375) ERR TypeError('getWearableAppearanceData() takes no arguments (1 given)',)
+getBodyAppearanceData(1110375) ERR TypeError('getBodyAppearanceData() takes no arguments (1 given)',)
+getDtsWearableAppearanceCategory(1110375) = 1
+getDtsWearableAppearanceGender(1110375) = 1
+getDtsBodyAppearanceGender(1110375) = 1
+getWearableAppearanceData(1110409) ERR TypeError('getWearableAppearanceData() takes no arguments (1 given)',)
+getBodyAppearanceData(1110409) ERR TypeError('getBodyAppearanceData() takes no arguments (1 given)',)
+getDtsWearableAppearanceCategory(1110409) = 1
+getDtsWearableAppearanceGender(1110409) = 1
+getDtsBodyAppearanceGender(1110409) = 1
+body found 0

@@ -1,0 +1,182 @@
+<root>
+	<Parent>	BattleGroundSpace	</Parent>
+	<ClientName>	BattleTitanSpace </ClientName>
+	<Properties>
+
+		<entityIDToCampID>
+			<Type>	PYTHON	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</entityIDToCampID>
+
+		<campScore>
+			<Type>	PYTHON	</Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+		</campScore>
+
+		<gameBeginTime>
+			<Type> INT32 </Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default> 0 </Default>
+		</gameBeginTime>
+
+		<gameEndTime>
+			<Type> INT32 </Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default> 0 </Default>
+		</gameEndTime>
+
+		<normalMonsterRefreshTime>
+			<Type> INT32 </Type>
+			<Flags>	ALL_CLIENTS	</Flags>
+			<Default> 0 </Default>
+		</normalMonsterRefreshTime>
+
+
+	</Properties>
+
+	<CellMethods>
+	
+		<gmCreateTitanRobot>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> VECTOR3 </Arg>
+		</gmCreateTitanRobot>
+
+		<gmCreateWarpGate>
+			<Arg> INT32 </Arg>
+			<Arg> BOOL </Arg>
+		</gmCreateWarpGate>
+
+		<gmClearSpace>
+			<Arg> INT32 </Arg>
+		</gmClearSpace>
+
+		<gmGameEnd>
+			<Arg> INT32 </Arg>
+		</gmGameEnd>
+
+		<gmTitanBaseDeliverScoreItem>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</gmTitanBaseDeliverScoreItem>
+
+		<gmTitanWarpGate>
+			<Arg> INT32 </Arg>
+		</gmTitanWarpGate>
+
+		<gmCreateTitanBase>
+			<Arg> INT32 </Arg>
+			<Arg> VECTOR3 </Arg>
+		</gmCreateTitanBase>
+		
+		<genMonDropItem>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> VECTOR3 </Arg>
+		</genMonDropItem>
+
+		<addCampScore>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</addCampScore>
+
+		<onPlayerReborn>
+			<Arg> ENTITY_ID </Arg>
+			<Arg> BOOL </Arg>
+		</onPlayerReborn>
+
+		<deliverScoreItem>
+			<Arg> ENTITY_ID </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</deliverScoreItem>
+
+		<triggerWarpGate>
+			<Arg> INT32 </Arg>
+			<Arg> ENTITY_ID </Arg>
+		</triggerWarpGate>
+
+		<onInvadeOver>
+			<Arg> INT32 </Arg>
+			<Arg> ENTITY_ID </Arg>
+			<Arg> BOOL </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</onInvadeOver>
+
+		<onInvadeMapLoaded>
+			<Arg> ENTITY_ID </Arg>
+		</onInvadeMapLoaded>
+
+		<addPlayerFightLostScore>
+			<Arg> ENTITY_ID </Arg>
+			<Arg> INT32 </Arg>
+		</addPlayerFightLostScore>
+
+		<onBossHurt>
+			<Arg> ENTITY_ID </Arg>
+			<Arg> ENTITY_ID </Arg>
+			<Arg> INT32 </Arg>
+		</onBossHurt>
+
+		<onBossUpdateHpPercent>
+			<Arg> INT32 </Arg>
+			<Arg> ENTITY_ID </Arg>
+			<Arg> INT32 </Arg>
+		</onBossUpdateHpPercent>
+
+		<broadcastMsgByCamp>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> PYTHON </Arg>
+		</broadcastMsgByCamp>
+	</CellMethods>
+
+	<ClientMethods>
+
+		<syncCampScore>
+			<Arg> PYTHON </Arg>
+		</syncCampScore>
+
+		<syncBaseInfo>
+			<Arg> PYTHON </Arg>
+		</syncBaseInfo>
+
+		<syncWarpGate>
+			<Arg> PYTHON </Arg>
+		</syncWarpGate>
+
+		<noticeCreateWarpGate>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</noticeCreateWarpGate>
+
+		<syncBossHp>
+			<Arg> PYTHON </Arg>
+		</syncBossHp>
+
+		<syncModeStep>
+			<Arg> PYTHON </Arg>
+		</syncModeStep>
+
+		<noticeInvade>
+			<Arg> INT32 </Arg>
+			<Arg> ENTITY_ID </Arg>
+			<Arg> INT32 </Arg>
+		</noticeInvade>
+
+		<noticeInvadeEnd>
+			<Arg> INT32 </Arg>
+			<Arg> ENTITY_ID </Arg>
+			<Arg> BOOL </Arg>
+		</noticeInvadeEnd>
+
+
+		<noticeTitanResult>
+			<Arg> INT32 </Arg>
+			<Arg> PYTHON </Arg>
+		</noticeTitanResult>
+
+	</ClientMethods>
+</root>

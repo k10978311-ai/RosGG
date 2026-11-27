@@ -1,0 +1,58 @@
+<root>
+	<Parent>	BattleGroundRos2Space	</Parent>
+	<Implements>
+		<Interface>	iRobotGenerate	</Interface>
+	</Implements>
+	<ClientName>	BattleGroundRos2TutorialSpace	</ClientName>
+	
+	<Properties>
+		<curHeritagePosition>
+			<Type>		VECTOR3			</Type>
+			<Flags>		ALL_CLIENTS		</Flags>
+		</curHeritagePosition>
+		<curHeritageEntID>
+			<Type>		ENTITY_ID		</Type>
+			<Flags>		ALL_CLIENTS		</Flags>
+		</curHeritageEntID>
+		<firstKillRobot>
+			<Type>		BOOL			</Type>
+			<Flags>		ALL_CLIENTS		</Flags>
+		</firstKillRobot>
+		<toShowEvacuation>
+			<Type>		BOOL			</Type>
+			<Flags>		ALL_CLIENTS		</Flags>
+		</toShowEvacuation>
+		<guideRobotID>
+			<Type>	ARRAY <of>	INT32	</of>	</Type>
+			<Flags>		ALL_CLIENTS		</Flags>
+		</guideRobotID>
+		<bossAIID>
+			<Type>	ARRAY <of>	INT32	</of>	</Type>
+			<Flags>		ALL_CLIENTS		</Flags>
+		</bossAIID>
+	</Properties>
+
+	<ClientMethods>
+		<onGetTutorialNaviLine> <Exposed/>
+			<Arg>		PYTHON 			</Arg>
+		</onGetTutorialNaviLine>
+		<onSyncHeritageInfo> <Exposed/>
+			<Arg>		ENTITY_ID 		</Arg>
+			<Arg>		VECTOR3 		</Arg>
+			<Arg>		BOOL 			</Arg>
+		</onSyncHeritageInfo>
+	</ClientMethods>
+
+	<CellMethods>
+		<requestToGetTutorialNaviLine> <Exposed/>
+			<Arg>		VECTOR3 		</Arg>
+			<Arg>		VECTOR3 		</Arg>
+		</requestToGetTutorialNaviLine>
+		<requestTriggerRobotAction> <Exposed/>
+			<Arg>			INT32				</Arg>
+		</requestTriggerRobotAction>
+		<requestToShowEvacuation> <Exposed/>
+		</requestToShowEvacuation>
+	</CellMethods>
+</root>
+

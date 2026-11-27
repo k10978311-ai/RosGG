@@ -1,0 +1,167 @@
+<root>
+	<Properties>
+		<!-- 新旧引导皆有的数据接口 -->
+		<hasBeganGuideFlag>					
+			<Type>			PYTHON				</Type>
+			<Flags>			BASE_AND_CLIENT			</Flags>
+			<Default> 		{}				</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</hasBeganGuideFlag>
+
+		<!-- 旧引导的数据接口 -->
+		<curGuideStepIdx>					
+			<Type>			PYTHON				</Type>
+			<Flags>			BASE_AND_CLIENT			</Flags>
+			<Default> 		{}				</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</curGuideStepIdx>
+		<guideFinishedDict>					
+			<Type>			PYTHON				</Type>
+			<Flags>			BASE_AND_CLIENT			</Flags>
+			<Default> 		{}				</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</guideFinishedDict>
+		<finishedGuideStepIdx>					
+			<Type>			PYTHON				</Type>
+			<Flags>			BASE_AND_CLIENT			</Flags>
+			<Default> 		{}				</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</finishedGuideStepIdx>
+		<isInGameFinished>					
+			<Type>			PYTHON				</Type>
+			<Flags>			BASE_AND_CLIENT			</Flags>
+			<Default> 		{}				</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</isInGameFinished>
+
+		<!-- 新引导的数据接口 -->
+		<finishedGuideGroup>					
+			<Type>			PYTHON				</Type>
+			<Flags>			BASE_AND_CLIENT			</Flags>
+			<Default> 		{}				</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</finishedGuideGroup>
+		<curMainGuideStepIdx>					
+			<Type>			PYTHON				</Type>
+			<Flags>			BASE_AND_CLIENT			</Flags>
+			<Default> 		{}				</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</curMainGuideStepIdx>
+		<mainGuideFinishedDict>					
+			<Type>			PYTHON				</Type>
+			<Flags>			BASE_AND_CLIENT			</Flags>
+			<Default> 		{}				</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</mainGuideFinishedDict>
+		<!-- 引导任务相关 -->
+		<ros2GuideFlagDict>
+			<Type>			PYTHON				</Type>
+			<Flags>			BASE_AND_CLIENT			</Flags>
+			<Default> 		{}				</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2GuideFlagDict>
+		<ros2GuideMissionProgressAwardGot>
+			<Type>			PYTHON				</Type>
+			<Flags>			BASE_AND_CLIENT			</Flags>
+			<Default> 		{}				</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2GuideMissionProgressAwardGot>
+		<ros2GuideMissionFinishedDict>					
+			<Type>			PYTHON				</Type>
+			<Flags>			BASE_AND_CLIENT			</Flags>
+			<Default> 		{}				</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2GuideMissionFinishedDict>
+		<ros2GuideMissionAwardGot>					
+			<Type>			PYTHON				</Type>
+			<Flags>			BASE_AND_CLIENT			</Flags>
+			<Default> 		{}				</Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2GuideMissionAwardGot>
+		<ros2FinishedBHInGameGuide>
+			<Type>			BOOL				</Type>
+			<Flags>			BASE_AND_CLIENT			</Flags>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2FinishedBHInGameGuide>
+		<ros2FinishedEXOInGameGuide>
+			<Type>			BOOL				</Type>
+			<Flags>			BASE_AND_CLIENT			</Flags>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2FinishedEXOInGameGuide>
+
+	</Properties>
+
+	<BaseMethods>
+		<reqCurStepByGuideKey> <Exposed/>
+			<Arg>			UINT16				</Arg>
+		</reqCurStepByGuideKey>
+		<reqFinishCurGuideStep> <Exposed/>
+			<Arg>			UINT16				</Arg>
+			<Arg>			UINT32				</Arg>
+		</reqFinishCurGuideStep>
+		<reqSkipMainGuideByKey> <Exposed/>
+			<Arg>			UINT16				</Arg>
+		</reqSkipMainGuideByKey>
+		<onROS2InGameGuideFinished>
+			<Arg>			UINT16				</Arg>
+		</onROS2InGameGuideFinished>
+
+		<!-- 新引导的RPC接口 -->
+		<reqSkipMainGuideByKey> <Exposed/>
+			<Arg>			UINT16				</Arg>
+		</reqSkipMainGuideByKey>
+		<reqEnterGuideStep> <Exposed/>
+			<Arg>			UINT16				</Arg>
+			<Arg>			UINT32				</Arg>
+		</reqEnterGuideStep>
+		<!-- 引导任务相关 -->
+		<reqGetRos2GuideMissionProgressAward> <Exposed/>
+			<Arg>			UINT16				</Arg>
+		</reqGetRos2GuideMissionProgressAward>
+		<reqGetRos2GuideMissionAward> <Exposed/>
+			<Arg>			UINT32				</Arg>
+		</reqGetRos2GuideMissionAward>
+		<reqRecordRos2GuideMissionUIListenIdx> <Exposed/>
+			<Arg>			UINT16				</Arg>
+		</reqRecordRos2GuideMissionUIListenIdx>
+		<enterBattleGroundRos2TutorialSpace> <Exposed/>
+			<Arg>		UINT32		</Arg>
+		</enterBattleGroundRos2TutorialSpace>
+	</BaseMethods>
+
+	<ClientMethods>
+		<onGetCurGuideStep>
+			<Arg>			UINT16				</Arg>
+			<Arg>			UINT32				</Arg>
+		</onGetCurGuideStep>
+		<!-- 完成某个步骤 -->
+		<onUpdateCurGuideStepFinished>
+			<Arg>			UINT16				</Arg>
+			<Arg>			UINT32				</Arg>
+			<Arg>			UINT32				</Arg>
+		</onUpdateCurGuideStepFinished>
+		<!-- 完成某一组引导 -->
+		<onUpdateCurGuideGroupFinished>
+			<Arg>			UINT16				</Arg>
+			<Arg>			UINT32				</Arg>
+		</onUpdateCurGuideGroupFinished>
+		<!-- 完成整个主线引导 -->
+		<onUpdateCurMainGuideFinished>
+			<Arg>			UINT16				</Arg>
+		</onUpdateCurMainGuideFinished>
+		<onSyncRos2GuideMissionInfo>
+			<Arg>			PYTHON				</Arg>
+		</onSyncRos2GuideMissionInfo>
+		<onSyncRos2GuideFlagDict>
+			<Arg>			PYTHON				</Arg>
+		</onSyncRos2GuideFlagDict>
+		<onGetRos2GuideMissionAward>
+			<Arg>			UINT16				</Arg>
+			<Arg>			PYTHON				</Arg>
+		</onGetRos2GuideMissionAward>
+		<onGetRos2GuideMissionProgressAward>
+			<Arg>			UINT16				</Arg>
+			<Arg>			PYTHON				</Arg>
+		</onGetRos2GuideMissionProgressAward>
+	</ClientMethods>
+</root>

@@ -1,0 +1,226 @@
+<root>
+	<Properties>
+		<xmasTopPlayerPositionInfo>
+			<Type>		PYTHON		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+		</xmasTopPlayerPositionInfo>
+
+        <dtsTrailTaskVoteCheckTimerID>
+			<Type>		INT32	</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+        </dtsTrailTaskVoteCheckTimerID>
+        
+        <dtsTrailTeamRoleChooseTimerID>
+			<Type>		INT32	</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+        </dtsTrailTeamRoleChooseTimerID>
+        
+        <dtsTrailTeamFinalCheckTimerID>
+			<Type>		INT32	</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+        </dtsTrailTeamFinalCheckTimerID>
+        
+        <dtsTrailTeamTaskCheckTimerID>
+			<Type>		INT32	</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+        </dtsTrailTeamTaskCheckTimerID>
+
+        <dtsTrailTaskTeamCnt>
+			<Type>		INT32	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+        </dtsTrailTaskTeamCnt>
+
+        <dtsTrailTaskTeamInvitation>
+			<Type>		PYTHON	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+        </dtsTrailTaskTeamInvitation>
+        
+        <dtsTrailTaskRoleChoose>
+			<Type>		PYTHON	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+        </dtsTrailTaskRoleChoose>
+        
+        <dtsTrailTaskFinalTeamID>
+			<Type>		INT32	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+        </dtsTrailTaskFinalTeamID>
+        
+        <dtsTrailTaskFinalTangsenAvtID>
+			<Type>		INT32	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+        </dtsTrailTaskFinalTangsenAvtID>
+        
+        <dtsTrailTaskFinalAvtID2Role>
+			<Type>		PYTHON	</Type>
+			<Flags>		CELL_PUBLIC	</Flags>
+        </dtsTrailTaskFinalAvtID2Role>
+        
+        <dtsTrailTaskAllTeamStatus>
+			<Type>		PYTHON	</Type>
+			<Flags>		CELL_PUBLIC	</Flags>
+        </dtsTrailTaskAllTeamStatus>
+        
+        <dtsTrailTaskFinalTangsenPos>
+			<Type>		PYTHON	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+        </dtsTrailTaskFinalTangsenPos>
+        
+        <dtsInHalfAnniversary2021Time>
+			<Type>		BOOL	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	False		</Default>
+        </dtsInHalfAnniversary2021Time>
+        <dtsTrailTaskTeamChooseFinish>
+    		<Type>		BOOL	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	False		</Default>
+        </dtsTrailTaskTeamChooseFinish>
+        <dtsInHalfAnniversary2021TransFormTime>
+			<Type>		BOOL	</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	False		</Default>
+        </dtsInHalfAnniversary2021TransFormTime>
+
+		<titanTokenDict>
+			<Type>		PYTHON		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	{}		</Default>
+		</titanTokenDict>
+		<findNpcEntIDList>
+			<Type>	ARRAY <of>	INT32	</of>	</Type>
+			<Flags>		ALL_CLIENTS		</Flags>
+			<Default>		[]		</Default>
+		</findNpcEntIDList>
+
+		<syncTitanTokenDictTimerID>
+			<Type>		INT32	</Type>
+			<Flags>		CELL_PRIVATE	</Flags>
+		</syncTitanTokenDictTimerID>
+
+		<chirstmasBellTotalAmount>
+			<Type>		INT32		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	0		</Default>
+		</chirstmasBellTotalAmount>
+
+		<chirstmasOldManEntityID>
+			<Type>		INT32		</Type>
+			<Flags>		ALL_CLIENTS	</Flags>
+			<Default>	0		</Default>
+		</chirstmasOldManEntityID>
+
+	</Properties>
+
+	<BaseMethods>
+	</BaseMethods>
+
+	<CellMethods>
+		<gmCreateHalloweenRobot>
+			<Arg>		VECTOR3		</Arg>
+		</gmCreateHalloweenRobot>
+		
+		<gmCreateDtsSnowmanEntity>
+			<Arg>		VECTOR3		</Arg>
+		</gmCreateDtsSnowmanEntity>
+
+        <sendDtsTrailTaskInvitationToTeam>
+			<Arg>		INT32		</Arg> 
+			<Arg>		INT32		</Arg> 
+        </sendDtsTrailTaskInvitationToTeam>
+
+        <onPlayerAcceptDtsTrailTaskInvitation>
+			<Arg>		INT32		</Arg> 
+			<Arg>		INT32		</Arg> 
+			<Arg>		BOOL		</Arg> 
+        </onPlayerAcceptDtsTrailTaskInvitation>
+        
+        <chooseDtsTrailTaskRole>
+			<Arg>		INT32		</Arg> 
+			<Arg>		INT32		</Arg> 
+			<Arg>		INT32		</Arg> 
+        </chooseDtsTrailTaskRole>
+
+        <requestDtsTrailTaskCondition>
+			<Arg>		MAILBOX		</Arg> 
+			<Arg>		PYTHON		</Arg> 
+        </requestDtsTrailTaskCondition>
+
+        <updateTitanTokenTime>
+        </updateTitanTokenTime>
+
+        <getOtherTokenAward>
+        	<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+        </getOtherTokenAward>
+
+		<updateTitanTokenDict>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	BOOL	</Arg>
+		</updateTitanTokenDict>
+
+		<sendTokenGift>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</sendTokenGift>
+
+		<sendAllPlayerTokenTips>
+			 <Arg>       STRING      </Arg>
+			 <Arg>       STRING      </Arg>
+			 <Arg>	INT32	</Arg>
+		</sendAllPlayerTokenTips>
+
+		<updateTeamChristmasBellAmount>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</updateTeamChristmasBellAmount>
+
+		<updateTeamChristmasBellSubmitAmount>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</updateTeamChristmasBellSubmitAmount>
+
+		<submitChirstmaxBell>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</submitChirstmaxBell>
+
+		<christmasAirDrop>
+			<Arg>		PY_DICT			</Arg>
+			<Arg>		VECTOR3	</Arg>
+		</christmasAirDrop>
+
+	</CellMethods>
+
+	<ClientMethods>
+		<refreshXmasTop3PlayerComingUpSfx>
+		            <Arg>           INT32            </Arg>
+		</refreshXmasTop3PlayerComingUpSfx>
+
+        <broadcastDtsTrailTeamFinishTask>
+		    <Arg>           INT32            </Arg>
+        </broadcastDtsTrailTeamFinishTask>
+
+        <broadcastChristmasOldManUpdatePos>
+        </broadcastChristmasOldManUpdatePos>
+
+        <broadcastChristmasTotalAirDrop>
+        </broadcastChristmasTotalAirDrop>
+        
+        <broadcastChooseFinalTrailTaskTeam>
+		    <Arg>       STRING      </Arg>
+        </broadcastChooseFinalTrailTaskTeam>
+
+        <updateTitanTokenTime>
+        	<Arg>           INT32            </Arg>
+        </updateTitanTokenTime>
+
+        <syncTitanTokenDict>
+        	<Arg>           PYTHON            </Arg>
+        </syncTitanTokenDict>
+	</ClientMethods>
+</root>
+

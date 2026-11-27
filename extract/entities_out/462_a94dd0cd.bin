@@ -1,0 +1,87 @@
+<root>
+	<Properties>
+		<ros2BingoList>
+			<Type> PYTHON	</Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<PersistentMongo>	true			</PersistentMongo>
+			<Default>	[]		</Default>
+		</ros2BingoList>
+		<ros2BingoReward>
+			<Type> PYTHON	</Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<PersistentMongo>	true			</PersistentMongo>
+			<Default>	{}		</Default>
+		</ros2BingoReward>
+		<ros2BingoKeyA>
+			<Type> INT32	</Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<PersistentMongo>	true			</PersistentMongo>
+			<Default>	0		</Default>
+		</ros2BingoKeyA>
+		<ros2BingoKeyB>
+			<Type> INT32	</Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<PersistentMongo>	true			</PersistentMongo>
+			<Default>	0		</Default>
+		</ros2BingoKeyB>
+		<ros2BingoRefreshTimes>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2BingoRefreshTimes>
+		<ros2BingoBattle>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2BingoBattle>
+		<ros2BingoTask>
+			<Type> PYTHON	</Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<PersistentMongo>	true			</PersistentMongo>
+			<Default>	{}		</Default>
+		</ros2BingoTask>
+	</Properties>
+
+	<BaseMethods>
+		<unfoldRos2Bingo> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</unfoldRos2Bingo>
+
+		<getRos2BingoAward> <Exposed/>
+			<Arg>	INT32	</Arg>
+		</getRos2BingoAward>
+
+		<getRos2BingoTaskReward> <Exposed/>
+			<Arg>	INT32	</Arg>
+		</getRos2BingoTaskReward>
+
+		<getAllTaskRewards> <Exposed/>
+		</getAllTaskRewards>
+	</BaseMethods>
+
+	<ClientMethods>
+		<syncRos2BingoList>
+			<Arg> PYTHON </Arg>
+			<Arg> PYTHON </Arg>
+		</syncRos2BingoList>
+		<syncRos2BingoRewards>
+			<Arg> PYTHON </Arg>
+			<Arg> PYTHON </Arg>
+		</syncRos2BingoRewards>
+		<syncRos2BingoKey>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</syncRos2BingoKey>
+		<syncRos2BingoTask>
+			<Arg> PYTHON </Arg>
+			<Arg> INT32 </Arg>
+		</syncRos2BingoTask>
+		<syncRos2BingoTaskReward>
+			<Arg> PYTHON </Arg>
+			<Arg> PYTHON </Arg>
+		</syncRos2BingoTaskReward>
+	</ClientMethods>
+</root>

@@ -1,0 +1,3 @@
+before: URGENT_SWITCH_USE_LOGIN_SCENE=False loginScene=None
+called Globals.loadDefaultScene()
+after: switch=True loginScene=scene 1 App.scene=None

@@ -1,0 +1,128 @@
+<root>
+	<Properties>
+		<ros2PrewarmTag>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2PrewarmTag>
+		<ros2PrewarmSign>
+			<Type> STRING </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> "" </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2PrewarmSign>
+		<ros2PrewarmInviteInfo>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2PrewarmInviteInfo>
+		<ros2PrewarmInvitedPlayer>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2PrewarmInvitedPlayer>
+		<ros2PrewarmRefusePlayer>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2PrewarmRefusePlayer>
+		<ros2PrewarmAwardInfo>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2PrewarmAwardInfo>
+		<ros2PrewarmDayActivePoint>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2PrewarmDayActivePoint>
+	</Properties>
+	
+	<BaseMethods>
+		<onRos2PrewarmReciveInvite>
+			<Arg> GID </Arg>
+			<Arg> STRING </Arg>
+		</onRos2PrewarmReciveInvite>
+		<ros2PrewarmReqUpdateTeamData> <Exposed/>
+		</ros2PrewarmReqUpdateTeamData>
+		<ros2PrewarmInvitePlayerJoinTeam> <Exposed/>
+			<Arg> GID </Arg>
+		</ros2PrewarmInvitePlayerJoinTeam>
+		<onRos2PrewarmPlayerJoinTeam>
+			<Arg> GID </Arg>
+			<Arg> INT8 </Arg>
+		</onRos2PrewarmPlayerJoinTeam>
+		<acceptJoinRos2PrewarmPlayerTeam> <Exposed/>
+			<Arg> GID </Arg>
+		</acceptJoinRos2PrewarmPlayerTeam>
+		<refuseJoinRos2PrewarmPlayerTeam> <Exposed/>
+			<Arg> GID </Arg>
+		</refuseJoinRos2PrewarmPlayerTeam>
+		<onRefuseJoinRos2PrewarmPlayerTeam>
+			<Arg> GID </Arg>
+		</onRefuseJoinRos2PrewarmPlayerTeam>
+		<joinRos2PrewarmTeamByTeamSign> <Exposed/>
+			<Arg> STRING </Arg>
+		</joinRos2PrewarmTeamByTeamSign>
+		<getRos2PrewarmTeamFullAward> <Exposed/>
+		</getRos2PrewarmTeamFullAward>
+		<ros2PrewarmDelMember> <Exposed/>
+			<Arg> GID </Arg>
+		</ros2PrewarmDelMember>
+		<clearRos2PrewarmData>
+		</clearRos2PrewarmData>
+		<onRos2PrewarmAddJoinPoint>
+			<Arg> GID </Arg>
+			<Arg> INT32 </Arg>
+		</onRos2PrewarmAddJoinPoint>
+		<ros2PrewarmGetJoinAward> <Exposed/>
+		</ros2PrewarmGetJoinAward>
+		<readRos2PrewarmInvite> <Exposed/>
+			<Arg> ARRAY <of> GID </of> </Arg>
+		</readRos2PrewarmInvite>
+	</BaseMethods>
+
+
+	<ClientMethods>
+		<syncRos2PrewarmTeamSign>
+			<Arg> STRING </Arg>
+		</syncRos2PrewarmTeamSign>
+		<syncRos2PrewarmTeamInfo>
+			<Arg> PYTHON </Arg>
+		</syncRos2PrewarmTeamInfo>
+		<syncRos2PrewarmInvitedPlayer>
+			<Arg> PYTHON </Arg>
+		</syncRos2PrewarmInvitedPlayer>
+		<onRos2PrewarmTeamOperaFail>
+			<Arg> INT8 </Arg>
+			<Arg> GID </Arg>
+		</onRos2PrewarmTeamOperaFail>
+		<syncRos2PrewarmInviteInfo>
+			<Arg> PYTHON </Arg>
+		</syncRos2PrewarmInviteInfo>
+		<syncRos2PrewarmAwardInfo>
+			<Arg> PYTHON </Arg>
+		</syncRos2PrewarmAwardInfo>
+		<syncRos2PrewarmRefuseInfo>
+			<Arg> PYTHON </Arg>
+		</syncRos2PrewarmRefuseInfo>
+		<onRos2PrewarmJoinTeam>
+			<Arg> GID </Arg>
+		</onRos2PrewarmJoinTeam>
+		<onGetRos2PrewarmTeamFullAward>
+			<Arg> INT8 </Arg>
+		</onGetRos2PrewarmTeamFullAward>
+		<onRos2PrewarmPlayerJoinTeam>
+			<Arg> INT8 </Arg>
+		</onRos2PrewarmPlayerJoinTeam>
+		<onRos2PrewarmGetJoinAward>
+			<Arg> INT8 </Arg>
+		</onRos2PrewarmGetJoinAward>
+	</ClientMethods>
+</root>

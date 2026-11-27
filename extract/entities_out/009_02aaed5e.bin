@@ -1,0 +1,42 @@
+<root>
+	<Properties>
+		<elevators>
+			<Type> PYTHON </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</elevators>
+		<elevatorOutsideInputs>
+			<Type> PYTHON </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</elevatorOutsideInputs>
+		<elevatorInsideInputs>
+			<Type> PYTHON </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</elevatorInsideInputs>
+		<elevatorMoveDirs>
+			<Type> PYTHON </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</elevatorMoveDirs>
+	</Properties>
+	<CellMethods>
+		<pressElevatorOutside> <Exposed/>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT32			</Arg>
+		</pressElevatorOutside>
+		<pressElevatorInside> <Exposed/>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT32			</Arg>
+			<Arg>		INT32			</Arg>
+		</pressElevatorInside>
+		<notifyArrive>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</notifyArrive>
+		<notifySchedule>
+			<Arg> INT32 </Arg>
+		</notifySchedule>
+	</CellMethods>
+	<ClientMethods>
+	</ClientMethods>
+</root>

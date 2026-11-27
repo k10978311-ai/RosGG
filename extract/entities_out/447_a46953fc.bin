@@ -1,0 +1,230 @@
+<root>
+	<Properties>
+		<!-- 战斗外传进来的背包 -->
+		<dtsRos2BattlePackageData>
+			<Type>			PYTHON		</Type>
+			<Flags>			CELL_PUBLIC	</Flags>
+			<Default>		{}		</Default>
+		</dtsRos2BattlePackageData>
+		
+		<!-- 战斗外传进来的装备栏 -->
+		<dtsRos2EquipBarPackageData>
+			<Type>			PYTHON		</Type>
+			<Flags>			CELL_PUBLIC	</Flags>
+			<Default>		{}		</Default>
+		</dtsRos2EquipBarPackageData>
+		
+		<!-- 战斗外传进来的保险箱 -->
+		<dtsRos2BattleSafeBoxData>
+			<Type>			PYTHON		</Type>
+			<Flags>			CELL_PUBLIC	</Flags>
+			<Default>		{}		</Default>
+		</dtsRos2BattleSafeBoxData>
+
+		<!-- 装备栏额外数据信息-->
+		<dtsRos2EquipExtendInfo>
+			<Type>			PYTHON		</Type>
+			<Flags>			CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>		{}		</Default>
+		</dtsRos2EquipExtendInfo>
+
+		<!-- ros2.0背包 -->
+		<dtsRos2BattleItemPackage>
+			<Type>			DTS_ROS2_IN_BATTLE_PACKAGE3	</Type>
+			<Flags>			CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>
+				<itemList>
+					[]
+				</itemList>
+				<layoutInfo>
+					{}
+				</layoutInfo>
+				<_packageCapacity>
+					0
+				</_packageCapacity>
+			</Default>
+		</dtsRos2BattleItemPackage>
+
+		<dtsRos2BattleSafeBox>
+			<Type>			DTS_ROS2_IN_BATTLE_SAFEBOX	</Type>
+			<Flags>			CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>
+				<itemList>
+					[]
+				</itemList>
+				<layoutInfo>
+					{}
+				</layoutInfo>
+				<_packageCapacity>
+					0
+				</_packageCapacity>
+			</Default>
+		</dtsRos2BattleSafeBox>
+		<dtsRos2CourierDrone>
+			<Type>			DTS_ROS2_COURIER_DRONE	</Type>
+			<Flags>			CELL_PUBLIC_AND_OWN	</Flags>
+			<Default>
+				<itemList>
+					[]
+				</itemList>
+				<layoutInfo>
+					{}
+				</layoutInfo>
+				<_packageCapacity>
+					0
+				</_packageCapacity>
+			</Default>
+		</dtsRos2CourierDrone>
+	</Properties>
+
+	<CellMethods>
+		<discardDtsRos2ItemFromEquipPackage> <Exposed/>
+			<Arg>	INT32	</Arg>
+		</discardDtsRos2ItemFromEquipPackage>
+		<moveDtsRos2ItemFromPackageToEquipBarNoGrid><Exposed/>
+			<Arg> INT32 </Arg> <!-- itemID -->
+			<Arg> STRING </Arg> <!-- uuid -->
+			<Arg> INT32 </Arg> <!-- areaID -->
+		</moveDtsRos2ItemFromPackageToEquipBarNoGrid>
+
+		<moveDtsRos2PackageItem> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</moveDtsRos2PackageItem>
+
+		<moveDtsRos2ItemFromPackageToPackage> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT32 </Arg>
+		</moveDtsRos2ItemFromPackageToPackage>
+		
+		<addDtsRos2ItemFromPackageToPackageFold> <Exposed/>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+		</addDtsRos2ItemFromPackageToPackageFold>
+		
+		<moveDtsRos2ItemFromEquipBarToPackage> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</moveDtsRos2ItemFromEquipBarToPackage>
+
+		<splitDtsRos2PackageFixedGridItem> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg>	INT32	</Arg>
+		</splitDtsRos2PackageFixedGridItem>
+
+		<refreshDtsRos2PackgeLayout> <Exposed/>
+			<Arg>	INT32	</Arg>
+		</refreshDtsRos2PackgeLayout>
+		
+		<moveDtsRos2ItemFromPackageToEquipBar> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg>	INT32	</Arg>
+		</moveDtsRos2ItemFromPackageToEquipBar>
+		
+		<discardDtsRos2ItemFromPackage> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+		</discardDtsRos2ItemFromPackage>
+		
+		<batchDiscardDtsRos2ItemFromPackage> <Exposed/>
+			<Arg>  INT32  </Arg>
+			<Arg> ARRAY <of> INT32  </of> </Arg>
+			<Arg> ARRAY <of> STRING  </of> </Arg>
+		</batchDiscardDtsRos2ItemFromPackage>
+		
+	</CellMethods>
+
+	<ClientMethods>
+		<onAddDtsRos2PackageItem>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</onAddDtsRos2PackageItem>
+		<onBatchAddDtsRos2PackageItem>
+			<Arg>	INT32	</Arg>
+			<Arg> ARRAY <of> INT32  </of> </Arg>
+			<Arg> ARRAY <of> PYTHON	  </of> </Arg>
+		</onBatchAddDtsRos2PackageItem>
+		<onDelDtsRos2PackageItem>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+		</onDelDtsRos2PackageItem>
+		<onBatchDelDtsRos2PackageItem>
+			<Arg>	INT32	</Arg>
+			<Arg> ARRAY <of> INT32  </of> </Arg>
+			<Arg> ARRAY <of> STRING	</of> </Arg>
+		</onBatchDelDtsRos2PackageItem>
+		<onClearDtsRos2Package>
+			<Arg>	INT32	</Arg>
+		</onClearDtsRos2Package>
+		<onDtsRos2PackageMoveItemGrid>
+			<Arg>	INT32	</Arg>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</onDtsRos2PackageMoveItemGrid>
+
+		<onUnlockDtsRos2InBattleItemPackage>
+			<Arg>	INT32	</Arg>
+		</onUnlockDtsRos2InBattleItemPackage>
+
+		<onUnlockDtsRos2InBattleItemSafeBox>
+			<Arg>	INT32	</Arg>
+		</onUnlockDtsRos2InBattleItemSafeBox>	
+		
+		<onUnlockDtsRos2Package>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</onUnlockDtsRos2Package>	
+		
+		<onRefreshDtsRos2EquipBar>
+		</onRefreshDtsRos2EquipBar>
+
+		<onRecoverPacakgeCapacity>
+		</onRecoverPacakgeCapacity>
+
+		<onRefreshRepertoryPackageLayoutInGame>
+			<Arg> PYTHON </Arg>
+			<Arg> PYTHON </Arg>
+			<Arg> INT32 </Arg>
+		</onRefreshRepertoryPackageLayoutInGame>
+
+		<onSubDtsRos2PackageFoldItem>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> STRING </Arg>
+			<Arg> INT32 </Arg>
+		</onSubDtsRos2PackageFoldItem>
+		
+		<onAddToRos2PackageGrid>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</onAddToRos2PackageGrid>
+
+		<syncEquipExtendInfo>
+			<Arg> PYTHON </Arg>
+		</syncEquipExtendInfo>
+
+
+		<doClearDtsRos2PackageAllInsuredItem>
+			<Arg>	INT32	</Arg>
+		</doClearDtsRos2PackageAllInsuredItem>
+	</ClientMethods>
+</root>

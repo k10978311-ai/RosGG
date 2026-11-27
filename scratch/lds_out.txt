@@ -1,0 +1,19 @@
+== Globals.loadDefaultScene args=()
+ names=[]
+ consts=['None', '<code object _loadDefaultScene at 0x76384d9696b0, ']
+  inner _loadDefaultScene names=['world', 'math3d', 'inspect', 'shared', 'legacyProperties', 'getSelectcharacterData', 'vector', 'readIsLogin', 'CAMERA_POS', 'scene', 'loginScene', 'load', 'const', 'SelectCharacterScene', 'None', 'True', 'load_postprocess', 'SelectCharacterScenePostProcess', 'viewer_position', 'view_range', 'set_active_scene', 'create_camera', 'set_placement', 'CAMERA_FORWARD', 'game3d', 'math', 'libclaudia', 'Mathf', 'set_perspect', 'CAMERA_ANGLE', 'CAMERA_ASPECT', 'CAMERA_MIN_Z', 'CAMERA_MAX_Z', 'get_window_size', 'atan', 'tan', 'PI', 'loadDefaultResource', 'SCENE_PATH', 'graphicsMgr', 'applySettings', 'set_fog'] consts=['None', '-1', "('legacyProperties',)", '1', '0', '1000', "('Mathf',)", '2', '1.0', '16.0', '9.0', '360.0', '4', '0.0', '1000.0']
+== SceneSystem.LoadNeoxScene args=('self', 'endCallback', 'loadCallback', 'async')
+ names=['maps_utils', 'isMap8K', 'mapID', 'BigMapDownloader', 'doCheckDLCReload', 'const', 'DLCType', 'BIG_MAP', 'StartCoroutine']
+ consts=['None', "'DoLoadNeoxScene'"]
+== SceneSystem.Awake args=('self',)
+ names=[]
+ consts=['None']
+== SceneSystem._SceneSystem__loadGame args=('self', 'mapID', 'campsInfo', 'callback')
+ names=['Globals', 'uiMgr', 'UILoading', 'enter_ui', 'True', 'lock', '_initGameMode', 'StopCoroutine', 'startRecordLoading', 'StartCoroutine']
+ consts=['None', "'UILoading'", "'args'", "'_preloadLevelResCoro'"]
+== SceneSystem.loadMap args=('self', 'mapID', 'campsInfo', 'callback')
+ names=['Globals', 'MAP_ID', 'PREV_MAP_ID', 'destroyDefaultMap', 'beforeLoadMap', '_SceneSystem__loadGame']
+ consts=['None']
+== SceneSystem.loadHallScene args=('self', 'callback')
+ names=['Globals', 'MAP_ID', 'PREV_MAP_ID', 'world', 'set_open_world_lod_enable', 'False', 'destroyDefaultMap', 'beforeLoadMap', 'uiMgr', 'UILoading', 'enter_ui', 'True', 'lock', 'StopCoroutine', 'startRecordLoading', 'const', 'HALL_MAP_ID', 'StartCoroutine']
+ consts=['None', '-1', "'UILoading'", "'_preloadLevelResCoro'"]

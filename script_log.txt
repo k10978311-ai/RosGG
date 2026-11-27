@@ -1,78 +1,105 @@
-11-13 16:32:06.806 D/AndroidRuntime(28358): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
-11-13 16:32:07.192 D/AndroidRuntime(28358): Calling main entry com.android.commands.monkey.Monkey
-11-13 16:32:07.331 I/AndroidRuntime(28358): VM exiting with result code 0.
-11-13 16:32:20.263 I/[16:32:20.263]     <SCRIPT> (28405): fetch_by_domain
-11-13 16:32:20.263 I/[16:32:20.263]     <SCRIPT> (28405): http_get url=https://h45na.update.easebar.com/pl/h45na_hc,host=h45na.update.easebar.com
-11-13 16:32:20.364 I/[16:32:20.364]     <SCRIPT> (28405): verify_result
-11-13 16:32:20.364 I/[16:32:20.364]     <SCRIPT> (28405): _fetch_http_data_antihijack h45na_hc
-11-13 16:32:20.380 I/[16:32:20.380]     <SCRIPT> (28405): fbn, fetchMd5AndCode  hotfix 1111 af9febf319e367cf4c1ce3a84f694212
-11-13 16:32:20.381 I/[16:32:20.381] M   <SCRIPT> (28405): fbn verifyHotfixCode, md5 af9febf319e367cf4c1ce3a84f694212
-11-13 16:32:20.415 I/[16:32:20.415] M   <SCRIPT> (28405): This is a test for headCode hotfix
-11-13 16:32:20.415 I/[16:32:20.415] M   <SCRIPT> (28405): hotfix_20180717 begin
-11-13 16:32:20.416 I/[16:32:20.416] M   <SCRIPT> (28405): hotfix_20190115_patch_func begin
-11-13 16:32:20.416 I/[16:32:20.416] M   <SCRIPT> (28405): hotfix_20190115_patch_func end
-11-13 16:32:20.416 I/[16:32:20.416] M   <SCRIPT> (28405): hotfix_20190508_MultiThreadPatchFix begin
-11-13 16:32:20.456 I/[16:32:20.456] M   <SCRIPT> (28405): hotfix_20190508_MultiThreadPatchFix end
-11-13 16:32:20.456 I/[16:32:20.456] M   <SCRIPT> (28405): hotfix_20190617_FixVersionInfoError begin
-11-13 16:32:20.456 I/[16:32:20.456] M   <SCRIPT> (28405): hotfix_20190617_FixVersionInfoError end
-11-13 16:32:20.457 I/[16:32:20.457] M   <SCRIPT> (28405): discard hotfix_unisdk_whitelist 617289
-11-13 16:32:20.457 I/[16:32:20.457] M   <SCRIPT> (28405): hotfix_unisdk_whitelist end
-11-13 16:32:20.457 I/[16:32:20.457] M   <SCRIPT> (28405): hotfix_20200303 begin
-11-13 16:32:20.457 I/[16:32:20.457] M   <SCRIPT> (28405): 20200327 modified
-11-13 16:32:20.457 I/[16:32:20.457] M   <SCRIPT> (28405): 20200416 modified
-11-13 16:32:20.457 I/[16:32:20.457] M   <SCRIPT> (28405): hotfix_20200303 shutdown USE_CHECK_FILE_MD5 on mobile devices
-11-13 16:32:20.458 I/[16:32:20.458] M   <SCRIPT> (28405): hotfix_20200303 pass: 617289
-11-13 16:32:20.458 I/[16:32:20.458] M   <SCRIPT> (28405): hotfix_20200818 start
-11-13 16:32:20.458 I/[16:32:20.458] M   <SCRIPT> (28405): hotfix_20200818 end
-11-13 16:32:20.458 I/[16:32:20.458] M   <SCRIPT> (28405): hotfix_axeso_2020_08_25 .... start
-11-13 16:32:20.458 I/[16:32:20.458] M   <SCRIPT> (28405): hotfix_axeso_2020_08_25 .... end
-11-13 16:32:20.458 I/[16:32:20.458] M   <SCRIPT> (28405): hotfix_natproxy_20210331 start
-11-13 16:32:20.464 I/[16:32:20.464] M   <SCRIPT> (28405): hotfix_natproxy_20210331 end
-11-13 16:32:20.466 I/[16:32:20.466] M   <SCRIPT> (28405): fbn, HeadCode on suc!
-11-13 16:32:21.298 I/[16:32:21.298]     <SCRIPT> (28405): fetch_by_domain
-11-13 16:32:21.298 I/[16:32:21.298]     <SCRIPT> (28405): http_get url=https://h45na.update.easebar.com/pl/npk_version_na_android.plist,host=h45na.update.easebar.com
-11-13 16:32:21.415 I/[16:32:21.415]     <SCRIPT> (28405): verify_result
-11-13 16:32:21.417 I/[16:32:21.417]     <SCRIPT> (28405): process_result host=h45na.update.easebar.com, success=True, fault=None
-11-13 16:32:21.504 I/[16:32:21.504] M   <SCRIPT> (28405): hardware_instancing_enbled: True
-11-13 16:32:21.505 I/[16:32:21.505] M   <SCRIPT> (28405): fubingnan version info: {'assets.npk_size': 8255000, 'assets.npk_md5': 'e78491456d1afd8d31067dc2890422ff', 'gles2_0_neox.xml_size': 8132, 'gles2_0_neox.xml_md5': '0968aa74db8ac76dd63a53e537fa650e', 'neox.xml_size': 8164, 'neox.xml_md5': 'caaf4ffc20f9143dc3c60bf8e3e8032c', 'script.npk_size': 48047172, 'script.npk_md5': 'd3c84dc209c1bc914e6f8
-11-13 16:32:21.506 I/[16:32:21.506] M   <SCRIPT> (28405): settingLanguage: en
-11-13 16:32:21.506 I/[16:32:21.506] M   <SCRIPT> (28405): LINYUAN___useDLCClothes:  False
-11-13 16:32:21.506 I/[16:32:21.506] M   <SCRIPT> (28405): fubingnan local-ver: 610637.617289, min-ver: 610141.448899
-11-13 16:32:21.507 I/[16:32:21.507] M   <SCRIPT> (28405): patch_language: en
-11-13 16:32:21.508 I/[16:32:21.508] M   <SCRIPT> (28405): fubingnan patch local-patch-ver: 610637.617289, min-patch-ver: 610637.617289
-11-13 16:32:21.508 I/[16:32:21.508] M   <SCRIPT> (28405): fubingnan patch version is equal!
-11-13 16:32:22.238 I/[16:32:22.238]     <SCRIPT> (28405): [WARNING] LINYUAN___ cpythonoverrides file is: 'assets/claudia/CythonOverrides.txt '
-11-13 16:32:24.105 I/[16:32:24.105]     <SCRIPT> (28405): [WARNING] Ignoring not-a-py file from line 1: '#0' in CythonOverrides.txt
-11-13 16:32:24.106 I/[16:32:24.106]     <SCRIPT> (28405): [WARNING] Ignoring not-a-py file from line 11: '#293088' in CythonOverrides.txt
-11-13 16:32:24.106 I/[16:32:24.106]     <SCRIPT> (28405): [WARNING] Ignoring not-a-py file from line 14: '#381568' in CythonOverrides.txt
-11-13 16:32:24.106 I/[16:32:24.106]     <SCRIPT> (28405): [WARNING] Ignoring not-a-py file from line 23: '#400014' in CythonOverrides.txt
-11-13 16:32:24.144 I/[16:32:24.144]     <SCRIPT> (28405): [trouger] properties.init()... assets/data/properties
-11-13 16:32:26.875 I/[16:32:26.875] M   <SCRIPT> (28405): Type <class 'libclaudia.internals.ResourceController.ResourceController'> should be initialized immediately after creation.
-11-13 16:32:27.121 I/[16:32:27.121] M   <SCRIPT> (28405): Type <class 'libclaudia.Settings.TagsAndLayers.TagLayerManager'> should be initialized immediately after creation.
-11-13 16:32:27.125 I/[16:32:27.125] M   <SCRIPT> (28405): Type <class 'libclaudia.Settings.CanvasManager.CanvasManager'> should be initialized immediately after creation.
-11-13 16:32:28.057 I/[16:32:28.057] M   <SCRIPT> (28405): Type <class 'ui.chat.voiceUtils.VoiceUtils'> should be initialized immediately after creation.
-11-13 16:32:28.181 I/[16:32:28.181] M   <SCRIPT> (28405): Type <class 'libclaudia.Settings.CanvasManager.Canvas'> should be initialized immediately after creation.
-11-13 16:32:28.716 I/[16:32:28.716] M   <SCRIPT> (28405): Type <class 'scenario.helper.scenario_gameobj.ScenarioGameObject'> should be initialized immediately after creation.
-11-13 16:32:28.717 I/[16:32:28.717] M   <SCRIPT> (28405): Type <class 'scenario.helper.scenario_ui._ScenarioUIMgr'> should be initialized immediately after creation.
-11-13 16:32:28.725 I/[16:32:28.725] M   <SCRIPT> (28405): Type <class 'scenario.helper.scenario_camera.NeoXCamera'> should be initialized immediately after creation.
-11-13 16:32:28.727 I/[16:32:28.727] M   <SCRIPT> (28405): Type <class 'scenario.helper.scenario_ui.ScenarioUI'> should be initialized immediately after creation.
-11-13 16:32:30.489 I/[16:32:30.489] M   <SCRIPT> (28405): Type <class 'helpers.async_task.TaskCallback'> should be initialized immediately after creation.
-11-13 16:32:30.490 I/[16:32:30.490] M   <SCRIPT> (28405): Type <class 'helpers.async_task.WorkerTask'> should be initialized immediately after creation.
-11-13 16:32:30.890 I/[16:32:30.890] M   <SCRIPT> (28405): fetch_by_domain
-11-13 16:32:30.890 I/[16:32:30.890] M   <SCRIPT> (28405): http_get url=https://h45na.update.easebar.com/server_list_ad.txt,host=h45na.update.easebar.com
-11-13 16:32:30.907 I/[16:32:30.907] M   <SCRIPT> (28405): verify_result
-11-13 16:32:30.911 I/[16:32:30.911] M   <SCRIPT> (28405): fetch_by_domain
-11-13 16:32:30.912 I/[16:32:30.911] M   <SCRIPT> (28405): http_get url=https://h45na.update.easebar.com/server_list_ad.txt,host=h45na.update.easebar.com
-11-13 16:32:30.935 I/[16:32:30.935] M   <SCRIPT> (28405): verify_result
-11-13 16:32:44.942 I/[16:32:44.942] M   <SCRIPT> (28405): fetch_by_domain
-11-13 16:32:44.942 I/[16:32:44.942] M   <SCRIPT> (28405): http_get url=https://h45na.update.easebar.com/notice_pc_hw.txt,host=h45na.update.easebar.com
-11-13 16:32:44.977 I/[16:32:44.977] M   <SCRIPT> (28405): verify_result
-11-13 16:32:44.978 I/[16:32:44.978] M   <SCRIPT> (28405): fetch_by_domain
-11-13 16:32:44.978 I/[16:32:44.978] M   <SCRIPT> (28405): http_get url=https://h45na.update.easebar.com/notice_pc_hw.txt,host=h45na.update.easebar.com
-11-13 16:32:45.005 I/[16:32:45.005] M   <SCRIPT> (28405): verify_result
-11-13 16:32:50.187 I/[16:32:50.187]     <SCRIPT> (28405): fetch_by_domain
-11-13 16:32:50.187 I/[16:32:50.187]     <SCRIPT> (28405): http_get url=https://h45na.update.easebar.com/notice_pc_hw.txt,host=h45na.update.easebar.com
-11-13 16:32:50.246 I/[16:32:50.246]     <SCRIPT> (28405): verify_result
-11-13 16:32:50.248 I/[16:32:50.248]     <SCRIPT> (28405): fetch_by_domain
-11-13 16:32:50.248 I/[16:32:50.248]     <SCRIPT> (28405): http_get url=https://h45na.update.easebar.com/notice_pc_hw.txt,host=h45na.update.easebar.com
-11-13 16:32:50.294 I/[16:32:50.294]     <SCRIPT> (28405): verify_result
+04-20 16:58:10.747 I/[16:58:10.747] M   <SCRIPT> (29934): [cj]test patch!!!!!!!!
+04-20 16:58:11.500 I/[16:58:11.500] M   <SCRIPT> (29934): prepare_md5_info PatchConst.FILES_HASH_PATH=hash_list not found!
+04-20 16:58:11.549 I/[16:58:11.549] M   <SCRIPT> (29934): @@@@@@@showLoadingTexture
+04-20 16:58:11.552 I/[16:58:11.552] M   <SCRIPT> (29934): @@@@@@@showInitPanel
+04-20 16:58:12.672 I/[16:58:12.672]     <SCRIPT> (29934): fetch_by_domain
+04-20 16:58:12.672 I/[16:58:12.672]     <SCRIPT> (29934): http_get url=https://h45na.update.easebar.com/pl/h45na_hc,host=h45na.update.easebar.com
+04-20 16:58:13.083 I/[16:58:13.083]     <SCRIPT> (29934): verify_result
+04-20 16:58:13.083 I/[16:58:13.083]     <SCRIPT> (29934): _fetch_http_data_antihijack h45na_hc
+04-20 16:58:13.101 I/[16:58:13.101]     <SCRIPT> (29934): fbn, fetchMd5AndCode  hotfix 1111 af9febf319e367cf4c1ce3a84f694212
+04-20 16:58:13.117 I/[16:58:13.117] M   <SCRIPT> (29934): fbn verifyHotfixCode, md5 af9febf319e367cf4c1ce3a84f694212
+04-20 16:58:13.148 I/[16:58:13.148] M   <SCRIPT> (29934): This is a test for headCode hotfix
+04-20 16:58:13.148 I/[16:58:13.148] M   <SCRIPT> (29934): hotfix_20180717 begin
+04-20 16:58:13.149 I/[16:58:13.149] M   <SCRIPT> (29934): hotfix_20190115_patch_func begin
+04-20 16:58:13.149 I/[16:58:13.149] M   <SCRIPT> (29934): hotfix_20190115_patch_func end
+04-20 16:58:13.149 I/[16:58:13.149] M   <SCRIPT> (29934): hotfix_20190508_MultiThreadPatchFix begin
+04-20 16:58:13.200 I/[16:58:13.200] M   <SCRIPT> (29934): hotfix_20190508_MultiThreadPatchFix end
+04-20 16:58:13.200 I/[16:58:13.200] M   <SCRIPT> (29934): hotfix_20190617_FixVersionInfoError begin
+04-20 16:58:13.201 I/[16:58:13.201] M   <SCRIPT> (29934): hotfix_20190617_FixVersionInfoError end
+04-20 16:58:13.201 I/[16:58:13.201] M   <SCRIPT> (29934): discard hotfix_unisdk_whitelist 617289
+04-20 16:58:13.201 I/[16:58:13.201] M   <SCRIPT> (29934): hotfix_unisdk_whitelist end
+04-20 16:58:13.201 I/[16:58:13.201] M   <SCRIPT> (29934): hotfix_20200303 begin
+04-20 16:58:13.201 I/[16:58:13.201] M   <SCRIPT> (29934): 20200327 modified
+04-20 16:58:13.201 I/[16:58:13.201] M   <SCRIPT> (29934): 20200416 modified
+04-20 16:58:13.201 I/[16:58:13.201] M   <SCRIPT> (29934): hotfix_20200303 shutdown USE_CHECK_FILE_MD5 on mobile devices
+04-20 16:58:13.201 I/[16:58:13.201] M   <SCRIPT> (29934): hotfix_20200303 pass: 617289
+04-20 16:58:13.201 I/[16:58:13.201] M   <SCRIPT> (29934): hotfix_20200818 start
+04-20 16:58:13.201 I/[16:58:13.201] M   <SCRIPT> (29934): hotfix_20200818 end
+04-20 16:58:13.201 I/[16:58:13.201] M   <SCRIPT> (29934): hotfix_axeso_2020_08_25 .... start
+04-20 16:58:13.201 I/[16:58:13.201] M   <SCRIPT> (29934): hotfix_axeso_2020_08_25 .... end
+04-20 16:58:13.201 I/[16:58:13.201] M   <SCRIPT> (29934): hotfix_natproxy_20210331 start
+04-20 16:58:13.211 I/[16:58:13.211] M   <SCRIPT> (29934): hotfix_natproxy_20210331 end
+04-20 16:58:13.212 I/[16:58:13.212] M   <SCRIPT> (29934): fbn, HeadCode on suc!
+04-20 16:58:13.613 I/[16:58:13.613]     <SCRIPT> (29934): fetch_by_domain
+04-20 16:58:13.613 I/[16:58:13.613]     <SCRIPT> (29934): http_get url=https://h45na.update.easebar.com/pl/npk_version_na_android.plist,host=h45na.update.easebar.com
+04-20 16:58:13.691 I/[16:58:13.691]     <SCRIPT> (29934): verify_result
+04-20 16:58:13.696 I/[16:58:13.696]     <SCRIPT> (29934): process_result host=h45na.update.easebar.com, success=True, fault=None
+04-20 16:58:13.795 I/[16:58:13.795] M   <SCRIPT> (29934): hardware_instancing_enbled: True
+04-20 16:58:13.796 I/[16:58:13.796] M   <SCRIPT> (29934): fubingnan version info: {'assets.npk_size': 8255000, 'assets.npk_md5': 'e78491456d1afd8d31067dc2890422ff', 'gles2_0_neox.xml_size': 8132, 'gles2_0_neox.xml_md5': '0968aa74db8ac76dd63a53e537fa650e', 'neox.xml_size': 8164, 'neox.xml_md5': 'caaf4ffc20f9143dc3c60bf8e3e8032c', 'script.npk_size': 48047172, 'script.npk_md5': 'd3c84dc209c1bc914e6f8
+04-20 16:58:13.797 I/[16:58:13.797] M   <SCRIPT> (29934): settingLanguage: en
+04-20 16:58:13.797 I/[16:58:13.797] M   <SCRIPT> (29934): LINYUAN___useDLCClothes:  False
+04-20 16:58:13.797 I/[16:58:13.797] M   <SCRIPT> (29934): fubingnan local-ver: 610637.617289, min-ver: 610141.448899
+04-20 16:58:13.800 I/[16:58:13.800] M   <SCRIPT> (29934): patch_language: en
+04-20 16:58:13.800 I/[16:58:13.800] M   <SCRIPT> (29934): fubingnan patch local-patch-ver: 610637.617289, min-patch-ver: 610637.617289
+04-20 16:58:13.800 I/[16:58:13.800] M   <SCRIPT> (29934): fubingnan patch version is equal!
+04-20 16:58:16.820 I/[16:58:16.820]     <SCRIPT> (29934): [WARNING] LINYUAN___ cpythonoverrides file is: 'assets/claudia/CythonOverrides.txt '
+04-20 16:58:16.828 I/[16:58:16.828]     <SCRIPT> (29934): [WARNING] Ignoring not-a-py file from line 1: '#0' in CythonOverrides.txt
+04-20 16:58:16.828 I/[16:58:16.828]     <SCRIPT> (29934): [WARNING] Ignoring not-a-py file from line 11: '#293088' in CythonOverrides.txt
+04-20 16:58:16.828 I/[16:58:16.828]     <SCRIPT> (29934): [WARNING] Ignoring not-a-py file from line 14: '#381568' in CythonOverrides.txt
+04-20 16:58:16.828 I/[16:58:16.828]     <SCRIPT> (29934): [WARNING] Ignoring not-a-py file from line 23: '#400014' in CythonOverrides.txt
+04-20 16:58:16.831 I/[16:58:16.831]     <SCRIPT> (29934): [trouger] properties.init()... assets/data/properties
+04-20 16:58:21.339 I/[16:58:21.339] M   <SCRIPT> (29934): Type <class 'libclaudia.internals.ResourceController.ResourceController'> should be initialized immediately after creation.
+04-20 16:58:21.570 I/[16:58:21.570] M   <SCRIPT> (29934): Type <class 'libclaudia.Settings.TagsAndLayers.TagLayerManager'> should be initialized immediately after creation.
+04-20 16:58:21.576 I/[16:58:21.576] M   <SCRIPT> (29934): Type <class 'libclaudia.Settings.CanvasManager.CanvasManager'> should be initialized immediately after creation.
+04-20 16:58:26.556 I/[16:58:26.556] M   <SCRIPT> (29934): Type <class 'ui.chat.voiceUtils.VoiceUtils'> should be initialized immediately after creation.
+04-20 16:58:27.398 I/[16:58:27.398] M   <SCRIPT> (29934): Type <class 'libclaudia.Settings.CanvasManager.Canvas'> should be initialized immediately after creation.
+04-20 16:58:33.033 I/[16:58:33.033] M   <SCRIPT> (29934): Type <class 'scenario.helper.scenario_gameobj.ScenarioGameObject'> should be initialized immediately after creation.
+04-20 16:58:33.044 I/[16:58:33.044] M   <SCRIPT> (29934): Type <class 'scenario.helper.scenario_ui._ScenarioUIMgr'> should be initialized immediately after creation.
+04-20 16:58:33.172 I/[16:58:33.172] M   <SCRIPT> (29934): Type <class 'scenario.helper.scenario_camera.NeoXCamera'> should be initialized immediately after creation.
+04-20 16:58:33.173 I/[16:58:33.173] M   <SCRIPT> (29934): Type <class 'scenario.helper.scenario_ui.ScenarioUI'> should be initialized immediately after creation.
+04-20 16:58:37.272 I/[16:58:37.272] M   <SCRIPT> (29934): Type <class 'helpers.async_task.TaskCallback'> should be initialized immediately after creation.
+04-20 16:58:37.273 I/[16:58:37.273] M   <SCRIPT> (29934): Type <class 'helpers.async_task.WorkerTask'> should be initialized immediately after creation.
+04-20 16:58:39.184 I/[16:58:39.184] M   <SCRIPT> (29934): fetch_by_domain
+04-20 16:58:39.184 I/[16:58:39.184] M   <SCRIPT> (29934): http_get url=https://h45na.update.easebar.com/server_list_ad.txt,host=h45na.update.easebar.com
+04-20 16:58:39.211 I/[16:58:39.211] M   <SCRIPT> (29934): verify_result
+04-20 16:58:39.214 I/[16:58:39.214] M   <SCRIPT> (29934): fetch_by_domain
+04-20 16:58:39.214 I/[16:58:39.214] M   <SCRIPT> (29934): http_get url=https://h45na.update.easebar.com/server_list_ad.txt,host=h45na.update.easebar.com
+04-20 16:58:39.236 I/[16:58:39.236] M   <SCRIPT> (29934): verify_result
+04-20 16:58:54.539 I/[16:58:54.539] M   <SCRIPT> (29934): fetch_by_domain
+04-20 16:58:54.539 I/[16:58:54.539] M   <SCRIPT> (29934): http_get url=https://h45na.update.easebar.com/notice_pc_hw.txt,host=h45na.update.easebar.com
+04-20 16:58:54.564 I/[16:58:54.564] M   <SCRIPT> (29934): verify_result
+04-20 16:58:54.566 I/[16:58:54.566] M   <SCRIPT> (29934): fetch_by_domain
+04-20 16:58:54.567 I/[16:58:54.567] M   <SCRIPT> (29934): http_get url=https://h45na.update.easebar.com/notice_pc_hw.txt,host=h45na.update.easebar.com
+04-20 16:58:54.588 I/[16:58:54.588] M   <SCRIPT> (29934): verify_result
+04-20 16:59:03.479 I/[16:59:03.479]     <SCRIPT> (29934): fetch_by_domain
+04-20 16:59:03.479 I/[16:59:03.479]     <SCRIPT> (29934): http_get url=https://h45na.update.easebar.com/notice_pc_hw.txt,host=h45na.update.easebar.com
+04-20 16:59:03.499 I/[16:59:03.499]     <SCRIPT> (29934): verify_result
+04-20 16:59:03.500 I/[16:59:03.500]     <SCRIPT> (29934): fetch_by_domain
+04-20 16:59:03.500 I/[16:59:03.500]     <SCRIPT> (29934): http_get url=https://h45na.update.easebar.com/notice_pc_hw.txt,host=h45na.update.easebar.com
+04-20 16:59:03.531 I/[16:59:03.531]     <SCRIPT> (29934): verify_result
+04-20 16:59:54.727 I/[16:59:54.727] M   <SCRIPT> (29934): Type <class 'libclaudia.internals.Level.Level'> should be initialized immediately after creation.
+04-20 16:59:54.728 I/[16:59:54.728] M   <SCRIPT> (29934): Type <class 'libclaudia.internals.Asset.Asset'> should be initialized immediately after creation.
+04-20 16:59:54.729 I/[16:59:54.729] M   <SCRIPT> (29934): Type <class 'libclaudia.Classes.SceneSystem.Scene'> should be initialized immediately after creation.
+04-20 16:59:55.370 I/[16:59:55.370] M   <SCRIPT> (29934): GetAllSubObj set([<Scene (GameObject) at 0x7638424EEBB0>])
+04-20 17:00:08.846 I/[17:00:08.846] M   <SCRIPT> (29934): Asset: ui/in_game/ui_jump_tip/ui_jump_tip.csb
+04-20 17:00:08.848 I/[17:00:08.848] M   <SCRIPT> (29934): Asset: character/dataosha_male/male.gim
+04-20 17:00:08.969 I/[17:00:08.969] M   <SCRIPT> (29934): Type <class 'libclaudia.internals.ResourceController.Resource'> should be initialized immediately after creation.
+04-20 17:00:09.026 I/[17:00:09.026] M   <SCRIPT> (29934): ======== Level Destroy (-1) ======
+04-20 17:00:09.027 I/[17:00:09.027] M   <SCRIPT> (29934): [Level] Scene (GameObject) destroy
+04-20 17:00:09.027 I/[17:00:09.027] M   <SCRIPT> (29934): ==================================
+04-20 17:00:09.036 I/[17:00:09.036] M   <SCRIPT> (29934): GetAllSubObj set([<Scene (GameObject) at 0x76383A5B4390>])
+04-20 17:01:58.987 I/[17:01:58.987] M   <SCRIPT> (29934): DEBUG clear_obj_cache for path=  character/dataosha_male/male.gim
+04-20 17:02:00.800 I/[17:02:00.800] M   <SCRIPT> (29934): Asset: ui/in_game/ui_jump_tip/ui_jump_tip.csb
+04-20 17:02:00.800 I/[17:02:00.800] M   <SCRIPT> (29934): Asset: character/dataosha_male/male.gim
+04-20 17:02:00.921 I/[17:02:00.921] M   <SCRIPT> (29934): ======== Level Destroy (20) ======
+04-20 17:02:00.921 I/[17:02:00.921] M   <SCRIPT> (29934): [Level] scene destroy
+04-20 17:02:00.922 I/[17:02:00.922] M   <SCRIPT> (29934): ==================================
+04-20 17:02:00.939 I/[17:02:00.939] M   <SCRIPT> (29934): GetAllSubObj set([<Scene (GameObject) at 0x7638424EEAE0>])
+04-20 17:03:28.065 I/[17:03:28.064] M   <SCRIPT> (29934): DEBUG clear_obj_cache for path=  ui/in_game/ui_jump_tip/ui_jump_tip.csb
+04-20 17:03:28.066 I/[17:03:28.066] M   <SCRIPT> (29934): DEBUG clear_obj_cache for path=  character/dataosha_male/male.gim
+04-20 17:03:28.979 I/[17:03:28.979] M   <SCRIPT> (29934): Asset: ui/in_game/ui_jump_tip/ui_jump_tip.csb
+04-20 17:03:28.980 I/[17:03:28.980] M   <SCRIPT> (29934): Asset: character/dataosha_male/male.gim
+04-20 17:03:29.087 I/[17:03:29.087] M   <SCRIPT> (29934): ======== Level Destroy (20) ======
+04-20 17:03:29.088 I/[17:03:29.088] M   <SCRIPT> (29934): [Level] scene destroy
+04-20 17:03:29.089 I/[17:03:29.089] M   <SCRIPT> (29934): ==================================
+04-20 17:03:29.101 I/[17:03:29.101] M   <SCRIPT> (29934): GetAllSubObj set([<Scene (GameObject) at 0x76384DE31AE0>])

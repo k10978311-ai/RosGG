@@ -31,9 +31,10 @@ if (Test-Path $caCrt) {
 @"
 === Manual steps on the phone (required, once) ===
 
-1. Wi-Fi (same LAN as PC) -> your network -> Advanced -> IP settings DHCP
-   OR Static DNS: set DNS 1 to $RosPcIp (leave DNS 2 empty or 8.8.8.8).
-   This sends game hostnames to dns_server.py on the PC.
+1. Wi-Fi (same LAN as PC) -> Manage network -> Advanced:
+   IP settings **Static** (Samsung usually ignores DNS on DHCP — this is why patch stays at 0%).
+   IP = phone's current address, gateway = router, DNS 1 = $RosPcIp, DNS 2 blank.
+   Verify: .\harness\fix_mobile_connect.ps1 must show h45na.update.easebar.com -> $RosPcIp.
 
 2. Install the test CA: Settings -> Biometrics and security -> Other security
    -> Install from device storage -> Download -> ros_harness_ca.crt

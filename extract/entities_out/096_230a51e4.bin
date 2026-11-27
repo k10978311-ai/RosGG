@@ -1,0 +1,36 @@
+<root>
+	<Properties> 
+		<ros2FlowPickaxe>
+			<Type> INT32 </Type>
+			<Flags> OWN_CLIENT </Flags>
+			<Default> 0 </Default>
+		</ros2FlowPickaxe>
+
+		<isRos2FlowMined>
+			<Type> BOOL </Type>
+			<Flags> OWN_CLIENT </Flags>
+			<Default> False </Default>
+		</isRos2FlowMined>
+
+	</Properties>
+
+	<CellMethods> 
+
+		<setRos2FlowMined>
+			<Arg> BOOL </Arg>
+		</setRos2FlowMined>
+
+	</CellMethods>
+
+	<ClientMethods>
+		<onStartMiningCB>
+			<Arg> INT32 </Arg>
+		</onStartMiningCB>
+
+		<onDoMiningCB>
+			<Arg> INT32 </Arg>
+		</onDoMiningCB>
+
+
+	</ClientMethods>
+</root>

@@ -1,0 +1,173 @@
+<root>
+	<Properties>
+		<ros2WorldLevel>
+			<Type> INT8 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 1 </Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2WorldLevel>
+		<ros2WorldLevelSeason>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 1 </Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2WorldLevelSeason>
+		<canPlayRos2GameByWorldLevel>
+			<Type> BOOL </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> False </Default>
+		</canPlayRos2GameByWorldLevel>
+		<ros2WorldLevelServerTaskNumDict>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+		</ros2WorldLevelServerTaskNumDict>
+		<ros2WorldLevelPersonaTaskTypeSet>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> set() </Default>
+		</ros2WorldLevelPersonaTaskTypeSet>
+
+		<ros2WorldLevelComfortLevel>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2WorldLevelComfortLevel>
+		<ros2WorldLevelWealth>
+			<Type> INT32 </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> 0 </Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2WorldLevelWealth>
+
+		<ros2WorldLevelPersonaTaskNumDict>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2WorldLevelPersonaTaskNumDict>
+		<ros2WorldLevelPersonaTaskDict>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2WorldLevelPersonaTaskDict>
+
+		<ros2WorldLevelReward>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+			<PersistentMongo>	true	</PersistentMongo>
+		</ros2WorldLevelReward>
+
+		<ros2WorldLevelPlayerRankCache>
+			<Type> PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default> {} </Default>
+		</ros2WorldLevelPlayerRankCache>
+
+	</Properties>
+	<ClientMethods>
+		<setRos2PlayerCanPlayGame>
+			<Arg> BOOL </Arg>
+		</setRos2PlayerCanPlayGame>
+		<setRos2PlayerWorldLevel>
+			<Arg> INT32 </Arg>
+		</setRos2PlayerWorldLevel>
+		<setRos2WorldLevelSeason>
+			<Arg> INT32 </Arg>
+		</setRos2WorldLevelSeason>
+
+		<queryRos2WorldLevelTaskNum>
+			<Arg> INT32 </Arg>
+		</queryRos2WorldLevelTaskNum>
+
+		<resQueryRos2WorldLevelTaskNumDict>
+			<Arg> PYTHON </Arg>
+		</resQueryRos2WorldLevelTaskNumDict>
+
+		<syncRos2WorldLevelPersonaTaskDict>
+			<Arg> PYTHON </Arg>
+		</syncRos2WorldLevelPersonaTaskDict>
+
+		<checkRos2WorldPersonaTask>
+			<Arg> PYTHON </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</checkRos2WorldPersonaTask>
+
+		<resQueryRos2WorldLevelRank>
+			<Arg> PYTHON </Arg>
+			<Arg> INT32 </Arg>
+			<Arg> INT32 </Arg>
+		</resQueryRos2WorldLevelRank>
+
+		<resQueryRos2WorldLevelPlayerRank>
+			<Arg> PYTHON </Arg>
+		</resQueryRos2WorldLevelPlayerRank>
+
+		<sendRos2WorldLevelReward>
+			<Arg> PYTHON </Arg>
+			<Arg> INT8 </Arg>
+			<Arg> INT8 </Arg>
+		</sendRos2WorldLevelReward>
+	</ClientMethods>
+	<BaseMethods>
+		<queryRos2WorldLevelTaskNum>
+			<Arg> INT32 </Arg>
+		</queryRos2WorldLevelTaskNum>
+		<updateRos2WorldLevelKillDefendefNum>
+			<Arg> INT32 </Arg>
+		</updateRos2WorldLevelKillDefendefNum>
+		<updateRos2WorldLevelEscapeMaterials>
+			<Arg> FLOAT </Arg>
+		</updateRos2WorldLevelEscapeMaterials>
+		<updateRos2WorldLevelKillPoints>
+			<Arg> FLOAT </Arg>
+		</updateRos2WorldLevelKillPoints>
+		<updateRos2WorldLevelResolve>
+			<Arg> INT32 </Arg>
+		</updateRos2WorldLevelResolve>
+
+		<queryRos2WorldLevelTaskNumDict><Exposed/>
+		</queryRos2WorldLevelTaskNumDict>
+
+		<queryRos2WorldLevelRank><Exposed/>
+			<Arg> INT8 </Arg>
+			<Arg> INT8 </Arg>
+		</queryRos2WorldLevelRank>
+
+		<queryRos2WorldLevelPlayerRank><Exposed/>
+			<Arg> INT8 </Arg>
+			<Arg> INT8 </Arg>
+		</queryRos2WorldLevelPlayerRank>
+
+		<resQueryRos2WorldLevelTaskNumDict>
+			<Arg> PYTHON </Arg>
+		</resQueryRos2WorldLevelTaskNumDict>
+
+		<resQueryRos2WorldLevelRank>
+			<Arg> PYTHON </Arg>
+			<Arg> INT8 </Arg>
+			<Arg> INT8 </Arg>
+		</resQueryRos2WorldLevelRank>
+
+		<resQueryRos2WorldLevelPlayerRank>
+			<Arg> PYTHON </Arg>
+			<Arg> INT8 </Arg>
+			<Arg> INT8 </Arg>
+		</resQueryRos2WorldLevelPlayerRank>
+
+		<sendWorldLevelServerReward>
+			<Arg> PYTHON </Arg>
+			<Arg> INT8 </Arg>
+			<Arg> INT8 </Arg>
+		</sendWorldLevelServerReward>
+		<sendWorldLevelServerRankReward>
+			<Arg> PYTHON </Arg>
+			<Arg> INT8 </Arg>
+			<Arg> INT8 </Arg>
+		</sendWorldLevelServerRankReward>
+	</BaseMethods>
+</root>

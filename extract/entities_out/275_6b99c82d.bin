@@ -1,0 +1,78 @@
+<root>
+	<Implements>
+		<Interface>	iGlobal		</Interface>
+		<Interface>	iBaseNoCell	</Interface>
+	</Implements>
+
+	<Properties>
+		<dayNo>
+			<Type>		 INT32 		</Type>
+			<Flags>			BASE		</Flags>
+			<Default>       0       </Default>
+			<Persistent>	true	</Persistent>
+		</dayNo>
+		
+		<valentineSupportValue>
+			<Type>			PYTHON				</Type>
+			<Flags>			BASE				</Flags>
+			<Persistent>	true				</Persistent>
+			<Default>		{}			</Default>
+		</valentineSupportValue>
+		
+		<valentineRoleWinRecord>
+			<Type>			PYTHON				</Type>
+			<Flags>			BASE				</Flags>
+			<Persistent>	true				</Persistent>
+			<Default>		{}			</Default>
+		</valentineRoleWinRecord>
+	</Properties>
+
+	<BaseMethods>
+		<addValentineSupportValueToGoddess>
+			<Arg>			MAILBOX			</Arg>
+			<Arg>			INT32			</Arg>
+			<Arg>			INT32			</Arg>
+			<Arg>			INT32			</Arg>
+		</addValentineSupportValueToGoddess>
+		
+		<getValentineGoddessCharmValue>
+			<Arg>			MAILBOX			</Arg>
+		</getValentineGoddessCharmValue>
+		
+		<getTotalValentineGoddessCharmValue>
+			<Arg>			MAILBOX			</Arg>
+		</getTotalValentineGoddessCharmValue>
+		
+		<updateValentineSupportValue>
+			<Arg>			INT32			</Arg>
+			<Arg>			INT32			</Arg>
+			<Arg>			INT32			</Arg>
+		</updateValentineSupportValue>
+		
+		<getValentineDayNo>
+			<Arg>			MAILBOX			</Arg>
+		</getValentineDayNo>
+		
+		<getValentineSupportValueRankList>
+			<Arg>			MAILBOX			</Arg>
+			<Arg>			INT32			</Arg>
+		</getValentineSupportValueRankList>
+		
+		<getValentineSupportValueRank>
+			<Arg>			MAILBOX			</Arg>
+			<Arg>			INT32			</Arg>
+			<Arg>			INT32			</Arg>
+		</getValentineSupportValueRank>
+		
+		<getPrevRoleWinRecord>
+			<Arg>			MAILBOX			</Arg>
+			<Arg>			INT32			</Arg>
+		</getPrevRoleWinRecord>
+		
+		<getRoleWinRounds>
+			<Arg>			MAILBOX			</Arg>
+			<Arg>			INT32			</Arg>
+		</getRoleWinRounds>
+	</BaseMethods>
+</root>
+

@@ -1,0 +1,147 @@
+<root>
+	<Properties> 
+		<!-- Ros2玩家dna芯片的全部安装情况 -->
+		<ros2Camp2PersistChipTree>
+			<Type>		PYTHON			</Type> 
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}			</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2Camp2PersistChipTree>
+		<!-- Ros2当前安装dna芯片的情况 -->
+		<ros2DnaNodeID2ChipID>
+			<Type>		PYTHON			</Type> 
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}			</Default>
+		</ros2DnaNodeID2ChipID>
+		<ros2ChipID2OwnedItemsInfo>
+			<Type>		PYTHON			</Type> 
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}			</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2ChipID2OwnedItemsInfo>
+
+		<!-- Ros2战斗外所有已经解锁的dna节点 -->
+		<ros2Camp2PersistUnlockedDnaNodes>
+			<Type>	PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default>	{}	</Default>
+			<PersistentMongo> true </PersistentMongo>
+		</ros2Camp2PersistUnlockedDnaNodes>
+		<!-- Ros2战斗外当前角色已经解锁的dna节点 -->
+		<ros2UnlockedDnaNodes>
+			<Type>	PYTHON </Type>
+			<Flags> BASE_AND_CLIENT </Flags>
+			<Default>	set()	</Default>
+		</ros2UnlockedDnaNodes>
+
+		<!-- Ros2已经安装的Dna导致的存盘必要数据,注意不要存表格里有的数据，是存一些动态的状态数据，如果有必要 -->
+		<ros2DnaChipInfos>
+			<Type>		PYTHON			</Type> 
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}			</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2DnaChipInfos>
+		<ros2DnaChipDrawCount>
+			<Type>		INT8			</Type> 
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}			</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2DnaChipDrawCount>
+		<ros2Camp2DnaTreeUnlockState>
+			<Type>		PYTHON			</Type> 
+			<Flags>		BASE_AND_CLIENT		</Flags>
+			<Default>	{}			</Default>
+			<PersistentMongo>	true			</PersistentMongo>
+		</ros2Camp2DnaTreeUnlockState>
+	</Properties>
+
+	<BaseMethods>
+		<wearRos2DnaChip> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+		</wearRos2DnaChip>
+		<takeOffRos2DnaChip> <Exposed/>
+			<Arg>	INT32	</Arg>
+		</takeOffRos2DnaChip>
+		<unlockDnaNode> <Exposed/>
+			<Arg>	INT32	</Arg>
+		</unlockDnaNode>
+		<addRos2DnaChipWithSrc>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</addRos2DnaChipWithSrc>
+		<delRos2DnaChip>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+		</delRos2DnaChip>
+		<researchRos2DnaChip> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg> ARRAY <of> ROS2_DNA_RESEARCH_DATA_ITEM  </of> </Arg>
+		</researchRos2DnaChip>
+		<breakthroughRos2DnaChip> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg> ARRAY <of> ROS2_DNA_BREAKTHROUGH_DATA_ITEM  </of> </Arg>
+		</breakthroughRos2DnaChip>
+		<getRos2DnaChipResearchProgressAward> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg>	INT32	</Arg>
+		</getRos2DnaChipResearchProgressAward>
+		<requestToDrawDnaChip> <Exposed/>
+			<Arg>	INT32	</Arg>
+		</requestToDrawDnaChip>
+		<subRos2DnaChipNewTagCnt> <Exposed/>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+		</subRos2DnaChipNewTagCnt>
+		<unlockRos2DnaTree> <Exposed/>
+		</unlockRos2DnaTree>
+	</BaseMethods>
+
+	<ClientMethods>
+		<onWearRos2DnaChip>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+		</onWearRos2DnaChip>
+		<onTakeOffRos2DnaChip>
+			<Arg>	INT32	</Arg>
+		</onTakeOffRos2DnaChip>
+		<onUnlockDnaNode>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+		</onUnlockDnaNode>
+		<onUpdateOwnedRos2DnaChipsInfo>
+			<Arg>	INT32	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</onUpdateOwnedRos2DnaChipsInfo>
+		<onResearchRos2DnaChip>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</onResearchRos2DnaChip>
+		<onBreakthroughRos2DnaChip>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg>	INT32	</Arg>
+			<Arg>	PYTHON	</Arg>
+		</onBreakthroughRos2DnaChip>
+		<onGetRos2DnaChipResearchProgressAward>
+			<Arg>	INT32	</Arg>
+			<Arg>	STRING	</Arg>
+			<Arg>	INT32	</Arg>
+		</onGetRos2DnaChipResearchProgressAward>
+		<onGetRos2DnaChipAwards>
+			<Arg>	PYTHON	</Arg>
+		</onGetRos2DnaChipAwards>
+		<onGetRos2DnaChipDrawResult>
+			<Arg>	PYTHON	</Arg>
+			<Arg>	INT8	</Arg>
+		</onGetRos2DnaChipDrawResult>
+	</ClientMethods>
+</root>

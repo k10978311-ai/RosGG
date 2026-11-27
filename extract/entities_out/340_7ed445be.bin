@@ -1,0 +1,19 @@
+<root>
+  <Parent> DtsRos2TaskNpc </Parent>
+	<ClientName>	DtsRos2TaskNpcExpress		</ClientName>
+  <Properties>
+      <entIDInteractEnable>
+          <Type>    PYTHON        </Type>
+          <Flags>   ALL_CLIENTS  </Flags>
+      </entIDInteractEnable>
+  </Properties>
+  <ClientMethods>
+
+  </ClientMethods>
+  <CellMethods>
+  <onActiveAvatarInteract>
+      <Arg>       INT32         </Arg>
+  </onActiveAvatarInteract>
+  </CellMethods>
+
+</root>
