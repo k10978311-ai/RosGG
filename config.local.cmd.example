@@ -1,0 +1,11 @@
+@echo off
+rem Copy to config.local.cmd (gitignored). Values here override config.cmd.
+
+set ROS_PC_IP=192.168.1.21
+rem set ROS_PHONE_SERIAL=
+rem set ROS_PHONE_XAPK_DIR=/sdcard/RosGG
+rem set ROS_LOCAL_APK=C:\path\to\your-signed.apk
+rem set ROS_PATCH_VERSION=v005
+rem set ROS_CUSTOM_ICON=C:\path\to\icon.png
+rem set ROS_APP_LABEL=RoS Private Svr
+rem set ROS_DEVICE_FULL_PERMISSIONS=1

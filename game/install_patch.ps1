@@ -8,7 +8,7 @@ param(
     [string]$Serial = ""
 )
 $ErrorActionPreference = "Stop"
-. (Join-Path $PSScriptRoot "..\ros_server_v2\client\scripts\adb_common.ps1")
+. (Join-Path $PSScriptRoot "..\adb_common.ps1")
 
 $dir = Get-ChildItem (Join-Path $PSScriptRoot "patches") -Directory | Where-Object Name -like "$Version*" | Select-Object -First 1
 if (-not $dir) { throw "No patch folder matching $Version" }

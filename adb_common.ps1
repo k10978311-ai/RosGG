@@ -9,18 +9,31 @@ if (-not $script:RosAdb) {
     throw "adb.exe not found. Install LDPlayer adb or Android platform-tools."
 }
 
-# PC LAN IP used by dns_server / ros_mock_server (override with $env:ROS_PC_IP).
-$script:RosPcIp = if ($env:ROS_PC_IP) { $env:ROS_PC_IP } else {
-    foreach ($cfgPath in @(
-        (Join-Path $PSScriptRoot "ros_server_v2\config.cmd"),
-        (Join-Path $PSScriptRoot "config.cmd")
-    )) {
+function Read-RosConfig {
+    $map = @{}
+    foreach ($name in @("config.cmd", "config.local.cmd")) {
+        $cfgPath = Join-Path $PSScriptRoot $name
         if (-not (Test-Path $cfgPath)) { continue }
-        $m = Select-String -Path $cfgPath -Pattern "set ROS_PC_IP=(\S+)" | Select-Object -First 1
-        if ($m) { break }
+        Get-Content $cfgPath | ForEach-Object {
+            if ($_ -match '^\s*set\s+(\w+)=(.*)$') {
+                $map[$Matches[1]] = $Matches[2].Trim()
+            }
+        }
     }
-    if ($m) { $m.Matches[0].Groups[1].Value } else { "192.168.1.18" }
+    return $map
 }
+
+$script:RosConfig = Read-RosConfig
+
+# PC LAN IP: $env:ROS_PC_IP wins, else config.cmd / config.local.cmd
+$script:RosPcIp = if ($env:ROS_PC_IP) { $env:ROS_PC_IP }
+    elseif ($RosConfig.ROS_PC_IP) { $RosConfig.ROS_PC_IP }
+    else { "192.168.1.18" }
+
+$script:RosPhoneSerial = $RosConfig.ROS_PHONE_SERIAL
+$script:RosXapkName = $RosConfig.ROS_XAPK_NAME
+$script:RosPhoneXapkDir = $RosConfig.ROS_PHONE_XAPK_DIR
+$script:RosDeviceFullPermissions = ($RosConfig.ROS_DEVICE_FULL_PERMISSIONS -eq "1") -or ($env:ROS_DEVICE_FULL_PERMISSIONS -eq "1")
 
 $script:RosPackage = "com.netease.chiji"
 $script:RosPubKey = Join-Path $PSScriptRoot "server_keys\loginapp.pubkey"
@@ -42,6 +55,7 @@ function Resolve-RosSerial {
         [string]$Serial = ""
     )
     if ($Serial) { return $Serial }
+    if ($Target -eq "phone" -and $script:RosPhoneSerial) { return $script:RosPhoneSerial }
     $devs = Get-RosDevices
   if ($Target -eq "phone") {
         return ($devs | Where-Object { $_.Serial -notmatch "^emulator-" } | Select-Object -First 1).Serial

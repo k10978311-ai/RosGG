@@ -8,11 +8,13 @@ param(
     [ValidateSet("phone", "ldplayer", "both")]
     [string]$Target = "phone",
     [switch]$WithObb,
-    [string]$XapkName = "RULES+OF+SURVIVAL_1.610637.617289_APKPure.xapk",
-    [string]$PhoneXapkDir = "/sdcard/RosGG"
+    [string]$XapkName = "",
+    [string]$PhoneXapkDir = ""
 )
 
 . "$PSScriptRoot\adb_common.ps1"
+if (-not $XapkName) { $XapkName = if ($RosXapkName) { $RosXapkName } else { "RULES+OF+SURVIVAL_1.610637.617289_APKPure.xapk" } }
+if (-not $PhoneXapkDir) { $PhoneXapkDir = if ($RosPhoneXapkDir) { $RosPhoneXapkDir } else { "/sdcard/RosGG" } }
 
 $obbRemote = "/sdcard/Android/obb/com.netease.chiji"
 $stage = "/data/local/tmp/ros_install"

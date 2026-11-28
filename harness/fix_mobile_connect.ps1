@@ -44,6 +44,14 @@ $pubkey = (& $RosAdb -s $serial shell "test -f '/storage/emulated/0/Android/data
 Write-Host "`nloginapp.pubkey on device: $pubkey"
 Write-Host "CA in Download: $(if ((& $RosAdb -s $serial shell 'test -f /sdcard/Download/ros_harness_ca.crt && echo yes').Trim() -eq 'yes') {'yes'} else {'missing'})"
 
+if ($phoneIp -eq $RosPcIp) {
+    Write-Host @"
+
+*** ERROR: Phone Wi-Fi IP is $phoneIp — same as the harness PC ($RosPcIp). That breaks the LAN.
+Use a different phone address (e.g. 192.168.1.168). Only DNS 1 should be $RosPcIp.
+"@
+}
+
 if (-not $dnsOk) {
     Write-Host @"
 
@@ -52,7 +60,7 @@ Samsung often ignores DNS on DHCP — use Static IP on Wi‑Fi '$ssid':
 
   Settings -> Connections -> Wi‑Fi -> (your network) -> Manage -> Advanced
   IP settings: Static
-    IP: $phoneIp (or keep current)
+    IP: $(if ($phoneIp -eq $RosPcIp) { '192.168.1.168' } else { $phoneIp })  (NOT $RosPcIp — that is the PC)
     Gateway: router (usually ${pcPrefix}.1)
     Prefix length: 24
     DNS 1: $RosPcIp

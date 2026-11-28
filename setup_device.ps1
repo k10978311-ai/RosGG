@@ -3,7 +3,8 @@
 # Run: powershell -ExecutionPolicy Bypass -File setup_device.ps1
 param(
     [string]$Serial = "",
-    [string]$PcIp = ""
+    [string]$PcIp = "",
+    [switch]$FullPermissions
 )
 
 . "$PSScriptRoot\adb_common.ps1"
@@ -18,6 +19,10 @@ Write-Host "PC harness IP: $RosPcIp"
 
 & $RosAdb -s $Serial shell "settings put global private_dns_mode off"
 Write-Host "[+] Private DNS off"
+
+if ($FullPermissions -or $RosDeviceFullPermissions) {
+    & powershell -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot "setup_device_permissions.ps1") -Serial $Serial | Out-Host
+}
 
 Push-RosLoginPubKey -Serial $Serial
 

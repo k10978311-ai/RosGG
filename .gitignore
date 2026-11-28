@@ -31,6 +31,8 @@ scratch/frida-server*
 # nested repo (own GitHub remote: RosGG-Server-v2)
 ros_server_v2/
 
+config.local.cmd
+
 # local-only: secrets, tools, large / third-party game binaries
 saved_accounts.json
 cloudflared.exe
